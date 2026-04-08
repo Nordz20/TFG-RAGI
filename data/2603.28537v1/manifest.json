@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28537v1",
+    "source_pdf": "../pdfs/2603.28537v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28537v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28537v1/images/p0006_figure_00001.png",
+    "caption": "Figure 1: Accuracy of the model training in the sub- sampled dataset minus the accuracy of the model training on a randomly subsampled dataset.",
+    "md5": "15d14754580981c4f41ef32d0af15ad0",
+    "description2": "The figure plots the difference in accuracy between model training on a subsampled dataset and a randomly subsampled dataset.",
+    "description3": "A line chart displays the difference in model training accuracy between two datasets over a range of values on the horizontal axis.",
+    "questions": [
+      "How does the model's accuracy change when using a sub-sampled dataset?",
+      "What is the general trend in the difference of model accuracy between datasets?"
+    ]
+  }
+]

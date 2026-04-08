@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 1,
+    "image_path": "../data/2603.28603v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1: Performance vs. time. Average perfor- mance across 8 datasets and multiple domains for fixed numbers of re-ranked images indicated with text labels. All models are trained on the land- marks domain (GLDv2). Runtime is estimated from model latencies reported in Table 5.",
+    "md5": "cca35e4ebc0042133b367e0905f0e506",
+    "description2": "The figure plots average performance across 8 datasets and multiple domains against time, with text labels indicating fixed numbers of re-ranked images for each model.",
+    "description3": "Three-panel line chart displays performance (mAP) versus time (ms) for multiple models, with text labels indicating re-ranked image counts.",
+    "questions": [
+      "What performance differences are indicated between the multiple datasets shown?",
+      "How does estimated runtime affect the average performance observed?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.28603v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2: Detailed overview of ELViS. The similarity matrix is refined using optimal transport with descriptor-dependent dustbin gains. The strongest local similarities per descriptor are then selected and transformed element-wise by a learned function f, before being sum-aggregated into a scalar global similarity. During training, a modified BCE loss with a learnable function g reshapes the penalty curve; g is used only for training and is expandable at inference.",
+    "md5": "c444395db5aabe0631202084527bbae8",
+    "description2": "The figure presents a detailed overview of ELViS, featuring a refined similarity matrix using optimal transport with descriptor-dependent dustbin gains.",
+    "description3": "Two-panel diagram outlines a process involving a similarity matrix, optimal transport, descriptor-dependent dustbin gains, and a learned function f, culminating in a BCE loss.",
+    "questions": [
+      "How does the process transform local similarities into a global similarity score?",
+      "What are the key steps involved in refining the similarity matrix?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.28603v1/images/p0005_figure_00003.png",
+    "caption": "Figure 3: Shape of the learned univariate functions f (left) and g (right). Although parame- terized as MLPs, both functions learn well-behaved scalar transformations that effectively separate matching and non-matching distributions. The distributions of input values are visualized separately for positive and negative image pairs, sampled during training.",
+    "md5": "cb212cb0fc1b4bf77c9d7a3f77c48361",
+    "description2": "The figure plots the shape of learned univariate functions f (left) and g (right), which are scalar transformations separating matching and non-matching distributions.",
+    "description3": "Two-panel plot displays histograms of input values for positive and negative pairs, alongside red lines representing learned univariate functions f and g.",
+    "questions": [
+      "How do the learned functions separate distributions of positive and negative image pairs?",
+      "What is the general shape of the learned functions for positive versus negative image pairs?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28603v1/images/p0006_figure_00004.png",
+    "caption": "Figure 4: Visualization of the 25 strongest correspondences (votes) among si, sj (left) and s′ i, s′ j (right) before (left) and after (right) refinement with optimal transport. Red (yellow) represents high (low) similarity. Raw similarity values in S (left) and values in S′ after passing them through f (right) are used. Heatmaps represent the dustbins values by evaluating h densely for all patches in both images; bright values indicate large dustbin gain and uninformative descriptors.",
+    "md5": "c91a429ead48e8838defb0e6f4a942df",
+    "description2": "The figure plots a comparison of similarity between si, sj and s'i, s'j before and after refinement with optimal transport using red for high and yellow for low similarity.",
+    "description3": "Two-panel plots display correspondences between image patches, with lines connecting points, and color representing similarity values before and after refinement.",
+    "questions": [
+      "How does refinement affect the similarity relationships between image patches?",
+      "What visual patterns indicate high versus low similarity between images?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.28603v1/images/p0010_figure_00005.png",
+    "caption": "Figure 5: Effectiveness with small training sets. Performance of ELViS and AMES when trained on subsets of the full training set (754k images), ranging from 0.2% to 100%. No re-ranking per- formance is indicated at 0 training set size. Training hyperparameters are tuned for each subset size based on validation performance.",
+    "md5": "239bec7dd8a412d9477205791fe878d0",
+    "description2": "The effectiveness of ELViS and AMES is plotted when trained on subsets of the full training set, ranging from 0.2% to 100%.",
+    "description3": "Three multi-panel line charts compare ELViS and AMES performance, plotted against training set size as a percentage of the full set.",
+    "questions": [
+      "How does training set size affect the models' overall effectiveness?",
+      "What general trends are observed in the models' performance?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 16,
+    "image_path": "../data/2603.28603v1/images/p0016_figure_00006.png",
+    "caption": "Figure F: Benchmark examples. Three random samples are shown for each of the 9 datasets. All images are resized to a square aspect ratio for better visualization.",
+    "md5": "0264daa8e06a7e58e4a8df39d595de1a",
+    "description2": "Three random samples are plotted for each of nine datasets in this figure.",
+    "description3": "Four-panel multi-panel plot displays nine datasets, each with three images arranged in a three-by-three grid, all resized to a square aspect ratio.",
+    "questions": [
+      "What kinds of images are used as examples within this benchmark?",
+      "How are the image samples organized for visualization?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 19,
+    "image_path": "../data/2603.28603v1/images/p0019_figure_00007.png",
+    "caption": "Figure G: Average precision per query. Each marker corresponds to the AP of a single query evaluated on different test datasets using DINOv2 as a representation model. x-axis: performance using ELViS trained on SOP dataset. y-axis: performance using ELViS trained on GLDv2 dataset.",
+    "md5": "9319c7922abc5e2801ba14588e411ec5",
+    "description2": "The figure plots average precision per query, with each marker representing the performance of a single query evaluated on different test datasets using DINOv2 as a representation model.",
+    "description3": "Three-panel three panels display scatter plots with blue markers, showing performance against each other using ELViS trained on different datasets.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 19,
+    "image_path": "../data/2603.28603v1/images/p0019_figure_00008.png",
+    "caption": "Figure H: Average precision per query. Each marker corresponds to the AP of a single query evaluated on INSTRE using DINOv2 as a representation model. y-axis: performance using ELViS trained on SOP dataset. x-axis: performance of the global descriptor without any re-ranking.",
+    "md5": "9c54de0dd7a3abd8ea9540a619ab3eb7",
+    "description2": "The figure plots average precision per query, with each marker representing the performance of a single query evaluated on INSTRE using DINOv2 as a representation model.",
+    "description3": "Four-panel scatter plot shows average precision per query, with y-axis representing ELViS performance and x-axis showing global descriptor performance.",
+    "questions": [
+      "How does the descriptor's performance relate to the ELViS performance?",
+      "What is the general relationship between query performance and descriptor performance?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 21,
+    "image_path": "../data/2603.28603v1/images/p0021_figure_00009.png",
+    "caption": "Figure I: The impact of re-ranking with ELViS. We show a single query and its database positives per row for each test set, with the exception of the MET dataset where three queries are shown. The text above each query denotes the change in Average Precision. The text above the positive images denotes the number of negative images ranked before the positive using only global similarity (1) and after re-ranking with ELViS (2), denoted as (1)→(2). The positives are ordered based on the difference (1)-(2) in descending order.",
+    "md5": "e3b6a6ee4c4455c5404c4d3d8c839e1f",
+    "description2": "The figure displays a single query's database positives per row, showing Average Precision changes and negative image rankings before and after re-ranking with ELViS.",
+    "description3": "Four-panel plot displays query results with associated text indicating Average Precision changes and the number of negatives before/after re-ranking.",
+    "questions": [
+      "What does the text above each query indicate about the re-ranking process?",
+      "How are the positive images arranged and what do they represent?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 22,
+    "image_path": "../data/2603.28603v1/images/p0022_figure_00010.png",
+    "caption": "Figure J: Visualization of strong correspondences before (left) and after (right) refinement with optimal transport.",
+    "md5": "7c610500d71c7e30669f6b72a819ab17",
+    "description2": "The figure visualizes strong correspondences before and after refinement with optimal transport, comparing two plots on the left and right sides.",
+    "description3": "Four-panel plot displays paired images, connected by orange lines, showing correspondences before and after refinement across different objects.",
+    "questions": [
+      "How do the visual characteristics change after the refinement process?",
+      "What is the relationship between the elements shown on the left and right sides?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2603.28603v1",
+    "source_pdf": "../pdfs/2603.28603v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28603v1.pdf",
+    "page": 23,
+    "image_path": "../data/2603.28603v1/images/p0023_figure_00011.png",
+    "caption": "Figure K: Visualization of similarity matrices before (left) and after (right) refinement with opti- mal transport with individual values passed through function f. A subset of 100 descriptors is used. These examples correspond to the ones of Figure J.",
+    "md5": "1e0ec323307fcadd421041a8b5986f3f",
+    "description2": "The figure visualizes similarity matrices, comparing two scenarios: a matrix before refinement using optimal transport and another after refinement on both sides of a vertical divide.",
+    "description3": "Four-panel matrices display similarity before and after refinement, utilizing 100 descriptors and a color scale ranging from 0.0 to 0.9.",
+    "questions": [
+      "How does the refinement process affect the appearance of the similarity matrices?",
+      "What is the overall trend observed when comparing the matrices before and after refinement?"
+    ]
+  }
+]

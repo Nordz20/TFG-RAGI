@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02118v1",
+    "source_pdf": "../pdfs/2604.02118v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02118v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02118v1/images/p0011_figure_00001.png",
+    "caption": "Figure 1: Instance ls 0 (Linear Spike, n=100, first 45 steps shown). The series follows a linear upward trend with Gaussian noise. A single transient spike at t=35 (•) deviates sharply from the local trend before reverting immediately.",
+    "md5": "28fe8842505be7196111b7f56e9297d0",
+    "description2": "The instance of Linear Spike sequence with Gaussian noise shows a sharp deviation from the linear trend followed by immediate reversion, featuring a single transient spike.",
+    "description3": "Two-panel line chart displays a linear upward trend with Gaussian noise, punctuated by a sharp, transient spike at time step 35.",
+    "questions": [
+      "What main topic or process is represented over time in the figure?",
+      "What overall trend or progression is shown across the figure?"
+    ]
+  }
+]

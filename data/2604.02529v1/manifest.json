@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02529v1/images/p0005_figure_00001.png",
+    "caption": "Figure 1. Orthographic projection of the SPTpol 500 deg2(green, dashed), SPT-SZ 2500 deg2(gray, dot-dashed) and the SPT- 3G 1500 deg2(orange, solid) survey fields, where the background is the Planck dust map (Planck Collaboration et al. 2014b).",
+    "md5": "7b9283ddfa5c1c9581fcffbbda46c712",
+    "description2": "The figure presents an orthographic projection of three survey fields: SPTpol 500 deg2, SPT-SZ 2500 deg2, and SPT-3G 1500 deg2, superimposed on the Planck dust map.",
+    "description3": "The plot is an orthographic projection displaying three survey fields (SPTpol, SPT-SZ, and SPT-3G) overlaid on a Planck dust map.",
+    "questions": [
+      "What are the relative sizes of the survey fields shown in this projection?",
+      "How are the different survey areas distinguished visually in this projection?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02529v1/images/p0007_figure_00002.png",
+    "caption": "Figure 3. Angular separation to the nearest AT20G coun- terpart shown as a function of SPTpol 150 GHz flux density for all SPT-SZ sources within the footprint defined by the SPTpol 25% weight contour. The dashed horizontal line marks the 1 arcmin (60 arcsec) association radius used to define accepted matches; sources below this threshold are re- tained, while sources above it are treated as non-associations.",
+    "md5": "f7c09ddc7fe206b8c96a6f448852ffef",
+    "description2": "The figure plots angular separation to the nearest AT20G counterpart as a function of SPTpol 150 GHz flux density for all SPT-SZ sources within a defined footprint.",
+    "description3": "A scatter plot displays angular separation versus 150 GHz flux density, differentiating between associated and unassociated sources with a horizontal line.",
+    "questions": [
+      "How does the angular separation to a counterpart relate to the SPTpol flux density?",
+      "What is the threshold used to distinguish between associated and non-associated sources?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02529v1/images/p0007_figure_00003.png",
+    "caption": "Figure 2. Source selection takes the SPT-SZ point source catalog (Everett et al. 2020), extracts sources with a S/N greater than 10, cross matches the RA and DEC to the AT20G catalog, then, takes those with a pixel value with a weight value above 25% of the maps mean weight.",
+    "md5": "cd9d62472d6f4d46959b97825714a2b6",
+    "description2": "Source selection takes the SPT-SZ point source catalog, extracting sources with signal-to-noise ratios greater than 10 and cross-matching coordinates to the AT20G catalog.",
+    "description3": "A bar chart displays the number of sources after successive cuts based on signal-to-noise ratio, matching, and footprint.",
+    "questions": [
+      "What is the process for selecting sources from the SPT-SZ catalog?",
+      "How does the number of sources change with each selection criterion?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02529v1/images/p0008_figure_00004.png",
+    "caption": "Figure 4. Fraction of median map weight values at the location of each source in the 150 GHz coadded map (blue) and the 90 GHz coadded map (orange). The dashed vertical line indicates the threshold for inclusion in the catalog (25% weight).",
+    "md5": "3ecf5064b64d2e151d220ce8a34f5a4a",
+    "description2": "The figure plots fraction of median map weight values at each source, with blue representing 150 GHz data and orange representing 90 GHz data.",
+    "description3": "A histogram displays the fraction of median map weight values at source locations, using orange for 90 GHz and yellow for 150 GHz data.",
+    "questions": [
+      "How does the distribution of map weight values differ between the two frequencies shown?",
+      "What threshold determines whether a source is included in the catalog?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02529v1/images/p0009_figure_00005.png",
+    "caption": "Figure 5. Azimuthally averaged matched filter for point source extraction at 150 GHz.",
+    "md5": "4a002ed9b71c493cb2f294f5b527db1f",
+    "description2": "The figure plots an azimuthally averaged matched filter for point source extraction at a frequency of 150 gigahertz.",
+    "description3": "Two-panel line chart displays an \"optimal filter (azimuthal average)\" plotted against \"l/1000\" with a peak around l/1000 = 5.",
+    "questions": [
+      "What is the general shape of the filter used for point source extraction?",
+      "How does the filter's strength change as the measurement location varies?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02529v1/images/p0009_figure_00006.png",
+    "caption": "Figure 6. Top: 5’x5’ cutout of SPTpol coadd map with long wavelength features still visible. Bottom: Matched filtered version of the same map cut out shown above.",
+    "md5": "0c9f3371db488cd5cdcca991fba5fd2e",
+    "description2": "The figure presents a comparison between an unprocessed and processed image of a 5'x5' cutout from an SPTpol coadd map, highlighting long-wavelength features.",
+    "description3": "Four-panel image displays two cutouts, one unfiltered and one matched-filtered, of an SPTpol coadd map, each showing a 5’x5’ area.",
+    "questions": [
+      "What differences are apparent between the unfiltered and filtered versions of the map?",
+      "How do the visible features change after applying a filtering process?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02529v1/images/p0010_figure_00007.png",
+    "caption": "Figure 7. Top: Distribution of source four-year average S/N values per bundle in both 90 GHz (blue) and 150 GHz (orange) bands. Bottom: Distribution of mean flux densities for each source.",
+    "md5": "5f2f77e5d742ad96930ee02484e9bcba",
+    "description2": "The figure displays the distribution of signal-to-noise ratios and mean flux densities for sources in two frequency bands, with blue representing 90 GHz and orange representing 150 GHz.",
+    "description3": "Two-panel plot displays distributions of source signal-to-noise ratio values and mean flux densities, separated by 90 GHz (blue) and 150 GHz (orange) bands.",
+    "questions": [
+      "How do the distributions of S/N values differ between the two frequency bands?",
+      "What is the general pattern of flux density distributions shown in the bottom panel?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02529v1/images/p0012_figure_00008.png",
+    "caption": "Figure 8. 150 GHz fractional intrinsic variance vs. weighted mean spectral index. Red points indicate sources with log νLν ≥ 43, blue points indicate sources with values lower than 43, and black points indicate sources with no measured redshift.",
+    "md5": "f99d52690d3612d0f97fd662cde6d7b7",
+    "description2": "The figure plots the relationship between 150 GHz fractional intrinsic variance and weighted mean spectral index, distinguishing sources by their log νLν value or measured redshift.",
+    "description3": "Two-panel scatter plot displays fractional intrinsic variance versus weighted mean spectral index, with points colored by log νLν value and redshift measurement.",
+    "questions": [
+      "What relationship is indicated between fractional variance and spectral index?",
+      "How do measured points differ based on their redshift or spectral properties?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.02529v1/images/p0013_figure_00009.png",
+    "caption": "Figure 9. Delta of spectral indexes between flaring and non flaring states for each of our 40 brightest AGN light curves.",
+    "md5": "354332ded8d9b4a2f416f9f6f42d97a4",
+    "description2": "The figure plots the delta of spectral indexes between flaring and non-flaring states for each of 40 brightest AGN light curves.",
+    "description3": "A histogram displays the delta of spectral indexes between flaring and non-flaring states for 40 AGN light curves, with a vertical line indicating the median.",
+    "questions": [
+      "What is the distribution of spectral index differences between flaring and non-flaring states?",
+      "How do the spectral indexes vary between the brightest AGN light curves?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.02529v1/images/p0015_figure_00010.png",
+    "caption": "Figure 10. Sample 90 and 150 GHz light curves from the STRAWHAT catalog.",
+    "md5": "afb9656642559e9ef1105699aa7e5d5b",
+    "description2": "The figure presents sample light curves for frequencies of 90 and 150 gigahertz from the STRAWHAT catalog.",
+    "description3": "Four-panel plots display light curves, showing 90 GHz and 150 GHz flux values versus MJD for four different STRAWHAT catalog samples.",
+    "questions": [
+      "What general trends are observed in the light curves of these samples?",
+      "How do the light curves differ between the different samples shown?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.02529v1",
+    "source_pdf": "../pdfs/2604.02529v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02529v1.pdf",
+    "page": 16,
+    "image_path": "../data/2604.02529v1/images/p0016_figure_00011.png",
+    "caption": "Figure 11. Sample 90 and 150 GHz light curves from the STRAWHAT catalog.",
+    "md5": "e0561cdadd90d8705efa04a00d084583",
+    "description2": "The figure displays sample light curves at 90 and 150 GHz from the STRAWHAT catalog.",
+    "description3": "Three-panel plots display light curves of 90 GHz (orange) and 150 GHz (blue) flux versus time (MJD) for three different STRAWHAT catalog samples.",
+    "questions": [
+      "What general trends are visible in the catalog's light curves?",
+      "How do the curves relate to the observed sample data?"
+    ]
+  }
+]

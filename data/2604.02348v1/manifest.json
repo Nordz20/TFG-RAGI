@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02348v1",
+    "source_pdf": "../pdfs/2604.02348v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02348v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.02348v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: Schematic of a cMDP with common state & action spaces with transition, reward, and initial-state distributions conditioned on a context 𝑐. The diagram shows two learning pipelines: (i) context-oblivious policy 𝜋(𝑠) receives only the state observation; (ii) context-aware policy 𝜛(𝑠,𝑐) additionally observes the context. Both are trained across contexts 𝑐 ∼ C.",
+    "md5": "89f1b3e8eda94ad817ac07b3395862e2",
+    "description2": "The figure depicts a cMDP with common state and action spaces, featuring transition, reward, and initial-state distributions conditioned on a context, showing two learning pipelines: one for a context-oblivious policy and another for a context-aware policy.",
+    "description3": "A block diagram displays a policy and environment interaction, with context conditioning one policy and state observations for the other.",
+    "questions": [
+      "How does the context influence the initial-state distributions in this learning setup?",
+      "What are the key differences in how observations are used by each learning pipeline?"
+    ]
+  }
+]

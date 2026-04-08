@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02711v1",
+    "source_pdf": "../pdfs/2604.02711v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02711v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02711v1/images/p0003_figure_00001.png",
+    "caption": "Fig. 1. Historical development of sensor-based Human Activity Recognition (HAR) models. From classical machine learning with hand-crafted features and shallow classifiers [11] to the rise of deep learning with CNNs and RNNs [112], the field progressed toward a phase focused on transfer and domain generalization (robustness across users, devices, and datasets [122, 129, 144]). More recently, self-supervised learning (SSL) approaches have enabled pretraining on unlabeled sensor data using contrastive or masked objectives [142]. Today, the field is moving toward foundation models, exemplified by large-scale sensor–language alignment [125], emphasizing scalability, generalization, and interpretability.",
+    "md5": "a78cd014e4fd5a9b3555c7a753f3720c",
+    "description2": "The figure plots the historical development of sensor-based Human Activity Recognition (HAR) models, showcasing a progression from classical machine learning to deep learning and eventually self-supervised learning approaches.",
+    "description3": "Four-panel timeline plots the historical development of sensor-based Human Activity Recognition models, progressing from classical machine learning to foundation models.",
+    "questions": [
+      "How has the approach to building Human Activity Recognition models changed over time?",
+      "What are the key stages in the evolution of sensor-based model development?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02711v1",
+    "source_pdf": "../pdfs/2604.02711v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02711v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02711v1/images/p0004_figure_00002.png",
+    "caption": "Fig. 2. Foundations and challenges of sensor-based HAR across multiple abstraction levels: signal-, data-, user-, semantic-, and corpus-level factors jointly define the complexity of learning robust and generalizable activity representations.",
+    "md5": "b2a3643bee64c659280306e8951e2a8b",
+    "description2": "The diagram illustrates foundations and challenges of sensor-based human activity recognition, considering signal, data, user, semantic, and corpus-level factors that impact learning robust and generalizable activity representations.",
+    "description3": "A multi-panel plot organizes sensor-based human activity recognition (HAR) challenges across signal, data, user, semantic, and corpus levels.",
+    "questions": [
+      "What factors contribute to the complexity of learning activity representations in sensor-based human activity recognition?",
+      "How do different levels of abstraction influence the challenges in developing generalizable activity representations?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02711v1",
+    "source_pdf": "../pdfs/2604.02711v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02711v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02711v1/images/p0006_figure_00003.png",
+    "caption": "Fig. 3. Definition of Foundation Models [149] and its adaptation across Computer Vision [165], Natural Language Processing [114], and Sensor-based Human Activity Recognition (this work).",
+    "md5": "834e662ce02dbd91d1bd20249d64bfe3",
+    "description2": "The figure defines foundation models and their adaptations across computer vision, natural language processing, and sensor-based human activity recognition.",
+    "description3": "Two-panel diagram presents a taxonomy of foundation models across computer vision, natural language processing, and sensor-based human activity recognition.",
+    "questions": [
+      "What constitutes a foundation model, according to the provided definition?",
+      "How do foundation models adapt to different activity and language processing tasks?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02711v1",
+    "source_pdf": "../pdfs/2604.02711v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02711v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02711v1/images/p0007_figure_00004.png",
+    "caption": "Fig. 4. How foundation models address HAR challenges across signal-, data-, user-, semantic-, and corpus-level dimensions.",
+    "md5": "83cb118f2c4a8049456b3b70c84c2aee",
+    "description2": "The diagram illustrates how foundation models tackle Human-AI Collaboration (HAR) challenges across signal, data, user, semantic, and corpus levels.",
+    "description3": "Two-panel diagram displays foundation models addressing human activity recognition challenges across five dimensions, shown as radiating spokes from a central hub.",
+    "questions": [
+      "What are the main challenges addressed by foundation models in human activity recognition?",
+      "How do different dimensions of human activity recognition relate to foundation model approaches?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02711v1",
+    "source_pdf": "../pdfs/2604.02711v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02711v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02711v1/images/p0009_figure_00005.png",
+    "caption": "Fig. 5. Heuristic 1–7 scores of representative works against six HAR–FM criteria. The “Ideal HAR-FM” panel depicts a target profile. Scores (1 = limited evidence to 7 = strong evidence) are judgment-based syntheses from reported results (compared both to the other models in this survey and to an aspirational “ideal” FM-for-HAR reference point) and are intended for qualitative comparison rather than a leaderboard. Representative works: SelfHAR-700k [164], MASTER [177], OneHAR [145], UniMTS [170], IMU2CLIP [105], SensorLM [171], RelCon [156], Chronos HAR Adapters [152], MHARFedLLM [10], NORMWEAR [95], TxP [123], AURA-MFM [99], Time2Lang [116], and LSM [107].",
+    "md5": "5ddeb6c51f869f7dcd022ebeac20aaf6",
+    "description2": "The figure plots the heuristic scores of 12 representative works against six HAR-FM criteria, with scores ranging from 1 to 7.",
+    "description3": "Four-panel radar chart displays heuristic scores (1-7) for multiple representative works against six HAR–FM criteria, with an \"Ideal HAR-FM\" target profile.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02711v1",
+    "source_pdf": "../pdfs/2604.02711v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02711v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02711v1/images/p0011_figure_00006.png",
+    "caption": "Fig. 6. Conceptual taxonomy and lifecycle of foundation models for sensor-based Human Activity Recognition (HAR). This framework synthesizes the diverse methodological patterns into four–phase workflow: By aligning these dimensions along the model development lifecycle, the taxonomy clarifies how individual architectural or methodological choices contribute to the progression from general pretraining to contextual grounding and real-world application, thereby offering a unifying structure for subsequent analysis in Section 3.",
+    "md5": "e706af466ed487b020a4cb65a862d8f1",
+    "description2": "The figure presents a conceptual taxonomy and lifecycle of foundation models for sensor-based Human Activity Recognition (HAR), structured into four phases.",
+    "description3": "A multi-panel plot organizes foundation model development into four phases: Prepare, Pretraining, Adaptation, and Application, with several sub-categories within each.",
+    "questions": [
+      "What are the main stages involved in developing sensor-based human activity recognition models?",
+      "How do different architectural and methodological choices influence model development?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02711v1",
+    "source_pdf": "../pdfs/2604.02711v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02711v1.pdf",
+    "page": 23,
+    "image_path": "../data/2604.02711v1/images/p0023_figure_00007.png",
+    "caption": "Fig. 7. Application domains for sensor-based HAR foundation models. The radial layout highlights four commonly targeted areas: general-purpose HAR / daily living [58, 119, 145, 157] , healthcare and wellbeing [20, 82, 128, 137, 151], smart-home and context-aware environments [98, 146, 159, 161] , and interactive/agentic assistants [113, 138, 158].",
+    "md5": "91554ab8d8134439bb24d5d99adb69e7",
+    "description2": "The figure displays a radial layout highlighting four application domains for sensor-based human activity recognition foundation models.",
+    "description3": "A radial chart organizes application domains—general-purpose HAR, healthcare, smart-home, and interactive assistants—with associated bullet points.",
+    "questions": [
+      "What are the primary application areas for sensor-based human activity recognition?",
+      "How are different application areas categorized within the foundation model landscape?"
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02620v1",
+    "source_pdf": "../pdfs/2604.02620v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02620v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02620v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1: (Colour online) Magnetic induction evo- lution with step = 2 · 106 iterations.",
+    "md5": "d35ed3d9e9ef456d8d7d13de4c56a49b",
+    "description2": "Magnetic induction evolution is plotted over a range of iterations, with each step representing 2 million iterations.",
+    "description3": "Two-panel line chart displays magnetic induction and applied magnetic field versus time, showing step evolution of 2 x 10^6 iterations.",
+    "questions": [
+      "How does magnetic induction change over time during this iterative process?",
+      "What is the relationship between the applied magnetic field and magnetic induction?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02620v1",
+    "source_pdf": "../pdfs/2604.02620v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02620v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02620v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2: (Colour online) Magnetic induction evo- lution with step = 102 iterations.",
+    "md5": "a8a2db554a6803f64739e9cd0870394f",
+    "description2": "Magnetic induction evolution is plotted over a sequence of 102 iterations.",
+    "description3": "Two-panel line chart displays the evolution of magnetic induction and applied magnetic field over time, with generic axis labels.",
+    "questions": [
+      "How does magnetic induction change over time during the iterative process?",
+      "What is the general relationship between the applied magnetic field and magnetic induction?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02620v1",
+    "source_pdf": "../pdfs/2604.02620v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02620v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02620v1/images/p0005_figure_00003.png",
+    "caption": "Figure 3: (Colour online) Magnetisation for dis- tinct step sizes.",
+    "md5": "4476954504eee1dd00ff34965c141db8",
+    "description2": "Magnetisation is plotted for distinct step sizes in this figure.",
+    "description3": "Three-panel line chart displays magnetization (M) versus a horizontal axis (H), with error bars, and different colored lines representing distinct step sizes.",
+    "questions": [
+      "What relationship is shown between colour and magnetisation?",
+      "How do the sizes affect the overall trend of magnetisation?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02620v1",
+    "source_pdf": "../pdfs/2604.02620v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02620v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02620v1/images/p0006_figure_00004.png",
+    "caption": "Figure 4: (Colour online) Detailed view of the step H = 0.35 of the ﬁeld of ﬁgure 1.",
+    "md5": "771c4110c391ee62ff9c2be3ee782afa",
+    "description2": "A detailed view of the step H equal to 0.35 is plotted, showing the field's structure from a colour diagram.",
+    "description3": "Three-panel graph displays B_avg values oscillating near 0.34 between t/t_0 values of 270000 and 300000.",
+    "questions": [
+      "What is the overall trend of the data shown in this detailed view?",
+      "What characteristic of the field is being presented in this detailed view?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02620v1",
+    "source_pdf": "../pdfs/2604.02620v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02620v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02620v1/images/p0007_figure_00005.png",
+    "caption": "Figure 5: (Colour online) Simulation with the pro- posed algorithm using distinct signiﬁcance levels.",
+    "md5": "ce0766be6fa7c2e4fceca665e59a0ed1",
+    "description2": "The figure plots a simulation of an algorithm using different significance levels.",
+    "description3": "Three-panel line chart displays data points with error bars, showing varying trends across different significance levels plotted against a horizontal axis labeled *H*.",
+    "questions": [
+      "What does the simulation illustrate about the algorithm's response to significance levels?",
+      "How are different significance levels visually represented in the simulation?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02620v1",
+    "source_pdf": "../pdfs/2604.02620v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02620v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02620v1/images/p0008_figure_00006.png",
+    "caption": "Figure 6: (Colour online) Comparison of the pro- posed algorithm results, reference values and orig- inal step size, with and without applied current.",
+    "md5": "ec24b0021539f11d64505191f9eebffc",
+    "description2": "The figure compares proposed algorithm results, reference values, and original step size, with and without applied current.",
+    "description3": "Three-panel line chart plots M versus H, showing multiple data series distinguished by color and legend labels.",
+    "questions": [
+      "How do the algorithm results compare to the reference values under different conditions?",
+      "What is the general trend of the results as the horizontal axis value increases?"
+    ]
+  }
+]

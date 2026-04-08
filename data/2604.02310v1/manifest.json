@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02310v1",
+    "source_pdf": "../pdfs/2604.02310v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02310v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.02310v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1. The pulse profile of PSR J1740−3052 at different frequency chan- nels for 320 s of sub-integrated time, observed 6 days away from the epoch of periastron. The solid black lines represent the total intensity, the red dashed lines represent linear polarisation and the blue dash-dotted lines represent circular polarisation. There is no visible effect of scatter-broadening at the lower frequency channels of S1-band observations. The pulsar shows very low circular polarisation intensities at all frequency channels.",
+    "md5": "4b44572e3951563edaca9f19048b3079",
+    "description2": "The figure plots the pulse profile of PSR J1740−3052, displaying total intensity, linear polarization, and circular polarization at different frequency channels over 320 seconds of sub-integrated time.",
+    "description3": "Three-panel plot displays pulse profiles of PSR J1740−3052, showing total intensity (black), linear polarisation (red), and circular polarisation (blue) at four frequency channels.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02310v1",
+    "source_pdf": "../pdfs/2604.02310v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02310v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02310v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2. Evolution of total intensity (1st panel/top), linear polarisation intensity (2nd panel), circular polarisation intensity (3rd panel), DM and scattering variation (4th panel) and RM variation (5th panel) as a function of observation time for PSR J1740−3052, observed at S1-band with 875 MHz bandwidth the centre frequency of 2405 MHz. There is no visible DM or scattering variation in this pulsar. However, the RM shows a slow variation.",
+    "md5": "b9137086b38806dac00783635d8a9df2",
+    "description2": "The figure plots total intensity, linear polarisation intensity, circular polarisation intensity, and rotation measure variations over time for PSR J1740−3052, observed at S1-band with 875 MHz bandwidth.",
+    "description3": "Five panels display time series data, including total intensity, polarization, DM, scattering, and RM variations for PSR J1740−3052.",
+    "questions": [
+      "How does the polarization intensity change over the observation time?",
+      "What is the general trend observed in the variation of RM with time?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02310v1",
+    "source_pdf": "../pdfs/2604.02310v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02310v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02310v1/images/p0004_figure_00003.png",
+    "caption": "Figure 3. Left: The pulse profile of PSR J2051−0827 at different frequency channels for 320 s of sub-integrated time, far away from the eclipse region. The solid black lines represent the total intensity, the red dashed lines represent linear polarisation and the blue dash-dotted lines represent circular polarisation. The lower frequency channels have lower linear and circular polarisation intensities. We also see clear scintillation in this pulsar as a function of frequency. Right: Stokes I, Q, U and V as a function of frequency after being corrected for the value of RM. It is seen that the behaviour of Stokes Q and U changes as a function of frequency, with a stronger leading component emerging at lower frequencies, resulting in overall changes in the linear polarisation intensity profiles as a function of frequency.",
+    "md5": "0f070ca46c7f532655eec46da42438c2",
+    "description2": "The figure plots the pulse profile of PSR J2051−0827 at different frequency channels, displaying total intensity, linear polarization, and circular polarization over time.",
+    "description3": "Two-panel plot displays pulse profiles and Stokes parameters (I, Q, U, V) versus frequency, showing scintillation and frequency-dependent polarization behavior.",
+    "questions": [
+      "How do the different polarization types change with frequency?",
+      "What is the general relationship between pulse phase and polarization intensity?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02310v1",
+    "source_pdf": "../pdfs/2604.02310v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02310v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02310v1/images/p0005_figure_00004.png",
+    "caption": "Figure 4. Evolution of total intensity (1st panel/top), linear polarisation intensity (2nd panel), circular polarisation intensity (3rd panel), DM and scattering variation (4th panel) and RM variation (5th panel) as a function of observation time for PSR J2051−0827, observed at L-band with 856 MHz bandwidth and 1284 MHz centre frequency. We observe two eclipses during our 4 hrs observation.",
+    "md5": "7a9ada1308f320777540e31ec01bb671",
+    "description2": "The figure plots the evolution of total intensity, polarisation intensities, DM and scattering variation, and RM variation as a function of timeline for PSR J2051−0827.",
+    "description3": "A multi-panel plot displays five time series, showing intensity, polarization, DM, scattering, and RM variations over a four-hour observation.",
+    "questions": [
+      "How does the intensity of different polarization types change over the observation time?",
+      "What general trends are visible in the observed properties as a function of time?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02310v1",
+    "source_pdf": "../pdfs/2604.02310v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02310v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02310v1/images/p0006_figure_00005.png",
+    "caption": "Figure 5. The pulse profile of PSR J1748−2446A at different frequency chan- nels for 320 s of sub-integrated time, far away from the eclipse region. The solid black lines represent the total intensity, the red dashed lines represent linear polarisation and the blue dash-dotted lines represent circular polarisa- tion. The effects of scattering are visible at the lower frequency channels. The linear and circular polarisations are equally strong at all frequency channels.",
+    "md5": "0351de2a219032dbbb3ee4636c51efad",
+    "description2": "The figure plots the pulse profile of PSR J1748−2446A, displaying total intensity, linear polarization, and circular polarization at different frequency channels over 320 seconds.",
+    "description3": "Four-panel plot displays pulse profiles of PSR J1748−2446A, showing total intensity (solid black), linear (red dashed), and circular (blue dash-dotted) polarization at varying frequencies.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02310v1",
+    "source_pdf": "../pdfs/2604.02310v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02310v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02310v1/images/p0007_figure_00006.png",
+    "caption": "Figure 6. Evolution of total intensity (1st panel/top), linear polarisation intensity (2nd panel), circular polarisation intensity (3rd panel), DM and scattering variation (4th panel) and RM variation (5th panel) as a function of observation time for PSR J1748−2444A, observed at L-band with 642 MHz bandwidth and 1283 MHz centre frequency. We observe two eclipses during our 2.5 hrs observation. The pulsar is eclipsed for 30% of the orbit.",
+    "md5": "ad60edb5ad574704e5d96118f35e8436",
+    "description2": "The figure plots a timeline showing the evolution of total intensity, polarisation intensities, DM and RM variations as a function of observation time for PSR J1748−2444A.",
+    "description3": "Total intensity, polarization, DM, scattering, and RM changes fluctuate over 2.5 hours for PSR J1748−2444A.",
+    "questions": [
+      "How does the intensity of different polarization states change over the observation time?",
+      "What is the general trend of the pulsar's DM and RM variation during the observation?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02310v1",
+    "source_pdf": "../pdfs/2604.02310v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02310v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02310v1/images/p0008_figure_00007.png",
+    "caption": "Figure 7. Propagation effects seen in PSR J1748−2444A as the line of sight moves towards and away from the eclipse. Plots a and e represent the normal mode far away from the eclipse region, plots b, c, d and f represents the profile as the pulsar enters and exits the eclipse. The circular polarisation evolves and the second component seems to have a very small change in sign during these phases. This could be due Faraday Conversion or scattering or a combination of the two. This requires a detailed study and we defer it to our future publication.",
+    "md5": "db8f5e8e0e1e05f1c6387709bc5cbe53",
+    "description2": "The figure plots propagation effects in PSR J1748−2444A as the line of sight moves towards and away from the eclipse, showing normal mode profiles and circular polarization evolution.",
+    "description3": "The figure contains three line charts (a, b, c) and three multi-panel plots (d, e, f) displaying polarization data versus pulse phase and time.",
+    "questions": [
+      "How does the pulsar's profile change as it moves through the eclipse region?",
+      "What is the general trend of polarization during the pulsar's eclipse propagation?"
+    ]
+  }
+]

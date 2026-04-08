@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29972v1",
+    "source_pdf": "../pdfs/2603.29972v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29972v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.29972v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1. Linear fit of mortality on admission heart rate for each group when holding all other covariates fixed at their group means.",
+    "md5": "a1ca0311c13958da999576f4a9ee244f",
+    "description2": "The figure plots a linear fit of mortality on admission heart rate for each group with all other covariates held constant at their respective group means.",
+    "description3": "A line chart displays mortality probability versus admission heart rate, showing separate linear fits for men and women.",
+    "questions": [
+      "What is the relationship between admission heart rate and mortality for different groups?",
+      "How are mortality trends modeled in relation to admission heart rate?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29972v1",
+    "source_pdf": "../pdfs/2603.29972v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29972v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.29972v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2. Population linear models of SBP on BMI by group and data samples.",
+    "md5": "a6fa52825f3f34872ca6af3c742c5f85",
+    "description2": "The figure plots population linear models of systolic blood pressure (SBP) against body mass index (BMI) for different groups and data samples.",
+    "description3": "A scatter plot displays SBP versus BMI for Group H and Group K, with linear models overlaid.",
+    "questions": [
+      "What general patterns are observed in the data samples for each group?",
+      "How do the linear models represent the relationship between BMI and SBP?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29972v1",
+    "source_pdf": "../pdfs/2603.29972v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29972v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.29972v1/images/p0007_figure_00003.png",
+    "caption": "Figure 3. Percentage of parameter space leading to sign flips. See Remark A.2 for how we compute the percentage for the unex- plained component.",
+    "md5": "2ba0db471ac14b90c538523f0fe691aa",
+    "description2": "The figure plots the percentage of parameter space that leads to sign flips.",
+    "description3": "A line chart displays the percentage of parameter space for explained and unexplained components versus dimensionality of covariates.",
+    "questions": [
+      "How does the percentage of parameter space leading to sign flips change with covariate dimensionality?",
+      "What is the relative contribution of explained and unexplained components to sign flips?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29972v1",
+    "source_pdf": "../pdfs/2603.29972v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29972v1.pdf",
+    "page": 16,
+    "image_path": "../data/2603.29972v1/images/p0016_figure_00004.png",
+    "caption": "Figure 4. Percentage of parameter space leading to unexplained component sign flips, without covariate standardization.",
+    "md5": "ce7326e5ebb0deefa956a37715900be1",
+    "description2": "The figure plots the percentage of parameter space leading to unexplained component sign flips without covariate standardization.",
+    "description3": "A multi-panel line chart displays the percentage of parameter space leading to unexplained component sign flips versus the dimensionality of covariates.",
+    "questions": [
+      "How does the percentage of parameter space with sign flips change with covariate dimensionality?",
+      "What is the relationship between cube length and the percentage of parameter space exhibiting sign flips?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.29972v1",
+    "source_pdf": "../pdfs/2603.29972v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29972v1.pdf",
+    "page": 19,
+    "image_path": "../data/2603.29972v1/images/p0019_figure_00005.png",
+    "caption": "Figure 5. Mortality outcome histogram for HR quartile two subgroup.",
+    "md5": "6041af9f40bf8a0f2b75dc7c9ecca11b",
+    "description2": "A histogram displays the distribution of mortality outcomes for a subgroup defined by the second quartile of high-risk patients.",
+    "description3": "A histogram displays mortality outcomes for men and women, categorized by in-hospital death (0/1) within the HR quartile two subgroup.",
+    "questions": [
+      "What is the distribution of mortality outcomes within this subgroup?",
+      "How do the mortality outcomes differ between the two groups shown?"
+    ]
+  }
+]

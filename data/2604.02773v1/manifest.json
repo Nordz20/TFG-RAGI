@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.02773v1/images/p0001_figure_00001.png",
+    "caption": "Fig. 1: Overview of our study on generalized small object detection. Leveraging the proposed TinySet-9M dataset and benchmark, we systematically investigate the performance of existing label-efficient paradigms in the small-object regime and introduce a new detection paradigm, Point-prompt Small Object Detection (P2SOD). The middle panel illustrates the domain composition of TinySet-9M, while the right panel compares the performance of representative label-efficient paradigms on small objects and our proposed detection paradigm.",
+    "md5": "687389bd68c36d342e93524e25a719c8",
+    "description2": "The figure provides an overview of a study on generalized small object detection, featuring a dataset and benchmark, as well as existing and proposed detection paradigms.",
+    "description3": "A multi-panel plot displays a study overview, TinySet-9M dataset composition, and a performance comparison of detection paradigms.",
+    "questions": [
+      "What is the primary focus of the study regarding object detection?",
+      "How does the proposed approach aim to improve detection performance?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02773v1/images/p0003_figure_00002.png",
+    "caption": "Fig. 2: Statistical analysis of the TinySet-9M dataset. (a) shows the composition of TinySet-9M, where different source datasets form distinct sub-domains; (b) presents the distribution of object scales, in which the green line indicates the average object scale of the dataset (20.4) and the red line denotes the scale threshold for small objects; (c) illustrates the distribution of object density across images; (d) shows the comparison of TinySet-9M and Object365 in terms of the proportion of small objects, object density, average object scale, number of instances, and number of images.",
+    "md5": "21f70764350117e4b2b06163737fc8f9",
+    "description2": "The figure presents a statistical analysis of the TinySet-9M dataset, featuring four sub-figures: composition, object scales, object density, and comparison with Object365.",
+    "description3": "The figure contains four panels: a stacked bar chart, a line plot, a histogram, and a radial plot.",
+    "questions": [
+      "What are the different data sources that contribute to the TinySet-9M dataset?",
+      "How does the distribution of object scales vary within the dataset?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02773v1/images/p0004_figure_00003.png",
+    "caption": "Fig. 3: Visualization of the TinySet-9M dataset. The dataset contains a large number of densely distributed objects with extremely small spatial scales, which results in blurred object boundaries and weak semantic representations.",
+    "md5": "a146470155c7ea6b730d41b8e40c6c70",
+    "description2": "The figure visualizes the TinySet-9M dataset, comprising numerous densely packed objects with tiny spatial scales leading to indistinct object boundaries and limited semantic meaning.",
+    "description3": "The multi-panel plot displays various images categorized as satellite, aerial, daily-life, driving, microscopic, and agricultural scenes.",
+    "questions": [
+      "What characteristics define the objects contained within this dataset?",
+      "How are the objects spatially arranged within the visualized dataset?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02773v1/images/p0006_figure_00004.png",
+    "caption": "Fig. 4: Detection results of different detection paradigms on TinySet-9M dataset. Orange boxes denote the detection results with confidence higher than 0.2.",
+    "md5": "b1963f460e0aa02d622690f92aefd525",
+    "description2": "The figure plots detection results of different detection paradigms on the TinySet-9M dataset, with orange boxes denoting detections above a 0.2 confidence level.",
+    "description3": "Detection results from various paradigms appear, with orange boxes indicating confidence levels above 0.2.",
+    "questions": [
+      "How do different detection approaches perform on the TinySet-9M dataset?",
+      "What is the general appearance of detection results with higher confidence?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02773v1/images/p0007_figure_00005.png",
+    "caption": "Fig. 5: Overview of the proposed method. (a) Illustration of the overall architecture of DEAL, which is built upon the RT- DETR framework and extended to support point-prompted small object detection. (b) Illustration of the training pipeline of the proposed Prediction-Guided Cyclic Point Prompting (PG-CPP) strategy.",
+    "md5": "c19fff2573dd0d53958bffd75497bea9",
+    "description2": "The figure illustrates a workflow diagram showing the architecture of DEAL, built on RT-Detr, and its training process using PG-CPP for point-prompted small object detection.",
+    "description3": "The figure presents a multi-panel plot, illustrating the architecture of DEAL and its Prediction-Guided Cyclic Point Prompting training pipeline.",
+    "questions": [
+      "How does the proposed method address small object detection?",
+      "What are the key steps involved in the training pipeline?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02773v1/images/p0009_figure_00006.png",
+    "caption": "Fig. 6: Inference settings for the P2SOD task. Setting (1) uses one point prompt per category in each image; Setting (2) assigns one point prompt to each object instance; Setting (3) randomly selects a single category and uses one point from that category as the prompt; Setting (4) randomly selects a category and uses point prompts from all its instances.",
+    "md5": "292673e3534f626056d3b792f3f233cb",
+    "description2": "The figure presents four settings for the P2SOD task, each with different approaches to generating point prompts per image or object instance.",
+    "description3": "Four panels display image and prediction pairs, demonstrating different point prompt settings for the P2SOD task.",
+    "questions": [
+      "How do different prompt selection strategies affect inference in the P2SOD task?",
+      "What are the variations in prompt selection methods used for the P2SOD task?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02773v1/images/p0012_figure_00007.png",
+    "caption": "Fig. 7: Different point prompt position during inference under setting (3).",
+    "md5": "c3da82ff34f5513f54f8532390ea85d4",
+    "description2": "The figure plots different point prompt positions during inference under setting three.",
+    "description3": "A multi-panel plot displays bar and line graphs, showing AP^s values for different point prompt positions.",
+    "questions": [
+      "How does inference performance change with different prompt positions?",
+      "What is the general trend in performance as the prompt position varies?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.02773v1/images/p0013_figure_00008.png",
+    "caption": "Fig. 8: Detection results of zero-shot methods SAM3 and our proposed DEAL on DOTA-v2.0 dataset. Green boxes, red boxes, red points, and orange boxes denote the gt, box visual prompts, point visual prompts, and detection results, respectively.",
+    "md5": "a82369e5d2ede027a198328d2da753c9",
+    "description2": "The figure plots detection results of zero-shot methods SAM3 and DEAL on the DOTA-v2.0 dataset using green boxes, red boxes, red points, and orange boxes to represent ground truth, visual prompts, and outcomes.",
+    "description3": "Green, red, and orange boxes indicate ground truth, prompts, and detections from SAM3 and DEAL on the DOTA-v2.0 dataset.",
+    "questions": [
+      "How do different detection methods perform on this dataset?",
+      "What is the visual representation of the detection results?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.02773v1/images/p0014_figure_00009.png",
+    "caption": "Fig. 9: Detection results on images collected from the Internet. All images are resized to a resolution of 1024 × 1024. None of these images belong to the training datasets, and they exhibit unseen categories or data distributions, such as cartoon images and surveillance camera footage. Red points and orange boxes denote the point visual prompts and the corresponding detection results, respectively.",
+    "md5": "960193900521766c6c8e845635b916e8",
+    "description2": "The figure plots detection results on Internet-collected images, resized to 1024 × 1024, featuring unseen categories and data distributions.",
+    "description3": "The multi-panel plot displays detection results on nine images, with red points and orange boxes indicating prompts and detections.",
+    "questions": [
+      "What types of images were used to evaluate the detection results?",
+      "How are the detection results visually represented within the image?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02773v1",
+    "source_pdf": "../pdfs/2604.02773v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02773v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.02773v1/images/p0015_figure_00010.png",
+    "caption": "Fig. 10: Unseen sceneries feature association visualization. In this figure, green bounding boxes denote ground-truth annotations, and red stars indicate the point prompts. Each feature map visualizes the cosine similarity between the feature at every spatial location and the feature at the prompted point location.",
+    "md5": "38bd3b2db88135893ad32dc8b1cad01a",
+    "description2": "The figure displays a visualization of unseen sceneries feature associations, with green bounding boxes denoting ground-truth annotations and red stars indicating point prompts.",
+    "description3": "The multi-panel plot displays heatmaps visualizing cosine similarity, with green bounding boxes and red stars marking annotations and prompts, respectively.",
+    "questions": [
+      "How do different feature maps represent the similarity between locations in sceneries?",
+      "What is the relationship between ground-truth annotations and the visualized feature associations?"
+    ]
+  }
+]

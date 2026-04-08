@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.22285v1",
+    "source_pdf": "../pdfs/2603.22285v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.22285v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.22285v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1. Overview of VideoDetective. Given a query, we (1) divide the video into segments and construct a spatio-temporal affinity graph from visual similarity and temporal proximity; (2) iteratively observe video segments and propagate the relevance scores over the graph to update a global belief field, guiding next observation via a hypothesis–verification–refinement loop to recover missing clues; and (3) aggregate a compact multimodal evidence set (query-relevant frames + related text) for MLLM to produce a clue-grounded answer.",
+    "md5": "2d13fce090cda12656ac3d99f4f09a93",
+    "description2": "A line chart plots the process of VideoDetective, dividing a video into segments, constructing a graph, updating relevance scores, and aggregating evidence for multimodal language processing.",
+    "description3": "A multi-panel plot outlines VideoDetective's process, including graph construction, iterative observation, and multimodal evidence aggregation for clue-grounded answers.",
+    "questions": [
+      "How does the system use video segments to answer a user's query?",
+      "What is the overall process for finding relevant information within a video?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.22285v1",
+    "source_pdf": "../pdfs/2603.22285v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.22285v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.22285v1/images/p0006_figure_00002.png",
+    "caption": "Figure 2. Performance improvements across different backbones on VideoMME-long w/o subtitle. VideoDetective consistently enhances various vision-language models across different architectures and parameter scales, demonstrating its plug-and-play capability.",
+    "md5": "c06368af2207becf361190111d0faffd",
+    "description2": "Performance improvements are plotted across different backbones on the VideoMME-long dataset without subtitles, showcasing enhancements for various vision-language models.",
+    "description3": "A bar chart displays performance improvements, labeled as \"Performance Gain,\" across various vision-language models with differing backbones.",
+    "questions": [
+      "How does VideoDetective impact the performance of different model architectures?",
+      "What is the overall pattern of performance changes observed?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.22285v1",
+    "source_pdf": "../pdfs/2603.22285v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.22285v1.pdf",
+    "page": 8,
+    "image_path": "../data/2603.22285v1/images/p0008_figure_00003.png",
+    "caption": "Figure 3. Token Efficiency. Comparison of accuracy versus average token consumption. VideoDetective achieves the optimal position on the efficiency-accuracy Pareto frontier.",
+    "md5": "643415637389632906dff1c837ccf926",
+    "description2": "A comparison of accuracy and average token consumption is plotted, with a line representing the optimal position on the efficiency-accuracy Pareto frontier achieved by VideoDetective.",
+    "description3": "A scatter plot compares accuracy versus average token consumption for several models, with VideoDetective marked by a red star.",
+    "questions": [
+      "How does the accuracy of different models relate to their token consumption?",
+      "What is the trade-off between accuracy and efficiency among these models?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.22285v1",
+    "source_pdf": "../pdfs/2603.22285v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.22285v1.pdf",
+    "page": 12,
+    "image_path": "../data/2603.22285v1/images/p0012_figure_00004.png",
+    "caption": "Figure 4. An example of VideoDetective",
+    "md5": "8dfbf0637f57857c2e3b69ea4f0de3da",
+    "description2": "The diagram illustrates the architecture of VideoDetective, a system for detecting and tracking objects in video sequences.",
+    "description3": "A multi-panel plot displays a belief propagation graph, video frames, and two frames of a person making ceramic coasters.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

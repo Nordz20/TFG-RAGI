@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02248v1",
+    "source_pdf": "../pdfs/2604.02248v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02248v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02248v1/images/p0010_figure_00001.png",
+    "caption": "Figure 1: Architecture of BVFLMSP.",
+    "md5": "c0892b6c69004bf124302d03d49ab33a",
+    "description2": "The architecture of BVFLMSP is diagrammed in Figure 1, illustrating the process of variant filtering and prioritization.",
+    "description3": "A multi-panel plot displays a BVFLMSP architecture, with three passive clients feeding into a server, each containing a neural network.",
+    "questions": [
+      "What are the key architectural components of the BVFLMSP system?",
+      "How is data processed and integrated within the BVFLMSP architecture?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02248v1",
+    "source_pdf": "../pdfs/2604.02248v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02248v1.pdf",
+    "page": 19,
+    "image_path": "../data/2604.02248v1/images/p0019_figure_00002.png",
+    "caption": "Figure 2: Loss and accuracy curves for two modalities (Clinical + miRNA).",
+    "md5": "c8d3d1cb991488cfef03b915b4669095",
+    "description2": "The figure plots loss and accuracy curves for two modalities, Clinical and miRNA.",
+    "description3": "Two-panel plot displays loss and accuracy curves, each a line chart showing multiple lines representing different epsilon values over steps.",
+    "questions": [
+      "How do different approaches affect the accuracy of clinical and miRNA data?",
+      "What is the general trend of loss and accuracy over the steps shown?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02248v1",
+    "source_pdf": "../pdfs/2604.02248v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02248v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.02248v1/images/p0020_figure_00003.png",
+    "caption": "Figure 4: Loss and accuracy curves for two clients (Clinical + miRNA )",
+    "md5": "3d4530892ccf7eda65a634a33fce30eb",
+    "description2": "The figure plots loss and accuracy curves for two clients, Clinical and miRNA.",
+    "description3": "Two-panel line charts display loss and accuracy curves over epochs for two clients, showing multiple lines representing different epsilon values.",
+    "questions": [
+      "How does the loss change over time for different client configurations?",
+      "What is the general trend of accuracy versus the number of epochs?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02248v1",
+    "source_pdf": "../pdfs/2604.02248v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02248v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.02248v1/images/p0020_figure_00004.png",
+    "caption": "Figure 3: Loss and accuracy curves for three modalities (Clinical + miRNA + DNAm).",
+    "md5": "6fd17945c1955a1f370501dbda66f364",
+    "description2": "The figure plots loss and accuracy curves for three modalities: Clinical, miRNA, and DNAm.",
+    "description3": "Two-panel plot displays loss and accuracy curves over steps for three modalities, showing multiple lines representing different epsilon values.",
+    "questions": [
+      "How do different approaches affect the overall accuracy of clinical, miRNA, and DNAm data?",
+      "What is the general trend of loss and accuracy over the course of the experiment?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02248v1",
+    "source_pdf": "../pdfs/2604.02248v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02248v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.02248v1/images/p0021_figure_00005.png",
+    "caption": "Figure 7: Composition of noise (Bayesian and Embedding output perturbation)",
+    "md5": "a0167ab04f1b211a4ae732bb70ea4d2c",
+    "description2": "The figure plots the composition of noise from Bayesian and Embedding output perturbations.",
+    "description3": "Four-panel plot displays a scatterplot of red dots against a blue shaded area, representing total privacy cloud and intrinsic model uncertainty.",
+    "questions": [
+      "How does the Bayesian approach influence the composition of noise?",
+      "What is the relationship between the embedding output and the observed perturbation?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02248v1",
+    "source_pdf": "../pdfs/2604.02248v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02248v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.02248v1/images/p0021_figure_00006.png",
+    "caption": "Figure 6: Visual proof of model’s differential privacy",
+    "md5": "d63d2eff1b9cb5bd18bfd7dcc84e07a0",
+    "description2": "A plot visualizes the differential privacy properties of a model.",
+    "description3": "Two-panel scatter plots, each displaying data points colored by patient, show differential privacy, with overlapping clouds indicating better privacy.",
+    "questions": [
+      "How does the model’s privacy change with embedding output perturbation?",
+      "What is the visual representation of the model’s differential privacy?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02248v1",
+    "source_pdf": "../pdfs/2604.02248v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02248v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.02248v1/images/p0021_figure_00007.png",
+    "caption": "Figure 5: Loss and accuracy curves for three clients (Clinical + miRNA + DNAm)",
+    "md5": "09d9b07e5fc958f79935c255b0bffd55",
+    "description2": "The figure presents loss and accuracy curves for three clients: Clinical, miRNA, and DNAm.",
+    "description3": "Two-panel plot displays line charts of loss and accuracy curves over epochs for three clients, each with varying epsilon values.",
+    "questions": [
+      "How does the loss change over time for different client groups?",
+      "What is the general trend of accuracy versus the number of epochs?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02248v1",
+    "source_pdf": "../pdfs/2604.02248v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02248v1.pdf",
+    "page": 22,
+    "image_path": "../data/2604.02248v1/images/p0022_figure_00008.png",
+    "caption": "Figure 8: Uncertainty comparison",
+    "md5": "f0feba993eef9a30712c4b2581632d69",
+    "description2": "A plot comparing uncertainty levels is structured.",
+    "description3": "Two-panel plots display predicted survival probability distributions across time intervals, with mean probability indicated by circles.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

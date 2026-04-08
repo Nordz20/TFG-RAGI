@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03226v1/images/p0004_figure_00001.png",
+    "caption": "Fig. 2. Left: CIFAR-10 training examples. Right: Server’s STL-10 examples.",
+    "md5": "82a49a874ca634e531ef9fb3cd25d1c9",
+    "description2": "The figure displays two sets of examples, featuring CIFAR-10 training data on the left and server's STL-10 data on the right.",
+    "description3": "Two-panel grid displays CIFAR-10 training examples on the left and server’s STL-10 examples on the right, showcasing various object categories.",
+    "questions": [
+      "What types of objects are shown as training examples in this comparison?",
+      "How do the visual examples differ between the left and right panels?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03226v1/images/p0004_figure_00002.png",
+    "caption": "Fig. 1. Left: EMNIST training examples. Right: Server’s synthetic examples.",
+    "md5": "3897d74e797b282812511f0093d2de37",
+    "description2": "The figure displays a comparison of two sets of examples, featuring EMNIST training data on the left and the server's synthetic data on the right.",
+    "description3": "Four-panel image displays two columns of handwritten characters, labeled as EMNIST training examples on the left and server’s synthetic examples on the right.",
+    "questions": [
+      "What are some examples of data used for training?",
+      "How do the training and synthetic examples visually differ?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03226v1/images/p0006_figure_00003.png",
+    "caption": "Fig. 3. Average accuracy during training on EMNIST-Dir(0.3) using either Avg or GeoMed as the model aggregation step and without filtering. The case without SL is labeled as Avg, γ = 0. We vary the value of ηg ∈ {1, 2} when using SL with γ = 0.1. Shaded areas represent min-max values over 3 runs.",
+    "md5": "25935c6e1df447b7f6c10c8bc8e22b82",
+    "description2": "The figure plots a line chart showing average accuracy during training on EMNIST-Dir(0.3) using Avg or GeoMed aggregation steps without filtering, varying ηg and displaying min-max values over 3 runs.",
+    "description3": "Three multi-panel plots display line charts showing average accuracy versus round, with shaded min-max ranges over three runs.",
+    "questions": [
+      "How does the aggregation method affect the training accuracy on the EMNIST-Dir dataset?",
+      "What is the general trend of accuracy during training with different parameter settings?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03226v1/images/p0006_figure_00004.png",
+    "caption": "Fig. 5. Test accuracy vs. training round on CIFAR-10 Dir(0.3) using GeoMed aggregation, without SL, and with 0F (blue), AF (orange), LF (green).",
+    "md5": "75bfdd5c546b675def6339b3deaa351a",
+    "description2": "The figure plots test accuracy against training rounds on the CIFAR-10 dataset using GeoMed aggregation, comparing three methods: 0F, AF, and LF.",
+    "description3": "Two-panel line chart displays test accuracy (%) versus training round for CIFAR-10 datasets, using blue, orange, and green lines.",
+    "questions": [
+      "How does the test accuracy change over training rounds for different aggregation methods?",
+      "What is the general trend of accuracy versus training round for CIFAR-10 data?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03226v1/images/p0006_figure_00005.png",
+    "caption": "Fig. 4. Accuracy vs. malicious fraction β when using Geometric Median for model aggregation but without SL.",
+    "md5": "5c0e23d056e2194b9bbb30e3ff5b7266",
+    "description2": "The figure plots accuracy against malicious fraction β when using Geometric Median for model aggregation without Single-Layer (SL).",
+    "description3": "Two-panel line chart displays accuracy (%) versus malicious fraction (β) for OF and LF, with error bars, across two datasets.",
+    "questions": [
+      "How does the model aggregation method affect accuracy with increasing malicious data?",
+      "What is the relationship between the malicious fraction and the model accuracy?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.03226v1/images/p0007_figure_00006.png",
+    "caption": "Fig. 8. Accuracy vs. malicious fraction β for different filtering and learning parameters at the server with Geometric Median as model aggregation.",
+    "md5": "feefb47e73643a99826e8b7b475f03dd",
+    "description2": "A line chart plots accuracy against malicious fraction β for various filtering and learning parameters using Geometric Median as a model aggregation method at the server.",
+    "description3": "Two-panel line charts compare accuracy versus malicious fraction (β) for different parameters, with error bars, across EMNIST and CIFAR-10 datasets.",
+    "questions": [
+      "How does the level of malicious data affect the accuracy of learning?",
+      "What is the general trend of accuracy as the filtering parameters change?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.03226v1/images/p0007_figure_00007.png",
+    "caption": "Fig. 9. Sensitivity against the parameter ρ of the loss-based filter LF.",
+    "md5": "32720c70436b55dafc5245cf8ab4689f",
+    "description2": "The figure plots sensitivity against the parameter ρ for a loss-based filter LF.",
+    "description3": "Two-panel line charts display accuracy (%) versus parameter ρ for EMNIST and CIFAR-10 datasets, showing two lines per panel representing different β values.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.03226v1/images/p0007_figure_00008.png",
+    "caption": "Fig. 7. Test accuracy during training on CIFAR-10 Dirichlet 0.3 using GeoMed aggregation with γ = 0.1 for SL.",
+    "md5": "5c2e7c1025795672de73f92158c6d77e",
+    "description2": "The figure plots test accuracy during training on the CIFAR-10 dataset using GeoMed aggregation with a gamma value of 0.1 and Dirichlet value of 0.3 for semi-supervised learning.",
+    "description3": "Two-panel line chart displays test accuracy (%) over rounds for three lines (OF, AF, LF) with different parameter values.",
+    "questions": [
+      "How does training affect test accuracy using different aggregation methods?",
+      "What is the general trend of test accuracy over the training rounds?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.03226v1",
+    "source_pdf": "../pdfs/2604.03226v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03226v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.03226v1/images/p0007_figure_00009.png",
+    "caption": "Fig. 6. Accuracy vs. malicious fraction β for different filtering and learning parameters at the server and using Averaging aggregation and without SL.",
+    "md5": "6e6d2e08f6dd10895b2001555e28ad8d",
+    "description2": "The figure plots accuracy against malicious fraction beta for various filtering and learning parameters at the server, with averaging aggregation and no single-leader (SL) approach.",
+    "description3": "Four-panel line chart plots accuracy (%) against β, showing two lines (OF and LF) with error bars, for CIFAR-10 with γ = 0.",
+    "questions": [
+      "How does the malicious fraction affect the observed accuracy levels?",
+      "What is the relative performance of the different filtering approaches?"
+    ]
+  }
+]

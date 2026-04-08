@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28466v1",
+    "source_pdf": "../pdfs/2603.28466v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28466v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.28466v1/images/p0005_figure_00001.png",
+    "caption": "Figure 1: Interpretation process for B4 (left) and B234 (right) on a CUB-200 red-bellied woodpecker. Red and blue indicate higher and lower feature importance. Representative patches are the closest training examples to each prototype; border colors match the explanation map segments.",
+    "md5": "a1904ce26a10c5371935b090936ab8bc",
+    "description2": "The figure illustrates the interpretation process for two bird species, B4 and B234, on a CUB-200 red-bellied woodpecker, with representative patches and color-coded feature importance.",
+    "description3": "Two-panel plot displays input images, explanation maps, and feature attribution heatmaps for B4 and B234, alongside representative patches of each cluster.",
+    "questions": [
+      "How do explanations of red-bellied woodpecker features differ between the two presented examples?",
+      "What visual features are considered most and least important in these red-bellied woodpecker interpretations?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28466v1",
+    "source_pdf": "../pdfs/2603.28466v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28466v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.28466v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2: UMAP projection of training and test (lower opacity) embeddings from the twenty sparrow classes of CUB-200. Left: classifier prototypes cj as crosses and rescaled to class norm as triangles. Right: KMEx prototypes.",
+    "md5": "620ec8d9c79906ef2c9e781969c09055",
+    "description2": "The figure is a UMAP projection of training and test embeddings from 20 sparrow classes in CUB-200, with classifier prototypes as crosses and triangles on the left, and KMEx prototypes on the right.",
+    "description3": "Two-panel UMAP projections display sparrow class embeddings, with the left panel showing classifier prototypes as crosses and triangles, and the right panel showing KMEx prototypes as squares.",
+    "questions": [
+      "How do classifier prototypes and KMEx prototypes represent the sparrow classes?",
+      "What visual distinction is made between training and test embeddings?"
+    ]
+  }
+]

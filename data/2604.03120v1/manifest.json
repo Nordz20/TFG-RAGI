@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03120v1",
+    "source_pdf": "../pdfs/2604.03120v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03120v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.03120v1/images/p0001_figure_00001.png",
+    "caption": "Fig. 1. Conceptual comparison of the existing paradigm and our SCC-Loc framework. To overcome severe cross-modal bottlenecks in thermal geo- localization, SCC-Loc systematically resolves: (a) spatial quantization bias via semantic alignment (SGVA); (b) dense structural outliers via cascaded filtering (C-SATSF) ; and (c) deceptive visual decoys via consensus selection (CD-RAPS).",
+    "md5": "2eddb650aa5546d9d0e4c72b54ca67bd",
+    "description2": "A conceptual comparison diagram illustrates the existing paradigm and SCC-Loc framework, resolving spatial quantization bias, dense structural outliers, and deceptive visual decoys.",
+    "description3": "Two-panel plot compares an existing paradigm with the SCC-Loc framework, using semantic alignment, cascaded filtering, and consensus selection to resolve spatial, structural, and visual issues.",
+    "questions": [
+      "How does the SCC-Loc framework address limitations in existing thermal geo-localization approaches?",
+      "What are the key components used in the proposed framework for improved localization?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03120v1",
+    "source_pdf": "../pdfs/2604.03120v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03120v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03120v1/images/p0004_figure_00002.png",
+    "caption": "Fig. 2. Overview of the proposed SCC-Loc framework. The pipeline consists of four main stages: (1) Feature Extraction: A shared DINOv2 backbone bridges the thermal-visible modality gap to extract dense spatial features and global tokens; (2) SGVA Module: The Semantic-Guided Viewport Alignment module leverages the query’s global token to adaptively crop and align the retrieved satellite candidates with the UAV field-of-view; (3) C-SATSF Mechanism: Following dense matching via MINIMARoMa, the Cascaded Spatial-Adaptive Texture-Structure Filtering progressively purifies raw correspondences by eliminating spatial, textural, and structural inconsistencies; (4) CD-RAPS Strategy: The Consensus-Driven Reliability-Aware Position Selection integrates 3D pose optimization and multi-dimensional reliability evaluation to vote for the robust optimal horizontal position via geographic consensus.",
+    "md5": "42ef85ef63b7ffd08b00105170e788b3",
+    "description2": "The figure presents a pipeline diagram illustrating the four main stages of the SCC-Loc framework, including Feature Extraction, SGVA Module, C-SATSF Mechanism, and CD-RAPS Strategy.",
+    "description3": "A multi-panel plot outlines the SCC-Loc framework, detailing four stages with associated modules and data flow.",
+    "questions": [
+      "How does the framework combine information from different sources to determine a position?",
+      "What are the main steps involved in the proposed framework's processing pipeline?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03120v1",
+    "source_pdf": "../pdfs/2604.03120v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03120v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.03120v1/images/p0009_figure_00003.png",
+    "caption": "Fig. 3. Visual samples from the constructed Thermal-UAV dataset. The dataset systematically captures profound modality discrepancies and diurnal thermal variations across diverse spatial topologies: (a) Urban and (b) Rural Scenes showcase thermal UAV queries of distinct semantic categories (e.g., buildings, roads, fields) during daytime and nighttime; (c) Reference Map presents the global database at varying search scales, comprising visible-light satellite ortho- photos and their spatially aligned Digital Surface Models (DSM) to supply crucial 3D elevation priors.",
+    "md5": "502c4bd12493da3b477c7d609ab3d635",
+    "description2": "The figure displays visual samples from the Thermal-UAV dataset, showcasing profound modality discrepancies and diurnal thermal variations across diverse spatial topologies in urban and rural scenes.",
+    "description3": "Four-panel image displays urban and rural scenes with daytime and nighttime thermal UAV queries, alongside reference maps with satellite and DSM data.",
+    "questions": [
+      "What main concept is organized in the figure?",
+      "How are the main categories structured in the figure?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03120v1",
+    "source_pdf": "../pdfs/2604.03120v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03120v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.03120v1/images/p0011_figure_00004.png",
+    "caption": "Fig. 4. Qualitative visualization of the proposed SCC-Loc pipeline in (a) Urban and (b) Rural scenarios. The process illustrates the adaptive correction of spatial quantization bias via the SGVA module (Re-Cropping) and the progressive elimination of structural outliers using the C-SATSF mechanism (Matching). Finally, based on the highly purified correspondences, the CD-RAPS strategy refines candidate poses via physically constrained optimization, and computes the total reliability (Final score) by fusing the multi-dimensional evaluation (Base score) with geographic consensus to determine the robust optimal hypothesis for precise Localization.",
+    "md5": "c90e95f891259a5c17c5124a401d8154",
+    "description2": "The figure presents a pipeline diagram illustrating the adaptive correction of spatial quantization bias and progressive elimination of structural outliers in urban and rural scenarios.",
+    "description3": "Four-panel image displays a multi-panel plot showing retrieval, re-cropping, matching, and localization processes for urban and rural scenarios.",
+    "questions": [
+      "How does the pipeline adapt to different environments, such as urban versus rural areas?",
+      "What are the key steps involved in the overall localization process?"
+    ]
+  }
+]

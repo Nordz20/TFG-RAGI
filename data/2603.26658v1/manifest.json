@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 3,
+    "image_path": "../data/2603.26658v1/images/p0003_figure_00001.png",
+    "caption": "Fig. 1: Qualitative comparison between ZEDD and DDFF [14]. DDFF uses a very small aperture, so the defocus effect is barely noticeable even when zoomed in. In contrast, our focus stacks exhibit clear, smooth defocus effects. Our depth ground-truth is of higher resolution and denser, and it contains no missing regions due to occlusions.",
+    "md5": "bd22954d0943cdee9fc6bd7b22b5d08f",
+    "description2": "The figure presents a qualitative comparison between ZEDD and DDFF, highlighting the differences in aperture size and resulting defocus effects.",
+    "description3": "The image presents a multi-panel plot comparing ZEDD and DDFF datasets, showing defocus effects and ground-truth depth.",
+    "questions": [
+      "How do different approaches compare in terms of the visual appearance of defocus effects?",
+      "What are the key differences in the quality of the depth ground-truth data shown?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.26658v1/images/p0005_figure_00002.png",
+    "caption": "Fig. 2: Overview of the FOSSA pipeline. FOSSA consists of two main stages: focus stack feature extraction (blue box), and feature refinement (gray box). For each focus stack extraction layer, the image features are first processed individually and then pass through a stack attention layer for efficient information exchange across the stack. The features are then collapsed along the stack dimension, and pass through a sequence of refinement ViT blocks and finally a DPT head for dense depth output.",
+    "md5": "df0c6b8aff2add4b796ef5e9b480d62f",
+    "description2": "The figure presents an overview of the FOSSA pipeline, featuring two main stages: focus stack feature extraction (blue box) and feature refinement (gray box).",
+    "description3": "The diagram presents a multi-panel plot outlining the FOSSA pipeline, with blue and gray boxes representing feature extraction and refinement stages, respectively.",
+    "questions": [
+      "What are the main stages involved in the FOSSA pipeline?",
+      "How does information flow through the layers of the FOSSA pipeline?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.26658v1/images/p0007_figure_00003.png",
+    "caption": "Fig. 3: A gallery of our ZEDD benchmark. ZEDD includes 100 diverse scenes spanning a wide range of indoor and outdoor environments. The dataset features rich geometric structure and provides high-quality ground-truth.",
+    "md5": "9f9cb2c62aae84cb1a6b0af8d743c139",
+    "description2": "A gallery of 100 diverse scenes is plotted, featuring a wide range of indoor and outdoor environments with rich geometric structure.",
+    "description3": "The multi-panel plot displays 20 images, each showing a different indoor and outdoor scene with a color-gradient overlay.",
+    "questions": [
+      "What types of environments are represented within this benchmark dataset?",
+      "What characteristics define the quality of the data included in this benchmark?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.26658v1/images/p0011_figure_00004.png",
+    "caption": "Fig. 4: Qualitative comparisons with baselines on 3 benchmarks. Our results are both sharp and metrically accurate. While monocular depth methods such as MoGe-2 [47] also produce sharp results, the scales are not metrically correct due to the scale am- biguity. DfD methods such as HybridDepth [12] fail on ZEDD and Infinigen Defocus. Even on DDFF where HybridDepth is trained on, their results are not as sharp as ours.",
+    "md5": "054b6cd6d3a8f3f78e7e08916964ce83",
+    "description2": "The figure presents qualitative comparisons of baselines on three benchmarks, featuring sharp and metrically accurate results for our method alongside those from MoGe-2 and HybridDepth.",
+    "description3": "The multi-panel plot displays qualitative comparisons of results for \"Ours,\" \"MoGe-2,\" and \"HybridDepth\" on three benchmarks.",
+    "questions": [
+      "How do the presented methods compare to baselines in terms of qualitative results?",
+      "What are the observed differences in performance between the methods metrically?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 13,
+    "image_path": "../data/2603.26658v1/images/p0013_figure_00005.png",
+    "caption": "Fig. 5: FOSSA is robust to the aperture sizes, the focus distance distrubiton, and the focus stack size. The variance is small and we consistently outperform baselines under all configurations. Although always trained with a focus stack size of 5, our method can work with as few as 2 images. All results are on the ZEDD validation split.",
+    "md5": "98ceaaab375002fddb3631ae4aeed8c2",
+    "description2": "The figure plots the robustness of FOSSA to aperture sizes, focus distance distribution, and focus stack size, displaying small variance and consistent outperformance under all configurations.",
+    "description3": "Three-panel plot displays bar charts comparing the performance of \"Ours,\" \"DFV,\" and \"HybridDepth\" across aperture sizes, focus distances, and focus stack sizes.",
+    "questions": [
+      "How does FOSSA's performance change with varying aperture sizes?",
+      "What impact does the number of images in the focus stack have on FOSSA?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 18,
+    "image_path": "../data/2603.26658v1/images/p0018_figure_00006.png",
+    "caption": "Fig. A1: Hardware setup of our data capture pipeline.",
+    "md5": "ca9cb788214cc723f79bc161b2b68e18",
+    "description2": "A pipeline is structured to represent the hardware setup for capturing data.",
+    "description3": "A data capture pipeline hardware setup includes a lidar, camera, and tripod mounted on a horizontal rail.",
+    "questions": [
+      "What components are included in the data capture pipeline?",
+      "How is the hardware arranged for data collection?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 20,
+    "image_path": "../data/2603.26658v1/images/p0020_figure_00007.png",
+    "caption": "Fig. A2: Manual cleanup procedure. In the lower-right corner of the left chair, Lidar noise accumulates near the occlusion boundary, producing an enlarged silhouette (red region). The leg of the right chair is metallic and highly reflective, leading to missing depth measurements (blue region). We manually select and remove these noisy regions.",
+    "md5": "41a8485bfd2fbf5ea574337843aff1d1",
+    "description2": "The figure depicts a manual cleanup procedure where Lidar noise accumulates near the occlusion boundary in the left chair's lower-right corner, producing an enlarged red silhouette of the chair leg.",
+    "description3": "The multi-panel plot displays accumulated point cloud, manual cleanup, and refined point cloud data, highlighting noisy regions.",
+    "questions": [
+      "What challenges arise when using Lidar measurements in this scene?",
+      "How does the procedure improve the quality of the point cloud data?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 21,
+    "image_path": "../data/2603.26658v1/images/p0021_figure_00008.png",
+    "caption": "Fig. A3: Scene category distribution of our ZEDD benchmark. ZEDD covers diverse indoor and outdoor scenes commonly seen in daily life.",
+    "md5": "9f7cc178d23216e4256bb1549dc99d27",
+    "description2": "The figure displays a scene category distribution for the ZEDD benchmark, featuring various indoor and outdoor scenes typically encountered in everyday life.",
+    "description3": "The pie chart displays the distribution of scene categories within the ZEDD benchmark, with values for office, hallway, classroom, outdoor, lab, kitchen, and miscellaneous.",
+    "questions": [
+      "What types of environments does this benchmark represent?",
+      "How is the benchmark's content organized into scene categories?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 21,
+    "image_path": "../data/2603.26658v1/images/p0021_figure_00009.png",
+    "caption": "Fig. A4: Depth value histogram of the ZEDD benchmark. ZEDD covers a diverse depth range from 0.3m to 15m, making it a challenging dataset for depth estimation.",
+    "md5": "b415c18349ab7dcf305e8d0b1a74eb6a",
+    "description2": "A histogram plots the distribution of depth values in the ZEDD benchmark, spanning 0.3 meters to 15 meters and showcasing its diversity.",
+    "description3": "A line chart displays the depth value histogram of the ZEDD benchmark, with depth in meters on the x-axis and relative frequency on the y-axis.",
+    "questions": [
+      "What does the histogram reveal about the distribution of depth values?",
+      "How does the dataset's depth range contribute to the estimation challenge?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 22,
+    "image_path": "../data/2603.26658v1/images/p0022_figure_00010.png",
+    "caption": "Fig. A5: A gallery of the images and depth ground-truth for our Infinigen Defocus Benchmark. The scenes are diverse, and the ground-truth is pixel-perfect.",
+    "md5": "8b756012e2a3d12408976fe224a4cf54",
+    "description2": "A gallery of images and depth ground-truth is plotted, featuring diverse scenes with pixel-perfect ground-truth.",
+    "description3": "A multi-panel plot displays diverse indoor scenes alongside their corresponding pixel-perfect depth ground-truth.",
+    "questions": [
+      "What types of scenes are included in this collection of images?",
+      "How are the depth measurements represented within these images?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 24,
+    "image_path": "../data/2603.26658v1/images/p0024_figure_00011.png",
+    "caption": "Fig. A6: Varying the blur kernel shape via the shape parameter p of the generalized PSF. Note that the total energy is not normalized to 1 in this graph.",
+    "md5": "ef14c3b211eafb7e74fb59737e4f8a4e",
+    "description2": "The figure plots varying blur kernel shapes via the shape parameter p of the generalized point spread function (PSF).",
+    "description3": "A multi-panel plot displays four blurred kernel shapes, varying with the shape parameter *p* values of 2, 4, 8, and 32, respectively.",
+    "questions": [
+      "How does the shape of the blur change as the shape parameter is varied?",
+      "What is the general relationship between the shape parameter and the distribution of energy?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2603.26658v1",
+    "source_pdf": "../pdfs/2603.26658v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26658v1.pdf",
+    "page": 27,
+    "image_path": "../data/2603.26658v1/images/p0027_figure_00012.png",
+    "caption": "Fig. A7: Visualizations of all the 54 images we captured for one scene. Each row is a different focus distance, and each column is a different aperture. The lens breathing is perfectly canceled out by the image-space warping.",
+    "md5": "7fa796e3abdd864b3bfb8c945982fb5a",
+    "description2": "The figure presents a line chart comparing 54 images captured for one scene, organized by focus distance and aperture.",
+    "description3": "The multi-panel plot displays 54 images arranged in rows of varying focus distances and columns of different aperture values.",
+    "questions": [
+      "How does the appearance of the scene change with different focus distances?",
+      "What is the relationship between aperture and the captured image's visual characteristics?"
+    ]
+  }
+]

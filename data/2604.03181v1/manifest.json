@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03181v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: Overview. We introduce MV-VDP, a multi-view video diffusion policy that jointly models the spatio-temporal state of the environment. Compared to prior manipulation policies, our approach: (1) processes 3D-aware multi-view images rather than independent multiple 2D views; (2) represents robot states and actions as multi-view heatmaps, aligning the action space with the representation used in video pretraining; (3) leverages a video foundation model, instead of a traditional vision– language backbone, to jointly model future RGB sequences and heatmap sequences. As a result, MV-VDP achieves state-of-the-art performance on both the Meta-World and real-world benchmarks, outperforming video-prediction–based, 3D-based, and vision–language–action models.",
+    "md5": "9815f74ad06a3e88de48fcfd591a8fd3",
+    "description2": "We introduce MV-VDP, a multi-view video diffusion policy that jointly models the spatio-temporal state of the environment with multi-view heatmaps and a video foundation model.",
+    "description3": "A multi-panel plot compares a previous manipulation policy with a multi-view video diffusion policy, showing state and action representations.",
+    "questions": [
+      "How does this multi-view diffusion policy handle robot actions and environment states?",
+      "What types of data are jointly modeled by the video foundation model?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03181v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2: Overview of MV-VDP’s pipeline. (a) Point clouds and the current end-effector pose are projected into spatial-aware multi-view RGB images and heatmaps, which are encoded and used to jointly predict future multi-view RGB videos and heatmap videos via a video diffusion model. Predicted heatmaps are back-projected to recover 3D end-effector positions. (b) The multi-view video diffusion transformer augments a pretrained video diffusion backbone with view-attention to enable cross-view interaction. (c) A lightweight action decoder predicts end-effector rotation and gripper states from the denoised video latents. Final action chunks are formed by combining the predicted positions, rotations, and gripper states.",
+    "md5": "798aea968088162fc33b169fe77a944c",
+    "description2": "The pipeline overview shows projections of point clouds and end-effector poses into spatial-aware images and heatmaps for predicting future videos and 3D positions.",
+    "description3": "The multi-panel plot outlines a pipeline, including projections, video diffusion, and action decoding, with architectural details shown below.",
+    "questions": [
+      "How does the system predict future video and heatmap sequences?",
+      "What is the overall process for recovering 3D end-effector positions?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.03181v1/images/p0008_figure_00003.png",
+    "caption": "Figure 3: Real-world experimental setup and tasks. We evaluate MV-VDP on three manipulation tasks using a Franka Research 3 robot with three ZED2i cameras. We further assess generalization under variations in background, object height, lighting, and object category.",
+    "md5": "806b89ff3a564621649c6ab4dc5aa25b",
+    "description2": "The figure illustrates the real-world experimental setup and tasks for evaluating MV-VDP on three manipulation tasks using a Franka Research 3 robot and three ZED2i cameras.",
+    "description3": "A multi-panel plot displays a robot setup, task rollout process, and generalization settings with variations in background, height, lighting, and category.",
+    "questions": [
+      "What types of tasks are used to evaluate the system's performance?",
+      "How does the system's ability to perform tasks change with varying environmental conditions?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.03181v1/images/p0010_figure_00004.png",
+    "caption": "Figure 4: Average success rates for different inference denoising steps. The experiments are conducted on the Meta-World benchmark. MV-VDP demonstrates high robustness to varying diffusion steps, achieving strong performance even when the denoising step is set to 1.",
+    "md5": "14a072eb37adf37c7f760db4d3cd379b",
+    "description2": "Average success rates for different inference denoising steps are plotted, with data from experiments conducted on the Meta-World benchmark.",
+    "description3": "A line chart plots average success rate against diffusion steps, demonstrating robustness with strong performance even at a single step.",
+    "questions": [
+      "How does inference denoising affect performance on the Meta-World benchmark?",
+      "What is the general trend in success rates with varying diffusion steps?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 22,
+    "image_path": "../data/2604.03181v1/images/p0022_figure_00005.png",
+    "caption": "Figure 5: Visualization of the predicted RGB sequences and heatmap sequences for the Button- Press-Top task in Meta-World. For each view, the first and third rows show predictions from MV-VDP, while the second and fourth rows show the corresponding ground truth. The peak locations of both predicted and ground-truth heatmaps are overlaid on the predicted and ground-truth RGB images, respectively. The results show that (1) the predicted RGB sequences are visually realistic, and (2) the heatmap peaks closely follow the end effector in the RGB images, indicating strong consistency between the predicted heatmaps and RGB sequences.",
+    "md5": "6dd5d4947eecf311728643583ad3067f",
+    "description2": "The figure visualizes predicted RGB sequences and heatmap sequences for the Button-Press-Top task in Meta-World, with predictions from MV-VDP compared to ground truth.",
+    "description3": "Predicted and ground truth sequences for the Button-Press-Top task are shown across three views, with predicted results above ground truth.",
+    "questions": [
+      "How do predicted sequences compare to ground truth sequences in this task?",
+      "What is the relationship between the predicted heatmaps and the RGB images?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 23,
+    "image_path": "../data/2604.03181v1/images/p0023_figure_00006.png",
+    "caption": "Figure 6: Visualization of the predicted RGB sequences and heatmap sequences for the Door- Open task in Meta-World. For each view, the first and third rows show predictions from MV-VDP, while the second and fourth rows show the corresponding ground truth. The peak locations of both predicted and ground-truth heatmaps are overlaid on the predicted and ground-truth RGB images, respectively. The results show that (1) the predicted RGB sequences are visually realistic, and (2) the heatmap peaks closely follow the end effector in the RGB images, indicating strong consistency between the predicted heatmaps and RGB sequences.",
+    "md5": "2d42fe629f136de9164d268e41b24269",
+    "description2": "The figure visualizes predicted RGB sequences and heatmap sequences for the Door-Open task in Meta-World, with predictions from MV-VDP displayed alongside ground truth results.",
+    "description3": "A multi-panel plot displays predicted and ground truth RGB sequences and heatmap sequences for a Door-Open task, across three views.",
+    "questions": [
+      "How do predicted and ground-truth visualizations compare for the Door-Open task?",
+      "What is the relationship between predicted heatmaps and RGB images in this visualization?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.03181v1/images/p0024_figure_00007.png",
+    "caption": "Figure 7: Visualization of the predicted RGB sequences and heatmap sequences for the Push-T task. For each view, the first and third rows show predictions from MV-VDP, while the second and fourth rows show the corresponding ground truth. The peak locations of both predicted and ground-truth heatmaps are overlaid on the predicted and ground-truth RGB images, respectively. The results show that (1) the predicted RGB sequences are visually realistic, and (2) the heatmap peaks closely follow the end effector in the RGB images, indicating strong consistency between the predicted heatmaps and RGB sequences.",
+    "md5": "f0719f42905a1e20a27172a1848412f7",
+    "description2": "The figure visualizes predicted RGB sequences and heatmap sequences for the Push-T task, with predictions from MV-VDP displayed alongside ground truth results.",
+    "description3": "The multi-panel plot displays predicted and ground truth RGB sequences and heatmap sequences across three views, with overlaid peak locations.",
+    "questions": [
+      "How do the predicted sequences compare to the ground truth sequences in this visualization?",
+      "What relationship is shown between the predicted heatmaps and the RGB images?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 25,
+    "image_path": "../data/2604.03181v1/images/p0025_figure_00008.png",
+    "caption": "Figure 8: Visualization of the predicted RGB sequences and heatmap sequences for the Scoop Tortilla task. For each view, the first and third rows show predictions from MV-VDP, while the second and fourth rows show the corresponding ground truth. The peak locations of both predicted and ground-truth heatmaps are overlaid on the predicted and ground-truth RGB images, respectively. The results show that (1) the predicted RGB sequences are visually realistic, and (2) the heatmap peaks closely follow the end effector in the RGB images, indicating strong consistency between the predicted heatmaps and RGB sequences.",
+    "md5": "f5f8256d3815567f3d4abc8a8e1fb827",
+    "description2": "The figure visualizes predicted RGB sequences and heatmap sequences for the Scoop Tortilla task, with predictions from MV-VDP displayed alongside ground truth results.",
+    "description3": "A multi-panel plot displays predicted and ground truth RGB sequences and heatmap sequences across three views, with overlaid peak locations.",
+    "questions": [
+      "How do the predicted and ground-truth visualizations compare for this task?",
+      "What is the relationship between the predicted heatmaps and RGB images shown?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 26,
+    "image_path": "../data/2604.03181v1/images/p0026_figure_00009.png",
+    "caption": "Figure 9: Visualization of the predicted RGB sequences and heatmap sequences for the Put Lion task. For each view, the first and third rows show predictions from MV-VDP, while the second and fourth rows show the corresponding ground truth. The peak locations of both predicted and ground-truth heatmaps are overlaid on the predicted and ground-truth RGB images, respectively. The results show that (1) the predicted RGB sequences are visually realistic, and (2) the heatmap peaks closely follow the end effector in the RGB images, indicating strong consistency between the predicted heatmaps and RGB sequences.",
+    "md5": "f5e084c2f304df4e8cba619aff4645ad",
+    "description2": "The figure visualizes predicted RGB sequences and heatmap sequences for the Put Lion task, with predictions from MV-VDP displayed alongside ground truth results.",
+    "description3": "The multi-panel plot displays predicted and ground truth RGB sequences and heatmaps for three views, with peak locations overlaid.",
+    "questions": [
+      "How do the predicted and ground-truth visualizations compare for the Put Lion task?",
+      "What is the relationship between the predicted heatmaps and the RGB images?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 27,
+    "image_path": "../data/2604.03181v1/images/p0027_figure_00010.png",
+    "caption": "Figure 10: Visualization of video predictions under different denoising steps (Part I). Predicted RGB videos and heatmap videos under different denoising step settings. Lower denoising steps lead to visibly lower RGB video quality, while the predicted heatmaps remain relatively stable.",
+    "md5": "715824e3f863c3ce84b3ed7d9098c8b6",
+    "description2": "Visualization of video predictions under different denoising steps shows predicted RGB videos with decreasing quality but stable heatmaps.",
+    "description3": "The multi-panel plot displays predicted RGB videos and heatmap videos across different denoising step settings, arranged in rows.",
+    "questions": [
+      "How does the quality of predicted video change with varying denoising steps?",
+      "What is the relationship between denoising steps and the stability of predicted heatmaps?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.03181v1",
+    "source_pdf": "../pdfs/2604.03181v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03181v1.pdf",
+    "page": 28,
+    "image_path": "../data/2604.03181v1/images/p0028_figure_00011.png",
+    "caption": "Figure 11: Visualization of video predictions under different denoising steps (Part II). Predicted RGB videos and heatmap videos under different denoising step settings. Lower denoising steps lead to visibly lower RGB video quality, while the predicted heatmaps remain relatively stable.",
+    "md5": "4359db7eb05da492362d0d1471719687",
+    "description2": "The figure visualizes predicted RGB videos and heatmap videos under different denoising step settings, with lower denoising steps resulting in lower RGB video quality.",
+    "description3": "The multi-panel plot displays RGB video and heatmap video predictions across varying denoising step settings, arranged in a grid.",
+    "questions": [
+      "How does the quality of predicted videos change with varying denoising steps?",
+      "What is the general relationship between denoising steps and the appearance of predicted videos?"
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02209v1",
+    "source_pdf": "../pdfs/2604.02209v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02209v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02209v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1: Annotation workflow of CV-18 NER dataset.",
+    "md5": "030345e8c2c1a2fe17e9c23e8d6ea084",
+    "description2": "The figure is an annotation workflow diagram illustrating the steps for the CV-18 NER dataset.",
+    "description3": "Two-panel flowchart details the annotation workflow for a CV-18 NER dataset, beginning with a training set and ending with the dataset itself.",
+    "questions": [
+      "What is the overall process for creating the CV-18 NER dataset?",
+      "How does the workflow proceed from initial training to the final dataset?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02209v1",
+    "source_pdf": "../pdfs/2604.02209v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02209v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02209v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2: Example of enriched transcripts with in- line BIO-style entity markup.",
+    "md5": "85811c64145bafc9c2211e44f75873d9",
+    "description2": "The figure presents an example of enriched transcripts with inline BIO-style entity markup.",
+    "description3": "Four-panel figure displays Arabic text with corresponding English translations and BIO-style entity markup annotations above each word.",
+    "questions": [
+      "How are text transcripts being annotated to identify specific elements?",
+      "What is the general structure used to represent the relationship between text and markup?"
+    ]
+  }
+]

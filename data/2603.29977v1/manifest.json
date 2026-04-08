@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29977v1",
+    "source_pdf": "../pdfs/2603.29977v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29977v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.29977v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1: Fusion architectures. (A) Early Fusion MLP (8.8M params). (B) Cross-Attention (1.8M params). (C) Bilinear Fusion (0.54M params). (D) Gated Fusion (3.2M params). See Section 3 for details.",
+    "md5": "30bf5a9147e2387868e1e9a1eefaee47",
+    "description2": "The figure presents four fusion architectures: Early Fusion MLP, Cross-Attention, Bilinear Fusion, and Gated Fusion, each with a specified number of parameters.",
+    "description3": "Four-panel plot displays four fusion architectures, labeled early fusion, cross-attention, bilinear fusion, and gated fusion, with varying parameter counts.",
+    "questions": [
+      "What architectural designs are presented for data fusion?",
+      "How do the parameter counts differ among the fusion designs?"
+    ]
+  }
+]

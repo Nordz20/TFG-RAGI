@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03173v1",
+    "source_pdf": "../pdfs/2604.03173v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03173v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03173v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1: Non-resolving URL rates for DRBench models, grouped by provider. Each bar decomposes into hallucinated URLs (red; no Wayback Machine archive, indicating the URL likely never existed) and stale URLs (orange; archived but currently dead). Numbers above bars indicate total URLs per model.",
+    "md5": "cc6c7441930d0280c93da96d1f1ff505",
+    "description2": "The figure is a bar chart comparing non-resolving URL rates for DRBench models grouped by provider, with red bars representing hallucinated URLs and orange bars representing stale URLs.",
+    "description3": "A bar chart displays non-resolving URL rates, separated into hallucinated (red) and stale (orange) components, for several models from Google, OpenAI, and Anthropic.",
+    "questions": [
+      "How do different models perform regarding the proportion of hallucinated versus stale URLs?",
+      "What is the general trend in the number of URLs associated with each provider?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03173v1",
+    "source_pdf": "../pdfs/2604.03173v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03173v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03173v1/images/p0006_figure_00002.png",
+    "caption": "Figure 2: Non-resolving URL rates by academic field and model for ExpertQA. Fields are sorted by overall non-resolving URL rate.",
+    "md5": "f473bc49aa2664fcfae229cbaaab29a6",
+    "description2": "A line chart plots non-resolving URL rates by academic field and model, with fields ordered by their overall non-resolving URL rate.",
+    "description3": "The heatmap displays non-resolving URL rates across academic fields, sorted by overall rate, for three models.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03173v1",
+    "source_pdf": "../pdfs/2604.03173v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03173v1.pdf",
+    "page": 23,
+    "image_path": "../data/2604.03173v1/images/p0023_figure_00003.png",
+    "caption": "Figure 3: Non-resolving URL rates by subfield within Healthcare/Medicine. The top 15 subfields (sorted by rate) range from 14.8% (Virologist) to 21.4% (General practitioner). Subfield labels A–O are keyed in the accompanying table.",
+    "md5": "afb893045be75377882676bc00c0f793",
+    "description2": "The figure plots a line chart comparing non-resolving URL rates for Healthcare/Medicine subfields, ranging from 14.8% to 21.4%.",
+    "description3": "Four-panel bar graph displays non-resolving URL rates, ranging from 14.8% to 21.4%, across fifteen healthcare subfields (A–O).",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03173v1",
+    "source_pdf": "../pdfs/2604.03173v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03173v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.03173v1/images/p0024_figure_00004.png",
+    "caption": "Figure 4: Distribution of urlhealth correction rounds per question (435 questions each, 3 models). The three models exhibit distinct self-correction profiles. Gemini 2.5 Pro (green) completes in 1–2 rounds every time: its two-phase architecture (Google Search grounding followed by a single verification turn) caps it at two rounds, and 44% of questions need only one. GPT-5.1 (orange) clusters at 2 rounds (61%), with 87% finishing in 2–3 rounds; the long tail to 6 rounds is rare (<2% of questions). Claude Sonnet 4.5 (blue) concentrates at 3–5 rounds (83% of questions, median 4), reflecting the cost of verifying its large citation sets (18.4 URLs/question vs. 9.7–11.1 for the other models). All three models achieve near-zero hallucinated citations in final output despite these different convergence patterns.",
+    "md5": "a79a5c385ff60bb86ba36f0d4ea8d3ce",
+    "description2": "The figure plots a line chart showing distinct self-correction profiles for three models, with Gemini 2.5 Pro completing rounds in 1-2 turns and GPT-5.1 clustering at 2 rounds.",
+    "description3": "A bar chart displays the distribution of urlhealth correction rounds for three models, with rounds on the x-axis and percentage of questions on the y-axis.",
+    "questions": [
+      "How do the models' architectures relate to their observed correction round distributions?",
+      "What differences exist in the typical number of correction rounds among the models?"
+    ]
+  }
+]

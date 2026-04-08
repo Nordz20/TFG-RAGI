@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02911v1",
+    "source_pdf": "../pdfs/2604.02911v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02911v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.02911v1/images/p0001_figure_00001.png",
+    "caption": "Fig. 1: Different Dreamer learning paradigms. The original Dreamer learns environment dynamics by reconstructing observations. DreamTIP, building upon this, also incorporates Task-Invariant Properties designed by an LLM to reduce its over-reliance on underlying dynamics parameters.",
+    "md5": "c99e084262e72aa7cfb53d673deb5a47",
+    "description2": "The figure plots different learning paradigms for the Dreamer, including the original approach and DreamTIP, which incorporates Task-Invariant Properties.",
+    "description3": "A multi-panel plot contrasts Dreamer and DreamTIP learning paradigms, incorporating task-invariant properties designed by an LLM.",
+    "questions": [
+      "How do different learning paradigms approach reconstructing observations to inform agent behavior?",
+      "What are the key components involved in the Dreamer and DreamTIP learning processes?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02911v1",
+    "source_pdf": "../pdfs/2604.02911v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02911v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02911v1/images/p0004_figure_00002.png",
+    "caption": "Fig. 2: Overview of the proposed framework. The framework consists of two stages: In the first stage, DreamTIP is employed in a simulation environment to learn Task-Invariant Properties; In the second stage, it adapts to the dynamics distribution in the physical environment with only a few rollouts.",
+    "md5": "c59b8076d6c10acb568d768089ecd61f",
+    "description2": "The figure presents an overview of the proposed framework featuring two stages: learning and adaptation, with DreamTIP used in both stages.",
+    "description3": "A multi-panel plot, arranged vertically, outlines a framework with two stages for robot adaptation, utilizing DreamTIP and policy networks.",
+    "questions": [
+      "What are the main steps involved in the proposed framework?",
+      "How does the framework adapt to different environments?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02911v1",
+    "source_pdf": "../pdfs/2604.02911v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02911v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02911v1/images/p0006_figure_00003.png",
+    "caption": "Fig. 4: Illustrations of terrain settings in simulation and real-world evalua- tion.",
+    "md5": "cb367199c9e514516a1895417b53345f",
+    "description2": "The diagram shows the comparison of terrain settings between simulated and actual environments for evaluating system performance.",
+    "description3": "Two-panel image displays terrain settings in simulation and real-world evaluation, arranged as a 2x3 grid of photographs.",
+    "questions": [
+      "How do simulated terrain settings compare to real-world terrain settings?",
+      "What types of terrain are illustrated in these simulation and real-world environments?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02911v1",
+    "source_pdf": "../pdfs/2604.02911v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02911v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02911v1/images/p0006_figure_00004.png",
+    "caption": "Fig. 3: Performance comparison of various methods on eight transfer tasks in simulation. The evaluation metric is the average cumulative reward over 100 trajectories per task. Our method outperformed all other baselines across the board. The vertical axis represents the average trajectory reward, while the horizontal axis indicates the varying levels of task difficulty. The results are obtained through testing over 100 trajectories with 3 different random seeds.",
+    "md5": "9e48e77d9ae66c79f4106610aac8baa8",
+    "description2": "The figure is a line chart comparing the performance of various methods on eight transfer tasks in simulation, plotting average cumulative rewards against varying levels of task difficulty.",
+    "description3": "A multi-panel bar chart compares the average trajectory reward of several methods across eight transfer tasks, with varying difficulty levels on each axis.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02911v1",
+    "source_pdf": "../pdfs/2604.02911v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02911v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02911v1/images/p0007_figure_00005.png",
+    "caption": "Fig. 5: Performance comparison of various methods on the crawl task across simulated and real environments. Simulation environment (top, above gray dashed line) and real-world environment (bottom). Red line: obstacle height; Yellow dots: robot dog’s traversal height at the obstacle. With the obstacle height set to 25 cm in both environments, the Baseline method encounters collisions with its head when passing through the obstacles, whereas our method traverses safely. This demonstrates the superior task transfer performance of our method, as well as the consistency in its sim-to-real effectiveness.",
+    "md5": "520d0a8b43464029ed7175481bfe604b",
+    "description2": "The figure compares various methods on a crawl task across simulated and real environments, plotting obstacle height and robot dog traversal height.",
+    "description3": "Three-panel plot compares two methods (WMP and Ours) traversing obstacles in simulated and real environments, showing head collisions for WMP and safe passage for Ours.",
+    "questions": [
+      "How does the method's performance differ between simulated and real-world environments?",
+      "What is the relative effectiveness of the method in overcoming obstacles?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02911v1",
+    "source_pdf": "../pdfs/2604.02911v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02911v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02911v1/images/p0007_figure_00006.png",
+    "caption": "Fig. 6: Ablation on the number n of trajectories added to the mix buffer. We evaluated the performance of our approach in a simulation environment on the Stair (25 cm), Climb (61 cm), and Tilt (35 cm) tasks, collecting additional trajectories on these transfer tasks for adaptation after pre-training DreamTIP. Success rates are calculated over twenty trials.",
+    "md5": "f2ffa2aee580930552b06ea5a42fa41d",
+    "description2": "The figure plots ablation results showing the effect of varying the number n of trajectories added to the mix buffer on performance in simulation tasks.",
+    "description3": "A line chart displays success rates for Stair, Climb, and Tilt tasks as a function of the number of new trajectories added.",
+    "questions": [
+      "How does the adaptation environment influence performance with additional trajectories?",
+      "What is the general relationship between trajectory count and adaptation performance?"
+    ]
+  }
+]

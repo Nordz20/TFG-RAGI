@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02068v1",
+    "source_pdf": "../pdfs/2604.02068v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02068v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02068v1/images/p0006_figure_00001.png",
+    "caption": "Figure 1: Network Topology Evolution of UK Inter-Industry Payment Flows (2017-2024). Each panel displays the payment network structure for a given year, with nodes representing indus- try sectors coloured by economic category: Financial & Business (red), Manufacturing (blue), Trade & Distribution (green), Public & Social (orange), Primary Industries (purple), and Other Services (grey). Network density increased systematically from 0.689 (2017) to 0.775 (2024), indicating growing economic integration. The COVID-19 disruption is visible in 2020, where density temporarily fell to 0.693 before recovery exceeded pre-pandemic levels. Average path length decreased from 1.31 to 1.22, suggesting increasingly direct inter-industry relationships.",
+    "md5": "efb1bde50315f95455b5be1bb767cae4",
+    "description2": "The network topology evolution of UK inter-industry payment flows from 2017 to 2024 displays a timeline of growing economic integration and increasing direct relationships.",
+    "description3": "Three-panel plot displays network topologies for 2017, 2019, 2020, 2021, 2022, and 2024, using colored nodes to represent industry sectors.",
+    "questions": [
+      "How did the structure of UK inter-industry payment networks change between 2017 and 2024?",
+      "What were the major trends in the density and relationships within the UK payment network?"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03139v1",
+    "source_pdf": "../pdfs/2604.03139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03139v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03139v1/images/p0004_figure_00001.png",
+    "caption": "Fig. 1: The overall framework of FSUNav is shown in the figure. Current vision-language navigation methods still face significant limitations in terms of heterogeneous robot compatibility, real-time performance, and navigation safety, while also struggling to support open-vocabulary semantic generalization and multimodal task inputs. To address these issues, this paper proposes FSUNav, which leverages an efficient dual-brain collaborative architecture to achieve fast, safe, and generalizable zero-shot goal-oriented navigation, delivering comprehensive improvements in generalization capability, real-time performance, safety, and robustness.",
+    "md5": "94bb1fa308ab38a4c7f582cf7867b939",
+    "description2": "The figure illustrates the pipeline of FSUNav, a framework combining vision-language navigation methods with an efficient dual-brain collaborative architecture for zero-shot goal-oriented navigation.",
+    "description3": "The multi-panel plot details FSUNav’s framework, featuring a robot and modules labeled \"Cerebellum\" and \"Cerebrum\" with associated inputs and outputs.",
+    "questions": [
+      "How does the framework address limitations in robot navigation and compatibility?",
+      "What are the key components of the proposed navigation system's architecture?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03139v1",
+    "source_pdf": "../pdfs/2604.03139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03139v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03139v1/images/p0006_figure_00002.png",
+    "caption": "Fig. 2: The overall framework of FSUNav Cerebrum is shown in the figure. A unified Vision-Language Model (VLM) serves as the core semantic engine across three Cerebrum layers. The Semantic Layer parses multimodal goals into structured target profiles and performs open-vocabulary grounding; the Spatial Layer integrates VLM-driven semantic waypoints with geometry-based frontier exploration for efficient navigation; and the Rule Layer orchestrates behavior via two-stage verification and adaptive cooldown, while also constructing a semantic scene graph. This hierarchical design enables training-free, zero-shot adaptation to heterogeneous goal-oriented navigation tasks.",
+    "md5": "1afd6e1ae9b7e9f394e77fefa2d5d3eb",
+    "description2": "The figure shows a workflow diagram of FSUNav Cerebrum's overall framework, featuring three layers: Semantic, Spatial, and Rule.",
+    "description3": "Two-panel diagram illustrates a hierarchical framework, composed of semantic, spatial, and rule layers, connected by arrows and boxes.",
+    "questions": [
+      "How does the framework approach goal-oriented navigation tasks?",
+      "What are the main components involved in the overall navigation process?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03139v1",
+    "source_pdf": "../pdfs/2604.03139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03139v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.03139v1/images/p0007_figure_00003.png",
+    "caption": "Fig. 3: In our real-world experimental setup, we deployed the framework on a Unitree Go2 EDU quadruped robot. A custom 3D-printed mount was used to attach an Intel RealSense D455 camera to the robot for capturing real-time RGB observations.",
+    "md5": "a0e31409938af1f0018ed6ca91fa7de8",
+    "description2": "A pipeline diagram shows the deployment of a framework on a Unitree Go2 EDU quadruped robot with an attached Intel RealSense D455 camera for RGB observation capture.",
+    "description3": "A quadruped robot, labeled \"Unitree Go2 EDU,\" features a 3D-printed mount holding an Intel RealSense D455 camera and a mid360 Lidar.",
+    "questions": [
+      "What type of robot was used in this real-world experimental framework?",
+      "How was the camera attached to the robot for capturing observations?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03139v1",
+    "source_pdf": "../pdfs/2604.03139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03139v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.03139v1/images/p0008_figure_00004.png",
+    "caption": "Fig. 4: Under a maximum locomotion speed of 0.6 m/s, the quadruped robot successfully completed the open-vocabulary object goal navigation task targeting “umbrella.” During the experiment, the robot not only demonstrated efficient mobility but also exhibited real-time dynamic obstacle avoidance capabilities, achieving safe approach and accurate identification of the target object in unstructured environments. Additional task types for the quadruped robot, along with physical experiments involving the humanoid robot G1 and wheeled mobile robots, are planned to be updated in subsequent versions.",
+    "md5": "af673d8bf31dc7a569a7f63cfa987188",
+    "description2": "The figure plots the successful completion of an open-vocabulary object goal navigation task targeting \"umbrella\" under a maximum locomotion speed of 0.6 m/s.",
+    "description3": "The robot traverses toward an umbrella, achieving a 0.6 m/s speed while avoiding obstacles in a dynamic setting.",
+    "questions": [
+      "How does the robot navigate to a target object in an unstructured environment?",
+      "What capabilities were demonstrated during the robot's object navigation task?"
+    ]
+  }
+]

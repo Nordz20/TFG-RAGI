@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03150v1",
+    "source_pdf": "../pdfs/2604.03150v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03150v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03150v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1: HyperFitS: Top: The HyperFitS strategy showing a hypernetwork tak- ing baseline and water suppression correction parameters and predicting weights for a quantification network with a physics-based encoder. Bottom: The phys- ical model combining metabolite and macromolecule basis set, baseline spline functions, and water suppression correction factor used to predict the spectral fit.",
+    "md5": "1415460fff41ddea49fb6e97c4aaa24a",
+    "description2": "The figure depicts the HyperFitS strategy, featuring a hypernetwork predicting weights for a quantification network with physics-based encoder and physical model combining metabolite and macromolecule basis sets.",
+    "description3": "The multi-panel plot displays a hypernetwork strategy and a physical model for spectral fit prediction.",
+    "questions": [
+      "What role does the hypernetwork play in the overall quantification strategy?",
+      "How does the physical model incorporate baseline and water suppression corrections?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03150v1",
+    "source_pdf": "../pdfs/2604.03150v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03150v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.03150v1/images/p0010_figure_00002.png",
+    "caption": "Figure 2: A qualitative comparison showing metabolic maps of NAA+NAAG, Cr+PCr, GPC+PCh, inositol, and Glu+Gln, at 7T quantified with HyperFitS and LCModel. Individual representative spectra are displayed below. Process- ing times for a single MRSI volume of HyperFitS and LCModel are 10sec vs ∼1h for 3.4mm, and 90sec vs ∼8h for 2mm",
+    "md5": "65f92865f4e65b7d41bc62018d451de9",
+    "description2": "Metabolic maps comparing NAA+NAAG, Cr+PCr, GPC+PCh, inositol, and Glu+Gln are plotted at 7T using HyperFitS and LCModel.",
+    "description3": "The figure presents a multi-panel plot displaying metabolic maps and spectra for several compounds across different resolutions and quantification methods.",
+    "questions": [
+      "What metabolic compounds are shown in the comparison of brain maps?",
+      "How do the displayed maps differ based on quantification method?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03150v1",
+    "source_pdf": "../pdfs/2604.03150v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03150v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.03150v1/images/p0011_figure_00003.png",
+    "caption": "Figure 3: Metabolic maps of NAA+NAAG, Cr+PCr, GPC+PCh, Inositol, and Glu+Gln quantified with HyperFitS and LCModel from 3D MRSI acquired at 3T in a glioma patient. Maps are compared for different baseline modeling. Individual representative spectra are displayed below.",
+    "md5": "1d3568cce5257a5d2386ff2ebceec999",
+    "description2": "Metabolic maps of NAA+NAAG, Cr+PCr, GPC+PCh, Inositol, and Glu+Gln quantified with HyperFitS and LCModel from 3D MRSI acquired at 3T in a glioma patient are displayed.",
+    "description3": "A multi-panel plot displays metabolic maps and representative spectra for NAA, Cr, GPC, Inositol, and Glu, using HyperFitS and LCModel.",
+    "questions": [
+      "How do different baseline modeling approaches affect the representation of metabolic compounds?",
+      "What are the key metabolic compounds displayed in these maps?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03150v1",
+    "source_pdf": "../pdfs/2604.03150v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03150v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.03150v1/images/p0012_figure_00004.png",
+    "caption": "Figure 4: Top: A representative spectrum fitted by varying the hyperparam- eters for baseline flexibility (vertical) and spline node distance (horizontal) in increments of 1 10 of the total range. Three cases are shown enlarged on the right. The original spectrum is white, fit is red, baseline is yellow, and spline nodes are blue. Bottom: Contour plots of metabolite concentrations. A subject acquired at 7T with 3.4mm resolution was evaluated for 100 different baseline configurations. Baseline flexibility and spline node distance were changed over the hyperparameter range with increments of 1 10 of the total range. Values show the difference to the center value (0.5 flexibility, 0.15 ppm node distance) in per- cent.",
+    "md5": "8fdaaaa6d26e8ba5733ab2ad3309af3a",
+    "description2": "A representative spectrum is plotted with varying hyperparameters for baseline flexibility and spline node distance, featuring three enlarged cases on the right.",
+    "description3": "A multi-panel plot displays fitted spectra with varying baseline flexibility and spline node distance, alongside contour plots of metabolite concentrations.",
+    "questions": [
+      "How does varying baseline flexibility and node distance affect the fitted spectrum?",
+      "What is the relationship between baseline flexibility, node distance, and metabolite concentrations?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03150v1",
+    "source_pdf": "../pdfs/2604.03150v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03150v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.03150v1/images/p0013_figure_00005.png",
+    "caption": "Figure 5: Metabolite concentration boxplots for metabolites NAA+NAAG, Cr+PCr, PCh+GPC, Glu+Gln, Ins, Tau, GSH, and GABA. Evaluations are performed for 7T (top) and 3T (bottom). The 7T was evaluated with water sup- pression correction by HyperFitS. The 3T was processed with different baseline configurations by HyperFitS. Comparison to LCModel is included.",
+    "md5": "c786cd474959aa33ecd3dc9dbcf884b1",
+    "description2": "The figure displays boxplots of metabolite concentration for eight metabolites at two magnetic field strengths, 7T and 3T, with varying processing methods.",
+    "description3": "The figure presents two multi-panel boxplots comparing metabolite concentrations across different processing methods for 7T and 3T data.",
+    "questions": [
+      "What is the primary comparison made regarding metabolite concentrations at different field strengths?",
+      "How do different processing configurations affect the observed metabolite concentration distributions?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03150v1",
+    "source_pdf": "../pdfs/2604.03150v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03150v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.03150v1/images/p0014_figure_00006.png",
+    "caption": "Figure 6: Uncertainty maps for the metabolites NAA, Glu and Ins at 7T (left) and 3T (right). LCModel uncertainties are computed as CRLBs, HyperFitS uncertainties are shown with Aleatoric and Epistemic uncertainty.",
+    "md5": "2c5e19fa1b6b392d9ba09fad050061cf",
+    "description2": "Uncertainty maps plot metabolites NAA, Glu, and Ins at 7T and 3T magnetic field strengths, displaying LCModel and HyperFitS uncertainties.",
+    "description3": "A multi-panel plot displays uncertainty maps for NAA, Glu, and Ins, comparing LCModel CRLBs with Aleatoric and Epistemic uncertainties at 7T and 3T.",
+    "questions": [
+      "How do uncertainty maps for metabolites differ between 7T and 3T imaging?",
+      "What types of uncertainty are visualized for the metabolites NAA, Glu, and Ins?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.03150v1",
+    "source_pdf": "../pdfs/2604.03150v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03150v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.03150v1/images/p0015_figure_00007.png",
+    "caption": "Figure 7: Correlation matrix of in-vivo metabolite concentrations fitted by Hy- perFitS at a.) 7T and b.) 3T. c.) A spectrum acquired at 7T with its fit and individual metabolite components.",
+    "md5": "aaf916c38bf12c3aa1b26ab4034be54e",
+    "description2": "The figure is a correlation matrix of in-vivo metabolite concentrations fitted by HyperFitS at different magnetic field strengths, including 7T and 3T.",
+    "description3": "The image contains two correlation matrices (a and b) and a spectrum with fit and component lines (c), all related to metabolite concentrations.",
+    "questions": [
+      "How do metabolite concentrations relate to each other in vivo at different magnetic field strengths?",
+      "What is the overall pattern of correlations observed between different metabolite components?"
+    ]
+  }
+]

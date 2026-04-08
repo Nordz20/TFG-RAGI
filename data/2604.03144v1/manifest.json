@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03144v1",
+    "source_pdf": "../pdfs/2604.03144v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03144v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.03144v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1. Overview of InCoder-32B-Thinking, a coder for general and industrial code intelligence with thinking capability, which supports tasks from general coding to industrial tasks such as GPU optimization, chip design, and 3D modeling.",
+    "md5": "870dee6a1403a94478d33f443f480233",
+    "description2": "The figure presents an overview of InCoder-32B-Thinking, a coder capable of general and industrial code intelligence with thinking capabilities.",
+    "description3": "A multi-panel plot displays tasks, code snippets, and numerical data related to InCoder-32B-Thinking's capabilities across general and industrial domains.",
+    "questions": [
+      "What general types of industrial and coding tasks does this system support?",
+      "How does this system's capability relate to code intelligence optimization?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03144v1",
+    "source_pdf": "../pdfs/2604.03144v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03144v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03144v1/images/p0002_figure_00002.png",
+    "caption": "Figure 3. Comparison of CUDA kernel implementations for Hinge Loss. Through reasoning, InCoder-32B-Thinking identifies the shape mismatch between the 2D predictions and 1D targets tensors, correctly mapping flat indices to row indices for proper broadcasting. The non-thinking model indexes both tensors with the same flat index, causing out-of-bounds error.",
+    "md5": "4c49c35f7c218ad1ae16da12a40aaed9",
+    "description2": "The figure compares CUDA kernel implementations for Hinge Loss, plotting the comparison of two-dimensional predictions against one-dimensional target tensors.",
+    "description3": "A multi-panel plot compares CUDA kernel implementations, highlighting shape mismatches and indexing errors between two models.",
+    "questions": [
+      "How do different implementations handle errors when processing tensors with mismatched dimensions?",
+      "What is the general difference in how these implementations approach tensor indexing?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03144v1",
+    "source_pdf": "../pdfs/2604.03144v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03144v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03144v1/images/p0002_figure_00003.png",
+    "caption": "Figure 2. The performance of InCoder-32B-Thinking on code benchmarks.",
+    "md5": "bbe91a00ff28d022bd897451cf43498b",
+    "description2": "The performance of InCoder-32B-Thinking is plotted on a graph for code benchmarks.",
+    "description3": "A multi-panel bar chart compares the performance of three models on several code benchmarks, with bars grouped by benchmark.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03144v1",
+    "source_pdf": "../pdfs/2604.03144v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03144v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03144v1/images/p0004_figure_00004.png",
+    "caption": "Figure 4. Overview of the data engine pipeline. Left: task seeds and environment bundles are passed through an elicitation, execution, feedback loop against real backends, producing multi-turn trajectories Dreal. Right: Dreal trains an ICWM that simulates the real backends during large-scale synthesis; periodic audits keep the world model calibrated across iterations.",
+    "md5": "6e7c4691e2654867300369476e82180e",
+    "description2": "The figure depicts a pipeline diagram illustrating the data engine workflow, comprising elicitation, execution, and feedback loops on the left side, and training of an ICWM with simulated backends on the right side that simulates real backends during large-scale synthesis.",
+    "description3": "A multi-panel plot outlines a data engine pipeline, with sections for task seeding, elicitation, and distributed execution, culminating in ICWM training.",
+    "questions": [
+      "How does the pipeline generate data for training and simulating backend systems?",
+      "What are the main stages involved in the data engine pipeline's operation?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03144v1",
+    "source_pdf": "../pdfs/2604.03144v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03144v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.03144v1/images/p0010_figure_00005.png",
+    "caption": "Figure 5. ICWM fidelity across five industrial domains. Outcome prediction accuracy measures per-turn label agreement; trajectory agreement measures end-to-end verdict consistency over multi-turn correction sequences. The dashed line marks the 95% threshold. All domains exceed 95% on outcome accuracy; the 1.6–2.8 pp gap to trajectory agreement reflects error compounding across turns.",
+    "md5": "4f4c2759839665f482bd51b388e6d919",
+    "description2": "The figure plots ICWM fidelity across five industrial domains, displaying outcome prediction accuracy and trajectory agreement with error bars.",
+    "description3": "A bar chart displays outcome prediction accuracy and trajectory agreement across five industrial domains, exceeding a 95% threshold.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03144v1",
+    "source_pdf": "../pdfs/2604.03144v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03144v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.03144v1/images/p0011_figure_00006.png",
+    "caption": "Figure 6. Statistics of median thinking length (T) and answer length (A) per task category, sorted by thinking depth. Shaded bands show the inter-quartile range (P25–P75). Industrial domains are highlighted in purple. Thinking depth spans a 209× range, reflecting the naturally varying reasoning demands of different execution backends.",
+    "md5": "3450fb49fff9d84771f4786ede9f4f51",
+    "description2": "The figure plots statistics of median thinking length and answer length per task category, sorted by thinking depth, with shaded bands showing the inter-quartile range.",
+    "description3": "Two-panel plot displays median thinking and answer lengths per task category, sorted by thinking depth, with shaded interquartile ranges and purple highlighting for industrial domains.",
+    "questions": [
+      "What general characteristic is highlighted for industrial versus other task categories?",
+      "How does the figure represent the range of thinking depth?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.03144v1",
+    "source_pdf": "../pdfs/2604.03144v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03144v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.03144v1/images/p0012_figure_00007.png",
+    "caption": "Figure 7. Performance visualization of InCoder-32B-Thinking across nine industrial code benchmarks as thinking training data scales from 180M to 540M tokens.",
+    "md5": "5ee1b2f51d6d1536748ed0c7927385f3",
+    "description2": "The figure visualizes the performance of InCoder-32B-Thinking on nine industrial code benchmarks, with varying thinking training data sizes from 180 million to 540 million tokens.",
+    "description3": "The multi-panel plot visualizes InCoder-32B-Thinking's performance across nine code benchmarks, tracking metrics with increasing training data.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

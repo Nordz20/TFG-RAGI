@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 1,
+    "image_path": "../data/2603.28766v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1. (a) We introduce HandX, a large-scale dataset of bimanual and dexterous motions paired with fine-grained textual descriptions. The examples highlight the high-fidelity captures produced by our motion capture system (Figure A), and demonstrate instantiation on a real-world humanoid with dexterous hands. (b) We benchmark two generative paradigms: diffusion-based and autoregressive (AR) models. (c) Our models support flexible conditioning and synthesize highly dynamic, expressive hand motions. (d) We observe clear scaling trends: increasing dataset size and model capacity yields substantial performance gains.",
+    "md5": "4fc528db40f5353db92ad64e0add1e8b",
+    "description2": "A line chart or comparative plot displays the performance gains of diffusion-based and autoregressive models as they scale with increasing dataset size and model capacity.",
+    "description3": "A multi-panel plot displays a dataset, generative models, motion generation, and scaling trends, alongside textual descriptions and data statistics.",
+    "questions": [
+      "What types of models were used to generate bimanual hand motions?",
+      "How does the size of the dataset and model capacity affect performance?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.28766v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2. Two benchmark models. (a) Diffusion model. Text embeddings for the left hand, right hand, and bimanual interaction are separately cross-attended with noisy motion embeddings, and then fused through residual connections to predict denoised mo- tion embeddings. (b) Autoregressive model, consisting of Finite Scalar Quantization (FSQ) and a text-prefix autoregressive model. Unlike the diffusion model, it concatenates the left-hand, right- hand, and bimanual text descriptions with separator tokens to form a text prefix, and formulates bimanual motion generation as a to- ken prediction task over motion tokenized by FSQ.",
+    "md5": "372de1854cdc40765bd1725d7110b9e2",
+    "description2": "The figure plots two benchmark models: a diffusion model predicting denoised motion embeddings from noisy motion embeddings and text embeddings, and an autoregressive model generating bimanual motion through token prediction.",
+    "description3": "A multi-panel plot compares a diffusion model (a) and an autoregressive model (b) with labeled components and connections.",
+    "questions": [
+      "How do different models approach generating bimanual motion from text descriptions?",
+      "What are the key structural differences between the diffusion and autoregressive models shown?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28766v1/images/p0006_figure_00003.png",
+    "caption": "Figure 3. Qualitative results of our unified framework, showing (a) high-fidelity text-to-motion generation with fine-grained articulation and contact, and (b) bimanual motion synthesis given versatile spatiotemporal conditions. Gray hands denote the input condition, green hands denote the generation, and orange hands denote the extended long-horizon generation.",
+    "md5": "e244cdf7b67f707f298e5f0e4d12f20b",
+    "description2": "The figure presents a workflow diagram illustrating high-fidelity text-to-motion generation with fine-grained articulation and contact, as well as bimanual motion synthesis given versatile spatiotemporal conditions.",
+    "description3": "The image presents a multi-panel plot displaying text-to-motion and bimanual motion synthesis, with hands colored gray, green, and orange.",
+    "questions": [
+      "What main objective or task does the figure describe?",
+      "How is the overall pipeline or architecture organized in the figure?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.28766v1/images/p0007_figure_00004.png",
+    "caption": "Figure 4. Scaling trend of computational scale. We observe a clear log-linear relationship between R-precision and FLOPS, with a high correlation coefficient of 0.96. R-Precision is evalu- ated with a batch size of 16.",
+    "md5": "c73ecc48ad02b31ffbcdb60d0f95e27e",
+    "description2": "The figure plots the scaling trend of computational scale, displaying a log-linear relationship between R-precision and FLOPS with a high correlation coefficient.",
+    "description3": "Two-panel plot displays a line chart showing a log-linear relationship between R-precision and FLOPS, with observed data points and a red line.",
+    "questions": [
+      "What is the general relationship between computational scale and R-precision?",
+      "How does R-precision change as computational scale increases?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.28766v1/images/p0007_figure_00005.png",
+    "caption": "Figure 5. Qualitative comparison of diffusion models trained with different data scales. The model trained on the full dataset gener- ates more expressive motion with better text alignment.",
+    "md5": "d858e3764f302ef68f6ea6451fe5c557",
+    "description2": "The figure plots a qualitative comparison of diffusion models trained with different data scales, showing better text alignment and more expressive motion when trained on the full dataset.",
+    "description3": "The multi-panel plot displays sequential figures of hands, arranged in rows and columns, representing diffusion model outputs.",
+    "questions": [
+      "How do the models' outputs differ based on the size of the training dataset?",
+      "What qualities distinguish the motion generated by the different models?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.28766v1/images/p0007_figure_00006.png",
+    "caption": "Figure 6. Qualitative comparison of diffusion models with dif- ferent model scales. Larger models produce motion that is better aligned with the text and exhibits improved bimanual contact.",
+    "md5": "85baded428ba3d2519a9a5206104f460",
+    "description2": "The figure presents a qualitative comparison of diffusion models with different model scales, plotting their alignment with text and bimanual contact performance.",
+    "description3": "A multi-panel plot displays hand movements across layers, with annotations highlighting reversed hands, not open hands, and interactions.",
+    "questions": [
+      "How does model scale influence the observed diffusion patterns?",
+      "What is the qualitative comparison of bimanual contact shown?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 12,
+    "image_path": "../data/2603.28766v1/images/p0012_figure_00007.png",
+    "caption": "Figure A. Our motion capture configuration: (a) 36-camera Opti- Track studio and (b) placement of 25 markers on each hand.",
+    "md5": "115e77ef8be745065051a5eb1a9f9311",
+    "description2": "The figure shows a 36-camera Opti-Track studio and the precise placement of 25 markers on each hand for motion capture analysis.",
+    "description3": "A multi-panel plot displays a motion capture studio and the placement of 25 markers on a hand, labeled with anatomical terms.",
+    "questions": [
+      "What type of setup is used to capture motion?",
+      "How are markers arranged on the hand for motion capture?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 13,
+    "image_path": "../data/2603.28766v1/images/p0013_figure_00008.png",
+    "caption": "Figure B. Distribution of filtered clips. This figure shows the intensity distribution of the filtered clips.",
+    "md5": "edf7c6466d14670a20d93c87617a0754",
+    "description2": "The figure displays the intensity distribution of filtered clips.",
+    "description3": "A bar chart displays the distribution of filtered clips, with a vertical line indicating the mean of the dataset.",
+    "questions": [
+      "What is the general pattern of intensity values within the filtered clips?",
+      "How are the filtered clips distributed in terms of their intensity?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 16,
+    "image_path": "../data/2603.28766v1/images/p0016_figure_00009.png",
+    "caption": "Figure C. Structured representation of extracted motion features. The JSON format captures temporal segmentation with frame indices and semantic state descriptions for transition events and constant events.",
+    "md5": "cf8dd1d69b44efe523437c5f9223be97",
+    "description2": "The figure presents a structured representation of extracted motion features in JSON format, capturing temporal segmentation with frame indices and semantic state descriptions.",
+    "description3": "Three-panel JSON format displays extracted motion features, including frame indices and semantic state descriptions for transition and constant events.",
+    "questions": [
+      "What kind of information is captured regarding motion events?",
+      "How are motion events organized and described within the structured representation?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 17,
+    "image_path": "../data/2603.28766v1/images/p0017_figure_00010.png",
+    "caption": "Figure D. Our prompt design to facilitate LLMs to summarize kinematic features. This is for bimanual motion captioning.",
+    "md5": "cf2d9c720a2b75962805992fe8d0e57e",
+    "description2": "The figure illustrates a prompt design that enables language models to summarize kinematic features for generating captions of bimanual arm and hand motions.",
+    "description3": "The figure presents a JSON list of dictionaries outlining prompt design for LLMs to summarize kinematic features of bimanual motion captioning.",
+    "questions": [
+      "How does this design help large language models understand motion?",
+      "What aspects of bimanual motion are being described?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2603.28766v1",
+    "source_pdf": "../pdfs/2603.28766v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28766v1.pdf",
+    "page": 18,
+    "image_path": "../data/2603.28766v1/images/p0018_figure_00011.png",
+    "caption": "Figure E. User study on data quality. Our HandX exhibits high-quality motion and annotations. For annotation quality evaluation, we compare our method with a baseline that utilizes Gemini 3 Pro [51] to directly caption rendered motion videos.",
+    "md5": "f8880e6d0a83b6b97493cc1862e27ad0",
+    "description2": "The figure presents a user study on data quality, comparing the annotation quality of HandX with a baseline using Gemini 3 Pro for captioning motion videos.",
+    "description3": "Two bar charts compare \"Ours,\" \"Gigahands,\" and \"HoloAssist\" scores for annotation and motion quality across four questions.",
+    "questions": [
+      "How does the presented method's annotation quality relate to the baseline?",
+      "What are the general trends observed in motion quality?"
+    ]
+  }
+]

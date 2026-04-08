@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02445v1",
+    "source_pdf": "../pdfs/2604.02445v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02445v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.02445v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: Toy illustration of the K-of-N anomaly problem. The time series contains an anomaly in only one of the eight dimensions. The naive all-dimension matrix profile reaches its maximum away from the anomalous interval, whereas the pre-sorting matrix profile reaches its maximum near that interval. The orange X marks the maximum value of each profile.",
+    "md5": "cdbcca254d8fa1a35bc16a845f916f6a",
+    "description2": "The figure is a toy illustration of the K-of-N anomaly problem, featuring a time series with an anomaly in one of eight dimensions.",
+    "description3": "Four-panel plot displays a time series with two matrix profiles, showing the naive profile's maximum distant from the anomaly, while the pre-sorting profile's maximum is closer.",
+    "questions": [
+      "How do different methods detect anomalies within a time series containing multiple dimensions?",
+      "What is the relationship between the location of an anomaly and the maximum value of the matrix profile?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02445v1",
+    "source_pdf": "../pdfs/2604.02445v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02445v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02445v1/images/p0004_figure_00002.png",
+    "caption": "Figure 3: The post-sorting strategy sorts dimension-wise matrix-profile values after nearest-neighbor selection. As a result, dimensional ordering is applied only after the neighbors have already been chosen.",
+    "md5": "d8ea0749d9a9fbebf44ff1ab814e96dd",
+    "description2": "The figure illustrates the post-sorting strategy that sorts dimension-wise matrix-profile values after nearest-neighbor selection and applies dimensional ordering afterwards.",
+    "description3": "Three-panel plot shows a 3D tensor with arrows indicating a process of finding nearest neighbors and then sorting.",
+    "questions": [
+      "What is the overall process for ordering values after selecting neighbors?",
+      "How does the sorting strategy relate to the selection of nearest neighbors?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02445v1",
+    "source_pdf": "../pdfs/2604.02445v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02445v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02445v1/images/p0004_figure_00003.png",
+    "caption": "Figure 2: The pre-sorting strategy sorts dimension-wise pairwise distances before nearest-neighbor selection in the multidimensional matrix profile. This ordering lets the sorted dimension-wise distances influence neighbor selection itself, which helps preserve anomalies that appear in only a subset of dimensions.",
+    "md5": "7fe843e6b1452b60a42d9e973c3ee0b4",
+    "description2": "The figure illustrates the pre-sorting strategy for sorting dimension-wise pairwise distances before nearest-neighbor selection in a multidimensional matrix profile, preserving anomalies in subsets of dimensions.",
+    "description3": "Three-panel plot visually represents a pre-sorting strategy involving a pairwise distance tensor and a matrix profile, with arrows indicating sorting and nearest neighbor selection.",
+    "questions": [
+      "How does pre-sorting distances affect the selection of nearest neighbors?",
+      "What is the overall strategy for preserving anomalies in multidimensional data?"
+    ]
+  }
+]

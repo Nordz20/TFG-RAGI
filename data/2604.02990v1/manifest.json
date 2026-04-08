@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02990v1",
+    "source_pdf": "../pdfs/2604.02990v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02990v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02990v1/images/p0004_figure_00001.png",
+    "caption": "Fig. 1: Decoupling view of a network into SK representing the values of the activations (left), represented by activation masks (gating); and QK, represented by the affine parameters (edge coefficients), with its activation patterns frozen (right). In FEDSQ, models are initialized from a common pretrained checkpoint and then adapted federatively by updating only QK after structural stabilization.",
+    "md5": "47bf5dad190633dd9fd0072c6453dc59",
+    "description2": "The figure displays a decoupling view of a network, featuring SK representing activation values through masks on the left and QK represented by affine parameters with frozen activation patterns on the right.",
+    "description3": "Two-panel diagram displays a network view of SK, showing activations and masks, alongside QK, displaying affine parameters with frozen activation patterns.",
+    "questions": [
+      "How do activation masks and affine parameters contribute to network representation?",
+      "What is the overall purpose of decoupling activations and parameters?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02990v1",
+    "source_pdf": "../pdfs/2604.02990v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02990v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02990v1/images/p0005_figure_00002.png",
+    "caption": "Fig. 2: Experiments performed over different model architec- tures and datasets, showing an improvement of FEDSQ over the other approaches. Left column indicates the experiments performed over ALEXNET. Right column indicates the exper- iments performed over RESNET18",
+    "md5": "5e5f397f7f8dc0df98e6b74858d70565",
+    "description2": "A line chart comparing the performance of various model architectures (ALEXNET and RESNET18) across different datasets, with FEDSQ showing an improvement over other approaches.",
+    "description3": "Two-panel line chart displays validation accuracy versus round for FEDSQ and other approaches across AlexNet and ResNet18 architectures and datasets.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

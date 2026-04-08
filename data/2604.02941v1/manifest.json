@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.02941v1/images/p0001_figure_00001.png",
+    "caption": "Fig. 1. Given a speech signal and 2D sample points,our framework can generate multi-resolution realistic 3D talking faces showing comprehensibility.",
+    "md5": "aab05c552d5514c85018b045ae0ac594",
+    "description2": "A workflow diagram illustrating our framework generating multi-resolution realistic 3D talking faces from a given speech signal and 2D sample points.",
+    "description3": "A multi-panel plot displays a speech signal and 2D sample points transforming into multi-resolution 3D talking faces.",
+    "questions": [
+      "How does the framework generate realistic 3D talking faces from speech signals?",
+      "What is the relationship between the input signal and the resulting facial representation?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02941v1/images/p0003_figure_00002.png",
+    "caption": "Fig. 2. The pipeline of the proposed 3D facial animation synthesis method.",
+    "md5": "3175b4a9ef619597137a7f7124be98a0",
+    "description2": "The pipeline is a structured representation of the steps involved in the proposed 3D facial animation synthesis method.",
+    "description3": "A multi-panel plot outlines a 3D facial animation synthesis method pipeline, including components like a Transformer Encoder and a Decoder.",
+    "questions": [
+      "What is the overall process for creating 3D facial animations?",
+      "How are different features combined to generate the final facial animation?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02941v1/images/p0003_figure_00003.png",
+    "caption": "Fig. 3. Mesh parameterization.",
+    "md5": "97313e88fe0d6a52cc75f0233213b757",
+    "description2": "A surface mesh is diagrammed, illustrating the mapping of a two-dimensional grid to a three-dimensional object's shape.",
+    "description3": "Two-panel plot displays a template face, a color-coded mesh, a point cloud, and a sequence of faces with increasing resolution.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02941v1/images/p0004_figure_00004.png",
+    "caption": "Fig. 5. The structure of our proposed DCAM module.",
+    "md5": "cc659ce1a4a99e51f5e53bdb5dddc356",
+    "description2": "The structure of the proposed DCAM module is plotted.",
+    "description3": "Two-panel plot displays a DCAM module structure, featuring local and global audio features interacting through cross-attention and a subsequent MLP layer.",
+    "questions": [
+      "What is the overall architecture of the proposed DCAM module?",
+      "How do local and global audio features interact within the module's structure?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02941v1/images/p0004_figure_00005.png",
+    "caption": "Fig. 4. The structure of our proposed two-layer RGCN module.",
+    "md5": "2a03ac52bec72c30404691c99b3b9fb7",
+    "description2": "The structure of the proposed two-layer RGCN module is plotted.",
+    "description3": "The two-layer RGCN module receives audio and spatial-temporal features, processed by GCN1 and GCN2, then an MLP to produce a fusion feature.",
+    "questions": [
+      "What is the overall architecture of the proposed module?",
+      "How are the audio and spatial-temporal features processed within the module?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02941v1/images/p0005_figure_00006.png",
+    "caption": "Fig. 6. Visual comparisons of sampled facial motions animated by different methods on VOCA-Test (left) and Multiface-test (right). The upper partition shows the facial animation conditioned on different speech parts,and he color map shows the distribution of distance errors from vertex to vertex, while the lower depicts the temporal statistics (mean and standard deviation) of adjacent-frame motion variations within a sequence.",
+    "md5": "25c6115592c41c2fe0619de8cef2d10f",
+    "description2": "Visual comparisons of sampled facial motions animated by different methods show conditioned animation and error distributions for VOCA-Test and Multiface-test on left and right respectively.",
+    "description3": "The multi-panel plot displays facial motion comparisons across methods, with color maps showing vertex distance errors and lower panels depicting temporal motion statistics.",
+    "questions": [
+      "How do facial animation methods influence the distribution of vertex distance errors?",
+      "What statistics describe the temporal variations in facial motion sequences?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02941v1/images/p0006_figure_00007.png",
+    "caption": "Fig. 7. The comparison results of the same sentence at different resolutions. To achieve clearer visualization, we enlarged the mouth area. It can be found that it has the ability to retain detailed parts at different resolutions.",
+    "md5": "e7272dc58e46cec161b1f94fe61091ad",
+    "description2": "The figure plots the comparison results of the same sentence at different resolutions, with a focus on the mouth area and its ability to retain detailed parts.",
+    "description3": "Two-panel image displays a multi-panel plot showing head models at varying resolutions, with an audio waveform displayed above.",
+    "questions": [
+      "What is the overall goal of presenting these results at different resolutions?",
+      "How does the level of detail appear to change with varying resolutions?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02941v1/images/p0007_figure_00008.png",
+    "caption": "Fig. 8. The audio attention output of different layers and the distribution of vertex-to-vertex distance errors. The attention distribution of this sentence is on the far right.",
+    "md5": "216ba9783232da7ee75f8034b3198911",
+    "description2": "The figure plots the audio attention output of different layers alongside the distribution of vertex-to-vertex distance errors.",
+    "description3": "Two-panel plot displays audio attention outputs and vertex-to-vertex distance errors, arranged in a grid with generic labels below each panel.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02941v1",
+    "source_pdf": "../pdfs/2604.02941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02941v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02941v1/images/p0008_figure_00009.png",
+    "caption": "Fig. 9. The results of the ablation experiment",
+    "md5": "af38219fdf461d5cb6f4d26229ce83f4",
+    "description2": "The results of the ablation experiment are plotted in this figure.",
+    "description3": "A multi-panel plot displays a series of 3D head models with color-coded regions, arranged in a grid, alongside a waveform graph.",
+    "questions": [
+      "What do the ablation experiment results reveal about component influence?",
+      "How does the experimental setup structure the comparison of methods?"
+    ]
+  }
+]

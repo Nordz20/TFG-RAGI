@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.04442v1",
+    "source_pdf": "../pdfs/2604.04442v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04442v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.04442v1/images/p0007_figure_00001.png",
+    "caption": "Fig. 1. Illustration of a Shadow-Jitter telemetry manipulation scenario. Controlled perturbations in host and network logs distort apparent event correlations, leading an unconstrained correlation-based defense to misclassify benign activity as malicious. In contrast, C-MADF applies causal filtering and adversarial dual-policy validation within a constrained MDP-DAG structure, reducing spurious mitigation actions under ambiguous observations.",
+    "md5": "b2018b45c97b0461b1d175054b65302a",
+    "description2": "The figure illustrates a Shadow-Jitter telemetry manipulation scenario where controlled perturbations distort event correlations, misleading defenses into misclassifying benign activity as malicious.",
+    "description3": "A multi-panel plot contrasts a baseline AI defense with a C-MADF defense against telemetry manipulation by an adversary.",
+    "questions": [
+      "How do adversarial perturbations affect the apparent correlations observed by a defense?",
+      "What is the key difference in how defenses respond to manipulated observations?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.04442v1",
+    "source_pdf": "../pdfs/2604.04442v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04442v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.04442v1/images/p0009_figure_00002.png",
+    "caption": "Fig. 2. The architecture of the Causal Multi-Agent Decision Framework (C-MADF). The process begins with the Causal Discovery Module learning a causal model from data. This model informs the MDP-DAG Roadmap, which provides a verifiable structure for investigations. The Council of Rivals, consisting of a Blue-Team and a Red-Team agent, deliberates on the best course of action within this roadmap. Their debate and the resulting policy divergence are fed into the Explainable Human-in-the-Loop Interface, which computes the ETS and presents a clear recommendation to the supervisory adjudication.",
+    "md5": "6eb8158b247994cb641a3ab0d3d9548c",
+    "description2": "The architecture of Causal Multi-Agent Decision Framework (C-MADF) depicts a process starting with causal discovery, followed by roadmap generation and agent deliberation.",
+    "description3": "A multi-panel plot outlines the Causal Multi-Agent Decision Framework, including modules for causal discovery, roadmap generation, agent deliberation, and a human interface.",
+    "questions": [
+      "How does this framework use causal models to guide decision-making processes?",
+      "What are the key components involved in generating recommendations within this architecture?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.04442v1",
+    "source_pdf": "../pdfs/2604.04442v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04442v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.04442v1/images/p0010_figure_00003.png",
+    "caption": "Fig. 3. The MDP-DAG Investigation Roadmap showing valid state transitions (orange arrows with reward values) and causally inconsistent blocked transitions (red X). The roadmap constrains the action space to ensure verifiable investigation flows, preventing logically inconsistent paths such as jumping directly from Initial Alert to Threat Mitigated without sufficient evidence collection.",
+    "md5": "d5e44a439e292370d6fbc8d421e70033",
+    "description2": "The figure is a roadmap that displays valid state transitions represented by orange arrows with reward values and causally inconsistent blocked transitions marked with red X's.",
+    "description3": "Two-panel diagram presents an MDP-DAG investigation roadmap with state transitions indicated by arrows and blocked transitions marked with red 'X' symbols.",
+    "questions": [
+      "What is the overall purpose of the investigation roadmap depicted?",
+      "How does the roadmap structure the investigation process?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.04442v1",
+    "source_pdf": "../pdfs/2604.04442v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04442v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.04442v1/images/p0012_figure_00004.png",
+    "caption": "Fig. 4. Council of Rivals adversarial deliberation architecture. At each investigation state st in the causally constrained MDP-DAG, the Blue-Team policy proposes a mitigation action based on its learned value estimates, while the Red-Team policy evaluates and challenges the proposal under a conservatively shaped objective. The interaction proceeds through iterative hypothesis evaluation, evidential justification, and action arbitration within the constrained action space. Inter-policy disagreement is quantified via the Policy Divergence Score D(st), which serves as an epistemic uncertainty signal and triggers human escalation when D(st) > τdiv. The policies are trained via self-play in a two-player stochastic game defined over the MDP-DAG, yielding stabilized adversarial decision policies.",
+    "md5": "870da7e1909d645f7063600dd21d1c63",
+    "description2": "The figure plots the Council of Rivals adversarial deliberation architecture, illustrating Blue-Team and Red-Team policy interaction through iterative hypothesis evaluation and action arbitration.",
+    "description3": "A multi-panel plot outlines a Council of Rivals adversarial deliberation architecture, showing iterative hypothesis evaluation and action arbitration.",
+    "questions": [
+      "How does adversarial interaction shape the action selection process?",
+      "What is the general flow of investigation and justification within this architecture?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.04442v1",
+    "source_pdf": "../pdfs/2604.04442v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04442v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.04442v1/images/p0014_figure_00005.png",
+    "caption": "Fig. 5. Illustrative decomposition of the ETS into its three primary components, Clarity, Completeness, and Confidence, and their respective sub-metrics. The figure visualizes the aggregation structure used to compute ETS(st) and demonstrates how the resulting score is compared against the escalation threshold τescalate. In this example, ETS(st) = 0.82 exceeds the calibrated threshold, and the system proceeds without mandatory human escalation. When ETS(st) falls below the threshold, structured explanation artifacts and human oversight are triggered.",
+    "md5": "fe28622d25ff6b5d2fe42fc58ddfa359",
+    "description2": "The figure illustrates the decomposition of the ETS into Clarity, Completeness, and Confidence components, along with their sub-metrics, used to compute a score exceeding the escalation threshold.",
+    "description3": "The multi-panel plot decomposes an ETS score into Clarity, Completeness, and Confidence components, each with sub-metrics and a decision logic.",
+    "questions": [
+      "How does the figure demonstrate the decomposition of a system into key components?",
+      "What determines whether human oversight or explanation is triggered?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.04442v1",
+    "source_pdf": "../pdfs/2604.04442v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04442v1.pdf",
+    "page": 17,
+    "image_path": "../data/2604.04442v1/images/p0017_figure_00006.png",
+    "caption": "Fig. 6. Illustration of the Shadow-Jitter attack scenario. Adversarial timing perturbations and log injections distort telemetry observations, inducing misleading correlations in conventional monolithic detection pipelines. In contrast, C-MADF leverages causal filtering and adversarial multi-agent validation to distinguish injected noise from genuine causal signals, thereby reducing false-positive mitigation actions under partial-compromise assump- tions.",
+    "md5": "bb26ead613d1aee386a6de1e326a12c7",
+    "description2": "The figure illustrates a Shadow-Jitter attack scenario, where timing perturbations and log injections distort telemetry observations, inducing misleading correlations in conventional monolithic detection pipelines.",
+    "description3": "Two-panel diagram outlines the C-MADF online incident response, showing an offline phase and an online phase connected by a continuous learning loop.",
+    "questions": [
+      "How does the approach differ from conventional detection pipelines?",
+      "What are the main phases involved in the online incident response process?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.04442v1",
+    "source_pdf": "../pdfs/2604.04442v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04442v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.04442v1/images/p0021_figure_00007.png",
+    "caption": "Fig. 7. Defensive response under Shadow-Jitter injection: C-MADF maintains high detection with low false positives, structured human review, and strong explainability, while the baseline AI fails catastrophically due to hallucinated threat confirmation and lack of verification.",
+    "md5": "7182f9cd2fd5777acb0b702f49bea483",
+    "description2": "The figure plots a defensive response under Shadow-Jitter injection, comparing the performance of C-MADF and a baseline AI in terms of detection rate and false positives.",
+    "description3": "Two-panel diagram contrasts a baseline AI and C-MADF defense systems' responses to Shadow-Jitter injection, using flowcharts and a line chart.",
+    "questions": [
+      "How does the C-MADF system avoid the catastrophic failures seen in the baseline AI?",
+      "What fundamental differences in structure enable the defensive capabilities shown?"
+    ]
+  }
+]

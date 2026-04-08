@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02477v1",
+    "source_pdf": "../pdfs/2604.02477v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02477v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.02477v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1. Overview of our profile-aware multimodal parsing framework. Unlike traditional practice and one-shot VLM sum- marization, our method uses topology-aware chunking, modular graph generation, and graph aggregation to preserve context and structure, yielding a scalable final graph for improved patient care.",
+    "md5": "956adc663c4a13151ba9515869b5c86d",
+    "description2": "The figure is an overview of our profile-aware multimodal parsing framework, depicting topology-aware chunking, modular graph generation, and graph aggregation.",
+    "description3": "The multi-panel plot compares traditional practice and existing summarization methods with a profile-aware multimodal parsing framework.",
+    "questions": [
+      "How does the proposed framework improve patient care compared to existing methods?",
+      "What are the key steps involved in the profile-aware parsing process?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02477v1",
+    "source_pdf": "../pdfs/2604.02477v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02477v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.02477v1/images/p0002_figure_00002.png",
+    "caption": "Figure 2. Our detailed pipeline. Long CPGs are split into topology-aware chunks, each chunk graph is built via queue-based VLM expansion (with duplicate and ancestry updates), and all chunk graphs are iteratively merged into a final graph.",
+    "md5": "69680593f2a740377158ab2cbc575b12",
+    "description2": "The figure illustrates our pipeline, which splits long CPGs into topology-aware chunks, builds chunk graphs through queue-based VLM expansion, and merges them into a final graph.",
+    "description3": "A multi-panel plot details a pipeline, progressing from topology-aware chunking to graph generation and iterative graph aggregation.",
+    "questions": [
+      "How does the pipeline handle ancestry information during graph construction?",
+      "What is the overall strategy for iteratively building the final graph?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02477v1",
+    "source_pdf": "../pdfs/2604.02477v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02477v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02477v1/images/p0008_figure_00003.png",
+    "caption": "Figure 3. Qualitative comparison on one representative decision module. (A) AutoKG baseline output, (B) our output, and (C) adjudicated ground-truth graph. Our method better preserves path continuity and branching fidelity, with fewer spurious/fragmented transitions.",
+    "md5": "9f0a1f2f0fa54073fb568e88204b642f",
+    "description2": "The figure is a qualitative comparison of three decision modules: an autoKG baseline output, the authors' output, and an adjudicated ground-truth graph.",
+    "description3": "The multi-panel plot compares AutoKG baseline, a proposed method, and adjudicated ground-truth graphs, highlighting path continuity and branching fidelity.",
+    "questions": [
+      "How does the proposed method's output compare to the ground-truth in decision-making?",
+      "What are the key differences observed between the baseline and proposed outputs?"
+    ]
+  }
+]

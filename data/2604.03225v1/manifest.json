@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03225v1",
+    "source_pdf": "../pdfs/2604.03225v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03225v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03225v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1. Comparison of VOSR with existing generative SR methods in terms of performance, efficiency, and training cost. Blue/orange colors denote T2I-based and vision-only methods, circles/triangles denote multi-step and one-step models. Performance is measured on RealSR [3], and efficiency is measured at 512 × 512 resolution using official repositories. VOSR achieves competitive or better perceptual quality than many T2I-based SR methods in both multi-step and one-step settings, while clearly outperforming prior vision-only methods. Its multi-step variant is substantially more efficient than existing T2I-based methods, and its one-step variant remains comparable to recent one-step T2I systems. Measured by the total number of training pixels consumed, VOSR requires only about one-tenth of the training cost of representative T2I-based SR methods. For fairness, we count only the pretraining cost of the core diffusion modules; reused components such as the VAE and semantic encoders are excluded.",
+    "md5": "43dcce47781a1befc151fb9c457b8844",
+    "description2": "A comparison of VOSR with existing generative SR methods plots performance, efficiency, and training cost using blue/orange colors and circles/triangles to denote different models.",
+    "description3": "Two-panel plot compares VOSR with other methods across performance (lower is better), efficiency (lower is better), and training cost (lower is better) using scatter plots.",
+    "questions": [
+      "How does the performance of VOSR compare to other generative super-resolution methods?",
+      "What are the relative training costs of VOSR compared to other approaches?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03225v1",
+    "source_pdf": "../pdfs/2604.03225v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03225v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03225v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2. Overview of VOSR. (a) Framework overview. Given an LR image, VOSR builds two complementary conditions from the input: a spatially aligned structural condition in the VAE latent space and a high-level visual semantic condition extracted by a pretrained vision encoder. These conditions are injected into a diffusion transformer to predict the denoising velocity for HR reconstruction. (b) Condition and guidance design. Compared with prior vision-only SR that mainly relies on structural-only conditioning, VOSR introduces an additional visual semantic condition to reduce semantic ambiguity in restoration. Moreover, instead of using a fully unconditional branch as in standard classifier-free guidance, VOSR adopts a restoration-oriented guidance and removes semantic guidance while retaining weakened LR structural cues, making the guidance input-anchored and more suitable for restoration.",
+    "md5": "8f68ed0e6b9a10b0dba7f20377e2dbb4",
+    "description2": "The figure presents an overview of VOSR, featuring a framework that builds two conditions from an input low-resolution image: spatially aligned structural and high-level visual semantic conditions.",
+    "description3": "Two-panel plot displays a framework overview and condition/guidance design, utilizing boxes and arrows to illustrate the VOSR process.",
+    "questions": [
+      "What types of conditions are built from the input image for restoration?",
+      "How does the guidance strategy differ from standard approaches?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03225v1",
+    "source_pdf": "../pdfs/2604.03225v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03225v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.03225v1/images/p0008_figure_00003.png",
+    "caption": "Figure 4. Effect of guidance scale on VOSR-1.4B-ms. As the scale increases, LPIPS rises while MUSIQ drops, indicating a shift from more generative to more faithful restoration to the LR input.",
+    "md5": "84a3d1430655e4fc98a463551e4692b4",
+    "description2": "The figure plots the effect of guidance scale on VOSR-1.4B-ms, showing LPIPS rising and MUSIQ dropping as the scale increases, indicating a shift in restoration style.",
+    "description3": "Two-panel line chart displays LPIPS and MUSIQ values versus restoration guidance scale, showing LPIPS rising while MUSIQ drops.",
+    "questions": [
+      "How does the guidance scale affect the quality of image restoration?",
+      "What is the relationship between generative and faithful restoration as guidance increases?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03225v1",
+    "source_pdf": "../pdfs/2604.03225v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03225v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.03225v1/images/p0008_figure_00004.png",
+    "caption": "Figure 3. Multi-step (top) and one-step (bottom) SR visual comparison on RealDeg [7] Cf/0020.png and ScreenSR 010.png.",
+    "md5": "a322b3fe30ed16e63f1f0c4d80ad3433",
+    "description2": "The figure presents a visual comparison of multi-step and one-step Super Resolution (SR) results on the RealDeg dataset, featuring images from both RealDeg [7] and ScreenSR.",
+    "description3": "Three-panel plot displays runtime (in seconds) and parameters (in megabytes) for vision-only and T2I-based SR models.",
+    "questions": [
+      "How do different approaches to visual SR compare in terms of computational complexity?",
+      "What are the general differences observed between one-step and multi-step SR methods?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03225v1",
+    "source_pdf": "../pdfs/2604.03225v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03225v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.03225v1/images/p0013_figure_00005.png",
+    "caption": "Figure 5. Thumbnail montage of the ScreenSR benchmark. The selected 130 GT images cover diverse scenarios, including indoor and outdoor scenes, humans, animals, plants, artworks, and multilingual text, with substantial variation in object and scene scales. This diversity ensures a comprehensive evaluation of generative SR methods in terms of semantic coverage, structural fidelity, and robustness across different content types.",
+    "md5": "8cdd49eb44a204db6dc35bc0041120a0",
+    "description2": "The figure is a thumbnail montage of 130 images from the ScreenSR benchmark, showcasing diverse scenarios and content types.",
+    "description3": "A thumbnail montage displays 130 GT images showcasing diverse scenes, objects, and scales across indoor, outdoor, and textual content.",
+    "questions": [
+      "What types of content are included in this benchmark for generative SR methods?",
+      "How does this benchmark aim to evaluate the performance of generative SR methods?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03225v1",
+    "source_pdf": "../pdfs/2604.03225v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03225v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.03225v1/images/p0015_figure_00006.png",
+    "caption": "Figure 6. User study results in the multi-step and one-step settings. VOSR-1.4B-ms and VOSR-1.4B-os receive the highest numbers of votes in their respective groups, showing strong human prefer- ence in perceptual quality and consistency with the LR input.",
+    "md5": "3a989c43724f5b1c754062215ceebf67",
+    "description2": "User study results plot multi-step and one-step settings, displaying strong human preference for perceptual quality and consistency with LR input.",
+    "description3": "Three-panel pie charts display user votes, with VOSR-1.4B-ms and VOSR-1.4B-os receiving the most votes across both settings.",
+    "questions": [
+      "What general patterns emerge from the user preference results shown?",
+      "How does perceptual quality relate to user choices in these settings?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.03225v1",
+    "source_pdf": "../pdfs/2604.03225v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03225v1.pdf",
+    "page": 16,
+    "image_path": "../data/2604.03225v1/images/p0016_figure_00007.png",
+    "caption": "Figure 7. Additional visual comparisons of multi-step (1st, 3rd and 5th) and one-step (2nd, 4th and 6th) SR results. Compared with representative vision-only and T2I-based methods, VOSR produces perceptually more realistic details while better preserving structures that are faithful to the LR input. Please zoom in for better view.",
+    "md5": "1d3a63dfc84ff9b21775599e219d7e35",
+    "description2": "The figure presents a visual comparison of multi-step and one-step super-resolution (SR) results, featuring 1st, 3rd, and 5th steps alongside representative vision-only and T2I-based methods.",
+    "description3": "The image presents a multi-panel plot displaying six rows of visual comparisons, each containing several images arranged horizontally.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

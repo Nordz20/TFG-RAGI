@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28553v1",
+    "source_pdf": "../pdfs/2603.28553v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28553v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.28553v1/images/p0005_figure_00001.png",
+    "caption": "Fig. 1. IXP from the student perspective, displaying recent injects.",
+    "md5": "3d81034d3191bc7ae66d48304dcc9917",
+    "description2": "The figure displays a graphical representation of an individual's experience points (IXP) from their own perspective, highlighting recent injects.",
+    "description3": "Two-panel screenshot displays a user interface with a disclaimer and context sections, alongside options, notifications, and exercise information.",
+    "questions": [
+      "What type of activity is being presented to the student?",
+      "What is the overall purpose of displaying this information?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28553v1",
+    "source_pdf": "../pdfs/2603.28553v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28553v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.28553v1/images/p0010_figure_00002.png",
+    "caption": "Fig. 2. Top ten features in the fully specified model (Text+Log+Bloom). Positive weights indicate higher predicted probability of milestone achievement. Subscripts for embedding-based features represent the n-th dimension of the vector.",
+    "md5": "9f38167b6480176a909759f1695e8969",
+    "description2": "The figure plots the top ten features in a fully specified model, with positive weights indicating higher predicted probability of milestone achievement.",
+    "description3": "A bar chart displays the top ten features and their logistic regression coefficients, with positive values indicating higher milestone probability.",
+    "questions": [
+      "What features influence the predicted probability of achievement?",
+      "How do the features represent different dimensions of the model?"
+    ]
+  }
+]

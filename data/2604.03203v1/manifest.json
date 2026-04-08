@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03203v1",
+    "source_pdf": "../pdfs/2604.03203v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03203v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03203v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: Example of a binary classification deep learning model workflow using 3D medical imaging.",
+    "md5": "6efb0773ade4097593a851e373b2224c",
+    "description2": "A binary classification deep learning model workflow is structured to process 3D medical imaging data.",
+    "description3": "A multi-panel plot displays a binary classification deep learning model workflow, incorporating image data and clinical data to generate predictions.",
+    "questions": [
+      "How does a deep learning model process medical imaging data for classification?",
+      "What are the general steps involved in a deep learning workflow for medical image analysis?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03203v1",
+    "source_pdf": "../pdfs/2604.03203v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03203v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03203v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2: Overall PR3DICTR workflow. An example notebook for steps 1–3 can be found in the repository, and another notebook demonstrates steps 4–6.",
+    "md5": "ca7a816cfd345f2694b742dd2b52d161",
+    "description2": "The figure illustrates an overall workflow of the PR3DICTR process, featuring steps on data preparation, model training, and result analysis.",
+    "description3": "A six-panel workflow diagram outlines the PR3DICTR process, with each step represented by a circular icon and descriptive text.",
+    "questions": [
+      "What are the main steps involved in the PR3DICTR workflow?",
+      "How is data processed and organized throughout the workflow?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03203v1",
+    "source_pdf": "../pdfs/2604.03203v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03203v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03203v1/images/p0004_figure_00003.png",
+    "caption": "Figure 3: Schematic of a data pre-processing pipeline for preparing datasets to be used in the PR3DICTR framework.",
+    "md5": "d2c03b73e5051f661a1ebea461e2cf58",
+    "description2": "A schematic diagram illustrates a data pre-processing pipeline for preparing datasets to be used in the PR3DICTR framework.",
+    "description3": "A flowchart details a data pre-processing pipeline, including clinical and optional image data, leading to a NumPy-formatted dataset.",
+    "questions": [
+      "What is the overall process for preparing data within the PR3DICTR framework?",
+      "How is clinical data structured and organized for use in the data pipeline?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03203v1",
+    "source_pdf": "../pdfs/2604.03203v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03203v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.03203v1/images/p0005_figure_00004.png",
+    "caption": "Figure 4: Code flow diagram of the PR3DICTR framework.",
+    "md5": "ac5fec56b56a068ad018a3a4677883c3",
+    "description2": "The code flow diagram illustrates the structure and organization of the PR3DICTR framework's workflow, depicting a pipeline of processes.",
+    "description3": "A flowchart details the code flow of the PR3DICTR framework, outlining steps from script selection to evaluation results.",
+    "questions": [
+      "What is the overall purpose of the PR3DICTR framework, according to this diagram?",
+      "What are the main steps involved in the code flow for this framework?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03203v1",
+    "source_pdf": "../pdfs/2604.03203v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03203v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03203v1/images/p0006_figure_00005.png",
+    "caption": "Figure 5: Outline of the classification model framework in PR3DICTR, for a hypothetical 2-label classification task.",
+    "md5": "44a40f0cc5a8a63720e49a8b7ea0779b",
+    "description2": "The figure outlines the classification model framework in PR3DICTR for a hypothetical 2-label classification task.",
+    "description3": "Two-panel diagram outlines a classification model framework, with a flowchart showing data processing and a multi-panel plot detailing the 3D image encoder and output module.",
+    "questions": [
+      "What does the PR3DICTR framework outline for this classification task?",
+      "How is the model structured to generate labels from input data?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03203v1",
+    "source_pdf": "../pdfs/2604.03203v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03203v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.03203v1/images/p0011_figure_00006.png",
+    "caption": "Figure 6: Confusion matrix and calibration plot for the sex prediction model produced using the PR3DICTR framework on the NSCLC-Radiomics database.",
+    "md5": "90504e2c4cda0fb8b02b545444c50348",
+    "description2": "A confusion matrix and a calibration plot are plotted to display the performance of a sex prediction model developed using the PR3DICTR framework on the NSCLC-Radiomics database.",
+    "description3": "Two-panel plot displays a confusion matrix and calibration plot, both for gender prediction, using a test set with axes labeled generically.",
+    "questions": [
+      "How well does the model predict sex based on NSCLC-radiomics data?",
+      "What is the relationship between predicted and observed rates for sex prediction?"
+    ]
+  }
+]

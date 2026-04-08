@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03192v1",
+    "source_pdf": "../pdfs/2604.03192v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03192v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03192v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1: End-to-end framework. Documents are length-routed to the multi-teacher KD branch or MapReduce module. Three teachers provide logit and pseudo-label supervision across five ablation stages.",
+    "md5": "716c997dcbc3d5c92369df7e3e753368",
+    "description2": "The figure illustrates a pipeline routing documents to a multi-teacher knowledge distillation branch or MapReduce module, with three teachers providing logit and pseudo-label supervision.",
+    "description3": "A flowchart details an end-to-end framework, routing documents through a multi-teacher knowledge distillation branch or MapReduce module.",
+    "questions": [
+      "What is the overall purpose of the framework shown?",
+      "How are documents processed within this end-to-end framework?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03192v1",
+    "source_pdf": "../pdfs/2604.03192v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03192v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03192v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2: Standard distillation loss (Eq. 2): LKD (soft- ened KL), Linter (projected MSE), and LCE (gold cross- entropy).",
+    "md5": "8534eddd12800905249287e74583f2d2",
+    "description2": "The figure plots the standard distillation loss, comparing three methods: LKD, Linter, and LCE.",
+    "description3": "The flowchart details a final training loss calculation using KL divergence, cross-entropy, and masked MSE components.",
+    "questions": [
+      "How are different loss functions used to train a model?",
+      "What is the overall structure of the training loss calculation?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03192v1",
+    "source_pdf": "../pdfs/2604.03192v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03192v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03192v1/images/p0004_figure_00003.png",
+    "caption": "Figure 3: Dual-teacher EWAD+CPDP with Qwen-2.5 (32B + 14B → 3B + LoRA). Eight ablation experiments isolate each component.",
+    "md5": "ba54b3923a094a72205fd96879a4b2e1",
+    "description2": "The figure plots the structure of a dual-teacher model combining EWAD, CPDP, and Qwen-2.5, isolating individual components through eight ablation experiments.",
+    "description3": "A flowchart details a local model distillation pipeline, utilizing two teacher models and eight ablation experiments to evaluate components.",
+    "questions": [
+      "How do different components affect the performance of the distillation process?",
+      "What is the overall structure of the distillation pipeline being presented?"
+    ]
+  }
+]

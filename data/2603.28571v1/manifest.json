@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28571v1",
+    "source_pdf": "../pdfs/2603.28571v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28571v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.28571v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1: Left, a hypermap that admits the boundary conditions ◦•◦•••◦•••◦◦◦ and ◦•◦••◦◦•••◦•◦. Right, a hypermap with a monochromatic boundary.",
+    "md5": "fc17286ee36ceaaf77f07fce840b1e22",
+    "description2": "A hypermap is plotted, featuring two structures: one admitting specific boundary conditions and another with a monochromatic boundary on the right side.",
+    "description3": "Two-panel image displays a hypermap with boundary conditions on the left, and a monochromatic boundary hypermap on the right.",
+    "questions": [
+      "What are the differences between the boundary conditions shown on the left and right?",
+      "How do the hypermaps presented differ in their boundary characteristics?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28571v1",
+    "source_pdf": "../pdfs/2603.28571v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28571v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.28571v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2: Left, a hypermap with an alternating boundary. Right, a hypermap whose boundary is not alternating.",
+    "md5": "201945c540a507c851f160b553e84850",
+    "description2": "The figure displays two structures, a hypermap with an alternating boundary on the left and one without an alternating boundary on the right.",
+    "description3": "Two-panel plot displays a hypermap with an alternating boundary on the left and a hypermap with a non-alternating boundary on the right.",
+    "questions": [
+      "What is the difference between the hypermaps shown on the left and right?",
+      "How do the boundaries of the hypermaps differ between the two panels?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.28571v1",
+    "source_pdf": "../pdfs/2603.28571v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28571v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.28571v1/images/p0011_figure_00003.png",
+    "caption": "Figure 3: Illustration of the many-to-one correspondence, from hypermaps to Ising-decorated maps, through the contraction of digons.",
+    "md5": "046ac039705e5b0b05f9668603a24b11",
+    "description2": "The illustration depicts a many-to-one correspondence between hypermaps and Ising-decorated maps achieved by contracting digons.",
+    "description3": "Two-panel diagram displays a transformation, showing a complex shape evolving into a simpler, grid-like structure through a series of arrows.",
+    "questions": [
+      "What is the relationship between hypermaps and Ising-decorated maps?",
+      "How does the contraction of digons transform a hypermap into a map?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.28571v1",
+    "source_pdf": "../pdfs/2603.28571v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28571v1.pdf",
+    "page": 13,
+    "image_path": "../data/2603.28571v1/images/p0013_figure_00004.png",
+    "caption": "Figure 4: A sketch of the splitting procedure: top left, the boundary edge of type A that we peel. Top right, the case where it is adjacent to a black inner face. Bottom row, the case where it is identified with a boundary edge of type B.",
+    "md5": "4098e7725bc2f1a76a810a429a30aac2",
+    "description2": "A sketch illustrates the splitting procedure, featuring peeling a boundary edge of type A and its adjacency to a black inner face or identification with a boundary edge of type B.",
+    "description3": "Two-panel sketch illustrates boundary edge peeling procedures, showing type A edges and their adjacency to a black inner face, and type B edges.",
+    "questions": [
+      "What are the different scenarios shown regarding the boundary edge splitting procedure?",
+      "How does the splitting procedure change when the boundary edge is adjacent to a black face?"
+    ]
+  }
+]

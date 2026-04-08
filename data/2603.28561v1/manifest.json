@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28561v1",
+    "source_pdf": "../pdfs/2603.28561v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28561v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.28561v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1. Architecture overview. The figure illustrates the end-to-end system architecture and the role of the proposed simulation-to- language dataset generation pipeline. Multi-agent traffic scenarios are generated in the BlueSky simulator, from which raw state data are extracted and converted into structured natural-language prompts using rule-based supervision. The resulting prompt–response pairs constitute the training dataset for LoRA-based fine-tuning. At deployment, the fine-tuned LLM generates tactical actions for multiple agents, which are executed in BlueSky, closing the simulation loop.",
+    "md5": "62947b5f297fe1def228bf819c44058b",
+    "description2": "The figure illustrates a pipeline converting raw state data from BlueSky simulator into structured natural-language prompts using rule-based supervision for traffic scenarios.",
+    "description3": "A multi-panel plot details a simulation-to-language dataset generation pipeline, progressing from scenario generation to inference.",
+    "questions": [
+      "What main objective or task does the figure describe?",
+      "How is the overall pipeline or architecture organized in the figure?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28561v1",
+    "source_pdf": "../pdfs/2603.28561v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28561v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28561v1/images/p0006_figure_00002.png",
+    "caption": "Figure 3. Traffic snapshots for the three scenarios (A, B, C) used in Table 3. The LLM agents and the Rule-based agents are colored in pink and green, respectively. Each scenario has 5-6 routes, each of which hosts 5 agents with random spawning times. Throughout all scenarios, we considered 10 LLM agents, and the rest are Rule-based agents.",
+    "md5": "4ecafde74a0b73185121203055e0cd9d",
+    "description2": "Traffic snapshots for three scenarios feature pink-colored LLM agents and green-colored Rule-based agents on routes with random spawning times.",
+    "description3": "Three multi-panel plots display traffic snapshots for scenarios A, B, and C, with pink and green markers representing LLM and Rule-based agents, respectively.",
+    "questions": [
+      "What are the key differences between the scenarios presented?",
+      "How are the agents distributed within a typical scenario?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.28561v1",
+    "source_pdf": "../pdfs/2603.28561v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28561v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28561v1/images/p0006_figure_00003.png",
+    "caption": "Figure 2. Training effectiveness of fine-tuning methods. (a) shows the supervised learning progress through loss reduction, hence accuracy increase, while (b) shows the GRPO reward evolution across training iterations.",
+    "md5": "7de313d5c4ff63facba100985b1bc899",
+    "description2": "The figure plots the training effectiveness of fine-tuning methods, displaying both the supervised learning progress and the GRPO reward evolution over training iterations.",
+    "description3": "Two-panel plot displays a line chart of loss reduction versus step (a) and GRPO reward evolution versus training iterations (b).",
+    "questions": [
+      "How does the training process affect the accuracy of the supervised learning method?",
+      "What is the general trend of reward progression during the training iterations?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.28561v1",
+    "source_pdf": "../pdfs/2603.28561v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28561v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.28561v1/images/p0011_figure_00004.png",
+    "caption": "Figure 4. Decision rules for the rule-based policy, organized by ownship proximity to the next waypoint. The policy distinguishes between situations where the ownship is far from the waypoint (dwp o > dsafe o ) and near the waypoint (dwp o ≤ dsafe o ), with speed constraint enforcement applied as a final override.",
+    "md5": "95a8123cf2577995916cea9c333b2bf6",
+    "description2": "The figure presents decision rules for a rule-based policy, structured by ownership proximity to the next waypoint, distinguishing between situations where ownship is far or near the waypoint.",
+    "description3": "Three-panel plot visually organizes decision rules based on ownship proximity to the next waypoint, with speed constraint enforcement as a final override.",
+    "questions": [
+      "How does the policy change based on the ownship's distance to the next waypoint?",
+      "What are the different decision-making scenarios presented based on ownship proximity?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.28561v1",
+    "source_pdf": "../pdfs/2603.28561v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28561v1.pdf",
+    "page": 14,
+    "image_path": "../data/2603.28561v1/images/p0014_figure_00005.png",
+    "caption": "Figure 5. Example prompt for tactical deconfliction at a single time step. The system prompt establishes the model’s role and constraints, while the user prompt provides a structured description of the current traffic situation. Qualitative descriptors are derived from numerical thresholds to support natural-language reasoning.",
+    "md5": "e2846f4800af9ac582c0554b1f12abe8",
+    "description2": "The figure illustrates an example prompt for tactical deconfliction at a single time step, featuring a system prompt establishing the model's role and constraints.",
+    "description3": "Two-panel figure displays a system prompt and a user prompt, structured as text, detailing an airspace tactical deconfliction scenario.",
+    "questions": [
+      "How do constraints and descriptors contribute to the prompt's overall description?",
+      "What is the general process established by the system prompt?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.28561v1",
+    "source_pdf": "../pdfs/2603.28561v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28561v1.pdf",
+    "page": 15,
+    "image_path": "../data/2603.28561v1/images/p0015_figure_00006.png",
+    "caption": "Figure 6. Target response format corresponding to the prompt in Figure 5. The constrained response format ensures consistent parsing during both training and closed-loop inference.",
+    "md5": "af5a8384e49f91c71889e8cad3c9b1f6",
+    "description2": "The diagram illustrates the target response format for a specific prompt, featuring a constrained format for consistent parsing during training and closed-loop inference.",
+    "description3": "Three-panel figure demonstrates the expected response format, indicating \"Accelerate\" as the recommended action.",
+    "questions": [
+      "What is the expected structure of the response generated by the system?",
+      "How does the response format contribute to consistent processing during training?"
+    ]
+  }
+]

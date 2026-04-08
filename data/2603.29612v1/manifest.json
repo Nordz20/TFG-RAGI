@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29612v1",
+    "source_pdf": "../pdfs/2603.29612v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29612v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.29612v1/images/p0005_figure_00001.png",
+    "caption": "Figure 1: FCN architecture with Residual connection.",
+    "md5": "6bbcdac371ee95aabc766a2afa1ab8a2",
+    "description2": "The diagram illustrates a fully connected neural network with residual connections, showcasing the architecture's design and components.",
+    "description3": "Two-panel architecture displays a sequential flow of convolution, activation function, and residual connections leading to a global pooling output.",
+    "questions": [
+      "What is the overall structure of this architecture?",
+      "How do the components interact within this architecture?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29612v1",
+    "source_pdf": "../pdfs/2603.29612v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29612v1.pdf",
+    "page": 9,
+    "image_path": "../data/2603.29612v1/images/p0009_figure_00002.png",
+    "caption": "Figure 2: Empirical autocorrelation matrices bRGAP(θ) for the one-layer GAP network with m1 = 10 under ﬁxed Gaussian initialization and input generated from an AR(1) process with parameters θ = 0 (left panel) and θ = 0.99 (right panel). The numbering of the output neurons has been chosen to maximize the correlation of successive neurons, thereby revealing the strong clustering of the outputs.",
+    "md5": "ffc628838a3f55303c3b61e99626a4ec",
+    "description2": "The figure plots two empirical autocorrelation matrices for a one-layer GAP network with 10 inputs under fixed Gaussian initialization and AR(1) process parameters, comparing θ = 0 and θ = 0.99.",
+    "description3": "The two panels display empirical autocorrelation matrices, showing neuron correlations for a network with m1 = 10, under varying θ values.",
+    "questions": [
+      "How does the network's output neuron correlation change with different input process parameters?",
+      "What patterns emerge in the autocorrelation matrices of the network's output neurons?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29612v1",
+    "source_pdf": "../pdfs/2603.29612v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29612v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.29612v1/images/p0010_figure_00003.png",
+    "caption": "Figure 3: Empirical correlation matrices with dependence parameter θ = 0.65 in the Gaussian AR(1) input time series. The numbering of the output neurons has been chosen to maximize the correlation of successive neurons.",
+    "md5": "0672a286e7c7d4c2ffb2fb34be33520f",
+    "description2": "The figure plots empirical correlation matrices between neurons in a Gaussian AR(1) input time series, with a dependence parameter of 0.65 and numbered for maximizing correlations.",
+    "description3": "Two-panel plot displays four correlation matrices, each showing neuron correlation values ranging from -1 to 1, with numbered output neurons along both axes.",
+    "questions": [
+      "How does the correlation between neurons change with varying dependence parameters?",
+      "What is the general pattern of neuron relationships shown in these matrices?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29612v1",
+    "source_pdf": "../pdfs/2603.29612v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29612v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.29612v1/images/p0011_figure_00004.png",
+    "caption": "Figure 4: QQ plots and histograms (with ﬁtted Gaussian densities) of the standardized statistic Sn for two representative conﬁgurations.",
+    "md5": "9a7527b49288be7fe023a25c066bff01",
+    "description2": "The figure displays QQ plots and histograms with fitted Gaussian densities of the standardized statistic Sn for two representative configurations.",
+    "description3": "Three-panel plot displays two histograms with Gaussian density fits and corresponding QQ plots of standardized statistic Sn for two configurations.",
+    "questions": [
+      "What general features do the plots reveal about the statistic's distribution?",
+      "How are the plots organized to present the statistic's behavior?"
+    ]
+  }
+]

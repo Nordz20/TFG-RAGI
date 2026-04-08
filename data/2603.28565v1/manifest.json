@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28565v1",
+    "source_pdf": "../pdfs/2603.28565v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28565v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.28565v1/images/p0002_figure_00001.png",
+    "caption": "Fig. 1: StreamingVLA explores streaming execution of VLA models by enabling different stage to be runned in a asynchronous manner. By overlapping the latency for stages, without sacrificing performance, it achieves 2.4× end-to-end speedup, and 6.5 × execution halting time reduction, enabling fast and fluent execution.",
+    "md5": "efb3710911f8aad0cd5056067b8883c1",
+    "description2": "The figure is a workflow diagram illustrating the StreamingVLA process that enables asynchronous VLA model execution by overlapping stage latency.",
+    "description3": "Three-panel diagram compares original and improved (StreamingVLA) model inference flows, showing latency reduction and speedup via asynchronous stage execution.",
+    "questions": [
+      "How does the approach presented affect the overall speed and halting time of model execution?",
+      "What are the key differences in the structure of the original versus the improved model execution flow?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28565v1",
+    "source_pdf": "../pdfs/2603.28565v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28565v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.28565v1/images/p0004_figure_00002.png",
+    "caption": "Fig. 2: The overall methodology framework for StreamingVLA: We conduct a systematic timeline analysis and conclude the optimization target for fast and fluent execution. We present two key techniques: action flow matching and adaptive early observation, to overlap the latency of action execution with of action generation and VLM observation, respectively.",
+    "md5": "eb9deea857776ed0cbe38370753ef9b3",
+    "description2": "The timeline illustrates the overall methodology framework for StreamingVLA, featuring systematic analysis and optimization targeting fast and fluent execution through action flow matching and adaptive early observation.",
+    "description3": "Two-panel figure displays a flowchart and a bar graph, illustrating a methodology framework for StreamingVLA, detailing action flow matching and adaptive early observation.",
+    "questions": [
+      "What is the overall approach for optimizing action and observation workflows?",
+      "How does the methodology structure the sequence of action, generation, and observation?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.28565v1",
+    "source_pdf": "../pdfs/2603.28565v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28565v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28565v1/images/p0006_figure_00003.png",
+    "caption": "Fig. 3: The Illustration of state-based modeling of action flow matching: It reformulates the action modeling from predicting actions as absolute values to predict- ing actions as updates to a feature-space state accumulated by prior actions. Extended formulation and architectural adjustment is adopted for larger scaled VLA model and mainstream benchmarks.",
+    "md5": "ecb1600152150e157647b09d1f222847",
+    "description2": "The illustration shows how action prediction is reformed into updates to a feature-space state accumulated by prior actions in the state-based modeling of action flow matching.",
+    "description3": "A multi-panel plot compares original action modeling and state-based modeling, showing action flow matching as updates to a feature-space state.",
+    "questions": [
+      "How does this illustration represent action modeling compared to previous approaches?",
+      "What is the overall strategy for formulating action modeling in this illustration?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.28565v1",
+    "source_pdf": "../pdfs/2603.28565v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28565v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.28565v1/images/p0010_figure_00004.png",
+    "caption": "Fig. 4: The Illustration of action saliency aware adaptive early observation: We highlight the importance of diverse action saliency, and adopt a lightweight predic- tor to implement an adaptive early observation scheme.",
+    "md5": "da228ed5ab8ee8a87c922256315cb316",
+    "description2": "The illustration plots the concept of action saliency awareness in an adaptive early observation framework.",
+    "description3": "Two-panel plot compares uniform early observation with action saliency-aware adaptive early observation, using diagrams and flowcharts.",
+    "questions": [
+      "What is the primary benefit of using adaptive early observation in this approach?",
+      "How does the approach differ between a uniform and adaptive early observation scheme?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.28565v1",
+    "source_pdf": "../pdfs/2603.28565v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28565v1.pdf",
+    "page": 18,
+    "image_path": "../data/2603.28565v1/images/p0018_figure_00005.png",
+    "caption": "Fig. 5: Real-world Setup. The real-world evaluation platform includes a tabletop workspace, a Franka Panda robotic manipulator fixed to the table, and a RGB camera for visual observation. All objects are positioned on the table surface.",
+    "md5": "1a3057f6c1c740aba2e2c75d91bd1026",
+    "description2": "The figure shows a real-world setup featuring a tabletop workspace, a Franka Panda robotic manipulator fixed to the table, and an RGB camera for visual observation.",
+    "description3": "A robotic manipulator, RGB camera, and various objects are arranged on a tabletop workspace for evaluation.",
+    "questions": [
+      "What components are included in the real-world evaluation platform?",
+      "How are the objects arranged within the observed workspace?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.28565v1",
+    "source_pdf": "../pdfs/2603.28565v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28565v1.pdf",
+    "page": 21,
+    "image_path": "../data/2603.28565v1/images/p0021_figure_00006.png",
+    "caption": "Fig. 6: The runtime breakdown based on actual profiling of π0.5 and Stream- ingVLA. The three colored blocks correspond to the “observation”, \"gen-action\" and \"execution\" stage in the VLA workflow. The length of each block reflects the measured time.",
+    "md5": "6afa36eaa963d57d98d364d74c229614",
+    "description2": "The figure is a diagram showing the runtime breakdown of π0.5 and StreamingVLA, with three colored blocks representing observation, gen-action, and execution stages.",
+    "description3": "Two-panel comparison highlights the runtime differences between π0.5 and StreamingVLA, displaying observation, action, and halt phases across time.",
+    "questions": [
+      "What do the colored blocks in the breakdown represent regarding the workflow?",
+      "How does the measured time reflect the execution of different stages?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.28565v1",
+    "source_pdf": "../pdfs/2603.28565v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28565v1.pdf",
+    "page": 22,
+    "image_path": "../data/2603.28565v1/images/p0022_figure_00007.png",
+    "caption": "Fig. 7: Architecture of the predictor for adaptive early observation. During training, the model receives the early-frame embedding and the pending action se- quence as conditions and predicts a residual embedding ∆embedding that estimates the latent change toward the future frame. The model is trained using an MSE loss between the ground-truth late-frame embedding and the reconstructed representation (embeddingearly +∆embedding). At inference time, the L2 norm of ∆embedding serves as a visual-variance indicator, which is compared with a threshold to determine whether early observation should be triggered.",
+    "md5": "65cd2c40ef395a48b7c0957e02368ca3",
+    "description2": "The figure depicts the architecture of the predictor for adaptive early observation, predicting residual embeddings from early-frame embeddings and pending action sequences.",
+    "description3": "Three-panel diagram outlines a predictor architecture, displaying training and inference stages with conditional transformer blocks, projections, and an MSE loss calculation.",
+    "questions": [
+      "What architectural components are used to generate the reconstructed embedding?",
+      "How does the model's function change between training and observation phases?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.28565v1",
+    "source_pdf": "../pdfs/2603.28565v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28565v1.pdf",
+    "page": 23,
+    "image_path": "../data/2603.28565v1/images/p0023_figure_00008.png",
+    "caption": "Fig. 8: Screenshots of our video simulation results.The images in each row are spaced 4 seconds apart. Top two rows: open the top drawer and put the bowl inside. StreamingVLA completes the task in under 16 seconds, whereas pi0.5 has not yet picked up the bowl at the 20-second mark. Bottom two rows: put both the alphabet soup and the tomato sauce in the basket. At 20 seconds, StreamingVLA has already finished the pick-and-place operations for both objects, while pi0.5 is still on its way to picking up the second item.",
+    "md5": "8f774e75d766de8d8aa0fadb089cccbf",
+    "description2": "Screenshots of video simulation results display open drawer and bowl placement tasks performed by two algorithms, spaced 4 seconds apart.",
+    "description3": "The multi-panel plot displays sequential screenshots of two agents completing tasks, with rows showing open drawer, pick-up, and placement actions.",
+    "questions": [
+      "How do the two systems compare in completing pick-and-place operations?",
+      "What is the sequence of actions shown in the simulation?"
+    ]
+  }
+]

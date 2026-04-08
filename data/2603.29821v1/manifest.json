@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29821v1",
+    "source_pdf": "../pdfs/2603.29821v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29821v1.pdf",
+    "page": 1,
+    "image_path": "../data/2603.29821v1/images/p0001_figure_00001.png",
+    "caption": "Fig. 1. Spatial distributions of the coin parameters and decay curves of the probability density |ψ|2 for the π-mode for (a) the periodic lattice and (b) the Fibonacci lattice, with enlarged views of the rightmost 28 sites. The quantity |ψ|2 is plotted on a logarithmic scale, and the dashed lines represent the slopes of the ﬁtting curves indicating exponential decay. The binary coin parameters correspond to the rotation angles θW = 0.1π and θS = 0.65π. The brackets shown at the top of each panel indicate the spatial range and the correspond- ing number of S blocks required for the probability density to reach 10−15.",
+    "md5": "c313604a51aa1795a5d9b44c83cafcab",
+    "description2": "Spatial distributions of coin parameters and decay curves of probability density |ψ|2 are plotted for π-mode in periodic and Fibonacci lattices, with enlarged views of rightmost sites.",
+    "description3": "The plot displays probability density |ψ|² versus position (x) for two lattices, with dashed lines showing exponential decay slopes.",
+    "questions": [
+      "How do the spatial distributions of probability density differ between the periodic and Fibonacci lattices?",
+      "What is the general trend of the decay curves for the probability density in these lattices?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29821v1",
+    "source_pdf": "../pdfs/2603.29821v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29821v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.29821v1/images/p0002_figure_00002.png",
+    "caption": "Fig. 2. Spatial distributions of the generated coin parameters and the corresponding quasienergy spectrum. (a) Raw output sequence from the generative model. (b) Sequence binarized from (a) with a 0.5 threshold. Region [A] denotes the hierarchical edge heterostructure. (c) Enlarged view of the rightmost 50 sites of (b). Regions [B] and [C] indicate the topological host layer and the internal S-dense domain, respectively. (d) Quasienergy spectrum. The zero and π modes, highlighted by open square (□) and open circle (⃝), are clearly isolated from the dense bulk continuum. The total number of eigenvalues is 2N, due to the two internal coin states.",
+    "md5": "9582a3216001c43eb2710895fe23bf56",
+    "description2": "The figure plots spatial distributions of generated coin parameters and their corresponding quasienergy spectrum, featuring a raw output sequence, binarized sequence, and enlarged views of specific regions.",
+    "description3": "The figure contains four panels displaying a raw output sequence, a binarized sequence, an enlarged view, and a quasienergy spectrum.",
+    "questions": [
+      "How do the spatial distributions of coin parameters relate to the quasienergy spectrum?",
+      "What are the key structural features observed in the generated coin parameter sequence?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29821v1",
+    "source_pdf": "../pdfs/2603.29821v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29821v1.pdf",
+    "page": 3,
+    "image_path": "../data/2603.29821v1/images/p0003_figure_00003.png",
+    "caption": "Fig. 3. Decay curves of the probability density |ψ|2 for the π-mode local- ized at the right boundary. The panels show the results for the (a) generated sequence, and (b) principle-guided sequence constructed manually based on the generated design. The format of the ﬁgure is identical to that in Fig. 1.",
+    "md5": "a9ee4d8141e1d05763609df31571a417",
+    "description2": "The figure plots decay curves of probability density |ψ|2 for a π-mode localized at the right boundary, with separate panels showing results for generated and principle-guided sequences.",
+    "description3": "Two multi-panel plots display decay curves, showing probability density versus position, for generated and principle-guided sequences.",
+    "questions": [
+      "How does the probability density decay near the boundary for the two sequences?",
+      "What is the general difference in the spatial extent of the probability density?"
+    ]
+  }
+]

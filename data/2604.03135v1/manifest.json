@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03135v1",
+    "source_pdf": "../pdfs/2604.03135v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03135v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03135v1/images/p0003_figure_00001.png",
+    "caption": "Fig. 1. AI-led test generation flow",
+    "md5": "0b2ef988e18b8de5fb85693ffb8db26c",
+    "description2": "The diagram depicts a workflow where artificial intelligence generates tests for software applications, streamlining the testing process.",
+    "description3": "The circular flowchart outlines an AI-led test generation process with steps including planning, implementation, review, and execution.",
+    "questions": [
+      "What is the overall process illustrated for AI-led test generation?",
+      "How does the test generation process cycle through different stages?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03135v1",
+    "source_pdf": "../pdfs/2604.03135v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03135v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03135v1/images/p0003_figure_00002.png",
+    "caption": "Fig. 2. AI-led refactoring flow",
+    "md5": "0beb6c44800655b2ebcaa41323480f67",
+    "description2": "This diagram depicts a step-by-step process of AI-driven code transformation, showcasing the iterative refinement of software architecture.",
+    "description3": "The circular flowchart outlines an AI-led refactoring flow, with steps including planning, implementation, human review, and testing.",
+    "questions": [
+      "What is the general process illustrated by this AI-led refactoring workflow?",
+      "How are the different stages of the refactoring process organized and connected?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03135v1",
+    "source_pdf": "../pdfs/2604.03135v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03135v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03135v1/images/p0004_figure_00003.png",
+    "caption": "Fig. 3. LOC difference pre- and post-refactor",
+    "md5": "00fe6d77a0c0ea9028a99e53346cf205",
+    "description2": "The figure plots the difference in LOC (Lines of Code) between a pre-refactored and post-refactored codebase.",
+    "description3": "A bar chart displays lines of code change by architectural layer, with labels along the x-axis and \"Lines of Code Change\" on the y-axis.",
+    "questions": [
+      "What is the general trend in lines of code before versus after the refactor?",
+      "Which architectural layer shows the most significant difference in lines of code?"
+    ]
+  }
+]

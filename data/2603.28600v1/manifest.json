@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.28600v1/images/p0005_figure_00001.png",
+    "caption": "Figure 1: Contextual decision making: A binary context stimulus appears at time ton c and disappears at time toﬀ c . A binary target stimulus appears at time ton c ≥ ton c and disappears at time toﬀ g ≥ toﬀ c . The decision maker selects a binary response based on the inferred context and target stimuli. Note that while the ﬁgure illustrates the stimuli being fully temporally disjoint, our proposal also applies to the case where they overlap partially or fully in time.",
+    "md5": "74cc8b4ef726b8f97f3ff5840143b0f3",
+    "description2": "A binary context stimulus appears at time ton c and disappears at time toff c, accompanied by a binary target stimulus.",
+    "description3": "Three-panel plot shows context, target, and response stimuli across time, with labeled on and off times for each stimulus.",
+    "questions": [
+      "How does the timing of context and target stimuli influence decision making?",
+      "What is the general sequence of events involved in contextual decision making?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 9,
+    "image_path": "../data/2603.28600v1/images/p0009_figure_00002.png",
+    "caption": "Figure 2: Temporally-separated context and target stimuli illustrated using the example of the AX-CPT task. First, a context stimulus is presented, and the decision maker infers the context. Subsequently, no stimuli are present for a period, and the memory of the context decays. Finally, the target stimulus appears, and the decision maker recalls the inferred context from the memory that is used, together with information from the target, to make a decision.",
+    "md5": "5eb6e608a9fe68f65ab2b23affd668fd",
+    "description2": "A context stimulus is presented, followed by no stimuli, then a target stimulus, illustrating decision-making in AX-CPT task.",
+    "description3": "The multi-panel plot displays three phases – encoding, retention, and decision-making – with three lines tracking particle position over time.",
+    "questions": [
+      "How does the memory of a context stimulus change over time during a decision-making process?",
+      "What are the key phases involved in a decision-making process based on context and target stimuli?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 12,
+    "image_path": "../data/2603.28600v1/images/p0012_figure_00003.png",
+    "caption": "Figure 3: Neural network reduction. Left: the full network, consisting of four units each taking one input and all-to-all inhibition. Right: if inhibition is much higher between than across pairs, the system can be asymptotically approximated as a two-unit system.",
+    "md5": "1682ad1db4f91c6467de368f5078f637",
+    "description2": "The figure plots or structures a neural network with a comparison to its reduced version under specific conditions.",
+    "description3": "Two-panel plot displays a network of four units with all-to-all connections on the left, transforming into a two-unit system on the right.",
+    "questions": [
+      "How does the structure of a neural network change when inhibition is dominant?",
+      "What is the relationship between a full network and a simplified network representation?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 15,
+    "image_path": "../data/2603.28600v1/images/p0015_figure_00004.png",
+    "caption": "Figure 4: Decision boundaries for the Flanker task in ⃗z space. When the priors on the context and the target are correlated, the evidence from the context zc determines the required evidence for the target zg (left panel). When the prior probabilities are uncorrelated, then context plays no role in the decision and the model reduces to the standard DDM with ﬁxed boundaries (right panel).",
+    "md5": "294aac5aaf202ce5993b5d71f0ede0da",
+    "description2": "The figure plots decision boundaries for the Flanker task in ⃗z space, illustrating how correlated priors on context and target affect evidence-based decisions.",
+    "description3": "Two-panel plot displays decision boundaries in z space, showing correlation-dependent context influence (left) versus uncorrelated boundaries (right).",
+    "questions": [
+      "How does correlation between context and target affect decision-making processes?",
+      "What is the difference in decision boundaries when context is correlated versus uncorrelated?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 16,
+    "image_path": "../data/2603.28600v1/images/p0016_figure_00005.png",
+    "caption": "Figure 5: Average trajectories in the external context model with congruence bias on a congruent (left) and incongruent (right) trial. This model is equivalent to the congruence- bias model of the Flanker task [49], in which statistical dependence between ﬂankers and target produces dynamic biases in the decision variable on both congruent and incongruent trials, though it can just as well be applied to similar paradigms such as the Stroop task. In terms of log-likelihoods, the external context model decomposes into a linear log-likelihood random walk on the target and a saturating bias term. On a congruent trial, the inﬂuence of the ﬂankers accelerates the progress of the decision variable. On an incongruent trial, the decision variable moves away from the true response early on due to the initial inﬂuence of the context, but eventually reverses under the inﬂuence of the target.",
+    "md5": "57fc84f3864545a5a682dd4b60898ce6",
+    "description2": "Average trajectories are plotted for the external context model with congruence bias on congruent and incongruent trials.",
+    "description3": "A multi-panel line chart displays trajectories of context, target, flanker contribution, and decision statistic over time for congruent and incongruent trials.",
+    "questions": [
+      "How does the model's decision-making process differ between congruent and incongruent trials?",
+      "What is the overall trend of the target and context variables over time?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 18,
+    "image_path": "../data/2603.28600v1/images/p0018_figure_00006.png",
+    "caption": "Figure 6: The decision variable in the model as the prior over congruence, context drift, and target drift are varied. Congruence aﬀects the timing and proportion of early errors nonlinearly and later RTs linearly; context drift aﬀects the timing and proportion of early errors linearly and later RTs not at all (once the context bias is overcome); target drift aﬀects later RTs linearly (as in the ﬁxed context model).",
+    "md5": "1a4e8e520225d053703a3d050d2e9363",
+    "description2": "The figure plots the decision variable in a model, varying prior over congruence, context drift, and target drift.",
+    "description3": "Two-panel plots display density curves, with each panel showing congruent and incongruent conditions across varying levels of congruence, context drift, and target drift.",
+    "questions": [
+      "How does congruence influence the timing and proportion of errors?",
+      "What is the general relationship between drift and later response times?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 19,
+    "image_path": "../data/2603.28600v1/images/p0019_figure_00007.png",
+    "caption": "Figure 7: Optimal policies for the Flanker task. Left: Optimal policy without spatial uncer- tainty and obligatory sampling of both stimuli. Middle: Optimal policy for the same model with spatial uncertainty added, producing characteristic biases similar to those described in Flanker models such as [49, 79]. Right: Same model with the ability to sample stimuli independently. Vector ﬁelds illustrate the drift direction of ⃗z(t).",
+    "md5": "993d164c17bed3d673b7b53bbf7a9648",
+    "description2": "The figure plots optimal policies for the Flanker task, featuring three scenarios: no spatial uncertainty and obligatory sampling, spatial uncertainty producing biases, and independent stimulus sampling.",
+    "description3": "Two-panel plots display vector fields illustrating drift direction, with axes labeled \"Target LLR\" and \"Context LLR,\" showing different sampling strategies.",
+    "questions": [
+      "How does spatial uncertainty affect the model's policy for the Flanker task?",
+      "What is the impact of independent sampling on the model's behavior?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 21,
+    "image_path": "../data/2603.28600v1/images/p0021_figure_00008.png",
+    "caption": "Figure 8: Top: sequence diagram for one trial of the AX Continuous Performance Test. Bottom: frequency of each trial type in the experiment.",
+    "md5": "b9c9549f4b01e417ee9212d81b18ea75",
+    "description2": "The figure displays a sequence diagram and frequency data for one trial of the AX Continuous Performance Test, with top and bottom sections presenting distinct information.",
+    "description3": "Two-panel plot shows a sequence diagram and a bar chart displaying the frequency of AX, AY, BX, and BY trial types.",
+    "questions": [
+      "What does the experiment investigate regarding continuous performance tests?",
+      "How do the different trial types vary in frequency within the experiment?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 22,
+    "image_path": "../data/2603.28600v1/images/p0022_figure_00009.png",
+    "caption": "Figure 9: Shape of ﬁxed threshold over the response in stimulus belief space for AX- CPT. Both thresholds have the same value when deﬁned over the response statistic Z. However, when mapping them back into the 2D space of the context and target statistics zc and zg, the thresholds lead to curved boundaries determined by the AX-CPT response rules and frequencies.",
+    "md5": "19b5e801cfbc2e3c26e6c279fee423a7",
+    "description2": "The figure plots a fixed threshold's shape in stimulus belief space for AX-CPT, with both thresholds equal when defined over response statistic Z.",
+    "description3": "Four-panel plot displays curved boundaries in a two-dimensional space, labeled \"context (probe)\" and \"target (cue),\" representing fixed thresholds.",
+    "questions": [
+      "How do response thresholds define boundaries in the context and target statistics space?",
+      "What is the general shape of the boundaries determined by the AX-CPT response rules?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 23,
+    "image_path": "../data/2603.28600v1/images/p0023_figure_00010.png",
+    "caption": "Figure 10: Average and response time distributions in the internal context (AX-CPT) model, showing diﬀerent eﬀects of diﬀerent parameters. Eﬀects are shown for AY and BX trial types, which are illustrative of the eﬀects of primary interest (ﬁgures for the AX and BY are in the appendix). Note that the threshold and retrieval parameters aﬀect AY and BX trials diﬀerently, with threshold shifting the mode and retrieval drift shifting the tail. In contrast, target drift has its aﬀect primarily on AY trials (as this determines the extent to which responses in this condition would be confused with AX trials), whereas decay has its eﬀect primarily on BX trials (by changing the memory of the context).",
+    "md5": "02e1a186fccac5775b62fcf178fc7e75",
+    "description2": "Average and response time distributions are plotted, showing different effects of various parameters for AY and BX trial types.",
+    "description3": "Two-panel plots display average and response time distributions for AY and BX trial types, illustrating the effects of varying parameters across four subplots.",
+    "questions": [
+      "How do different parameters influence the distribution of response times in the model?",
+      "What are the contrasting effects of parameters on response time distributions for AY and BX trials?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 24,
+    "image_path": "../data/2603.28600v1/images/p0024_figure_00011.png",
+    "caption": "Figure 11: BRO policy for AX-CPT. The dashed contour marks a possible FTR policy – note the distinctively diﬀerent shape relative to the BRO policy.",
+    "md5": "ba93886a28b2be07f12d66b1eea40e7a",
+    "description2": "The figure plots the BRO policy for AX-CPT, with a dashed contour representing a possible FTR policy displaying a distinctly different shape.",
+    "description3": "Two-panel plot displays a scatter plot with error bars and vector field, alongside a bar graph showing sample context, target, both, left, and right.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 25,
+    "image_path": "../data/2603.28600v1/images/p0025_figure_00012.png",
+    "caption": "Figure 12: Proactiveness index as a function of retrieval drift and memory decay. The dashed line marks the ‘complete forgetting’ boundary, the magnitude of decay beyond which the context statistic decays to zero by the time retrieval starts.",
+    "md5": "57cbebbcd391d3dd49edaeb611256b77",
+    "description2": "The figure plots proactiveness index as a function of retrieval drift and memory decay, with a dashed line indicating the \"complete forgetting\" boundary.",
+    "description3": "A heatmap displays proactiveness index values relative to retrieval drift and memory decay, with a dashed line indicating a forgetting boundary.",
+    "questions": [
+      "How does the proactiveness index change with varying levels of retrieval drift and memory decay?",
+      "What is the relationship between memory decay and the boundary of complete forgetting?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 26,
+    "image_path": "../data/2603.28600v1/images/p0026_figure_00013.png",
+    "caption": "Figure 13: Optimal proactiveness index as a function of total drift (retrieval + target) and memory decay. In contrast to Fig. 12, the threshold and attention allocation in this ﬁgure are reward- rate-optimal. As in that ﬁgure, the dashed line marks the ‘complete forgetting’ boundary – the magnitude of decay beyond which the context statistic decays to zero by the time retrieval starts.",
+    "md5": "7de196aaeeda79c658dff8ac277ee324",
+    "description2": "The figure plots the optimal proactiveness index as a function of total drift and memory decay.",
+    "description3": "A heatmap displays the optimal proactiveness index as a function of total drift and memory decay, with a dashed line indicating a boundary.",
+    "questions": [
+      "How does the optimal proactiveness index change with varying drift and memory decay?",
+      "What is the relationship between memory decay and the optimal proactiveness index magnitude?"
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 28,
+    "image_path": "../data/2603.28600v1/images/p0028_figure_00014.png",
+    "caption": "Figure 15: Uniﬁed model recovers qualitative patterns of human performance in the AX-CPT across trial types. Left: RT and error rates by trial type in the model, using the same parameters as the Flanker model. Right: RT and error rates by trial type in 59 human participants. Error bars are standard errors (where not visible, they are smaller than the dots). RT and error patterns observed for the model are qualitatively similar to those observed in humans.",
+    "md5": "bee38e3c7111c10d95f787307d19a28f",
+    "description2": "The figure plots the reaction time and error rates by trial type for a unified model and 59 human participants, with error bars representing standard errors.",
+    "description3": "The multi-panel plot displays reaction times and error rates by trial type for a model and human participants, respectively.",
+    "questions": [
+      "How do the model's and participants' error and reaction time patterns compare?",
+      "What general patterns are visible in reaction time and error rates?"
+    ]
+  },
+  {
+    "id": 15,
+    "doc_id": "2603.28600v1",
+    "source_pdf": "../pdfs/2603.28600v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28600v1.pdf",
+    "page": 28,
+    "image_path": "../data/2603.28600v1/images/p0028_figure_00015.png",
+    "caption": "Figure 14: Uniﬁed model recovers characteristic patterns of performance in the Flanker task. Left: response time computed by 50-timestep RT bins for congruent (pink) and incongruent (teal) trials, showing early below-chance performance in the incongruent condition. Right: response time distributions for congruent and incongruent trials, showing the same mode but a fatter tail for incongruent relative to congruent trials. Both are signature patterns of performance in the Flanker task, previously reproduced by the Bayesian optimal model of Yu and colleagues.",
+    "md5": "7b8cead0ee23acfdcc8a48017726bfc3",
+    "description2": "The figure plots response time computed by 50-timestep RT bins for congruent and incongruent trials in the Flanker task.",
+    "description3": "The multi-panel plot displays response time data for congruent (pink) and incongruent (teal) trials, presented as a line chart and distribution.",
+    "questions": [
+      "How does performance differ between congruent and incongruent trials in the Flanker task?",
+      "What are the characteristic patterns of response time observed in the Flanker task?"
+    ]
+  }
+]

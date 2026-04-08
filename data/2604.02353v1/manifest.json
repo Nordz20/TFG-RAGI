@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02353v1",
+    "source_pdf": "../pdfs/2604.02353v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02353v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02353v1/images/p0007_figure_00001.png",
+    "caption": "Figure 1: Fine-tuning after zero-shot transfer. Both conditions run REINFORCE on the DQN concept bottleneck; they differ only in initialization. The transferred policy crosses 60% at generation 5 (50K steps); the from-scratch policy reaches 27% at generation 40 (400K steps) without crossing the threshold. Single seed; treat magnitude as indicative.",
+    "md5": "1da8e00b6b47ae381753c6374d1fb96a",
+    "description2": "The figure plots the performance of two reinforcement learning policies, one fine-tuned after zero-shot transfer and another trained from scratch, over generations with varying step counts.",
+    "description3": "A line chart compares a transferred policy and a from-scratch policy, displaying win rate versus generation, with a 60% threshold line.",
+    "questions": [
+      "How does the performance of a transferred policy compare to a from-scratch policy?",
+      "What is the general trend in performance over generations for each approach?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02353v1",
+    "source_pdf": "../pdfs/2604.02353v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02353v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02353v1/images/p0008_figure_00002.png",
+    "caption": "Figure 2: Concept ablation: frequency vs. win-rate drop when ablated. C16 (15.4% frequency) causes a 48.2 pp drop; C47 (33.0% frequency, the most-used concept) causes only a 9.4 pp drop. Three concepts improve win rate when removed (negative drop), suggesting they encode subop- timal patterns.",
+    "md5": "a9df068ae89ced85d11cc2bc3994a9fc",
+    "description2": "The figure plots a line chart comparing frequency and win-rate drop for different concepts, with C16 causing a significant 48.2 percentage point drop.",
+    "description3": "Two-panel scatter plot shows win-rate drop versus concept frequency, with three concepts improving win rate when removed.",
+    "questions": [
+      "How does the frequency of a concept relate to its impact on win rate when removed?",
+      "What is the general trend observed between concept frequency and win-rate drop?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02353v1",
+    "source_pdf": "../pdfs/2604.02353v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02353v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02353v1/images/p0009_figure_00003.png",
+    "caption": "Figure 3: Win rate vs. K (number of concepts) at 300K training steps against GnuGo L3. Transfer performance peaks at K=32 (76%); direct bottleneck performance is higher at K=8 and K=64. The paper uses K=64 based on direct performance at full training (3.4M steps), where larger K captures finer-grained structure. Results at 300K steps are not directly comparable to Table 1 (full curriculum).",
+    "md5": "2529c23fea4d39992b615d108cc1b743",
+    "description2": "The figure plots the win rate against the number of concepts (K) at 300,000 training steps in a game against GnuGo L3.",
+    "description3": "Two-panel line chart displays win rate versus K (number of concepts) for direct and transfer performance against GnuGo L3.",
+    "questions": [
+      "How does the win rate change as the number of concepts increases for direct and transfer learning?",
+      "What is the relationship between the number of concepts and the performance of direct versus transfer learning?"
+    ]
+  }
+]

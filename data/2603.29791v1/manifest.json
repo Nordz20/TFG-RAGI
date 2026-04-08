@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 3,
+    "image_path": "../data/2603.29791v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1: Synthetic Coverage Examples. The outer squares of (a-b-c) represent a semantic factor of interest, e.g., “cat type.” (a) Characterizes “random” sampling behavior, with no notion of a global coverage space. This often results in samples clustered around semantic modes and misses edge cases. The grid-like structures in (b-c) represent discrete semantic spaces defined by a taxonomy’s leaf nodes at increasing levels of granularity. For example, the first level could represent “cat type” broken down into “domestic, big wild cats, small wild cats, and feral”, whereas a square at a lower level might represent a specific cat breed like the “British shorthair.” (b) Represents perfect global planning at increasing granularity; and (c) shows global planning with progressive coverage loss, e.g., missing the branch “big wild cats” entirely (bottom left) or missing specific breeds (bottom right).",
+    "md5": "28a3aa13b2fe03fb2264fb4269f6f7ad",
+    "description2": "The figure illustrates a taxonomy diagram showing synthetic coverage examples of semantic factors, represented by outer squares, with varying levels of granularity and sampling behaviors.",
+    "description3": "Three-panel plot displays sampling behavior, a grid representing taxonomy levels, and a grid showing coverage loss with missing branches.",
+    "questions": [
+      "How does sampling strategy influence the representation of semantic factors like cat types?",
+      "What structural differences exist between the semantic spaces shown?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.29791v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2: Schematic of Simula Framework. Given user instructions y and/or a data sample S, we first (a) determine factors of interest fi, which (b) are expanded into taxonomies Ti. Next, (c) nodes of Ti are sampled to obtain mixes, and (d) turned into “meta prompts”. A user-defined fraction, c, of meta prompts is “complexified.” (e) Finally meta prompts are used to generate data proposals by a Generator, and iteratively refined using a Critic step.",
+    "md5": "3e3918421b3867f01aa96c0fe01d358c",
+    "description2": "The figure schematically depicts the Simula Framework's workflow: determining factors of interest, expanding them into taxonomies, sampling nodes, generating \"meta prompts\", complexifying some, and refining data proposals through iteration.",
+    "description3": "Three-panel schematic visually outlines a Simula Framework, progressing from factor determination to data proposal generation and iterative refinement.",
+    "questions": [
+      "How does the framework process user instructions and data to generate proposals?",
+      "What are the main stages involved in the Simula Framework’s data proposal generation?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 8,
+    "image_path": "../data/2603.29791v1/images/p0008_figure_00003.png",
+    "caption": "Figure 3: Double-Critic Rejection Sampling on MATH. (a) We establish the theoretical lift in the controlled setting, noting that rejection costs increase with task complexity. (b) Critic capabilities transport to the empirical setting but lose some effectiveness. (c) Calibrated Elo scores show model-human alignment. Stratified by complexity level, rejected samples are consistently assigned higher model complexity.",
+    "md5": "c0b3e8e0aebde84f5313df668529b006",
+    "description2": "The figure plots a double-critic rejection sampling process on MATH, with three panels showing theoretical lift, critic capabilities, and calibrated Elo scores stratified by complexity level.",
+    "description3": "Four-panel plot displays line charts and bar graphs, showing theoretical lift, empirical rejection rates, and Elo scores stratified by human complexity level.",
+    "questions": [
+      "How do rejection sampling capabilities relate to task complexity levels?",
+      "What does the analysis reveal about the alignment of model and human complexity?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 9,
+    "image_path": "../data/2603.29791v1/images/p0009_figure_00004.png",
+    "caption": "Figure 4: Intrinsic Diversity Metrics. We display dataset-wide (top) and nearest-neighbors (middle) embedding- based diversity, and taxonomic coverage (bottom). We note that Global diversification is crucial for increasing dataset-wide diversity, and that Local and Global diversification generally have an additive effect. We further note that while real data can be more or less diverse according to embedding-based metrics, it almost always covers less of the target domain than Simula variants on a taxonomy basis.",
+    "md5": "b43cc4d964bf55c85222414eefdce40a",
+    "description2": "The figure displays three plots: dataset-wide and nearest-neighbors embedding-based diversity, and taxonomic coverage.",
+    "description3": "Four-panel plots display dataset-wide and nearest-neighbors embedding diversity, and taxonomic coverage across multiple datasets and diversification strategies.",
+    "questions": [
+      "How do diversification methods influence dataset-wide embedding diversity metrics?",
+      "What is the general relationship between taxonomic coverage and embedding-based metrics?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.29791v1/images/p0010_figure_00005.png",
+    "caption": "Figure 5: Complexity Elo Distribution of Synthetic and Real Data. We display density plots of the complexity Elo rankings for the various system versions on four datasets. We note that synthetic data can cover the entire complexity range of all datasets and that Local and Global components are generally additive, i.e., they account for different types of complexity.",
+    "md5": "f025ad456a796442948c5d9bb8df0557",
+    "description2": "The figure displays density plots of complexity Elo rankings for various system versions on four datasets, featuring a comparison between synthetic and real data.",
+    "description3": "Two-panel plots display density plots of complexity Elo rankings for system versions across four datasets, labeled MCIQ, RCM, GSM8k, and LEXam.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.29791v1/images/p0011_figure_00006.png",
+    "caption": "Figure 6: Downstream Performance on Different Datasets. We report mean accuracy with 95% CI for different system versions. We note that while the contribution of different components to performance depends on the dataset and data size, the full Simula system always reaches the best result.",
+    "md5": "b908b8ce30d56e7ff0d97ce20ae446e2",
+    "description2": "The figure plots mean accuracy with 95% confidence intervals for various system versions on different datasets.",
+    "description3": "Three-panel line chart displays accuracy versus data size for different system versions across three datasets, showing 95% confidence intervals.",
+    "questions": [
+      "How does the contribution of components affect downstream performance?",
+      "What general relationship exists between data size and accuracy?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 12,
+    "image_path": "../data/2603.29791v1/images/p0012_figure_00007.png",
+    "caption": "Figure 7: Downstream Impact of Data Complexity on Mean Accuracy. For GSM8k and CTI MCQ, higher complexity data improves performance and scaling. Conversely, for LEXam, only the Low Complexity split shows improvement, suggesting that complex data can be detrimental when the teacher model is weak.",
+    "md5": "a15555c9ac1b70da516532c20caf3f8d",
+    "description2": "The figure plots the downstream impact of data complexity on mean accuracy for three datasets: GSM8k, CTI MCQ, and LEXam.",
+    "description3": "Four-panel line chart displays accuracy versus data size for GSM8k, CTI MCQ, CTI RCM, and LEXam, showing different complexity data types.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 29,
+    "image_path": "../data/2603.29791v1/images/p0029_figure_00008.png",
+    "caption": "Figure 8: Comparison of Online Harmful Content Taxonomy (Simula vs. Expert).",
+    "md5": "a739a3e3639ca2cfb042663a599d2d81",
+    "description2": "A comparison of online harmful content taxonomies is plotted or structured between Simula and expert approaches.",
+    "description3": "Two-panel circular diagrams compare the Online Harmful Content Taxonomy, labeled \"Simula\" and \"Expert,\" with overlapping and distinct categories.",
+    "questions": [
+      "How do the classifications of online harmful content differ between Simula and expert assessments?",
+      "What is the relative prevalence of different categories within the online harmful content taxonomy?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 29,
+    "image_path": "../data/2603.29791v1/images/p0029_figure_00009.png",
+    "caption": "Figure 9: Comparison of Chemical Element Taxonomy (Simula vs. Expert).",
+    "md5": "a434e279e040c05d77db8fd12d9713bc",
+    "description2": "A comparison of chemical element taxonomy is structured to display the differences between Simula and expert classification systems.",
+    "description3": "Two-panel circular plots compare chemical element taxonomies labeled with element symbols, arranged by group, for Simula and expert classifications.",
+    "questions": [
+      "How do simulations and expert assessments differ in classifying chemical elements?",
+      "What is the overall organization used to represent the chemical element taxonomy?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 32,
+    "image_path": "../data/2603.29791v1/images/p0032_figure_00010.png",
+    "caption": "Figure 10: Complexity score ablation MATH test set. The MATH dataset comes with ground truth complexity levels ranging from 1-5. We group by the ground truth complexity level and plot the model- assigned complexity scores for each group. We compare using average raw scores (Score) against using Elo rankings (Elo) and ablate the batch size (BS) of question scored simultaneously and the number of times each question is scored (N). All results are scaled per (BS, N)-grouping to lie between 0 and 100. For BS = 1, no pairwise rankings are done, so Elo rankings do not apply.",
+    "md5": "9cd98b2669989bfb4f8221842eab886c",
+    "description2": "The figure plots model-assigned complexity scores grouped by ground truth complexity levels from 1-5, comparing average raw scores and Elo rankings with varying batch sizes and scoring frequencies.",
+    "description3": "Three-panel plot displays box plots of model-assigned complexity scores, grouped by ground truth complexity level (1-5) and varying batch size and number of scores.",
+    "questions": [
+      "How do the complexity scores relate to the assigned ground truth complexity levels?",
+      "What is the general difference in scores between the two scoring methods?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 35,
+    "image_path": "../data/2603.29791v1/images/p0035_figure_00011.png",
+    "caption": "Figure 11: Downstream Performance on Global MMLU English and Korean. We report mean accuracy with 95% CI for these additional datasets. We continue to see that the full Simula system version with the critic, provides the best performance compared to the other versions.",
+    "md5": "e56cc5d4bc922af765343e62d2c25bea",
+    "description2": "The figure plots mean accuracy with 95% confidence intervals for downstream performance on Global MMLU English and Korean datasets.",
+    "description3": "Four-panel line chart displays accuracy versus data size for English and Korean datasets, showing different system versions with confidence intervals.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 36,
+    "image_path": "../data/2603.29791v1/images/p0036_figure_00012.png",
+    "caption": "Figure 12: Downstream Performance using Muon Optimizer. We report mean accuracy with 95% CI for the CTI MCQ dataset for student models fine-tuned using the Muon optimizer. We continue to see that the full Simula system version with the critic, provides the best performance compared to the other versions.",
+    "md5": "94484bb5dc005fde8df36da2cf5e1e13",
+    "description2": "The figure plots mean accuracy with 95% confidence intervals for the CTI MCQ dataset of student models fine-tuned using the Muon optimizer.",
+    "description3": "Two-panel line chart displays accuracy versus data size for several system versions, with error bars indicating 95% confidence intervals.",
+    "questions": [
+      "How does the accuracy of different system versions change with increasing data size?",
+      "Which system version demonstrates the highest overall downstream performance?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2603.29791v1",
+    "source_pdf": "../pdfs/2603.29791v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29791v1.pdf",
+    "page": 37,
+    "image_path": "../data/2603.29791v1/images/p0037_figure_00013.png",
+    "caption": "Figure 13: Downstream Performance using Qwen3-Next-80B Instruct. We report mean accuracy with 95% CI for the CTI MCQ dataset for data generated using the Qwen-3 80B instruction-tuned model. We continue to see that the full Simula system version with the critic, provides the best performance compared to the other versions.",
+    "md5": "4945cb1a36d47b623331c0b5ac9e7d66",
+    "description2": "The figure plots mean accuracy with 95% confidence intervals for the CTI MCQ dataset generated using the Qwen-3 80B instruction-tuned model.",
+    "description3": "A line chart displays mean accuracy with confidence intervals for different system versions on the CTI MCQ dataset.",
+    "questions": [
+      "How does the accuracy of different system versions change with increasing data size?",
+      "What is the relative performance of the full system compared to other versions?"
+    ]
+  }
+]

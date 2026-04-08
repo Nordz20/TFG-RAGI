@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29999v1",
+    "source_pdf": "../pdfs/2603.29999v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29999v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.29999v1/images/p0004_figure_00001.png",
+    "caption": "Fig. 1: Graphical representation of the aggregate computing system model.",
+    "md5": "89b977bff7337e0977b4ee6b278a684b",
+    "description2": "A graphical representation of the aggregate computing system model is plotted.",
+    "description3": "Three-panel plot displays a network diagram and three sequential stages, labeled \"Sense,\" \"Compute,\" and \"Interact,\" connected by a horizontal arrow indicating a computational round.",
+    "questions": [
+      "What is the overall graphical representation of this aggregate computing system?",
+      "How does the model depict the progression through the system's stages?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29999v1",
+    "source_pdf": "../pdfs/2603.29999v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29999v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.29999v1/images/p0006_figure_00002.png",
+    "caption": "Fig. 2: Architecture of Phyelds. Modules (components) contain classes (rect- angles), submodules (dashed borders), and functions (ovals). Arrows indicate dependencies.",
+    "md5": "f119f9c0cc0163d675bac66ab7b18654",
+    "description2": "The architecture of Phyelds is composed of modules containing classes, submodules with dashed borders, and functions represented by ovals, connected by arrows indicating dependencies.",
+    "description3": "Two-panel architecture diagram displays modules, submodules, classes, and functions connected by arrows indicating dependencies.",
+    "questions": [
+      "What are the main modules and components that make up Phyelds' architecture?",
+      "How do the modules and components relate to each other within the system?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29999v1",
+    "source_pdf": "../pdfs/2603.29999v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29999v1.pdf",
+    "page": 12,
+    "image_path": "../data/2603.29999v1/images/p0012_figure_00003.png",
+    "caption": "Fig. 3: Examples of common aggregate programming patterns implemented in Phyelds. On the left, a channel is constructed between a source device (bottom left) and a target device (top right). The channel color is yellow. On the right, devices are partitioned into coordination regions (different colors).",
+    "md5": "16c9a0ab8bba767d58d440eacdf5cc9b",
+    "description2": "The figure illustrates examples of common aggregate programming patterns implemented in Phyelds, featuring a yellow channel construction between devices on the left and device partitioning into colored coordination regions on the right.",
+    "description3": "Two-panel plot displays a channel connecting devices on the left, and devices partitioned into colored coordination regions on the right.",
+    "questions": [
+      "What are some common programming patterns demonstrated using these device arrangements?",
+      "How are devices organized and connected in these different visual representations?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29999v1",
+    "source_pdf": "../pdfs/2603.29999v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29999v1.pdf",
+    "page": 15,
+    "image_path": "../data/2603.29999v1/images/p0015_figure_00004.png",
+    "caption": "Fig. 4: Vicsek flocking simulation in VMAS using Phyelds. Agents (cirlces) align their velocities over time (left to right), exhibiting coherent collective motion.",
+    "md5": "33ef0b71f70a3877796c96b0aec3c167",
+    "description2": "A line chart plots the alignment of agents' velocities over time, with circles representing individual agents moving coherently from left to right.",
+    "description3": "Three-panel plot displays circular agents with velocity vectors, showing alignment and coherent collective motion from left to right.",
+    "questions": [
+      "How does the behavior of individual agents change over the course of the simulation?",
+      "What is the overall trend in the collective motion of the agents shown?"
+    ]
+  }
+]

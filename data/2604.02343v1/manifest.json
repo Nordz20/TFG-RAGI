@@ -1,0 +1,386 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02343v1/images/p0007_figure_00001.png",
+    "caption": "Figure 1: Compression ratio vs. number of candidates N on AIME (left) and MBPP (right) problems, using Opus as both generator and compressor. Just Ask (blue) achieves the best compression by explicitly requesting succinct rewrites, roughly halving the compression ratio compared to Shortest- of-N methods. Among Shortest-of-N variants, Temperature Sampling (green) outperforms Single Prompt (red), likely because single-prompt solutions share structural patterns. Lower is better.",
+    "md5": "46a7c0a6e7472b50b5e74dce5250a16c",
+    "description2": "A line chart compares the compression ratio with the number of candidates N on AIME and MBPP problems using Opus as both generator and compressor.",
+    "description3": "The plot presents a multi-panel line chart comparing compression ratio versus the number of candidates on AIME and MBPP problems.",
+    "questions": [
+      "How does the number of candidates generally affect the compression ratio achieved?",
+      "Compared to other methods, how does 'Just Ask' explicitly impact compression ratio?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02343v1/images/p0008_figure_00002.png",
+    "caption": "Figure 2: Overview of the compression mechanism and its use in an interactive protocol between an SLM and an LLM.",
+    "md5": "e0ef855f5cb141169684719a37bab925",
+    "description2": "The figure provides an overview of a compression mechanism and its application in an interactive protocol between a Spatial Language Model (SLM) and a Large Language Model (LLM).",
+    "description3": "A multi-panel plot details a compression mechanism and interactive protocol between an SLM and an LLM, using arrows and boxes.",
+    "questions": [
+      "What is the general purpose of the illustrated protocol between the SLM and the LLM?",
+      "How does the compression mechanism contribute to the interactive process shown?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 30,
+    "image_path": "../data/2604.02343v1/images/p0030_figure_00003.png",
+    "caption": "Figure 3: Accuracy of random selection (dashed) versus best-compression selection (solid) on 90 AIME problems using Opus. Random selection reports the expected accuracy of picking uniformly among N candidates. Across all three generation strategies, selecting the most compressible candidate yields accuracy within a few percentage points of random selection.",
+    "md5": "77f6be8fbbe119c3ac10a2ca560ec566",
+    "description2": "A line chart compares the accuracy of random selection and best-compression selection on 90 AIME problems using Opus.",
+    "description3": "A line chart displays accuracy (%) versus N (number of candidates) for random and best-compression selection strategies.",
+    "questions": [
+      "How does the accuracy of candidate selection change with the number of candidates considered?",
+      "What is the general relationship between random and best-compression selection accuracy?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 31,
+    "image_path": "../data/2604.02343v1/images/p0031_figure_00004.png",
+    "caption": "Figure 4: Absolute compression ratio (top) and relative compression ratio normalized to Temperature Sampling at N=1 (bottom) on AIME (left) and MBPP (right) using Opus. The dashed gray line at 1.0 indicates the baseline: values below 1.0 represent improved compression, while values above 1.0 indicate worse compression than the baseline. Lower is better.",
+    "md5": "fdf25ececdda0c4182e1c386802bb61d",
+    "description2": "The figure plots absolute and relative compression ratios for Opus on AIME and MBPP, with normalized temperature sampling at N=1.",
+    "description3": "The figure contains a multi-panel plot displaying compression ratios on AIME and MBPP, with error bars and a baseline gray line.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 32,
+    "image_path": "../data/2604.02343v1/images/p0032_figure_00005.png",
+    "caption": "Figure 5: Absolute compression ratio (top) and relative compression ratio normalized to Temperature Sampling at N=1 (bottom) on AIME (left) and MBPP (right) using Haiku. The dashed gray line at 1.0 indicates the baseline: values below 1.0 represent improved compression, while values above 1.0 indicate worse compression than the baseline. Lower is better.",
+    "md5": "47287ac9ebc61a7f4cd6828eee2cfe62",
+    "description2": "Absolute compression ratio and relative compression ratio are plotted on AIME and MBPP using Haiku, with a baseline indicated by a dashed gray line at 1.0.",
+    "description3": "The plot contains two multi-panel line charts displaying compression ratios on AIME and MBPP datasets, with error bars.",
+    "questions": [
+      "How does compression performance change with increasing numbers of candidates?",
+      "What is the relative compression performance compared to a baseline?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 33,
+    "image_path": "../data/2604.02343v1/images/p0033_figure_00006.png",
+    "caption": "Figure 7: Accuracy of random selection (dashed) versus best-compression selection (solid) on 90 AIME problems using Haiku. For single prompt generation, compression-based selection improves accuracy by up to 8 percentage points at N=10, suggesting that correct solutions follow more predictable reasoning patterns.",
+    "md5": "2778b70cb47e9098cd93c093dc2df06d",
+    "description2": "Accuracy of random selection and best-compression selection are plotted as dashed and solid lines, respectively, on a comparative graph for 90 AIME problems using Haiku.",
+    "description3": "A line chart compares accuracy of random and best-compression selection across N values, using Haiku for AIME problems.",
+    "questions": [
+      "How does compression-based selection affect the accuracy of problem-solving?",
+      "What is the general trend in accuracy as the number of candidates increases?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 33,
+    "image_path": "../data/2604.02343v1/images/p0033_figure_00007.png",
+    "caption": "Figure 6: Compression ratio vs. number of candidates N on AIME (left) and MBPP (right) problems, using Haiku as both generator and compressor. The qualitative pattern matches Opus (Figure 1): Just Ask achieves the best compression, followed by Temperature Sampling, with Single Prompt performing worst.",
+    "md5": "b95149610d32d138f8fafd14d3f8a531",
+    "description2": "The figure plots the compression ratio against the number of candidates N for AIME and MBPP problems, comparing Haiku's performance as both generator and compressor.",
+    "description3": "The multi-panel plot displays compression ratio versus the number of candidates, with error bars, for AIME and MBPP problems.",
+    "questions": [
+      "What general relationship exists between the number of candidates and compression ratio?",
+      "How do different approaches compare in achieving compression?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 34,
+    "image_path": "../data/2604.02343v1/images/p0034_figure_00008.png",
+    "caption": "Figure 8: Compression ratio (bits-per-character) for verbose original solutions versus succinct rewrites on AIME problems using Haiku. Summarized text has higher bits-per-character (less redundancy per character) but is substantially shorter, yielding lower total compressed size.",
+    "md5": "38d1d0a8702e1884734b3bf3dba170a4",
+    "description2": "A line chart plots the compression ratio in bits-per-character for verbose original solutions and succinct rewrites of AIME problems using Haiku.",
+    "description3": "Two multi-panel plots compare verbose and rewrite compression ratios and lengths for AIME and MBPP problems, using line and error bars.",
+    "questions": [
+      "How does the compression of original text compare to rewritten text?",
+      "What is the relationship between text length and compression ratio?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 44,
+    "image_path": "../data/2604.02343v1/images/p0044_figure_00009.png",
+    "caption": "Figure 9: GSM8K Q&A compression accuracy (SLM=Haiku, Claude 4.5). GSM8K shows consistent improvement from Q&A guidance, particularly on Medium problems where Opus can provide useful feedback.",
+    "md5": "3c6463f1186e75584dc3f8c8cdd09119",
+    "description2": "The figure plots GSM8K Q&A compression accuracy using Haiku and Claude 4.5 SLM methods, showing consistent improvement with guidance.",
+    "description3": "Two-panel plot displays GSM8K Q&A compression accuracy, categorized by problem difficulty (Medium, Hard + Very Hard, All Non-Easy) and question model.",
+    "questions": [
+      "How does question model type influence accuracy in GSM8K question answering?",
+      "What is the general relationship between problem difficulty and accuracy?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 44,
+    "image_path": "../data/2604.02343v1/images/p0044_figure_00010.png",
+    "caption": "Figure 10: MATH Algebra Q&A compression accuracy (SLM=Haiku, Claude 4.5).",
+    "md5": "e40b8450cbefab7b1ac462aab0833670",
+    "description2": "The figure plots the compression accuracy of MATH Algebra Q&A using SLM and Haiku algorithms with Claude 4.5.",
+    "description3": "Two-panel heatmaps display MATH Algebra question compression accuracy for Haiku, Claude 4.5, and Opus across medium, hard, and all question difficulty levels.",
+    "questions": [
+      "How does the performance of different models compare in algebra question answering?",
+      "What is the relationship between question difficulty and model accuracy?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 45,
+    "image_path": "../data/2604.02343v1/images/p0045_figure_00011.png",
+    "caption": "Figure 12: MATH Number Theory Q&A compression accuracy (SLM=Haiku, Claude 4.5). Number Theory shows strong improvement on Medium problems (55.6% to 88.9% with Opus guidance).",
+    "md5": "51ac815102db3a71213172eb3c58edf8",
+    "description2": "The figure plots the compression accuracy of MATH Number Theory Q&A using SLM and Haiku algorithms, specifically highlighting improvements on Medium problems.",
+    "description3": "Two-panel plot displays MATH Number Theory compression accuracy, using a color scale to represent percentages across three problem difficulty levels and three question models.",
+    "questions": [
+      "How does guidance affect the accuracy of question models for number theory problems?",
+      "What is the general relationship between problem difficulty and accuracy?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 45,
+    "image_path": "../data/2604.02343v1/images/p0045_figure_00012.png",
+    "caption": "Figure 11: MATH Geometry Q&A compression accuracy (SLM=Haiku, Claude 4.5).",
+    "md5": "e194ac31881e25daf9d04a5773b6bf09",
+    "description2": "The figure plots the MATH geometry Q&A compression accuracy for SLM and Haiku algorithms with Claude 4.5.",
+    "description3": "Compression accuracy differs across Haiku, Claude 4.5, and Opus for MATH Geometry Q&A, based on question difficulty.",
+    "questions": [
+      "What is the relative accuracy of different language models for math questions?",
+      "How does question difficulty affect the accuracy of these language models?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 46,
+    "image_path": "../data/2604.02343v1/images/p0046_figure_00013.png",
+    "caption": "Figure 14: MBPP Q&A compression accuracy (SLM=Haiku, Claude 4.5). Code generation proves challenging for Q&A compression on Hard and Very Hard problems.",
+    "md5": "35ed6b446560158f9e3ffafa5a92d7b6",
+    "description2": "The figure plots the accuracy of MBPP Q&A compression using Haiku and Claude 4.5 algorithms for Hard and Very Hard problem difficulties.",
+    "description3": "Two-panel heatmap displays MBPP Q&A compression accuracy for different question models (haiku, sonnet, opus) across medium, hard/very hard, and all non-easy problem difficulty levels.",
+    "questions": [
+      "How does the overall accuracy of code generation change with problem difficulty?",
+      "What is the relative performance of different code generation models?"
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 46,
+    "image_path": "../data/2604.02343v1/images/p0046_figure_00014.png",
+    "caption": "Figure 13: GPQA (MC) Q&A compression accuracy (SLM=Haiku, Claude 4.5). The high proportion of Very Hard problems limits improvement potential.",
+    "md5": "469373e5a8363a4e3d87a8279878f427",
+    "description2": "The figure plots the compression accuracy of GPQA (MC) Q&A using Haiku and Claude 4.5 SLM methods, limited by many Very Hard problems.",
+    "description3": "Two-panel heatmap displays GPQA (MC) Q&A compression accuracy for Haiku, sonnet, and opus across problem difficulty levels.",
+    "questions": [
+      "What are the observed limits to accuracy improvement in answering questions?",
+      "How does question model selection influence overall accuracy performance?"
+    ]
+  },
+  {
+    "id": 15,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 47,
+    "image_path": "../data/2604.02343v1/images/p0047_figure_00015.png",
+    "caption": "Figure 16: HLE Q&A compression accuracy (SLM=Haiku, Claude 4.5). Despite the high Very Hard rate (89%), Q&A shows modest improvements on Hard problems.",
+    "md5": "054a06a9581e1d132886b5c5b1c81b04",
+    "description2": "The figure plots HLE Q&A compression accuracy with Haiku and Claude 4.5 settings for varying problem difficulties, showing modest improvements on Hard problems despite a high Very Hard rate.",
+    "description3": "Two-panel heatmap displays HLE Q&A compression accuracy for Haiku, Sonnet, and Opus across medium, hard, and all non-easy problem difficulty levels.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 16,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 47,
+    "image_path": "../data/2604.02343v1/images/p0047_figure_00016.png",
+    "caption": "Figure 15: AIME Q&A compression accuracy (SLM=Haiku, Claude 4.5). Competition math problems show limited benefit from Q&A guidance.",
+    "md5": "b3bb9756e009df74b31e72df0bd327dc",
+    "description2": "AIME Q&A compression accuracy is plotted against SLM and Haiku, with Claude 4.5 also shown, illustrating competition math problem limitations.",
+    "description3": "Two-panel heatmap displays AIME question-and-answer compression accuracy for Haiku, Claude 4.5, and opus across varying difficulty levels.",
+    "questions": [
+      "What is the general relationship between problem difficulty and accuracy?",
+      "How does the choice of question answering model affect overall accuracy?"
+    ]
+  },
+  {
+    "id": 17,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 48,
+    "image_path": "../data/2604.02343v1/images/p0048_figure_00017.png",
+    "caption": "Figure 17: GSM8K Q&A compression accuracy (SLM=Haiku, Claude 3.5/4). Strong improvement on Medium problems (30% to 50%).",
+    "md5": "cfdc41ea43c8a08dd1df0629d0997eb0",
+    "description2": "The figure plots the GSM8K Q&A compression accuracy using Haiku and Claude 3.5/4 SLM methods for Medium-sized problems, showing a strong improvement of 30-50%.",
+    "description3": "Two-panel plot displays GSM8K Q&A compression accuracy, categorized by problem difficulty (medium, hard+very hard, all non-easy), using a heatmap structure.",
+    "questions": [
+      "What is the overall trend in accuracy with varying problem difficulty levels?",
+      "How does the compression model affect question answering accuracy?"
+    ]
+  },
+  {
+    "id": 18,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 48,
+    "image_path": "../data/2604.02343v1/images/p0048_figure_00018.png",
+    "caption": "Figure 18: MATH Algebra Q&A compression accuracy (SLM=Haiku, Claude 3.5/4).",
+    "md5": "6f9aab0048b11b2f8cd5e4b40ae7b41a",
+    "description2": "The figure plots the compression accuracy of MATH Algebra Q&A using SLM and Haiku algorithms with Claude results included.",
+    "description3": "Two-panel heatmap compares MATH Algebra Q&A compression accuracy for Haiku, sonnet, and opus across varying difficulty levels.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 19,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 49,
+    "image_path": "../data/2604.02343v1/images/p0049_figure_00019.png",
+    "caption": "Figure 20: MATH Number Theory Q&A compression accuracy (SLM=Haiku, Claude 3.5/4).",
+    "md5": "e099cc4aabaa67612b979123200ce4b4",
+    "description2": "The figure plots the compression accuracy of MATH Number Theory Q&A using SLM and Haiku algorithms with Claude's 3.5/4 model.",
+    "description3": "Two-panel heatmap displays MATH Number Theory question-answering compression accuracy for Haiku, Claude 3.5, and Claude 4 across varying difficulty levels.",
+    "questions": [
+      "How does the accuracy of math question answering change with different model architectures?",
+      "What is the relationship between question difficulty and overall accuracy?"
+    ]
+  },
+  {
+    "id": 20,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 49,
+    "image_path": "../data/2604.02343v1/images/p0049_figure_00020.png",
+    "caption": "Figure 19: MATH Geometry Q&A compression accuracy (SLM=Haiku, Claude 3.5/4).",
+    "md5": "9f47eaf4bbb30da39d5b948f7251cf20",
+    "description2": "The figure plots the geometry Q&A compression accuracy for SLM and Haiku methods with a Claude score of 3.5 out of 4.",
+    "description3": "Compression accuracy varies by question model and difficulty level for Haiku, Sonnet, and Opus LLMs.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 21,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 50,
+    "image_path": "../data/2604.02343v1/images/p0050_figure_00021.png",
+    "caption": "Figure 22: MBPP Q&A compression accuracy (SLM=Haiku, Claude 3.5/4).",
+    "md5": "6cfe3f8f8dcf54526848cebc8d93237c",
+    "description2": "The figure plots the accuracy of MBPP Q&A compression using Haiku and Claude methods, with SLM as the underlying technique.",
+    "description3": "Two-panel heatmap compares MBPP question-answering compression accuracy for Haiku, Sonnet, and Opus across varying question difficulty levels.",
+    "questions": [
+      "How does accuracy change with the complexity of the MBPP questions?",
+      "What are the relative accuracy trends for different LLMs?"
+    ]
+  },
+  {
+    "id": 22,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 50,
+    "image_path": "../data/2604.02343v1/images/p0050_figure_00022.png",
+    "caption": "Figure 21: GPQA (MC) Q&A compression accuracy (SLM=Haiku, Claude 3.5/4).",
+    "md5": "bf2289e002ca4c32fa7cd92bdea56fb7",
+    "description2": "The figure plots the compression accuracy of GPQA (MC) Q&A using Haiku and Claude SLMs with a score of 3.5 out of 4.",
+    "description3": "Two-panel heatmaps compare GPQA (MC) Q&A compression accuracy for Haiku, sonnet, and opus across medium, hard+very hard, and all non-easy difficulty levels.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 23,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 51,
+    "image_path": "../data/2604.02343v1/images/p0051_figure_00023.png",
+    "caption": "Figure 24: HLE Q&A compression accuracy (SLM=Haiku, Claude 3.5/4). Q&A shows improvement on Hard problems (1.2% to 6.2%).",
+    "md5": "717eaf84297aa79ce092e5354aa862a3",
+    "description2": "The figure plots the accuracy of HLE Q&A compression for different problem difficulties, with a focus on improvements in solving \"Hard\" problems.",
+    "description3": "Two-panel plot displays HLE Q&A compression accuracy, using a heatmap structure across medium, hard/very hard, and all non-easy problem categories.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 24,
+    "doc_id": "2604.02343v1",
+    "source_pdf": "../pdfs/2604.02343v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02343v1.pdf",
+    "page": 51,
+    "image_path": "../data/2604.02343v1/images/p0051_figure_00024.png",
+    "caption": "Figure 23: AIME Q&A compression accuracy (SLM=Haiku, Claude 3.5/4). The older Haiku model achieves 0% on all non-easy AIME problems, even with Opus guidance.",
+    "md5": "cd2ef8aa42c178dd2f7009a40ee8f7a9",
+    "description2": "AIME Q&A compression accuracy is plotted, with the older Haiku model achieving 0% on all non-easy AIME problems.",
+    "description3": "Two-panel heatmaps display AIME question-and-answer compression accuracy across different models and question types, with older Haiku achieving 0% on non-easy problems.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

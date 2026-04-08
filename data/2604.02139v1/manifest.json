@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02139v1/images/p0005_figure_00001.png",
+    "caption": "Figure 1: Schematic representation of the SHRED architecture applied to the considered three-dimensional test case. After compressing the original dataset via SVD, three sensors record the local temporal evolution of the temperature field. The resulting time-series signals are encoded into a latent space through a Long Short-Term Memory (LSTM) network. Subse- quently, a Shallow Decoder Network (SDN) maps the latent representation onto a compressed approximation of the full set of spatio-temporal field variables. Finally, the SVD basis is used to reconstruct the corresponding full-order state back-projcting its compressed representation.",
+    "md5": "b60b071717ff9e1fb4631d73f475a7d7",
+    "description2": "A timeline illustrates the SHRED architecture applied to a three-dimensional test case, depicting the compression and encoding of temperature field data through SVD, LSTM, and SDN networks.",
+    "description3": "A multi-panel plot displays a schematic of an architecture, including time-series data, LSTM, SDN, and SVD components.",
+    "questions": [
+      "How does this architecture represent and reconstruct a spatio-temporal field?",
+      "What is the general flow of data through this system for state approximation?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02139v1/images/p0007_figure_00002.png",
+    "caption": "Figure 2: Visual sketch of the selected model geometry. The image of the elementary cell on the left is taken from [40].",
+    "md5": "03d3ea6c9b8d2d964e4e00a2c62f4252",
+    "description2": "The figure presents a visual sketch of the selected model geometry, featuring an elementary cell image on the left.",
+    "description3": "A multi-panel plot displays a 2D sketch of an elementary cell alongside a 3D rendering of a cooling water pipe within a blanket.",
+    "questions": [
+      "What is the overall structure of the model geometry depicted?",
+      "What components are shown within the elementary cell?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02139v1/images/p0009_figure_00003.png",
+    "caption": "Figure 3: Overview of the selected magnetic field configurations considered in this analysis: a) constant toroidal magnetic field, b) constant toroidal toroidal + poloidal magnetic field, c) time-varying magnetic field.",
+    "md5": "aa753bc1b2546e9d521cccd0917b8b56",
+    "description2": "The figure presents an overview of three magnetic field configurations: constant toroidal, constant toroidal and poloidal, and time-varying.",
+    "description3": "Three-panel plots display three magnetic field configurations: constant toroidal, constant toroidal + poloidal, and time-varying, each shown as a 3D mesh.",
+    "questions": [
+      "What general magnetic field types are shown in this analysis overview?",
+      "How do the configurations presented offer a comparison of magnetic fields?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02139v1/images/p0010_figure_00004.png",
+    "caption": "Figure 4: Subdivision of the dataset in training, validation and test snapshots.",
+    "md5": "246ba9045dcd830a51df2edd10795c41",
+    "description2": "The figure displays a subdivision of a dataset into three parts: training, validation, and test snapshots.",
+    "description3": "A scatter plot displays data points categorized as training (blue circles), validation (green circles), and test (red crosses) along a horizontal axis labeled \"Parameter B₀ (T)\".",
+    "questions": [
+      "What purpose do the training, validation, and test snapshots serve within the dataset?",
+      "How is the dataset divided for training, validation, and test purposes?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02139v1/images/p0011_figure_00005.png",
+    "caption": "Figure 5: Results for the temperature (first column), velocity (second column) and pressure (third column) for the case with Bx = 0.75 T at time t = 2 s. The first row displays the reference full-order solution while the second row shows the reconstruction produced by the SHRED model. The third row reports the absolute difference between the FOM and the SHRED.",
+    "md5": "e0e677f17b8918199e2635e03ba61eb9",
+    "description2": "The figure plots temperature, velocity, and pressure results comparing full-order solutions with SHRED reconstructions at time t equal to 2 seconds for Bx equal to 0.75 T.",
+    "description3": "Three-panel plot displays temperature, velocity, and pressure fields, showing reference, reconstructed, and difference data across three rows.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02139v1/images/p0012_figure_00006.png",
+    "caption": "Figure 6: Results for the temperature (first column), velocity (second column) and pressure (third column) for the case with Bx = 1.85 T at time t = 2 s. The first row displays the reference full-order solution while the second row shows the reconstruction produced by the SHRED model. The third row reports the absolute difference between the FOM and the SHRED.",
+    "md5": "7db42a3963df97817b6f68e0a5532a9c",
+    "description2": "The figure plots temperature, velocity, and pressure results for a specific case at time t = 2 s, comparing full-order solutions with SHRED reconstructions and their differences.",
+    "description3": "Three-panel plot displays temperature, velocity, and pressure data, showing reference, reconstructed, and difference solutions across three rows.",
+    "questions": [
+      "What variables are displayed, and how are they organized within the figure's columns?",
+      "How does the 'shred' reconstruction compare to the 'reference' solution overall?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.02139v1/images/p0013_figure_00007.png",
+    "caption": "Figure 7: Results for the temperature (first column), velocity (second column) and pressure (third column) for the case with Bx = 2.5 T at time t = 2 s. The first row displays the reference full-order solution while the second row shows the reconstruction produced by the SHRED model. The third row reports the absolute difference between the FOM and the SHRED.",
+    "md5": "f081d79f03ceb07093d40041a532e8ac",
+    "description2": "The figure plots temperature, velocity, and pressure results for a case with Bx = 2.5 T at time t = 2 s, comparing full-order solutions to those produced by the SHRED model.",
+    "description3": "Three-panel plot displays temperature, velocity, and pressure data, showing reference, reconstructed, and difference values across three rows.",
+    "questions": [
+      "How do the different variables appear in the reference versus the SHRED reconstruction?",
+      "What does the absolute difference represent between the reference and SHRED solutions?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.02139v1/images/p0014_figure_00008.png",
+    "caption": "Figure 8: Temporal behavior of relative L2-error of the SHRED reconstruction over time for temperature, velocity and pressure for the cases with Bx = 0.75 T (a), Bx = 1.85 T (b) and Bx = 2.5 T (c).",
+    "md5": "ef0a8251f6e7974585b8502654df6a7f",
+    "description2": "The figure plots the temporal behavior of relative L2-error of the SHRED reconstruction over time for temperature, velocity, and pressure in three cases with different magnetic field strengths.",
+    "description3": "Three line charts, arranged in a 1x3 grid, display relative L2-error versus time for temperature, velocity, and pressure.",
+    "questions": [
+      "What does the temporal behavior reveal about the error reconstruction process?",
+      "How does the relative error change over time for different physical cases?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 17,
+    "image_path": "../data/2604.02139v1/images/p0017_figure_00009.png",
+    "caption": "Figure 9: Results for the temperature (first column), velocity (second column) and pressure (third column) for the case with Bx = 1.60 T and By = 0.45 T at time t = 2 s. The first row displays the reference full-order solution while the second row shows the reconstruction produced by the SHRED model. The third row reports the absolute difference between the FOM and the SHRED.",
+    "md5": "888cbc8729cae814445dcb04617171df",
+    "description2": "The figure plots results for temperature, velocity, and pressure over time, comparing a full-order solution with a reconstruction produced by the SHRED model.",
+    "description3": "Three-panel plot displays temperature, velocity, and pressure data, comparing full-order model solutions, SHRED reconstructions, and their absolute differences.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.02139v1/images/p0018_figure_00010.png",
+    "caption": "Figure 10: Temporal behavior of relative L2-error of the SHRED reconstruction over time for temperature, velocity and pressure for the test case with Bx = 1.6 T and By = 0.45 T.",
+    "md5": "a63467a8cb050726e04bb64b3f693c95",
+    "description2": "The figure plots a line chart showing the temporal behavior of relative L2-error for temperature, velocity, and pressure in a test case with specific magnetic field values.",
+    "description3": "A line chart plots the relative L2-error over time for temperature, velocity, and pressure, with time on the x-axis.",
+    "questions": [
+      "How does the reconstruction error change over time for different physical quantities?",
+      "What is the general trend of the relative error as a function of time?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.02139v1/images/p0020_figure_00011.png",
+    "caption": "Figure 12: Results for the temperature (first column), velocity (second column) and pressure (third column) for test case A. The first row displays the reference full-order solution while the second row shows the reconstruction produced by the SHRED model. The third row reports the absolute difference between the FOM and the SHRED.",
+    "md5": "05322461f83215d982a988285183c4af",
+    "description2": "The figure plots a line chart comparing temperature, velocity, and pressure results for test case A, with three rows showing reference, SHRED reconstruction, and their absolute differences.",
+    "description3": "Three-panel plot displays temperature, velocity, and pressure data, showing reference, reconstructed, and difference solutions in three rows.",
+    "questions": [
+      "What physical quantities are represented in each column of the reconstruction?",
+      "How does the SHRED reconstruction compare to the reference solution overall?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.02139v1/images/p0020_figure_00012.png",
+    "caption": "Figure 11: Temporal profiles of magnetic field of the three selected test cases.",
+    "md5": "4926ec03177b424bed717bb4ab51d106",
+    "description2": "The figure displays temporal profiles of magnetic fields for three test cases.",
+    "description3": "Three line charts, labeled Case A, B, and C, display magnetic field (B) versus time (s) for three test cases.",
+    "questions": [
+      "What are the key differences observed between the selected test cases?",
+      "How do the magnetic field profiles change over the temporal range?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.02139v1/images/p0021_figure_00013.png",
+    "caption": "Figure 13: Results for the temperature (first column), velocity (second column) and pressure (third column) for test case B. The first row displays the reference full-order solution while the second row shows the reconstruction produced by the SHRED model. The third row reports the absolute difference between the FOM and the SHRED.",
+    "md5": "f70f5cbd01cc0005faf5d9297e02185c",
+    "description2": "The figure plots temperature, velocity, and pressure results for test case B, with three columns representing different physical quantities and two rows displaying reference full-order solutions and SHRED model reconstructions.",
+    "description3": "Three-panel plot displays temperature, velocity, and pressure data, showing reference, reconstructed, and difference values across three rows.",
+    "questions": [
+      "What properties are visualized and compared between the reference and SHRED model?",
+      "How are the reference solution and SHRED reconstruction displayed relative to the difference?"
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 22,
+    "image_path": "../data/2604.02139v1/images/p0022_figure_00014.png",
+    "caption": "Figure 14: Results for the temperature (first column), velocity (second column) and pressure (third column) for test case C. The first row displays the reference full-order solution while the second row shows the reconstruction produced by the SHRED model. The third row reports the absolute difference between the FOM and the SHRED.",
+    "md5": "79772f9e45a06ed20b1e8c87be738c62",
+    "description2": "The figure plots temperature, velocity, and pressure in three columns, with rows showing a reference solution, SHRED reconstruction, and their absolute differences.",
+    "description3": "Three-panel plot displays temperature, velocity, and pressure fields, comparing a reference solution, SHRED reconstruction, and their absolute difference.",
+    "questions": [
+      "What physical quantities are represented in each column of the visual?",
+      "How does the reconstruction compare to the reference solution overall?"
+    ]
+  },
+  {
+    "id": 15,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 23,
+    "image_path": "../data/2604.02139v1/images/p0023_figure_00015.png",
+    "caption": "Figure 15: Temporal behavior of relative L2-error of the SHRED reconstruction over time for temperature, velocity and pressure for the three test cases",
+    "md5": "d521614dedc5a3e4664b2c2e9331d02f",
+    "description2": "The figure plots the temporal behavior of relative L2-error of the SHRED reconstruction over time for temperature, velocity, and pressure in three test cases.",
+    "description3": "The multi-panel plot displays the temporal behavior of relative L2-error for temperature, velocity, and pressure across three test cases.",
+    "questions": [
+      "What general trends are visible in the behavior of the reconstruction error?",
+      "How does the relative error change over the observed temporal range?"
+    ]
+  },
+  {
+    "id": 16,
+    "doc_id": "2604.02139v1",
+    "source_pdf": "../pdfs/2604.02139v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02139v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.02139v1/images/p0024_figure_00016.png",
+    "caption": "Figure 16: Real temporal profile and SHRED estimation of the rescaled magnetic field in the three test cases.",
+    "md5": "f7fb3404f3857b557b069bcc77c37e4b",
+    "description2": "The figure plots the real temporal profile and SHRED estimation of the rescaled magnetic field in three test cases.",
+    "description3": "The multi-panel plot displays the real temporal profile and SHRED estimation of the rescaled magnetic field across three test cases.",
+    "questions": [
+      "What do the cases illustrate about the rescaled magnetic field's temporal profile?",
+      "How does the estimation relate to the observed real magnetic field?"
+    ]
+  }
+]

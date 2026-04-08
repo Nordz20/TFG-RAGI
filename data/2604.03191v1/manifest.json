@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03191v1",
+    "source_pdf": "../pdfs/2604.03191v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03191v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.03191v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1: The Compression Gap. In the continuous pathway (Diffusion Policy), the vision encoder is the binding bottleneck; upgrading it propagates end-to-end. In the discrete pathway (OAT), the codebook (I(Z; T) ≤ 80 bits) is the binding bottleneck; encoder upgrades are blocked at quantization.",
+    "md5": "fce3ffd6b7a7de6403024c08e0ae2c42",
+    "description2": "The figure plots a comparison between two pathways, \"Diffusion Policy\" and \"OAT\", highlighting the binding bottlenecks in each.",
+    "description3": "Four-panel diagrams compare continuous and discrete pathways, highlighting bottlenecks at the vision encoder and codebook, respectively.",
+    "questions": [
+      "How do the continuous and discrete pathways differ in where the binding bottleneck occurs?",
+      "What is the effect of encoder upgrades on the continuous versus discrete pathways?"
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29974v1",
+    "source_pdf": "../pdfs/2603.29974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29974v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.29974v1/images/p0004_figure_00001.png",
+    "caption": "Fig. 1: Overview of GPT4AP. Multivariate air-pollution and meteorological time series are embedded and projected into temporal tokens. Trainable positional encoding is added before feeding tokens into a frozen GPT-2 backbone. Parameter-efficient Gaussian rsLoRA is applied to lightweight adaptation modules, while the pretrained transformer weights remain frozen. A prediction head produces outputs for few-shot, long-term, and zero-shot forecasting across multiple horizons.",
+    "md5": "fce262fb6ea632f6bf8e6c69522f6321",
+    "description2": "A line chart plots multivariate air-pollution and meteorological time series embedded into temporal tokens with added trainable positional encoding and a frozen GPT-2 backbone.",
+    "description3": "The multi-panel plot outlines a system, GPT4AP, using embedding, positional encoding, and a frozen GPT-2 backbone with lightweight adaptation modules.",
+    "questions": [
+      "How does this system use meteorological and air-pollution data for forecasting?",
+      "What are the key architectural elements used in this forecasting approach?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29974v1",
+    "source_pdf": "../pdfs/2603.29974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29974v1.pdf",
+    "page": 8,
+    "image_path": "../data/2603.29974v1/images/p0008_figure_00002.png",
+    "caption": "Fig. 2: Rank ablation study of Gaussian rsLoRA. (a) Forecasting error (MSE) decreases as rank increases and saturates beyond r=32. (b) Percentage of trainable parameters grows approximately linearly with rank. The best trade-off is achieved at r=32, which attains near-peak performance (99.9% of the minimum MSE on average) while training only 0.309% of the full model parameters.",
+    "md5": "150071530f0c97020cc9fd0a5cd706f3",
+    "description2": "The figure plots a rank ablation study of Gaussian rsLoRA, displaying forecasting error and percentage of trainable parameters as functions of increasing rank.",
+    "description3": "Two-panel graphs reveal forecasting error decreases and trainable parameters increase with rank, optimizing at 32.",
+    "questions": [
+      "How does forecasting error change as rank is increased?",
+      "What is the relationship between rank and the percentage of trainable parameters?"
+    ]
+  }
+]

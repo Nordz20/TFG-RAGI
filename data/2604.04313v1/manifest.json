@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.04313v1",
+    "source_pdf": "../pdfs/2604.04313v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04313v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.04313v1/images/p0002_figure_00001.png",
+    "caption": "Fig. 2. Right hand-related EEG topography in Mu frequency band.",
+    "md5": "e8a4f46bc809cca5b18c0de6905f86e1",
+    "description2": "Right-hand-related EEG topography is plotted in the Mu frequency band.",
+    "description3": "A color-coded topographic map displays right-hand related EEG activity in the Mu frequency band across a head outline.",
+    "questions": [
+      "What type of activity is shown using the topography?",
+      "What frequency band is associated with the displayed activity?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.04313v1",
+    "source_pdf": "../pdfs/2604.04313v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04313v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.04313v1/images/p0002_figure_00002.png",
+    "caption": "Fig. 1. Left hand-related EEG topography in Mu frequency band.",
+    "md5": "6d5abcfb0eab1c757e344aa379444527",
+    "description2": "Left hand-related EEG topography is plotted in the Mu frequency band.",
+    "description3": "A circular plot displays left-hand-related EEG topography in the Mu frequency band, using a color gradient to represent signal intensity.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.04313v1",
+    "source_pdf": "../pdfs/2604.04313v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04313v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.04313v1/images/p0003_figure_00003.png",
+    "caption": "Fig. 3. The CNN’s accuracy is satisfying. The network reaches accuracy over 90%even on small-scale data.",
+    "md5": "231a5ed624d4437ae77bb885c9585eb3",
+    "description2": "A line chart plots the accuracy of a CNN, reaching values above 90% even with small-scale data.",
+    "description3": "A line chart displays the accuracy of a CNN for training and test sets, plotted against the number of epochs.",
+    "questions": [
+      "How does the network's accuracy perform on different datasets?",
+      "What is the general trend of accuracy as the number of epochs increases?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.04313v1",
+    "source_pdf": "../pdfs/2604.04313v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04313v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.04313v1/images/p0003_figure_00004.png",
+    "caption": "Fig. 4. The Confusion Matrix of Adversarial Autoencoder. 1 = class ”left hand”, 0 = class ”right hand”.",
+    "md5": "de1a88e3fbe7fff5cd60edceba764339",
+    "description2": "The figure plots a confusion matrix for an adversarial autoencoder, with values indicating correct classifications between \"left hand\" and \"right hand\" classes.",
+    "description3": "Three-panel confusion matrix displays predicted versus actual labels for \"left hand\" (1) and \"right hand\" (0) classes, with numerical values and percentages.",
+    "questions": [
+      "How does the adversarial autoencoder perform in classifying left versus right hand gestures?",
+      "What is the overall distribution of predicted classes compared to actual classes?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.04313v1",
+    "source_pdf": "../pdfs/2604.04313v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04313v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.04313v1/images/p0003_figure_00005.png",
+    "caption": "Fig. 5. Original Image after the augmentation is on a left. Generated Image is on a right. Step 0.",
+    "md5": "2d05caa1325f5d36e36c27eed05dcda6",
+    "description2": "The figure displays two images side by side, with the original image on the left and the generated image on the right, at step 0.",
+    "description3": "A multi-panel plot displays an original image on the left and a generated image on the right, labeled as Step 0.",
+    "questions": [
+      "What is the difference between the original and generated image shown?",
+      "How does the image change after the augmentation process?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.04313v1",
+    "source_pdf": "../pdfs/2604.04313v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04313v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.04313v1/images/p0003_figure_00006.png",
+    "caption": "Fig. 6. Original Image after the augmentation is on a left. Generated Image is on a right. Step 150.",
+    "md5": "fd3246bb2682b85c573147bd2af096bc",
+    "description2": "The figure displays an original image after augmentation on the left, with its generated counterpart on the right at step 150.",
+    "description3": "Two-panel image displays an original image on the left and a generated image on the right, both showing a circular shape.",
+    "questions": [
+      "How does the image change after the augmentation process?",
+      "What is the relationship between the original and generated image shown?"
+    ]
+  }
+]

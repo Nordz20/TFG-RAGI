@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02784v1",
+    "source_pdf": "../pdfs/2604.02784v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02784v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.02784v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1: VLMs can produce hallucinated responses that are inconsistent with factual knowledge or image content. However, such hallucinations leave detectable signals in the model’s internal representations. We lever- age multiple internal states of VLMs to achieve robust and accurate hallucination detection",
+    "md5": "5af5901413c403a68bfff10d0b56d941",
+    "description2": "The figure plots the internal representations of a Visual Language Model (VLMs) that can produce hallucinated responses with detectable signals.",
+    "description3": "The diagram uses a flowchart structure to illustrate how VLMs internally detect hallucinated responses.",
+    "questions": [
+      "How do VLMs generate responses that are inconsistent with factual information?",
+      "What internal signals can be used to identify responses that are not based on reality?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02784v1",
+    "source_pdf": "../pdfs/2604.02784v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02784v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02784v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2: Overview of EnsemHalDet: This method extracts attention heads and hidden states across multiple layers. For each representation, binary classifiers are trained via logistic regression to detect hallucinations. By integrating detectors from the most effective layers and heads through ensemble learning, we detect hallucinated answers.",
+    "md5": "6c53b35fdab7154ee24cd3df4bb62d28",
+    "description2": "The figure presents a line chart or comparative plot illustrating the extraction of attention heads and hidden states across multiple layers in EnsemHalDet.",
+    "description3": "Two-panel diagram outlines a method, EnsemHalDet, using binary classifiers trained on attention heads and hidden states to detect hallucinated answers through ensemble learning.",
+    "questions": [
+      "How do classifiers identify and manage potentially hallucinated information?",
+      "What layers and heads are integrated to detect hallucinated content?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02784v1",
+    "source_pdf": "../pdfs/2604.02784v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02784v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02784v1/images/p0004_figure_00003.png",
+    "caption": "Figure 3: Overview of the detector-level ensemble process. For attention-head-based features (AH), we train L × H detectors, one for each layer-head pair. For hidden-state-based features (HS), we train L detectors, one for each layer. The detectors are first ranked on validation1, filtered to top-K candidates, further refined by greedy forward selection on validation2, and finally combined by a stacking-based meta-classifier (logistic regression).",
+    "md5": "cde4c406c74b44e742e7d5439f44d70e",
+    "description2": "The figure plots the detector-level ensemble process, featuring attention-head-based features with L × H detectors and hidden-state-based features with L detectors.",
+    "description3": "The multi-panel plot outlines a detector-level ensemble process, ranking, filtering, and combining detectors via a stacking meta-classifier.",
+    "questions": [
+      "How are features derived from layer-head pairs used to build detectors?",
+      "What is the general process for combining multiple detectors into a final prediction?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02784v1",
+    "source_pdf": "../pdfs/2604.02784v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02784v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02784v1/images/p0011_figure_00004.png",
+    "caption": "Figure 4: Prompt used for hallucination evaluation. We follow the CRAG-MM evaluation protocol.",
+    "md5": "83871b98a5e910de4a73f1b1baaeda07",
+    "description2": "The diagram illustrates a specific prompt designed to assess hallucinations in language models, following the CRAG-MM evaluation protocol.",
+    "description3": "The text presents a numbered list of rules for evaluating the accuracy of question answering systems.",
+    "questions": [
+      "What is the purpose of the evaluation shown?",
+      "What protocol was used for the evaluation?"
+    ]
+  }
+]

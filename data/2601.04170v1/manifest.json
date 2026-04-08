@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2601.04170v1",
+    "source_pdf": "../pdfs/2601.04170v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2601.04170v1.pdf",
+    "page": 6,
+    "image_path": "../data/2601.04170v1/images/p0006_figure_00001.png",
+    "caption": "Figure 1: Projected cumulative incidence of drift types by interaction count in simulation frame- work. Semantic drift emerges earliest and affects nearly half of agents by 600 interactions, while behavioral drift shows slower but steady progression. Data aggregated across 847 simulated workflows.",
+    "md5": "3987de6ea3a312843fd4cae7d69ee0bc",
+    "description2": "The figure plots the projected cumulative incidence of drift types by interaction count in a simulation framework, showing semantic and behavioral drift emergence.",
+    "description3": "Two-panel line chart displays projected cumulative incidence of drift types, showing semantic, coordination, and behavioral drift over cumulative agent interactions.",
+    "questions": [
+      "How do different types of drift emerge and progress over the course of agent interactions?",
+      "What is the relative rate of progression for different types of drift within the simulation?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2601.04170v1",
+    "source_pdf": "../pdfs/2601.04170v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2601.04170v1.pdf",
+    "page": 7,
+    "image_path": "../data/2601.04170v1/images/p0007_figure_00002.png",
+    "caption": "Figure 2: Degradation of ASI component categories over extended interactions. Behavioral boundaries show steepest decline, indicating progressive emergence of unintended strategies. All components converge toward critical thresholds by 500 interactions.",
+    "md5": "22412d3dfd019bc63b9bbde9dba1e16b",
+    "description2": "The figure plots the degradation of ASI component categories over extended interactions, with behavioral boundaries declining steeply and all components converging towards critical thresholds.",
+    "description3": "Two-panel line chart displays normalized component scores over interaction count, showing four categories converging toward critical thresholds.",
+    "questions": [
+      "How do different components change over time during extended interactions?",
+      "What is the general trend of component performance as interactions progress?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2601.04170v1",
+    "source_pdf": "../pdfs/2601.04170v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2601.04170v1.pdf",
+    "page": 8,
+    "image_path": "../data/2601.04170v1/images/p0008_figure_00003.png",
+    "caption": "Figure 3: Drift susceptibility by architectural characteristics at 300 interactions. Two-level hierarchies and explicit memory systems show greatest stability. Error bars represent 95% confidence intervals.",
+    "md5": "821b7343cbc2d24a500aa890817ccecb",
+    "description2": "The figure plots drift susceptibility by architectural characteristics, with two-level hierarchies and explicit memory systems exhibiting the greatest stability, accompanied by error bars representing 95% confidence intervals.",
+    "description3": "A bar chart displays median ASI at 300 interactions, with error bars, across several architectural characteristics.",
+    "questions": [
+      "What architectural features influence the observed susceptibility to drift?",
+      "How do confidence intervals illustrate the variability in system characteristics?"
+    ]
+  }
+]

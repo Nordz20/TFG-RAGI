@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03172v1",
+    "source_pdf": "../pdfs/2604.03172v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03172v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03172v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1. Model architecture of the proposed EffiMiniVLM.",
+    "md5": "14cbb46165b343d03e92c54372f63ae3",
+    "description2": "The diagram illustrates the model architecture of the proposed EffiMiniVLM, featuring a combination of transformer encoder and decoder layers.",
+    "description3": "The multi-panel plot displays a model architecture, including data preprocessing, dual encoders, a regression head, and optimization with loss.",
+    "questions": [
+      "What is the overall design of the proposed model?",
+      "How are the different components of the model connected?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03172v1",
+    "source_pdf": "../pdfs/2604.03172v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03172v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.03172v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2. Extrapolation of the scaling behaviour with increasing training data",
+    "md5": "b2a880818cf7d13dfaa9626e8cc24324",
+    "description2": "The figure plots the extrapolation of scaling behavior as training data increases.",
+    "description3": "A line chart displays observed, most likely, pessimistic, and optimistic bounds of a metric versus training dataset size percentage.",
+    "questions": [
+      "How does the observed behavior change as the amount of training data increases?",
+      "What are the different bounds used to represent scaling with increasing training data?"
+    ]
+  }
+]

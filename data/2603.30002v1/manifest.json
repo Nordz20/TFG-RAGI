@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.30002v1",
+    "source_pdf": "../pdfs/2603.30002v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.30002v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.30002v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: A high-level overview of our algorithmic approach to interpretive equivalence. Consider models h1,h2 that correspond to possibly unknown interpretations A1,A2 (Left). To determine whether models h1 and h2 are interpretively equivalent, we propose a two-step procedure. First, we sample another model h⋆ that also has interpretation A1 (Center). Second, we compare the representation similarity (drepr) between h1,h⋆ and h⋆,h2 (Right). If A1,A2 are equivalent, then averaged over all implementations h⋆, we should not be able to differentiate drepr(h1,h⋆) and drepr(h⋆,h2).",
+    "md5": "eab1730964de4dee52c23886ed57dee6",
+    "description2": "A two-step procedure compares representation similarity between models with unknown interpretations, sampling another model that shares one interpretation.",
+    "description3": "Three-panel plot shows interpretations and circuit models, with arrows indicating relationships and representation similarity comparisons between models.",
+    "questions": [
+      "How does the approach determine if two models represent equivalent interpretations?",
+      "What is the general process for assessing interpretive equivalence between models?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.30002v1",
+    "source_pdf": "../pdfs/2603.30002v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.30002v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.30002v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2: (Left) Average congruity between models associated with different interpretations. ■ indicates models have different interpretations; whereas ■ indicates that models have statistically indistinguishable interpretations. (Center) Congruity between GPT2 and Pythia family of models on the IOI task. groups models based on their actual interpretive differences observed by Tigges et al.",
+    "md5": "5ea73f420b83803dfa9c1c07cf093db6",
+    "description2": "A line chart plots average congruity between models with different or statistically indistinguishable interpretations, comparing GPT2 and Pythia models on an IOI task.",
+    "description3": "The figure contains three panels: a heatmap, a table, and a bar plot, displaying congruity and effect sizes.",
+    "questions": [
+      "How do different models compare in their interpretations of a given phenomenon?",
+      "What are the observed differences and similarities among various model interpretations?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.30002v1",
+    "source_pdf": "../pdfs/2603.30002v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.30002v1.pdf",
+    "page": 19,
+    "image_path": "../data/2603.30002v1/images/p0019_figure_00003.png",
+    "caption": "Figure 4: Pipeline for generating implementations for our interpretations (i.e. RASP language models). We first construct RASP programs, then using the procedure introduced in Lindner et al. (2023), we compile these programs into Transformer models. These Transformers exclusively have hard attention. Moreover, their architecture is minimal (containing only the necessary components to fully implement the given RASP program). We then apply the procedure introduced in Gupta et al. (2024) to translate these Tracr-Compiled Transformers into “real” Transformers: ones whose weight distribution matches those trained with stochastic gradient descent; these translated models also contain more",
+    "md5": "b0843777f11c2f62fc745e9b959d06b1",
+    "description2": "The figure presents a pipeline for generating implementations of RASP language models, comprising program construction, compilation, and translation.",
+    "description3": "Four-panel diagram outlines a pipeline, progressing from RASP programs to Tracr-Compiled Transformers, and ultimately to implementations through strict interchange training.",
+    "questions": [
+      "How are RASP programs transformed into Transformer models?",
+      "What is the overall process for generating implementations from interpretations?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.30002v1",
+    "source_pdf": "../pdfs/2603.30002v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.30002v1.pdf",
+    "page": 21,
+    "image_path": "../data/2603.30002v1/images/p0021_figure_00004.png",
+    "caption": "Figure 5: Activation patching results for each attention head. The coloring indicates the % of performance this individual attention head contributes to POS performance.",
+    "md5": "b6737c40d69313732e5e53e53d18c886",
+    "description2": "The figure plots activation patching results for each attention head, with color indicating the percentage contribution to POS performance.",
+    "description3": "Two-panel heat map displays the percentage of performance contribution from each attention head across different layer indices.",
+    "questions": [
+      "What does the coloring scheme signify about individual attention head contributions?",
+      "How does activation patching illustrate relationships between layers and attention heads?"
+    ]
+  }
+]

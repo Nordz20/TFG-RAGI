@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.01974v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1. Interactive tracking in a basketball sequence. User prompts guide the tracker through state changes, target changes, and global retargeting, demonstrating the interaction loop required for real-world analysis.",
+    "md5": "68576b02f2be4c63ab18eeb3d2276635",
+    "description2": "The figure plots an interactive tracking process in a basketball sequence, guided by user prompts that facilitate state changes, target changes, and global retargeting.",
+    "description3": "Two-panel image displays a basketball sequence with prompts guiding a tracker through state changes, target changes, and global retargeting in an interaction loop.",
+    "questions": [
+      "How does user input affect tracking during a basketball sequence?",
+      "What are the different stages involved in tracking a moving object in a video?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.01974v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2. Overview of the interactive evaluation protocol. Each video is divided into segments by user prompts. Dashed lines denote ground-truth trajectories, and colored curves represent tracker predictions. At each prompt, the tracker must either update its prediction or switch targets based on user input. ✓ and × denote correct and incorrect responses, respectively.",
+    "md5": "126498fbbb78ca0b9cd53d5ecc7685fe",
+    "description2": "The figure plots a line chart comparing video segments divided by user prompts, with dashed lines representing ground-truth trajectories and colored curves showing tracker predictions.",
+    "description3": "The multi-panel plot displays ground-truth trajectories (dashed) and tracker predictions (solid) across three segments, marked by user prompts and evaluation symbols.",
+    "questions": [
+      "How are video segments defined and used within the evaluation process?",
+      "What indicates a successful versus unsuccessful tracker prediction?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.01974v1/images/p0005_figure_00003.png",
+    "caption": "Figure 3. Overview of the proposed Interactive Memory-Augmented Tracking (IMAT) framework. The user provides natural- language descriptions of the target to the interactive perception module, which performs reasoning-guided grounding. The cognitive arbitration module then compares the grounded result with the prediction of the tracker to either correct the trajectory and update the memory banks or confirm the current tracking state. 3.4. Evaluation Protocol",
+    "md5": "3022e5903cc9633c28917483ec76f50b",
+    "description2": "The figure presents a workflow diagram illustrating the proposed Interactive Memory-Augmented Tracking (IMAT) framework, featuring modules for interactive perception, reasoning-guided grounding, and cognitive arbitration.",
+    "description3": "A multi-panel plot diagrams an Interactive Memory-Augmented Tracking framework, using boxes and arrows to show module interactions and data flow.",
+    "questions": [
+      "How does the framework use user descriptions to guide target tracking?",
+      "What are the main components involved in the tracking process?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.01974v1/images/p0008_figure_00004.png",
+    "caption": "Figure 4. Evaluation results on the six scenarios using the success rate in the InteractTrack benchmark. These figures show that the proposed baseline performs strongly across all six scenarios.",
+    "md5": "674ec622c42fb78246ad756ea7f1eec9",
+    "description2": "The figure plots evaluation results for six scenarios using the success rate in the InteractTrack benchmark, displaying performance metrics for each scenario.",
+    "description3": "Three multi-panel plots display success rates for different methods across daily activities, sports analysis, and UAV tracking scenarios.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.01974v1/images/p0014_figure_00005.png",
+    "caption": "Figure 6. Representative sequences from the sports analysis scenario. The sequence illustrates multiple interaction points in a basketball game, including target initialization, ball-focused attention during passes, shot-following, and explicit target switching among players. At each key timestamp, the user provides updated instructions that reflect the evolving visual context—shifting attention from the ball handler to the ball itself, following the shot trajectory, and then redirecting focus to a specific player. The highlighted sequence illustrates target- switch and part-tracking interaction cues as user instructions evolve across multiple stages.",
+    "md5": "bb62b06552e0d9564942ce6cb7f84bfb",
+    "description2": "The figure represents representative sequences from a sports analysis scenario, illustrating multiple interaction points in a basketball game.",
+    "description3": "Two-panel image displays a multi-panel plot showing a basketball game sequence with timestamps and user instructions for tracking targets.",
+    "questions": [
+      "How do user instructions guide attention during a basketball game sequence?",
+      "What are the key stages of interaction demonstrated in the sports analysis sequence?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.01974v1/images/p0014_figure_00006.png",
+    "caption": "Figure 5. Representative sequences from the daily activities scenario. This scenario includes everyday indoor and outdoor activities captured from a third-person viewpoint. The sequences depict interactions such as playing with pets, handling household objects, and casual human motion under moderate viewpoint shifts. The highlighted sequence illustrates target-switch interaction cues.",
+    "md5": "553eb06f12a00243948e345a3bd01308",
+    "description2": "The figure presents representative sequences of daily activities, including indoor and outdoor actions, pet play, object handling, and human movement, with moderate viewpoint shifts.",
+    "description3": "Two-panel plot displays sequential images showing a person tracking a dancer, with arrows indicating transitions and highlighting target-switch interactions.",
+    "questions": [
+      "What types of daily actions are demonstrated in this scenario?",
+      "How do the sequences show changes in focus during interactions?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.01974v1/images/p0015_figure_00007.png",
+    "caption": "Figure 8. Representative sequences from the surveillance scenario. This scenario features crowded street environments captured from a third-person viewpoint. The sequences depict interactions such as monitoring individuals in dense crowds, shifting attention between people and carried objects, and handling frequent occlusions and complex motion patterns. The highlighted sequence illustrates target- switch interaction cues.",
+    "md5": "c318711973f6aa804860e3b04f620357",
+    "description2": "The figure presents representative sequences from a surveillance scenario featuring crowded street environments captured from a third-person viewpoint.",
+    "description3": "Two-panel image displays a sequence of frames showing a person tracking individuals and objects within crowded street environments, indicated by green bounding boxes and text labels.",
+    "questions": [
+      "What types of interactions are demonstrated within the crowded street environments?",
+      "How does the surveillance scenario depict the shifting of attention between people and objects?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.01974v1/images/p0015_figure_00008.png",
+    "caption": "Figure 7. Representative sequences from the UAV tracking scenario. This scenario includes aerial-view videos characterized by large scale variation, long-range target motion, and perspective distortions typical of drone footage. The sequences feature vehicles, pedestrians, and small moving objects captured at varying altitudes and along diverse trajectories. The highlighted sequence illustrates challenges such as drastic scale changes, temporary target disappearance, and viewpoint transitions during UAV maneuvers. Other examples demonstrate additional difficulties common in aerial surveillance, including low-resolution targets, cluttered backgrounds, and complex scene geome- tries.",
+    "md5": "a07bd194d1b0d102e4fc0553163cbe3d",
+    "description2": "Representative sequences from the UAV tracking scenario feature vehicles, pedestrians, and small moving objects captured at varying altitudes and along diverse trajectories.",
+    "description3": "Two-panel image displays sequential frames of aerial videos, showing target tracking transitions with arrows indicating the sequence.",
+    "questions": [
+      "What are the main challenges observed in aerial surveillance scenarios?",
+      "How do the depicted sequences illustrate variations in target size and movement?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 16,
+    "image_path": "../data/2604.01974v1/images/p0016_figure_00009.png",
+    "caption": "Figure 10. Representative sequences from the other scenario. This scenario contains diverse scenes that do not fall into the previous categories, including industrial, laboratory, and indoor environments. The sequences illustrate various interaction points where user in- structions shift attention among different people, objects, and activities.",
+    "md5": "3b5c08663ca370bfb0ee369e3a7d022b",
+    "description2": "The figure plots representative sequences from a scenario featuring diverse scenes, including industrial, laboratory, and indoor environments.",
+    "description3": "A multi-panel plot displays sequential images, with overlaid text indicating user instructions and bounding boxes highlighting objects.",
+    "questions": [
+      "What kinds of activities are demonstrated within the represented scenarios?",
+      "How do instructions influence the focus of attention during the sequences?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 16,
+    "image_path": "../data/2604.01974v1/images/p0016_figure_00010.png",
+    "caption": "Figure 9. Representative sequences from the wildlife monitoring scenario. This scenario includes animal behaviors captured in natural environments. The sequences depict interactions such as observing feeding behaviors, shifting attention between different animals, and focusing on objects being manipulated by the animals.",
+    "md5": "4397ed02458b4ce0a529f11bb4ac8762",
+    "description2": "Representative sequences of animal behaviors in natural environments are plotted, including observations of feeding behaviors, attention shifts, and object manipulation.",
+    "description3": "Two-panel image displays sequential frames of animal behaviors, including feeding, attention shifts, and object manipulation, presented as a multi-panel plot.",
+    "questions": [
+      "What types of animal behaviors are shown in these natural environments?",
+      "How do the sequences illustrate interactions between animals and their surroundings?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 17,
+    "image_path": "../data/2604.01974v1/images/p0017_figure_00011.png",
+    "caption": "Figure 11. Visualization of challenging cases in InteractTrack. It demonstrates that our proposed method can effectively handle complex interactive scenarios and accurately track the target, whereas traditional trackers may lose the target.",
+    "md5": "b40b811500f9fbee652ba38273dc6d9f",
+    "description2": "The figure visualizes challenging cases in InteractTrack, demonstrating the effectiveness of a proposed method in handling complex interactive scenarios and tracking targets.",
+    "description3": "A multi-panel plot displays bounding boxes around objects, color-coded to represent different tracking methods and ground truth.",
+    "questions": [
+      "How does the proposed method perform compared to traditional trackers in interactive scenarios?",
+      "What types of complex situations does this visualization aim to address?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 17,
+    "image_path": "../data/2604.01974v1/images/p0017_figure_00012.png",
+    "caption": "Figure 12. Precision evaluation results across the six scenarios in the InteractTrack benchmark. The plots show that the proposed baseline achieves strong and consistent precision performance in all scenarios.",
+    "md5": "6171f98e2fa73a0465500ca01542bf36",
+    "description2": "The figure presents a plot of precision evaluation results across six scenarios in the InteractTrack benchmark, displaying the performance of the proposed baseline.",
+    "description3": "Three-panel line chart displays precision evaluation results across six scenarios, with multiple colored lines representing different methods.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.01974v1",
+    "source_pdf": "../pdfs/2604.01974v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.01974v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.01974v1/images/p0018_figure_00013.png",
+    "caption": "Figure 13. Failure cases. Even with updated user instructions, all trackers struggle with heavy occlusion and background clutter, ultimately losing the target despite interactive guidance.",
+    "md5": "159032d4bd4443bd5b100852cb483ffc",
+    "description2": "The figure plots failure cases of trackers struggling with heavy occlusion and background clutter, resulting in loss of the target despite interactive guidance.",
+    "description3": "Three panels display tracker bounding boxes in red, blue, and yellow, overlaid on images with occlusion and clutter, compared to ground truth in green.",
+    "questions": [
+      "What challenges do trackers face when dealing with complex visual environments?",
+      "How do trackers perform when presented with obscured or cluttered scenes?"
+    ]
+  }
+]

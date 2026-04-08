@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.26587v1",
+    "source_pdf": "../pdfs/2603.26587v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26587v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.26587v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1: Distribution of English proportion by senti- ment class. White diamonds indicate group means.",
+    "md5": "58e70be376943d8b03347f3649a26a15",
+    "description2": "The figure plots a distribution of English sentiment classes with white diamonds indicating group means.",
+    "description3": "Box plots display the distribution of English proportion across positive, mixed, and negative sentiment classes, with group means indicated by diamonds.",
+    "questions": [
+      "What does the figure illustrate about the distribution of English proportion by class?",
+      "What do the diamonds indicate about the group means for each sentiment?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.26587v1",
+    "source_pdf": "../pdfs/2603.26587v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26587v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.26587v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2: Distribution of language switch count per utterance by sentiment class. White diamonds indicate group means.",
+    "md5": "b1e688b8d116b8efebea89a780dad712",
+    "description2": "The figure displays a distribution of language switch count per utterance plotted against sentiment classes, with white diamonds representing group means.",
+    "description3": "The box plot displays the distribution of language switch counts per utterance, categorized by positive, mixed, and negative sentiment, with group means indicated.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

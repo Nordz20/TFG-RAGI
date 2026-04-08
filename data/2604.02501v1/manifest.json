@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02501v1",
+    "source_pdf": "../pdfs/2604.02501v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02501v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02501v1/images/p0005_figure_00001.png",
+    "caption": "Fig. 1: Evolution of AI-based ECG intelligence.",
+    "md5": "a240920df53c13edb6ab0eeabf3aadf5",
+    "description2": "A timeline illustrates the evolution of AI-based ECG intelligence.",
+    "description3": "Two-panel diagram displays the evolution of AI-based ECG intelligence, progressing from rule-based analysis to agentic wearable AI across time periods.",
+    "questions": [
+      "What is the overall trend shown regarding AI's role in electrocardiogram intelligence?",
+      "How has the approach to ECG analysis evolved, incorporating AI-based methods?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02501v1",
+    "source_pdf": "../pdfs/2604.02501v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02501v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02501v1/images/p0009_figure_00002.png",
+    "caption": "Fig. 2: The current research landscape of the use of Foundation models and LLMs for ECG analysis.",
+    "md5": "722e75ffa69500532cf8a82d412128b7",
+    "description2": "The figure presents a diagram illustrating the current research landscape of using Foundation models and Large Language Models for Electrocardiogram (ECG) analysis.",
+    "description3": "Two-panel diagram outlines ECG analysis research using foundation models and LLMs, categorized into zero-shot classification, report generation, and specialized prognostics.",
+    "questions": [
+      "What are the main areas of research involving large language models and ECG analysis?",
+      "How is the application of foundation models organized within ECG analysis workflows?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02501v1",
+    "source_pdf": "../pdfs/2604.02501v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02501v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02501v1/images/p0012_figure_00003.png",
+    "caption": "Fig. 3: Model optimization, hardware-software co-design, and privacy-aware AI techniques to realize Agentic ECG intelligence on the edge.",
+    "md5": "7dced1f35b9cce84bd2a4d1097929b58",
+    "description2": "The diagram illustrates a framework integrating model optimization, hardware-software co-design, and privacy-aware AI techniques for realizing Agentic ECG intelligence on the edge.",
+    "description3": "Two-panel diagram outlines model optimization, hardware-software co-design, and privacy considerations for edge-based ECG intelligence.",
+    "questions": [
+      "How do optimization and agentic techniques contribute to intelligence on the edge?",
+      "What hardware-software strategies enable privacy-aware model deployment?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02501v1",
+    "source_pdf": "../pdfs/2604.02501v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02501v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.02501v1/images/p0014_figure_00004.png",
+    "caption": "Fig. 4: Outlook for edge-aware Agentic AI ECG intelligence.",
+    "md5": "cc25c71457320c46cc17e8dee91d3663",
+    "description2": "The figure presents an outlook for edge-aware Agentic AI ECG intelligence.",
+    "description3": "Two-panel diagram displays edge-aware Agentic AI ECG intelligence, featuring a top panel outlining reasoning processes and a bottom panel showcasing architectures.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

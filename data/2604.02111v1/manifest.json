@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02111v1",
+    "source_pdf": "../pdfs/2604.02111v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02111v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02111v1/images/p0005_figure_00001.png",
+    "caption": "Fig. 1. Example of UNWIND output for the Hα region of a GLS 11 448 Aa,Ab spectroscopic epoch and the result of combining 77 epochs. The top spectra (green and blue) show the normalized output for the two components, shifted horizontally to the velocities of the epoch and upwards 0.1 continuum units, and diluted by their flux fractions. The bottom (orange and purple) spectra show the fitted telluric lines, specific to this epoch, and ISM spectrum, mostly DIBs and common to all epochs, in the two cases shifted downwards 0.1 units. The central spectra show the data (black) and fit (red) for this epoch, the fit being the sum of the green and blue spectra (minus one to leave the continuum fixed) multiplied by the orange and purple spectra.",
+    "md5": "2bd25b23389de7481d34d0a1f36fb775",
+    "description2": "A line chart plots normalized output spectra for two components and their combined result, along with fitted telluric lines and interstellar medium spectrum, against velocity and flux fractions.",
+    "description3": "Two-panel plot displays normalized flux versus wavelength, with top spectra showing components, bottom spectra showing telluric and ISM lines, and a central data/fit comparison.",
+    "questions": [
+      "What do the green and orange spectra represent in this spectroscopic continuum analysis?",
+      "How are the fitted telluric and ISM spectra positioned relative to the data?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02111v1",
+    "source_pdf": "../pdfs/2604.02111v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02111v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02111v1/images/p0007_figure_00002.png",
+    "caption": "Fig. 2. Phased radial velocity curves for GLS 11 448 Aa and Ab.",
+    "md5": "4dcf1d12ff263c1704e4414b5d940a74",
+    "description2": "Phased radial velocity curves plot the phased radial velocities of GLS 11 448 Aa and Ab over time.",
+    "description3": "Two-panel plot displays phased radial velocity curves for GLS 11 448 Aa (black) and Ab (red) data, with corresponding orbital fits.",
+    "questions": [
+      "How do the radial velocity curves of GLS 11 448 Aa and Ab change over their orbital phase?",
+      "What is the general trend of the radial velocity data for each of the two objects?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02111v1",
+    "source_pdf": "../pdfs/2604.02111v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02111v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02111v1/images/p0008_figure_00003.png",
+    "caption": "Fig. 3. Disentangled Brackett (left) and Pfund (right) He ii series of GLS 11 448 Aa (black) and Ab (red). The spectra are nor- malised, displaced in continuum units, and placed in the rest ve- locity frame of each component systemic velocity without taking into account wind infilling effects (hence, the small displacement in centroids towards the blue). Differences in S/N are caused by extinction increasing towards the blue and by the residuals of telluric-line subtraction (the most obvious ones being for Pf 5-8 and 5-10). The even-numbered Brackett series is not shown be- cause of the proximity of the H i Balmer series. The spectra have been degraded to R = 10 000 for display purposes.",
+    "md5": "0c1b2bf58f10eff413fff5d4d199c996",
+    "description2": "The figure displays a comparison between the disentangled Brackett (left) and Pfund (right) He ii series of GLS 11 448 Aa (black) and Ab (red).",
+    "description3": "Two-panel plot displays Brackett (left) and Pfund (right) He II series spectra, normalized and displaced, with black and red lines representing GLS 11 448 Aa and Ab, respectively.",
+    "questions": [
+      "How do the Brackett and Pfund series spectra of GLS 11 448 Aa and Ab compare?",
+      "What is the general trend observed in the spectra as velocity changes?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02111v1",
+    "source_pdf": "../pdfs/2604.02111v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02111v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02111v1/images/p0009_figure_00004.png",
+    "caption": "Fig. 4. Disentangled blue-violet spectra of GLS 11 448 Aa,Ab shifted to the stellar reference frame and degraded to the spectral classification resolution R = 2500. The two spectra are almost identical and there is no sign of the subtracted ISM. This is an update of Fig. 2 in Maíz Apellániz et al. (2015a), where the S/N is higher but the spectra are not disentangled and the ISM is not subtracted.",
+    "md5": "2cf3ed239b5bdbc7d4754d2f2b6db547",
+    "description2": "The figure displays the blue-violet spectra of GLS 11 448 Aa,Ab, shifted to a stellar reference frame and degraded to R = 2500 resolution.",
+    "description3": "Two-panel plot displays two line charts, showing spectra of GLS 11 448 Aa,Ab, shifted and degraded to a spectral resolution of R = 2500.",
+    "questions": [
+      "What do the spectra reveal about the characteristics of GLS 11 448 Aa,Ab?",
+      "How do the presented spectra compare to previous observations of the same objects?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02111v1",
+    "source_pdf": "../pdfs/2604.02111v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02111v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02111v1/images/p0010_figure_00005.png",
+    "caption": "Fig. 5. Section of the UNWIND extraction for GLS 11 448 Aa (in the rest frame of the star determined from Table 3) with a significant portion of the Phillips C2 (2,0) band. The black line is the star+ISM line (with the most prominent feature being the H i Paι line) and the red line the fitted ISM, including the C2 lines, DIBN8764, and DIBI8781. The vertical lines mark the expected position of the C2 lines in the rest frame of the star, note the velocity displacement.",
+    "md5": "1f5d09ca9a4ca2e82a8fb4bbabd8749c",
+    "description2": "A section of UNWIND extraction for GLS 11 448 Aa plots the Phillips C2 (2,0) band and significant spectral features.",
+    "description3": "Two-panel plot displays a line chart with a black line and a red line, alongside vertical lines marking expected positions.",
+    "questions": [
+      "What is the determined rest frame used for analyzing the spectral lines?",
+      "How do the lines represent the star’s spectrum and the fitted ISM?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02111v1",
+    "source_pdf": "../pdfs/2604.02111v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02111v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02111v1/images/p0011_figure_00006.png",
+    "caption": "Fig. 6. A comparison of the profiles of the interstellar He i λ10 830 triplet and K i λ7698.974 line in the GLS 11 448 sightline, with the latter placed in the velocity reference frame of the first component of the He i triplet (10 829.0911 Å), see also Fig. B.1. The dashed blue vertical lines mark the tentative He i velocity of −23.5 km/s in our barycentric reference frame, which is blueshifted with respect to either K i cloud. Stellar lines are broader in velocity than the plotted range (see e.g. Fig. 3).",
+    "md5": "26492a97ceacdd68967996daaa9bb2a2",
+    "description2": "A comparison of interstellar He i λ10 830 triplet and K i λ7698.974 line profiles is plotted for the GLS 11 448 sightline, referencing K i to the first He i component's velocity frame.",
+    "description3": "Three-panel plot displays two line profiles, labeled as He i and K i, against wavelength, with dashed blue lines marking a tentative velocity.",
+    "questions": [
+      "How do the profiles of the He i and K i lines compare in this interstellar sightline?",
+      "What is the general relationship between the velocities of the He i and K i lines?"
+    ]
+  }
+]

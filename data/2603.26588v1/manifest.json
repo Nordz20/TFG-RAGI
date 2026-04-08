@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.26588v1",
+    "source_pdf": "../pdfs/2603.26588v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26588v1.pdf",
+    "page": 1,
+    "image_path": "../data/2603.26588v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1. High-level overview of tooth completion process. A unified model is conditioned on the local context, with the optional antagonist condition. The incomplete shapes are synthetically generated. Our model works with every tooth class. The input data are represented as signed distance fields.",
+    "md5": "3defbf0ffbc46983a4e9e1ce642cb2d2",
+    "description2": "The figure presents a high-level overview of the tooth completion process, featuring a unified model conditioned on local context and optional antagonist conditions.",
+    "description3": "A multi-panel plot outlines a tooth completion process, including data augmentation, a diffusion network, and inference on real scans.",
+    "questions": [
+      "What is the overall process demonstrated for generating complete tooth structures?",
+      "How does the model utilize context and optional conditions to represent tooth completion?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.26588v1",
+    "source_pdf": "../pdfs/2603.26588v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26588v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.26588v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2. Detailed overview of completion architecture. For the additional antagonist, the Contextual branch is duplicated, and feature vectors are added together. Symbol represents concatenation.",
+    "md5": "97f743672eccb3b074be50b4a77f7e69",
+    "description2": "A detailed overview of a completion architecture is plotted, featuring a duplicated Contextual branch with concatenated feature vectors represented by the symbol.",
+    "description3": "The multi-panel plot displays a completion architecture with a diffusion branch and a contextual branch, connected by several ResNet encoders and attention layers.",
+    "questions": [
+      "How does the architecture handle additional antagonist information?",
+      "What is the general flow of information through the completion process?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.26588v1",
+    "source_pdf": "../pdfs/2603.26588v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26588v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.26588v1/images/p0005_figure_00003.png",
+    "caption": "Figure 3. Augmentation pipeline. Internal representation is denoted above the visualised meshes.",
+    "md5": "74080a1424ded8eeceb614563b6d70b6",
+    "description2": "The figure depicts a workflow diagram illustrating an augmentation pipeline, featuring visualized meshes with internal representations labeled above each mesh.",
+    "description3": "The multi-panel plot displays a pipeline, with mesh and SDF representations shown at various stages of augmentation.",
+    "questions": [
+      "What is the overall process for creating an augmented representation?",
+      "How are internal representations visualized in relation to the meshes?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.26588v1",
+    "source_pdf": "../pdfs/2603.26588v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26588v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.26588v1/images/p0006_figure_00004.png",
+    "caption": "Figure 4. Visual representations of meshes obtained through the Marching Cubes algorithm on test set.",
+    "md5": "35dabd1ef76d50255d359e06528f38bc",
+    "description2": "Visual representations of meshes are plotted, structured by the Marching Cubes algorithm on a test set.",
+    "description3": "The figure presents a three-panel plot displaying mesh visualizations of condition, ground truth, and generated data.",
+    "questions": [
+      "What visual representations were generated using the Marching Cubes algorithm?",
+      "How do the generated meshes compare to the original test set data?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.26588v1",
+    "source_pdf": "../pdfs/2603.26588v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26588v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.26588v1/images/p0007_figure_00005.png",
+    "caption": "Figure 5. Examples of teeth completed by our network. All results were achieved using a single cohesive model, with human-designed restorations crafted in laboratories by technicians.",
+    "md5": "8c8e9f120b041f74ccc51ea0e622150d",
+    "description2": "Examples of teeth completed by the network are plotted, showcasing the results achieved using a single cohesive model and human-designed restorations.",
+    "description3": "Four-panel plot displays six teeth, each with a clinical, model, and generated view, arranged in three columns, labeled with numbers and FDI values.",
+    "questions": [
+      "What is the overall purpose of the restorations shown in these examples?",
+      "How were the restorations created, and by whom?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.26588v1",
+    "source_pdf": "../pdfs/2603.26588v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.26588v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.26588v1/images/p0007_figure_00006.png",
+    "caption": "Figure 6. Failure cases produced by our model. The most common reason for failing to complete a model is gingiva abnormality.",
+    "md5": "3edd860861b784829dff81c2fe048aec",
+    "description2": "A line chart plots the failure cases produced by a model, with gingiva abnormality being the most common reason for incomplete models.",
+    "description3": "Two-panel plot displays clinical, generated, and condition models, with numerical values listed in a column to the right.",
+    "questions": [
+      "What is the primary reason for models failing to complete?",
+      "How do the clinical and generated models differ in these failure cases?"
+    ]
+  }
+]

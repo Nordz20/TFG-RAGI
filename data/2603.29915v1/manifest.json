@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29915v1",
+    "source_pdf": "../pdfs/2603.29915v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29915v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.29915v1/images/p0004_figure_00001.png",
+    "caption": "Fig. 1: Uncertainty-guided XAI resource allocation via epistemic gating. Epis- temic uncertainty is obtained from the model’s native estimator or a lightweight surrogate. Under constrained computation budget, Use Case 1 routes samples to low- or high-cost XAI methods based on expected reliability; Use Case 2 defers high-uncertainty samples, retaining only reliable explanations.",
+    "md5": "79bdc9ca437c8453c404f96b54ed9c3d",
+    "description2": "Uncertainty-guided XAI resource allocation via epistemic gating is illustrated, using model-native estimators or surrogates for episodic uncertainty.",
+    "description3": "The multi-panel plot, structured as a flowchart, outlines uncertainty-guided XAI resource allocation with two use cases.",
+    "questions": [
+      "How does the approach manage resource constraints when generating explanations?",
+      "What are the different strategies for handling samples with varying reliability?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29915v1",
+    "source_pdf": "../pdfs/2603.29915v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29915v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.29915v1/images/p0011_figure_00002.png",
+    "caption": "Fig. 2: Correlation heatmaps of XAI stability and epistemic uncertainty (XEC) under natural (left) and adversarial (right) perturbations. Each cell reports Spearman correlation between epistemic growth (EG) and explanation degra- dation (XD) across perturbation strengths for a given dataset, model and XAI method. Blue and gray regions (XEC < −0.6) correspond to strong negative association, where UQ serves as a reliable proxy for XAI instability.",
+    "md5": "87803ae4eb55386903c49cb8e93ebe6b",
+    "description2": "Correlation heatmaps of XAI stability and epistemic uncertainty under natural and adversarial perturbations are presented.",
+    "description3": "Two-panel heatmaps display Spearman correlations between epistemic growth and explanation degradation across datasets, models, and perturbation strengths, colored blue to gray.",
+    "questions": [
+      "How do adversarial perturbations influence the association between explanation and uncertainty?",
+      "What general trends are visible regarding explanation degradation and instability?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29915v1",
+    "source_pdf": "../pdfs/2603.29915v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29915v1.pdf",
+    "page": 13,
+    "image_path": "../data/2603.29915v1/images/p0013_figure_00003.png",
+    "caption": "Fig. 3: Stratified SHAP stability (Kendall’s τ) across epistemic uncertainty bins under Gaussian noise (σ) for low (blue), medium (green), and high (red) epis- temic strata. Violin plots show the distribution of stability values. Dots indicate means, horizontal bars the median, and vertical bars the standard deviation.",
+    "md5": "68616ff1dfc6d1c18fd559c781091d58",
+    "description2": "Stratified SHAP stability is plotted across epistemic uncertainty bins under Gaussian noise for low, medium, and high strata, with violin plots showing value distributions.",
+    "description3": "Four-panel plot displays violin plots showing stability values (Kendall’s τ) for low, medium, and high epistemic strata across three categories.",
+    "questions": [
+      "What do the bars and violin plots indicate about data distribution?",
+      "How do stability values differ between the epistemic strata?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29915v1",
+    "source_pdf": "../pdfs/2603.29915v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29915v1.pdf",
+    "page": 16,
+    "image_path": "../data/2603.29915v1/images/p0016_figure_00004.png",
+    "caption": "Fig. 4: Prediction shift (MSE in log-odds space) after removing top-k SHAP features by low- (blue), high- (red), and random-epistemic (gray) groups. Low- epistemic samples show larger shifts, indicating more faithful explanations.",
+    "md5": "df8bf70dafc0ddaf6cbd888cb4edc8a4",
+    "description2": "The figure plots the prediction shift in terms of mean squared error in log-odds space after removing top-k SHAP features by low-, high-, and random-epistemic groups.",
+    "description3": "Two-panel plot displays mean squared error (MSE) changes after removing top-k SHAP features, using blue, red, and gray bars for low, high, and random groups.",
+    "questions": [
+      "How does removing features affect prediction accuracy for different epistemic groups?",
+      "What is the general trend in prediction shift as more features are removed?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.29915v1",
+    "source_pdf": "../pdfs/2603.29915v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29915v1.pdf",
+    "page": 17,
+    "image_path": "../data/2603.29915v1/images/p0017_figure_00005.png",
+    "caption": "Fig. 5: Epistemic uncertainty (left axis, blue) and SSIM stability (right axis, or- ange) means and standard deviations versus noise level (bottom axis). Axes are color-coded. As noise increases, uncertainty rises while SSIM decreases mono- tonically (XEC ρ = −1.0 for both IG and SG).",
+    "md5": "681931516e366cc1be22be0f459254b9",
+    "description2": "The figure plots the mean and standard deviation of epistemic uncertainty (blue) and SSIM stability (orange) against noise level, with color-coded axes.",
+    "description3": "The line chart displays epistemic uncertainty and SSIM stability means and standard deviations versus noise level, color-coded by group.",
+    "questions": [
+      "How do epistemic uncertainty and SSIM stability change with increasing noise levels?",
+      "What is the general relationship between the two metrics shown as noise increases?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.29915v1",
+    "source_pdf": "../pdfs/2603.29915v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29915v1.pdf",
+    "page": 18,
+    "image_path": "../data/2603.29915v1/images/p0018_figure_00006.png",
+    "caption": "Fig. 6: PlantVillage: IG and SG saliency maps for clean and noisy low-epistemic (rows 1, 3) and high-epistemic (rows 2, 4) samples. For visualization, heatmaps are lightly Gaussian-smoothed to reduce pixel noise and emphasize structural patterns. Low-epistemic explanations maintain focused attribution on leaf struc- ture and disease areas.",
+    "md5": "71dc5164464f3b847d3b873580ebaf87",
+    "description2": "The figure displays IG and SG saliency maps for plant samples with varying epistemic levels, featuring heatmaps smoothed to highlight structural patterns.",
+    "description3": "The figure presents a multi-panel plot of heatmaps, showing saliency maps for clean and noisy samples across different epistemic levels.",
+    "questions": [
+      "How do explanations differ for low-epistemic versus high-epistemic samples?",
+      "What structural patterns are emphasized by the Gaussian-smoothed heatmaps?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.29915v1",
+    "source_pdf": "../pdfs/2603.29915v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29915v1.pdf",
+    "page": 23,
+    "image_path": "../data/2603.29915v1/images/p0023_figure_00007.png",
+    "caption": "Fig. 7: Epistemic uncertainty vs. SHAP stability (Kendall’s τ) under pooled noise conditions. Green points denote stable explanations (τ ≥ 0.7), red points de- note unstable. Vertical dashed lines show 30%, 50%, and 70% deferral rates ν. Marginal distributions illustrate class separation along each axis.",
+    "md5": "ae41b9a1c629d4505bee157d3ee1fe73",
+    "description2": "The figure plots epistemic uncertainty against SHAP stability, with green points representing stable explanations and red points denoting unstable ones under pooled noise conditions.",
+    "description3": "A scatter plot displays epistemic uncertainty versus SHAP stability (Kendall’s τ) for wine (left) and bean (right) data, with marginal distributions shown.",
+    "questions": [
+      "How do conditions affect the stability of explanations?",
+      "What is the relationship between epistemic uncertainty and explanation stability?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.29915v1",
+    "source_pdf": "../pdfs/2603.29915v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29915v1.pdf",
+    "page": 24,
+    "image_path": "../data/2603.29915v1/images/p0024_figure_00008.png",
+    "caption": "Fig. 8: Attribution mass on signal (blue) vs. noise (red) features across epistemic groups (solid: low, hatched: random, cross-hatched: high) and noise feature ra- tios. Low-epistemic explanations maintain focus on signal features better.",
+    "md5": "3a6fb2fee217f184a0e5c19074c15cdd",
+    "description2": "The figure plots the attribution mass of signal versus noise features across epistemic groups with varying noise ratios, shown in solid, hatched, and cross-hatched patterns.",
+    "description3": "Three-panel plots display signal (blue) and noise (red) feature attribution across epistemic groups and noise ratios for random forest and logistic regression.",
+    "questions": [
+      "How do different epistemic groups attribute signal versus noise features?",
+      "What general patterns are visible in the distribution of attribution mass?"
+    ]
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03020v1/images/p0006_figure_00001.png",
+    "caption": "Figure 1: Visualization over the square (−1, 1)2 of a sample hidden-layer neuron ψm(x) in TransNet associated with B1.5(0) in two dimensions, where the dashed line indicates the corresponding partition hyperplane. From left to right: γ = 2, 6, 14.",
+    "md5": "dcf82fb54171f5fed721e31884e5b9b3",
+    "description2": "The figure is a visualization of a sample hidden-layer neuron ψm(x) over the square (-1, 1)² in two dimensions, plotted with varying γ values from left to right.",
+    "description3": "Three panels display a neuron's visualization with a dashed partition hyperplane, showing γ values of 2, 6, and 14 across a square grid.",
+    "questions": [
+      "What do the dimensions of the square represent in relation to the neuron's output?",
+      "How does the associated hyperplane partition the space indicated in the visualization?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03020v1/images/p0006_figure_00002.png",
+    "caption": "Figure 2: Distribution histograms of the hidden-layer neuron activation values in TransNet associated with B1.5(0) in two dimensions. Activation values are collected from 500 input points over the unit square (−1, 1)2, with each point corresponding to 1000 different hidden-layer neurons, illustrating how the response pattern and concentration vary along with the shape parameter γ. From left to right: γ = 2, 6, 14.",
+    "md5": "ab68ed8318b24dfe2e96d23cb80a640b",
+    "description2": "The figure plots distribution histograms of neuron activation values in TransNet associated with B1.5(0) in two dimensions, varying patterns and concentrations for different shape parameters γ.",
+    "description3": "The multi-panel plot displays three histograms, each showing the distribution of activation values for varying γ values of 2, 6, and 14.",
+    "questions": [
+      "How do the activation histograms change as the shape parameter γ increases?",
+      "What is the general relationship between γ and the distribution of activation values?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.03020v1/images/p0007_figure_00003.png",
+    "caption": "Figure 3: Numerical results of fitting the high-frequency function f(x) = sin(30πx) in the interval (−1, 1) by using a TransNet associated with B1.1(0) in one dimension. 1000 uniformly distributed collocation points are used. From Left to right: γ = 2, 14; From top to bottom: M = 200, 1000.",
+    "md5": "70b15eebf6d00a9070f6afda5c75233f",
+    "description2": "The figure plots the numerical results of fitting a high-frequency function sin(30πx) in (-1, 1) using a TransNet with B1.1(0), varying γ and M, and comparing different values of M.",
+    "description3": "Two-panel graph compares the exact and predicted functions for γ = 2, 14 and M = 200, 1000.",
+    "questions": [
+      "How does the fitting accuracy change with varying parameters in this numerical analysis?",
+      "What is the general relationship between the fitted function and the exact function shown?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.03020v1/images/p0008_figure_00004.png",
+    "caption": "Figure 4: Network architecture of the proposed GTransNet (16) with L hidden layers.",
+    "md5": "cde5254b7bf38763dda8c031925dfbfe",
+    "description2": "The figure diagrammatically represents the network architecture of the proposed GTransNet, featuring 16 layers and L hidden layers for processing input data.",
+    "description3": "The diagram presents a multi-panel plot illustrating a network architecture with interconnected nodes and labeled layers.",
+    "questions": [
+      "What is the overall structure of the proposed network architecture?",
+      "How are the layers organized within the proposed network?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.03020v1/images/p0011_figure_00005.png",
+    "caption": "Figure 5: Distribution histograms of the hidden-layer neuron activation values in the proposed GTransNet associated with B1.5(0) in two dimensions. Activation values are collected from 500 input points over the unit square (−1, 1)2, with each point corresponding to 2000 different neurons in the first hidden layer and 1000 neurons in the second and third hidden layers. From left to right: γ = 2, 6, 14. First row: the first hidden layer ψ1; Second and third rows: the second and third hidden layers ψ2 and ψ3 of the GTransNet with δ = 0.5; Fourth and fifth rows: the second and third hidden layers ψ2 and ψ3 of the GTransNet with δ = 0.8.",
+    "md5": "3aba1bcce87b969607d52372f340a3d2",
+    "description2": "The figure displays distribution histograms of neuron activation values in the proposed GTransNet's first, second, and third hidden layers, plotted against different parameters γ and δ.",
+    "description3": "The image presents a multi-panel plot displaying distribution histograms of neuron activation values for γ = 2, 6, and 14, across multiple hidden layers.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.03020v1/images/p0012_figure_00006.png",
+    "caption": "Figure 6: Visualization of some typical second and third hidden-layer neurons, ψ(2) m (x) and ψ(3) m (x), in the proposed GTransNet. From left to right: γ = 2, 6, 14. Top row: ψ(2) m (x) with W2 ∼ N(0, 1); Middle row: ψ(2) m (x) with W2 ∼ N(0, σ2 2) and δ = 0.5; Bottom row: ψ(3) m (x) with W3 ∼ N(0, σ2 3) and δ = 0.5.",
+    "md5": "18bcc22f7501ffcd2ee4f7445bbc4dee",
+    "description2": "Visualization of typical second and third hidden-layer neurons in the proposed GTransNet displays different configurations of γ, W2, W3, and δ from left to right.",
+    "description3": "Three-panel plot displays neuron visualizations (ψ(2)m(x) and ψ(3)m(x)) across three γ values (2, 6, 14) with varying weight distributions.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.03020v1/images/p0015_figure_00007.png",
+    "caption": "Figure 7: Plots of relative L2 errors of numerical solutions produced by the TransNet method and the GTransNet method with two and three hidden layers in Section 4.1, where N denotes the number of last hidden-layer neurons. Top-left: (S1); Top-right: (S2); Bottom row: (S3).",
+    "md5": "5d8da2d178890264766fb17bff18040d",
+    "description2": "The figure plots relative L2 errors of numerical solutions produced by TransNet and GTransNet methods with varying numbers of hidden layers and neurons.",
+    "description3": "Four plots display relative L2 errors versus N, comparing TransNet and GTransNet methods with varying hidden layers and neuron counts.",
+    "questions": [
+      "What general relationship exists between the method and the relative L2 errors?",
+      "How do the solutions change relative to the number of hidden-layer neurons?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.03020v1/images/p0015_figure_00008.png",
+    "caption": "Figure 8: Average running times (in seconds) of the TransNet method and the GTransNet method with two and three hidden layers in Section 4.1, where N denotes the number of neurons in the last hidden layer. From left to right: (S1), (S2) and (S3).",
+    "md5": "72dc9b570d314320fbd9bbf227ad5803",
+    "description2": "The figure plots average running times in seconds for TransNet and GTransNet methods with two or three hidden layers, varying the number of neurons in the last hidden layer.",
+    "description3": "Three-panel line charts compare the average running times of TransNet and GTransNet methods with varying hidden layers across three datasets, labeled S1, S2, and S3.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 16,
+    "image_path": "../data/2604.03020v1/images/p0016_figure_00009.png",
+    "caption": "Figure 9: Plots of the relative L2 errors of numerical solutions produced by the GTransNet method (top row) and the TransNet method (bottom row) with different values of the last hidden-layer neurons N and the shape parameter γ for the three cases of the Poisson equation in Section 4.2.1. From left to right: Cases 1 (2D), Case 2 (2D), and Case 3 (3D).",
+    "md5": "af3fc8edbf9a719bf221d9e19c7dc947",
+    "description2": "The figure plots relative L2 errors of numerical solutions by GTransNet and TransNet for three Poisson equation cases with varying N and γ, comparing 2D and 3D results.",
+    "description3": "Three multi-panel plots display relative L2 errors versus shape parameter γ for varying neuron numbers, separated by method and Poisson equation case.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 17,
+    "image_path": "../data/2604.03020v1/images/p0017_figure_00010.png",
+    "caption": "Figure 10: Numerical solutions (top row) and the corresponding absolute point-wise errors (bottom row) produced by the GTransNet method for the three cases of the Poisson equation in Section 4.2.1. Left column: Case 1 (2D), N = 4000, γ = 8; Middle column: Case 2 (2D), N = 4000, γ = 10; Right column: Case 3 (3D), N = 7000, γ = 4, at the two cross sections x = 0 and y = 0.",
+    "md5": "2e368b1996787f1bb54381fe6686d18c",
+    "description2": "Numerical solutions for three cases of the Poisson equation are plotted alongside their corresponding absolute point-wise errors.",
+    "description3": "Two-panel plot displays numerical solutions and absolute errors as color-coded surfaces and contour plots across three cases with varying dimensions and parameters.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.03020v1/images/p0018_figure_00011.png",
+    "caption": "Figure 12: Numerical solutions (top row) and the corresponding absolute point-wise errors (bottom row) produced by the GTransNet method for the 2D Helmholtz equation in Section 4.2.2. Left column: ν = 4000 Hz, N = 4000, γ = 6; middle column: ν = 6000 Hz, N = 4000, γ = 10; right column: ν = 8000 Hz, N = 4000, γ = 10.",
+    "md5": "db59f6d3e98d4c1c9564088cfa4dc711",
+    "description2": "Numerical solutions and corresponding absolute point-wise errors are plotted for the 2D Helmholtz equation using the GTransNet method at different frequencies and parameters.",
+    "description3": "The figure presents a multi-panel plot with numerical solutions and absolute errors displayed as color-scaled images across three columns.",
+    "questions": [
+      "How does the GTransNet method perform for different frequencies of the Helmholtz equation?",
+      "What is the relationship between the numerical solutions and their absolute errors?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.03020v1/images/p0018_figure_00012.png",
+    "caption": "Figure 11: Plots of the relative L2 errors of numerical solutions produced by the GTransNet method (top row) and the TransNet method (bottom row) with different values of the last hidden-layer neurons N and the shape parameter γ for the 2D Helmholtz equation in Section 4.2.2. From left to right: ν = 4000, 6000, and 8000 Hz.",
+    "md5": "c9de207d2f1bd1be45fd5d34dc038733",
+    "description2": "The figure plots relative L2 errors of numerical solutions by GTransNet and TransNet methods for the 2D Helmholtz equation at 4000, 6000, and 8000 Hz frequencies.",
+    "description3": "Three multi-panel plots display relative L2 error versus shape parameter γ for varying hidden-layer neurons, across three frequencies.",
+    "questions": [
+      "How do different methods affect the relative L2 error for the Helmholtz equation?",
+      "What is the general trend of the relative L2 error as the shape parameter changes?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.03020v1/images/p0020_figure_00013.png",
+    "caption": "Figure 13: Plots of the relative L2 errors of numerical solutions produced by the GTransNet method (top row) and the TransNet method (bottom row) with different values of the last hidden-layer neurons N and the shape parameter γ for the 2D multiscale elliptic problem in Section 4.2.3. From left to right: ε = 0.5, 0.2, and 0.1.",
+    "md5": "6d78057d649a6269f82a7b84decb3630",
+    "description2": "The figure plots relative L2 errors of numerical solutions by GTransNet and TransNet methods with varying N and γ for a 2D multiscale elliptic problem.",
+    "description3": "The plots display relative L2 errors versus a parameter, using different line styles and colors to represent varying neuron numbers.",
+    "questions": [
+      "How do different methods perform in solving the multiscale elliptic problem?",
+      "What is the general trend of the relative L2 errors with varying parameter values?"
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.03020v1/images/p0020_figure_00014.png",
+    "caption": "Figure 14: Numerical solutions uNN − up (top row) and the corresponding absolute point-wise errors of numerical solutions (bottom row) produced by the GTransNet method for the 2D multiscale elliptic problem (43) in Section 4.2.3. Left column: ε = 0.5, N = 4000, γ = 6; Middle column: ε = 0.2, N = 4000, γ = 8; Right column: ε = 0.1, N = 4000, γ = 8.",
+    "md5": "753474be6f0fc0be8e3444aa4edc51af",
+    "description2": "Numerical solutions uNN and absolute point-wise errors of numerical solutions are plotted for the 2D multiscale elliptic problem using the GTransNet method.",
+    "description3": "Two-panel plots display numerical solutions and absolute errors as color gradients across three columns, each showing different parameter values.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 15,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.03020v1/images/p0021_figure_00015.png",
+    "caption": "Figure 16: Numerical solution (left) and the corresponding absolute point-wise error (right) at the three cross sections x = 0.5, y = 0.5 and z = 0.5 produced by the GTransNet method with N = 7000 and γ = 6 for the 3D steady-state Allen-Cahn equation in Section 4.2.4.",
+    "md5": "ce6a9de168676cbcd07b7de57495491f",
+    "description2": "The figure plots a numerical solution on the left and corresponding absolute point-wise error on the right at three cross sections.",
+    "description3": "Two-panel plot displays numerical solutions and absolute point-wise errors as 3D surface plots, with axes labeled x, y, and z.",
+    "questions": [
+      "What does the numerical solution represent within the Allen-Cahn equation?",
+      "How does the absolute pointwise error relate to the solution?"
+    ]
+  },
+  {
+    "id": 16,
+    "doc_id": "2604.03020v1",
+    "source_pdf": "../pdfs/2604.03020v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03020v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.03020v1/images/p0021_figure_00016.png",
+    "caption": "Figure 15: Plots of the relative L2 errors of numerical solutions produced by the GTransNet method (left) and the TransNet method (right) method with different values of the last hidden-layer neurons N and the shape parameter γ for the 3D steady-state Allen-Cahn equation in Section 4.2.4.",
+    "md5": "40f5437280518b18414b59f5ad0fddfb",
+    "description2": "The figure plots relative L2 errors of numerical solutions produced by two methods, GTransNet and TransNet, varying parameters N and γ for a 3D Allen-Cahn equation.",
+    "description3": "The multi-panel plot displays line graphs of relative L2 errors versus the shape parameter γ for GTransNet and TransNet methods.",
+    "questions": [
+      "How do changes in the hidden-layer parameter influence the numerical method's performance?",
+      "What is the general relationship between shape parameter and relative L2 error?"
+    ]
+  }
+]

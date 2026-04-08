@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29836v1",
+    "source_pdf": "../pdfs/2603.29836v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29836v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.29836v1/images/p0006_figure_00001.png",
+    "caption": "Figure 1. An ensemble of paths in the sl2 higher spin six vertex model for λ = (5, 5, 2, 0) with additional horizontal steps at the start and additional vertical steps at the top.",
+    "md5": "e64a5ee1e7193f157394dfab96216d8e",
+    "description2": "An ensemble of paths is plotted in the sl2 higher spin six vertex model for specific parameters.",
+    "description3": "Two-panel line chart displays several paths with varying slopes, labeled λ₁, λ₂, λ₃, and λ₄, against a grid background.",
+    "questions": [
+      "What does this visualization illustrate about paths within a higher spin vertex model?",
+      "How do the paths change over the steps shown in this model?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29836v1",
+    "source_pdf": "../pdfs/2603.29836v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29836v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.29836v1/images/p0007_figure_00002.png",
+    "caption": "Figure 2. sl2 higher spin six vertex model weights",
+    "md5": "29560f27b6abf4bcf1a6adea62e1c153",
+    "description2": "The figure plots the weights of the sl2 higher spin six vertex model.",
+    "description3": "Two-panel figure displays four diagrams with associated fractions, labeled as sl2 higher spin six vertex model weights.",
+    "questions": [
+      "How do the vertex configurations relate to the model's higher spin?",
+      "What do the weights represent in relation to the depicted configurations?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29836v1",
+    "source_pdf": "../pdfs/2603.29836v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29836v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.29836v1/images/p0011_figure_00003.png",
+    "caption": "Figure 3. All possible configurations and their weights in the case sj = −q−1/2.",
+    "md5": "cb1e104aa3b4c7ac085b52a338379003",
+    "description2": "The figure displays all possible configurations along with their corresponding weights for the case where sj is equal to negative q minus one half.",
+    "description3": "The multi-panel plot displays configurations and their associated weights, presented as fractions within a table.",
+    "questions": [
+      "What does the figure illustrate regarding possible arrangements within a case?",
+      "How are the weights associated with the different arrangements?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29836v1",
+    "source_pdf": "../pdfs/2603.29836v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29836v1.pdf",
+    "page": 12,
+    "image_path": "../data/2603.29836v1/images/p0012_figure_00004.png",
+    "caption": "Figure 4. An ensemble of paths and the corresponding monotone triangle",
+    "md5": "2c2b81006eb2e45dd536d9d09850033b",
+    "description2": "An ensemble of paths is plotted alongside a corresponding monotone triangle in this figure.",
+    "description3": "Four-panel plot displays a series of line graphs, each showing a path with labeled points and axes, arranged in a grid-like structure.",
+    "questions": [
+      "What general patterns are shown by the different paths represented?",
+      "How are the paths organized and related within the displayed structure?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.29836v1",
+    "source_pdf": "../pdfs/2603.29836v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29836v1.pdf",
+    "page": 12,
+    "image_path": "../data/2603.29836v1/images/p0012_figure_00005.png",
+    "caption": "Figure 5. The normalized weights ˜wx,−q−1/2",
+    "md5": "57c3d135b77d01c8df046ddaa498836d",
+    "description2": "The figure displays a plot of normalized weights denoted as wx, with a subscript indicating a negative value q-1/2.",
+    "description3": "The figure presents a multi-panel plot displaying normalized weights, each panel showing a vertical line with a red dot and associated text.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

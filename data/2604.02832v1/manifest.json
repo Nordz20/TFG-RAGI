@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02832v1/images/p0005_figure_00001.png",
+    "caption": "Figure 1: Architecture of the FT–MDN–Transformer with distributional RR predictions.",
+    "md5": "c8e3ab93ff92bf0783d364f56dec4ed4",
+    "description2": "The figure diagrams the architecture of a model combining Fourier Transform (FT), Mixture Density Network (MDN), and Transformer components for making distributional regression predictions.",
+    "description3": "Two-panel architecture displays a feature tokenization process feeding into a Transformer encoder backbone, culminating in a mixture-density head with distributional recovery rate predictions.",
+    "questions": [
+      "What is the overall architecture used for making distributional predictions?",
+      "How are numeric and categorical features processed before the transformer?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02832v1/images/p0009_figure_00002.png",
+    "caption": "Figure 2: Two-stage schema adaptation comparing shared-only and full-source pretraining followed by expansion to the target schema.",
+    "md5": "9db0daf96b1e65509f5aec17937bb5f7",
+    "description2": "A two-stage schema adaptation is plotted, comparing shared-only and full-source pretraining followed by expansion to the target schema.",
+    "description3": "Four-panel schematic outlines a two-stage schema adaptation process, involving shared-only and full-source pretraining, followed by target schema expansion and fine-tuning.",
+    "questions": [
+      "How does the adaptation process compare different pretraining strategies?",
+      "What is the overall sequence of steps involved in schema adaptation?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02832v1/images/p0010_figure_00003.png",
+    "caption": "Figure 3: Evaluation scenarios used throughout, including zero-shot, target baseline, and transfer learning.",
+    "md5": "1d052994576f9cb0edc39e658bb4d88b",
+    "description2": "The figure presents evaluation scenarios used throughout, including zero-shot, target baseline, and transfer learning.",
+    "description3": "Three-panel flowchart diagrams zero-shot, target baseline, and transfer learning evaluation scenarios, each showing a source, target, and evaluation component.",
+    "questions": [
+      "What are the key approaches for evaluating the target system's performance?",
+      "How do the depicted processes relate to baseline and transfer learning?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02832v1/images/p0012_figure_00004.png",
+    "caption": "Figure 4: Comparison of recovery rate distributions and feature space overlap.",
+    "md5": "85da85b023ae3463c60135b93d28db74",
+    "description2": "The figure compares recovery rate distributions with feature space overlap.",
+    "description3": "Three-panel plot displays recovery rate distributions as histograms, a Venn diagram showing feature space overlap, and numerical values within each panel.",
+    "questions": [
+      "How do recovery rates vary between the two groups shown in this comparison?",
+      "What is the relative extent of feature space overlap between the groups?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.02832v1/images/p0013_figure_00005.png",
+    "caption": "Figure 5: Correlation heatmaps (31×31) of common macro-financial features in GCD and UP5.",
+    "md5": "b36292d868afdd453fa9a99e729c46ae",
+    "description2": "A heatmap is plotted to display correlations between 31 common macro-financial features in two datasets, GCD and UP5.",
+    "description3": "Two-panel correlation heatmaps, each a 31x31 grid, display relationships between macro-financial features for GCD and UP5, respectively, using a color scale.",
+    "questions": [
+      "What common macro-financial features are visualized in these correlation heatmaps?",
+      "What general patterns emerge from the correlation relationships displayed?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.02832v1/images/p0014_figure_00006.png",
+    "caption": "Figure 6: Single-loan recovery distributions predicted by FT–MDN–T on UP5. Mixture components capture bimodality that is lost when only the mean is considered.",
+    "md5": "78cfc1fbb1d6601a873f6e9973b89c2f",
+    "description2": "The figure plots single-loan recovery distributions predicted by a model, featuring multiple mixture components that capture bimodality in the data.",
+    "description3": "Two-panel plots display mixture density distributions, showing predicted and truth recovery rates with vertical lines indicating component boundaries.",
+    "questions": [
+      "How do predicted distributions compare to observed distributions in this analysis?",
+      "What structural features are captured by the model that are otherwise lost?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.02832v1/images/p0015_figure_00007.png",
+    "caption": "Figure 7: UP5 portfolio-level recovery distributions. FT–MDN–T captures bimodality, unlike point-estimation models.",
+    "md5": "f04bf36418170800a4a72e1e21408aef",
+    "description2": "The figure displays a plot of portfolio-level recovery distributions for the UP5 model, highlighting the capture of bimodality by the FT-MDN-T approach compared to point-estimation models.",
+    "description3": "A multi-panel plot displays recovery distributions for training and test sets, with overlaid predicted portfolio density curves.",
+    "questions": [
+      "How do portfolio recovery distributions differ between estimation models?",
+      "What is the general shape of the portfolio recovery distributions shown?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 16,
+    "image_path": "../data/2604.02832v1/images/p0016_figure_00008.png",
+    "caption": "Figure 8: Categorical embeddings versus dummy encoding on UP5. FT–MDN–T benefits from native embed- dings, unlike tree-based baselines.",
+    "md5": "1251eba15c480d5988a5e6f3390e2672",
+    "description2": "A line chart comparing categorical embeddings and dummy encoding on UP5, with FT-MDN-T benefiting from native embeddings while tree-based baselines do not.",
+    "description3": "A line chart displays validation R-squared values over epochs for \"Dummies\" and \"Categorical\" methods, with shaded areas indicating interquartile ranges.",
+    "questions": [
+      "How do native embeddings affect the performance compared to tree-based baselines?",
+      "What is the relative trend of validation scores between the encoding methods?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 17,
+    "image_path": "../data/2604.02832v1/images/p0017_figure_00009.png",
+    "caption": "Figure 9: Validation R2 on UP5 when expanding from 37 to 317 features. Pretraining accelerates fine-tuning and surpasses the scratch baseline.",
+    "md5": "046aaaf1af2d69dcbe7358acd920aa51",
+    "description2": "The figure plots the validation R2 values for the UP5 dataset, comparing results with and without pretraining when expanding the number of features from 37 to 317.",
+    "description3": "A line chart displays validation R² values over epochs for pretraining and finetuning with varying feature counts of UP5.",
+    "questions": [
+      "How does pretraining affect the validation performance compared to starting from scratch?",
+      "What is the general trend of validation R2 as the number of features increases?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.02832v1/images/p0018_figure_00010.png",
+    "caption": "Figure 10: Cross-portfolio transfer from GCD to UP5. Left: R2. Right: MAE. TL shared→full shows strong results, followed by TL full→full.",
+    "md5": "177e50dd2a129eadb3c0b3c78e059260",
+    "description2": "The figure plots a left-right line chart comparing Root Mean Squared Error (R2) and Mean Absolute Error (MAE) for cross-portfolio transfer from GCD to UP5 with target labels shared or not.",
+    "description3": "Two-panel line chart displays R2 (left) and MAE (right) values for transfer learning approaches versus fine-tune set size.",
+    "questions": [
+      "What overall trends are visible in the results displayed?",
+      "How do the different approaches affect the observed results?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 22,
+    "image_path": "../data/2604.02832v1/images/p0022_figure_00011.png",
+    "caption": "Figure 11: Monte Carlo simulation workflow from configuration to aggregated results.",
+    "md5": "f068445a73f2c4f9059462826e04a6dd",
+    "description2": "The caption shows a workflow diagram illustrating the Monte Carlo simulation process, transforming configuration into aggregated results.",
+    "description3": "The workflow, presented as a flowchart, outlines a Monte Carlo simulation process from configuration to aggregated results.",
+    "questions": [
+      "What is the overall process illustrated by this Monte Carlo simulation workflow?",
+      "How does the simulation progress from initial configuration to final aggregated results?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 23,
+    "image_path": "../data/2604.02832v1/images/p0023_figure_00012.png",
+    "caption": "Figure 12: Transfer versus target-only performance across heterogeneity regimes. FT–MDN–T outperforms even with missing features, while XGBoost often fails under schema mismatch.",
+    "md5": "d37ddc2d65f6fe3c7e833b80d7962f7b",
+    "description2": "The figure plots the transfer and target-only performance of different models across varying levels of heterogeneity.",
+    "description3": "Two-panel plot displays transfer and target-only performance (R²) across heterogeneity regimes, using line charts with shaded regions and mean markers.",
+    "questions": [
+      "How do the features of model performance change with varying degrees of data heterogeneity?",
+      "What is the general relationship between transfer learning and target-only performance?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.02832v1/images/p0024_figure_00013.png",
+    "caption": "Figure 13: R2 degradation with increasing shift intensity at 100 target samples. FT–MDN–T is robust under covariate and conditional shifts but deteriorates under label shift, where tree- and MLP-based models fail sharply.",
+    "md5": "0a409cffb4fae788d5c9489a49696ba7",
+    "description2": "The figure plots the degradation of R2 values with increasing shift intensity at 100 target samples for different machine learning models.",
+    "description3": "Two-panel scatter plots display R² (transfer learning) versus feature shift score, showing FT–MDN–T’s robustness compared to other models under different shift types.",
+    "questions": [
+      "How does model performance change under different types of data shifts?",
+      "What is the general trend of degradation with increasing shift intensity?"
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": "2604.02832v1",
+    "source_pdf": "../pdfs/2604.02832v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02832v1.pdf",
+    "page": 25,
+    "image_path": "../data/2604.02832v1/images/p0025_figure_00014.png",
+    "caption": "Figure 14: Effect of target sample size across heterogeneity regimes. Transfer accelerates learning, particularly when target data are scarce.",
+    "md5": "2002cfc31a0f3c06f4eb0c02800dd183",
+    "description2": "The figure plots the effect of target sample size across different heterogeneity regimes, illustrating how transfer accelerates learning, especially in situations with limited target data.",
+    "description3": "Two-panel plot displays line charts with error bands, showing transfer performance versus target sample size across three heterogeneity regimes.",
+    "questions": [
+      "How does target sample size affect the observed learning effect?",
+      "What is the general relationship between heterogeneity and learning performance?"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29946v1",
+    "source_pdf": "../pdfs/2603.29946v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29946v1.pdf",
+    "page": 3,
+    "image_path": "../data/2603.29946v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1: ShapPFN architecture. The model encodes features and targets into embeddings, processes them through transformer layers with alternating attention over features and datapoints, then decodes into a global baseline and per-feature contributions. The final prediction is explicitly additive over features, enabling SHAP-like decomposition directly from the architecture.",
+    "md5": "26de706c1636bddb596ad1a57139be67",
+    "description2": "The figure plots ShapPFN's architecture, encoding features and targets into embeddings, processing them through transformer layers with alternating attention over features and datapoints.",
+    "description3": "The multi-panel plot displays a nanoTabPFN architecture with feature and target encoders, transformer layers, and decoders for baseline and contribution prediction.",
+    "questions": [
+      "How do alternating attention mechanisms contribute to the model's feature processing?",
+      "What is the general structure used to decompose predictions per feature?"
+    ]
+  }
+]

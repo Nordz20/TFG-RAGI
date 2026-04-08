@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02608v1",
+    "source_pdf": "../pdfs/2604.02608v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02608v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02608v1/images/p0007_figure_00001.png",
+    "caption": "Figure 1: IID steering accuracy across all 12 tasks for Llama-3.1-8B Base. The horizontal dashed line marks the IID threshold (τ = 0.10). Morphological tasks dramatically exceed predictions. Character-level capitalize and first_letter succeed (falsifying negative-control predictions), while only reverse_word and sentiment_flip consistently fail.",
+    "md5": "bcd5b01567241431ea604f061c53d920",
+    "description2": "The figure plots steering accuracy across all 12 tasks for Llama-3.1-8B Base, with the IID threshold marked by a horizontal dashed line at τ = 0.10.",
+    "description3": "A bar chart displays IID accuracy, split into mean and max, across twelve tasks labeled along the x-axis.",
+    "questions": [
+      "What general categories of tasks show the highest steering accuracy?",
+      "How do task types relate to performance above or below the threshold?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02608v1",
+    "source_pdf": "../pdfs/2604.02608v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02608v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02608v1/images/p0008_figure_00002.png",
+    "caption": "Figure 2: Cosine similarity vs. OOD transfer accuracy for all cross-template pairs, colored by task. The pooled correlation is near zero (Llama Base: r = 0.013, Gemma Base: r = 0.058), dissolving the previously reported Simpson’s paradox (r = −0.572). Points at high cosine (> 0.80) span the full range of transfer accuracy, confirming that geometric alignment does not predict functional transfer.",
+    "md5": "0c9bf2cd1b503d8a0cfe1fc18f4fdfd5",
+    "description2": "The figure plots cosine similarity against OOD transfer accuracy for all cross-template pairs, colored by task, showing no correlation between them.",
+    "description3": "Two-panel scatter plots show cosine similarity versus transfer accuracy for cross-template pairs, colored by task, with Llama and Gemma base models.",
+    "questions": [
+      "What relationship, if any, exists between cosine similarity and transfer accuracy?",
+      "How does the correlation between these measures change compared to previous findings?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02608v1",
+    "source_pdf": "../pdfs/2604.02608v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02608v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02608v1/images/p0010_figure_00003.png",
+    "caption": "Figure 3: FV steering accuracy vs. logit lens top-10 accuracy at the best layer for all 12 tasks. The gap between bars is the steerability-decodability gap. For all tasks across all models, FV steering accuracy meets or exceeds logit lens accuracy. The universal direction of this gap—steering > readability—is the paper’s core finding. Most dramatic gaps: country_capital (Llama Base: 0.880 steering vs. 0.056 readability, gap = −0.82), first_letter (Llama IT: 0.960 vs. 0.047, gap = −0.91).",
+    "md5": "36bf6695f0908718e1e0cdfceba4e258",
+    "description2": "FV steering accuracy meets or exceeds logit lens accuracy for all tasks across all models, with a steerability-decodability gap between bars.",
+    "description3": "Two-panel bar charts compare readability (logit lens top-10) and FV steering accuracy across 12 tasks, displaying gaps between the bars.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02608v1",
+    "source_pdf": "../pdfs/2604.02608v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02608v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02608v1/images/p0011_figure_00004.png",
+    "caption": "Figure 4: Layer-wise FV steering accuracy vs. logit lens accuracy for representative tasks. For all tasks, FV steering peaks at earlier layers (L2–L8) than logit lens readability (L28–L32). For coun- try_capital and first_letter, the logit lens is near zero at all layers while FV steering succeeds, demonstrating pure steerability-without-decodability. The temporal dissociation—early FV intervention, late readability emergence—supports the “FV as computational instruction” interpretation.",
+    "md5": "4757e7c547fc5009bfecda576d52642d",
+    "description2": "The figure plots layer-wise accuracy of FV steering and logit lens for various tasks, with FV steering peaking at earlier layers than logit lens readability.",
+    "description3": "Four-panel plots display layer-wise accuracy versus layer number for FV steering and logit lens readability across tasks like country_capital and first_letter.",
+    "questions": [
+      "How do the accuracy patterns of feature vector steering and logit lens compare?",
+      "What general relationship exists between layer number and task accuracy?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02608v1",
+    "source_pdf": "../pdfs/2604.02608v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02608v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.02608v1/images/p0024_figure_00005.png",
+    "caption": "Figure 5: FV vocabulary projection results for Llama-3.1-8B Base. The near-universal incoherence of FV vocabulary projections, even for highly effective FVs (> 0.90 steering accuracy), demonstrates that FVs encode computational instructions rather than answer directions. The partial exception is first_letter (task- relevant fraction ∼ 0.82): the FV projects to single-character tokens, though not to the correct specific letters.",
+    "md5": "dbbb0cc34de8f3f05e3ca094cf5943af",
+    "description2": "The figure plots the results of FV vocabulary projection for Llama-3.1-8B Base, showing varying effectiveness in encoding computational instructions rather than answer directions.",
+    "description3": "Three-panel bar chart displays fraction of top-50 tokens, showing \"correct output tokens\" and \"task-relevant tokens\" for various FV vocabulary projections.",
+    "questions": [
+      "What do vocabulary projections reveal about how FVs encode instructions?",
+      "How do the projections of different FVs vary in their coherence?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02608v1",
+    "source_pdf": "../pdfs/2604.02608v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02608v1.pdf",
+    "page": 25,
+    "image_path": "../data/2604.02608v1/images/p0025_figure_00006.png",
+    "caption": "Figure 6: Zero-shot vs. few-shot ICL vs. FV-steered accuracy for Llama-3.1-8B Base. FV steering is con- sistently additive or neutral—it never catastrophically interferes with the model’s existing computation. For most tasks, FV steering matches or approaches few-shot ICL accuracy.",
+    "md5": "19a48a78417f241924a34bf6fd20c423",
+    "description2": "The figure plots a line chart comparing zero-shot and few-shot accuracy for Llama-3.1-8B Base under ICL and FV-steered results, showing additive or neutral effects.",
+    "description3": "A bar chart compares zero-shot, few-shot ICL, and FV-steered accuracy across several tasks, with FV steering often matching or approaching few-shot ICL.",
+    "questions": [
+      "How does FV-steered accuracy compare to few-shot ICL accuracy?",
+      "What is the general effect of FV steering on model computation?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02608v1",
+    "source_pdf": "../pdfs/2604.02608v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02608v1.pdf",
+    "page": 25,
+    "image_path": "../data/2604.02608v1/images/p0025_figure_00007.png",
+    "caption": "Figure 7: Readability vs. steering for both Mistral models. Mistral is the only family with “readable- not-steerable” instances (reverse_word, sentiment_flip on Base; reverse_word on IT). The contrast with Llama/Gemma confirms that the dissociation pattern is model-family-dependent while the gap direction (steering ≥ readability for most tasks) is universal.",
+    "md5": "8f261380c91b0cd0f5cbd243fe9f55ae",
+    "description2": "The figure plots the relationship between readability and steering for two Mistral models, highlighting instances where readability exceeds steering.",
+    "description3": "Two-panel bar chart displays readability versus steering scores for Mistral models, with green bars representing readability and red bars representing steering.",
+    "questions": [
+      "How do the characteristics of Mistral models relate to readability and steering?",
+      "What general pattern describes the relationship between readability and steering?"
+    ]
+  }
+]

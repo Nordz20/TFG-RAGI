@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29813v1",
+    "source_pdf": "../pdfs/2603.29813v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29813v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.29813v1/images/p0005_figure_00001.png",
+    "caption": "Fig. 1. Overview of Ditto’s two-phase optimization framework. In Phase 1, model weights are quantized using clustering and bit-packing techniques to reduce memory usage. In Phase 2, our optimization replaces the GEMV operations with high-performance library calls. This combined approach enables significant reductions in both memory usage and inference latency while preserving model performance.",
+    "md5": "90f17debeeffe29c097852f2a1665f1f",
+    "description2": "The diagram illustrates Ditto's two-phase optimization framework, featuring quantized model weights and replaced GEMV operations to reduce memory usage and latency.",
+    "description3": "A multi-panel plot outlines a two-phase optimization framework, showing weight quantization and compilation-time replacement steps.",
+    "questions": [
+      "How does the framework optimize model performance and reduce memory usage?",
+      "What are the key stages involved in the optimization process?"
+    ]
+  }
+]

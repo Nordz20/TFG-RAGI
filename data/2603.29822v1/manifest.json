@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29822v1",
+    "source_pdf": "../pdfs/2603.29822v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29822v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.29822v1/images/p0002_figure_00001.png",
+    "caption": "Fig. 1. The considered UAV sensing system.",
+    "md5": "92bac7dd535aca5a2f9224e066dc982d",
+    "description2": "The considered UAV sensing system is a diagram of an unmanned aerial vehicle's sensory components.",
+    "description3": "A multi-panel plot displays a UAV, antenna array, and potential flight region, with labeled axes and directional beam.",
+    "questions": [
+      "What is the overall purpose of the depicted UAV sensing system?",
+      "How are the components of the system spatially arranged relative to each other?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29822v1",
+    "source_pdf": "../pdfs/2603.29822v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29822v1.pdf",
+    "page": 3,
+    "image_path": "../data/2603.29822v1/images/p0003_figure_00002.png",
+    "caption": "Fig. 2. The illustration of the proposed approach.",
+    "md5": "8c466a8aa0b9b0bed3dac37c600085b8",
+    "description2": "The illustration shows a flowchart diagramming the step-by-step process for implementing the novel algorithm.",
+    "description3": "A multi-panel plot with a flowchart demonstrates a proposed approach, including vector projection, embedding, and a noise estimation network.",
+    "questions": [
+      "What is the overall purpose of the proposed approach shown in this illustration?",
+      "How does the proposed approach organize the different processing steps?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29822v1",
+    "source_pdf": "../pdfs/2603.29822v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29822v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.29822v1/images/p0005_figure_00003.png",
+    "caption": "Fig. 3. (a)-(b): Potential region view of the point cloud reconstruction result with the relative permittivity based on the proposed approach; (c)-(f): Centralized view of the point cloud reconstruction results with the conductivity based on different approaches; SNR is ﬁxed as 20 dB.",
+    "md5": "bcfc0b82109055e71cfc4e191b16ea87",
+    "description2": "The figure plots a potential region view of point cloud reconstruction results, showing the relative permittivity and conductivity based on different approaches.",
+    "description3": "The figure contains six plots displaying point cloud reconstruction results, arranged in two rows of three, with generic x and y axes.",
+    "questions": [
+      "How do different approaches affect the reconstruction of point cloud data?",
+      "What is the general relationship between the reconstruction and the permittivity/conductivity?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29822v1",
+    "source_pdf": "../pdfs/2603.29822v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29822v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.29822v1/images/p0006_figure_00004.png",
+    "caption": "Fig. 4. The WD comparison under varying SNR conditions.",
+    "md5": "b9c5078f765620ebc65c22996475411c",
+    "description2": "The figure plots a comparison of white dwarfs under different signal-to-noise ratio conditions.",
+    "description3": "A line chart compares WD values for proposed, NoEBD, and Direc-Channel methods across varying SNR (dB) conditions.",
+    "questions": [
+      "How does the performance of different approaches change under varying signal-to-noise ratio conditions?",
+      "What is the general trend of the comparison results as the signal-to-noise ratio increases?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.29822v1",
+    "source_pdf": "../pdfs/2603.29822v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29822v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.29822v1/images/p0006_figure_00005.png",
+    "caption": "Fig. 5. The MPE/MDE comparisons under varying SNR conditions.",
+    "md5": "62cc5426964d36b333f466d723dd0eaa",
+    "description2": "The figure plots comparisons between MPE and MDE under different signal-to-noise ratio conditions.",
+    "description3": "A line chart plots MPE and MDE values versus SNR (in dB) for proposed, NoEBD, and Direc-channel methods.",
+    "questions": [
+      "What are the relative performance comparisons between the different approaches shown?",
+      "How do the MPE/MDE values change as the SNR conditions vary?"
+    ]
+  }
+]

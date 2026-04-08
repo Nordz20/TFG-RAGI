@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2601.03482v1",
+    "source_pdf": "../pdfs/2601.03482v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2601.03482v1.pdf",
+    "page": 4,
+    "image_path": "../data/2601.03482v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1: Illustration of an N-of-1 trial design with alternat- ing interventions (A and B) following a baseline period to evaluate individual treatment responses over time.",
+    "md5": "445c83ef066557363de379da6fd15784",
+    "description2": "The figure plots a line chart showing alternating treatments A and B, comparing individual responses over time after a baseline period.",
+    "description3": "Two-panel line chart displays alternating interventions (A and B) following a baseline period, tracking an outcome (back pain) over time.",
+    "questions": [
+      "What is the purpose of the alternating interventions shown in this design?",
+      "How does this design illustrate the evaluation of individual responses over time?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2601.03482v1",
+    "source_pdf": "../pdfs/2601.03482v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2601.03482v1.pdf",
+    "page": 5,
+    "image_path": "../data/2601.03482v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2: Visual illustration of the hybrid framework combining population-level LFMs with individual-level N-of-1 trials for evidence-based personalization of health interventions.",
+    "md5": "fd9b9f9e26431751537561a59df3d94c",
+    "description2": "A visual illustration of a hybrid framework combines population-level latent factor models with individual-level N-of-1 trials to facilitate evidence-based personalization of health interventions.",
+    "description3": "Two-panel diagram visually explains a hybrid framework combining population-level LFMs with individual-level N-of-1 trials for personalized health interventions.",
+    "questions": [
+      "How does this framework approach personalization of health interventions?",
+      "What are the key benefits of combining population and individual data?"
+    ]
+  }
+]

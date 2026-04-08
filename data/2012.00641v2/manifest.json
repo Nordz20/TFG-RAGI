@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2012.00641v2",
+    "source_pdf": "../pdfs/2012.00641v2.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2012.00641v2.pdf",
+    "page": 1,
+    "image_path": "../data/2012.00641v2/images/p0001_figure_00001.png",
+    "caption": "Fig. 1: The pipeline of state-of-the-art feature representation is replaced by the CNN based feature representation.",
+    "md5": "b4ec480d48a381861a63af0bdc20e511",
+    "description2": "A pipeline diagram illustrating the replacement of a state-of-the-art feature representation with a CNN-based feature representation.",
+    "description3": "A flowchart details a pipeline where an image passes through region detection, normalization, computation, and aggregation, ultimately producing a feature representation via convolutional neural networks.",
+    "questions": [
+      "What is the purpose of the pipeline shown?",
+      "How does the pipeline process an image to generate a feature representation?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2012.00641v2",
+    "source_pdf": "../pdfs/2012.00641v2.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2012.00641v2.pdf",
+    "page": 2,
+    "image_path": "../data/2012.00641v2/images/p0002_figure_00002.png",
+    "caption": "Fig. 2: Taxonomy used in this survey to categorize the existing deep learning based image retrieval approaches.",
+    "md5": "1768556f9e9be86399668eb2538ca6c8",
+    "description2": "A taxonomy diagram categorizes existing deep learning-based image retrieval approaches.",
+    "description3": "A taxonomy, structured as a flowchart, categorizes deep learning-based image retrieval approaches by type, including supervision, network, descriptor, retrieval, and miscellaneous.",
+    "questions": [
+      "How do different deep learning approaches categorize image retrieval methods?",
+      "What are the main categories used to classify image retrieval techniques?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2012.00641v2",
+    "source_pdf": "../pdfs/2012.00641v2.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2012.00641v2.pdf",
+    "page": 3,
+    "image_path": "../data/2012.00641v2/images/p0003_figure_00003.png",
+    "caption": "Fig. 4: The illustration of the neural code generation from a convolutional neural network (CNN) [61].",
+    "md5": "ee2b6b38a47460553c773d1176a09a77",
+    "description2": "The illustration depicts the neural code generation process from a convolutional neural network (CNN).",
+    "description3": "The multi-panel plot displays a convolutional neural network with seven layers, showing the dimensions of each layer's output.",
+    "questions": [
+      "What is the overall process being illustrated in this neural network?",
+      "How does information flow through the layers of this network?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2012.00641v2",
+    "source_pdf": "../pdfs/2012.00641v2.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2012.00641v2.pdf",
+    "page": 3,
+    "image_path": "../data/2012.00641v2/images/p0003_figure_00004.png",
+    "caption": "Fig. 3: A chronological view of deep learning based image retrieval methods depicting its evolution from 2011 to 2020.",
+    "md5": "8c12c1680d779f615ad2299c17609b47",
+    "description2": "A chronological view of deep learning-based image retrieval methods is plotted, spanning from 2011 to 2020.",
+    "description3": "A horizontal timeline displays the evolution of deep learning-based image retrieval methods from 2011 to 2020, with various techniques listed chronologically.",
+    "questions": [
+      "How have image retrieval methods changed over time based on deep learning?",
+      "What is the general progression of deep learning approaches for image retrieval?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2012.00641v2",
+    "source_pdf": "../pdfs/2012.00641v2.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2012.00641v2.pdf",
+    "page": 6,
+    "image_path": "../data/2012.00641v2/images/p0006_figure_00005.png",
+    "caption": "Fig. 5: A chronological view of deep learning based image retrieval methods depicting the different type of neural networks used from 2011 to 2020. The convolutional neural network, autoencoder network, siamese & triplet network, recurrent neural network, generative adversarial network, attention network and reinforcement learning network based deep learning approches for image retrieval are depicted in Red, Cyan, Magenta, Black, Blue, Green, and Yellow colors, respectively.",
+    "md5": "e05a284ae42b0a7739496772ac5342e5",
+    "description2": "A chronological view of deep learning-based image retrieval methods is plotted from 2011 to 2020, featuring different types of neural networks.",
+    "description3": "A timeline chart displays deep learning image retrieval methods from 2011 to 2020, categorized by network type and color-coded.",
+    "questions": [
+      "How have image retrieval methods evolved over time using deep learning techniques?",
+      "What different types of neural networks have been applied to image retrieval?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2012.00641v2",
+    "source_pdf": "../pdfs/2012.00641v2.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2012.00641v2.pdf",
+    "page": 6,
+    "image_path": "../data/2012.00641v2/images/p0006_figure_00006.png",
+    "caption": "Fig. 6: A typical Autoencoder network consisting of an En- coder and a Decoder network. Generally, the encoder is a CNN and the decoder is an up-CNN. The output of the encoder is a latent space which is used to generate the hash codes.",
+    "md5": "ff057b8547c23858fd47479006f6cbff",
+    "description2": "A typical Autoencoder network consists of an Encoder and a Decoder network, with the Encoder being a CNN and the Decoder being an up-CNN.",
+    "description3": "A block diagram displays an autoencoder network, comprising an encoder, a latent vector, and a decoder.",
+    "questions": [
+      "What is the overall purpose of the network shown in this diagram?",
+      "How are the encoder and decoder components typically structured within this network?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2012.00641v2",
+    "source_pdf": "../pdfs/2012.00641v2.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2012.00641v2.pdf",
+    "page": 7,
+    "image_path": "../data/2012.00641v2/images/p0007_figure_00007.png",
+    "caption": "Fig. 7: (a) Siamese network computes the similarity between image pairs. (b) Triplet network minimizes the distance be- tween the anchor and positive and maximizes the distance between the anchor and negative in feature space.",
+    "md5": "82d9e133bfc98f5420327f88f2a7f35c",
+    "description2": "The figure depicts a comparison of two neural networks, showing a Siamese network's computation of image pair similarity and a triplet network's optimization of feature space distances.",
+    "description3": "Two-panel plot displays a Siamese network and a triplet network, both utilizing CNNs and feature space for similarity and distance calculations.",
+    "questions": [
+      "How do Siamese and Triplet networks approach image similarity computations?",
+      "What is the key difference in how these networks handle image relationships?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2012.00641v2",
+    "source_pdf": "../pdfs/2012.00641v2.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2012.00641v2.pdf",
+    "page": 9,
+    "image_path": "../data/2012.00641v2/images/p0009_figure_00008.png",
+    "caption": "Fig. 8: A chronological view of deep learning based image retrieval methods depicting the different type of descriptors. The binary and real-valued feature vector based models are presented in Red and Blue colors, respectively. The feature aggregation based models are presented in Cyan color.",
+    "md5": "abe9307d0c3daf6eebc5fa2c6a4cac08",
+    "description2": "A timeline displays the development of deep learning-based image retrieval methods, featuring different types of descriptors represented by colored lines.",
+    "description3": "A timeline plot displays deep learning image retrieval methods categorized by descriptor type, using color to distinguish binary, real-valued, and aggregation-based models.",
+    "questions": [
+      "How have image retrieval methods evolved over time based on descriptor types?",
+      "What are the different categories of models used for image retrieval?"
+    ]
+  }
+]

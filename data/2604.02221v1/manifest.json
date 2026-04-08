@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02221v1",
+    "source_pdf": "../pdfs/2604.02221v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02221v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02221v1/images/p0004_figure_00001.png",
+    "caption": "Fig. 1. MuDoC uses GPT-4.1 for Reason-and-Act (ReAct) loop with 4 possible actions viz. Initial Search, Content Search, Confirm Intent, and Final Response.",
+    "md5": "33b8d33980a9c9061d85184ac050a9b5",
+    "description2": "The diagram illustrates the MuDoC system using GPT-4.1 in a Reason-and-Act loop with four distinct actions: Initial Search, Content Search, Confirm Intent, and Final Response.",
+    "description3": "Two-panel diagram details a Reason-and-Act loop, where GPT-4.1 performs actions like Initial Search, Content Search, Confirm Intent, and Final Response.",
+    "questions": [
+      "What are the primary actions involved in the MuDoC Reason-and-Act loop?",
+      "How does the system process a query to generate a final response?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02221v1",
+    "source_pdf": "../pdfs/2604.02221v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02221v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02221v1/images/p0007_figure_00002.png",
+    "caption": "Fig. 2. Snapshots from self-learning session: ‘Chat’ tab shows the conversational AI interface (MuDoC and TexDoC). ‘Objectives’ tab contains the learning objectives with checkboxes to track progress. ‘Document’ tab shows the source document for all AI systems. A ‘Notepad’ box is present on the right for note-taking.",
+    "md5": "e20ffd077f8d5bcb859264b0b520518f",
+    "description2": "Snapshots from a self-learning session display the conversational AI interface, learning objectives, and source documents for MuDoC and TexDoC.",
+    "description3": "The screen displays a multi-panel plot with tabs labeled ‘Objectives,’ ‘Chat,’ and ‘Textbook,’ alongside a notepad for notes.",
+    "questions": [
+      "What are the primary functions of the different tabs shown in this interface?",
+      "How does this system support learning and tracking progress?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02221v1",
+    "source_pdf": "../pdfs/2604.02221v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02221v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02221v1/images/p0011_figure_00003.png",
+    "caption": "Fig. 3. Perceived Learning Experience with MuDoC, TexDoC and DocSearch.",
+    "md5": "469e8a7c42b544a2f06bd48ca4ae2859",
+    "description2": "The figure plots the perceived learning experience with MuDoC, TexDoC, and DocSearch.",
+    "description3": "Three-panel bar plots compare perceived learning experiences with MuDoC, TexDoC, and DocSearch across seven statements, using colored bars to represent agreement levels.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]

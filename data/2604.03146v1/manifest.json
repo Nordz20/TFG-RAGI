@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03146v1",
+    "source_pdf": "../pdfs/2604.03146v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03146v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.03146v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1. Non-Gaussian Decision Scores and Classification Error. Left: Empirical histograms of decision scores for Class 0 (light blue) and Class 1 (light red) exhibit non-Gaussian dis- tributions that align closely with theoretical predictions (dashed blue). Gaussian approximations (green dashed) fail to capture the skewness and bimodality per class. Right: Classification error as a function of the regularization parameter. The empirical error (red) closely matches the theoretical non-Gaussian model (solid blue), while the Gaussian assumption on the score (green dashed) leads to an overestimation of the error and the Gaussian assumption on the data (purple dashed) leads to an underestimation of the error.",
+    "md5": "9af4918952525948ef5a4a5f0f58a103",
+    "description2": "Empirical histograms of decision scores for Class 0 and Class 1 exhibit non-Gaussian distributions with skewness and bimodality, aligning closely with theoretical predictions.",
+    "description3": "The plot features two panels: histograms of decision scores and a classification error curve versus a regularization parameter.",
+    "questions": [
+      "How do empirical decision scores differ from Gaussian approximations?",
+      "What is the relationship between regularization and classification error?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03146v1",
+    "source_pdf": "../pdfs/2604.03146v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03146v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.03146v1/images/p0008_figure_00002.png",
+    "caption": "Figure 2. We examine different score distributions for vari- ous regularization functions ρ : θ 7→ a⊤θ + ∥θ∥2, where a = (− cos(ϕ), sin(ϕ), 0, . . . , 0) for some angle ϕ = 0, π",
+    "md5": "909a52801e7d192ce91819c66912f84f",
+    "description2": "The figure plots different score distributions for various regularization functions with parameters θ and angle ϕ.",
+    "description3": "Four-panel plot displays a line chart, three histograms, and three density plots, comparing empirical and theoretical distributions.",
+    "questions": [
+      "How do score distributions change with different regularization functions?",
+      "What is the relationship between the empirical and theoretical distributions shown?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03146v1",
+    "source_pdf": "../pdfs/2604.03146v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03146v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.03146v1/images/p0024_figure_00003.png",
+    "caption": "Figure 3. Denoting Fa := F + span(a) and F ⊥ a := (F + span(a))⊥, and write PE for the orthogonal projection onto a subspace E. We define Jµ(µ) := E \u0002 eLy \u0000 µ⊤x + αz; κ \u0001\u0003 +ρ(µ), the part minimized by µ∗ in J . (left) Comparison of the values of t 7→ Jµ(µ∗ +tu) for a random direction u = V (solid line), u = VFa = PFaV (dashed line), u = VF = PF V (dash–dot line), and the null direction u = 0 (bold solid line). (right) From left to right and from top to bottom we display the following distribution: x⊤µ∗, (PF x)⊤µ∗, (PFax)⊤µ∗ and (PF ⊥ a x)⊤µ∗.",
+    "md5": "723f883c4554ef98020ba732d92592e5",
+    "description2": "The figure displays a comparison of values for Jµ(µ∗ +tu) plotted against t, with four different directions u represented by solid, dashed, dash-dot, and bold lines.",
+    "description3": "Two-panel plot displays a line chart comparing functions and four distributions of values, arranged in a 2x2 grid.",
+    "questions": [
+      "How do different directions influence the values represented in the left panel?",
+      "What are the relative distributions of the values shown in the right panel?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03146v1",
+    "source_pdf": "../pdfs/2604.03146v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03146v1.pdf",
+    "page": 27,
+    "image_path": "../data/2604.03146v1/images/p0027_figure_00004.png",
+    "caption": "Figure 4. Universality breakdown on MNIST data. Left: Empirical histograms of decision scores for Class 0 (light blue) and Class 1 (light red) of ˆθ⊤x, compared with a Gaussian approximation of matching mean and variance (green dashed) and with the corrected theoretical density(dashed blue). Right: Generalization performance. Predictions based on Gaussian score universality (green dashed) fail to match empirical results, while corrected theoretical predictions are accurate. Performance obtained by replacing the data with a moment-matched Gaussian surrogate (purple dashed) also exhibits a substantial mismatch.",
+    "md5": "58fec0d3b8a5d797693b8f4c2a4075e9",
+    "description2": "The figure plots empirical histograms of decision scores for Class 0 and Class 1 on MNIST data, alongside a Gaussian approximation and theoretical density.",
+    "description3": "The figure contains a two-panel plot, displaying decision score distributions and classification error versus regularization parameter.",
+    "questions": [
+      "How do theoretical predictions compare to empirical results regarding classification performance?",
+      "What is the relationship between decision scores and their Gaussian approximation?"
+    ]
+  }
+]

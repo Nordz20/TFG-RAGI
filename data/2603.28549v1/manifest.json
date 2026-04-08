@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.28549v1/images/p0002_figure_00001.png",
+    "caption": "FIG. 1: Computing time of the Forward model using DLAtrack6D as function of the number of used CPU kernels (red and blue line for 105 and 2.5 × 105",
+    "md5": "d20a3af4bd750ef4deb45af8e7176cc3",
+    "description2": "The figure plots computing time as a function of the number of used CPU kernels, with red and blue lines representing 10^5 and 2.5 x 10^5 respectively, using DLAtrack6D Forward model.",
+    "description3": "Two-panel line chart displays computing time as a function of CPU kernels, with red and blue lines representing different data sets.",
+    "questions": [
+      "How does the computing time of the model change with the number of CPU kernels used?",
+      "What is the general relationship between the number of kernels and the computing time?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 3,
+    "image_path": "../data/2603.28549v1/images/p0003_figure_00002.png",
+    "caption": "FIG. 2: Simulated spectrometer response for different PFT angles and phases of the resonant harmonic. The initial Gaussian energy distribution (dashed line) evolves into a modulated spectrum due to the DLA interaction.",
+    "md5": "999e49504bbd7831b60a188ddc0fde06",
+    "description2": "The figure plots the simulated spectrometer response for various plant functional type angles and phases of the resonant harmonic, illustrating its evolution from an initial Gaussian energy distribution.",
+    "description3": "Two-panel plot displays simulated spectrometer responses as histograms, with a dashed line representing the initial Gaussian energy distribution.",
+    "questions": [
+      "How does the energy distribution change with different phases of the resonant harmonic?",
+      "What is the general effect of the interaction on the initial energy distribution?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.28549v1/images/p0004_figure_00003.png",
+    "caption": "FIG. 3: Simulated mean energy gain as a function of pulse front tilt angle and phase offset. The plot shows a quasi-symmetry plane in the PFT angle dependence at 45◦.",
+    "md5": "61268c510294ba0ea42629d23b7bdce9",
+    "description2": "The figure plots simulated mean energy gain as a function of pulse front tilt angle and phase offset.",
+    "description3": "Four-panel plot displays a heatmap showing mean energy gain as a function of pulse front tilt angle and phase offset, exhibiting a quasi-symmetry plane.",
+    "questions": [
+      "What general dependence is shown between energy gain and pulse front tilt angle?",
+      "How does phase offset influence the simulated energy gain?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.28549v1/images/p0004_figure_00004.png",
+    "caption": "FIG. 4: Time and position of interaction between electron (black line) and laser pulse: longest interaction length for θPFT,opt = 45◦ (green ellipse), shorter interaction lengths for non-optimal PFT angles, but almost symmetric for θPFT = θPFT,opt ± ∆θ (red and blue ellipses).",
+    "md5": "0671a30a9b19cff92288d37429ac8f76",
+    "description2": "The figure plots the time and position of interaction between an electron and a laser pulse, with varying optimal and non-optimal polarization angles.",
+    "description3": "Two-panel plot displays interaction length between an electron (black line) and a laser pulse, using ellipses of varying colors to represent different angles.",
+    "questions": [
+      "How does the interaction length between an electron and a laser pulse vary with angle?",
+      "What is the relationship between the position and time of electron-laser pulse interaction?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.28549v1/images/p0005_figure_00005.png",
+    "caption": "FIG. 5: Reconstruction accuracy of pulse front tilt angle (left) and phase offset (right) on an independent test dataset (5000 samples). The neural network achieves a RMSE of about 1.5° in the PFT angle interval [35◦,45◦] and a RMSE of 0.36 on the phase offset corresponding to 0.4 fs timing offset. The symmetry in the PFT angle is clearly visible. The plot color depicts the second parameter: 30◦ PFT angle, 0 rad phase offset (purple) → 45◦ PFT angle, π phase offset (blue-green) → 60◦ PFT angle, 2π phase offset (yellow).",
+    "md5": "3b9b9c7663cde295c1e0b4f827cbc8d9",
+    "description2": "The figure plots the reconstruction accuracy of pulse front tilt angle and phase offset on an independent test dataset.",
+    "description3": "Two-panel scatter plot shows predicted versus initial pulse front tilt angle (left) and phase (right), with color indicating the angle and phase offset values.",
+    "questions": [
+      "How does the reconstruction accuracy vary with the pulse front tilt angle?",
+      "What is the relationship between the predicted and initial values of the phase offset?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28549v1/images/p0006_figure_00006.png",
+    "caption": "FIG. 7: Reconstruction error in pulse front tilt angle (left) and phase offset (right) as a function of Gaussian spectrometer noise level (see Eq. 6). RMSE of the model trained on pure synthetic data increases very fast. However, performance remains stable for model trained with noisy data (blue lines) up to noise levels exceeding expected experimental conditions.",
+    "md5": "c4da190e8e386abd83e45643ef60b764",
+    "description2": "The figure plots reconstruction error in pulse front tilt angle and phase offset as a function of Gaussian spectrometer noise level.",
+    "description3": "Two-panel line chart displays reconstruction error versus noise level, showing red lines (no noise) increasing rapidly and blue lines (with noise) remaining stable.",
+    "questions": [
+      "How does training data noise affect the model's reconstruction error performance?",
+      "What is the general trend of reconstruction error with increasing noise levels?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28549v1/images/p0006_figure_00007.png",
+    "caption": "FIG. 6: Reconstruction accuracy of pulse front tilt angle (left) and phase offset (right) on an independent test dataset (5000 samples). Gaussian noise is added to the training dataset of the neural network to improve the overall RMSE and the robustness against noisy measurement data for reconstruction. The plot color depicts the second parameter: 30◦ PFT angle, 0 rad phase offset (purple) → 45◦ PFT angle, π phase offset (blue-green) → 60◦ PFT angle, 2π phase offset (yellow).",
+    "md5": "8ea173a3ebf6dba405af3e6c053bb51a",
+    "description2": "The figure plots reconstruction accuracy of pulse front tilt angle and phase offset on an independent test dataset with added Gaussian noise.",
+    "description3": "Two-panel scatter plot shows the reconstruction accuracy of pulse front tilt angle (left) and phase offset (right), colored by angle and offset values.",
+    "questions": [
+      "How does reconstruction accuracy change with varying pulse front tilt angle and phase offset?",
+      "What is the relationship between the initial and predicted values for these measurements?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.28549v1/images/p0007_figure_00008.png",
+    "caption": "FIG. 9: The two models trained with pulse front tilt angles below 45◦ (left) and above 45◦ (right) can both predict the phase offset in the complete parameter range with similar accuracy. The plot color depicts the second parameter: 30◦ PFT angle, 0 rad phase offset (purple) → 45◦ PFT angle, π phase offset (blue-green) → 60◦ PFT angle, 2π phase offset (yellow).",
+    "md5": "4c9cc05d66dd2165097e395ef08afbfc",
+    "description2": "The figure plots two models trained with pulse front tilt angles below and above 45 degrees, displaying the prediction of phase offset in a complete parameter range.",
+    "description3": "Two-panel scatter plots display predicted versus initial phase (in radians) for pulse front tilt angles below and above 45 degrees, with color representing a parameter range.",
+    "questions": [
+      "How does the pulse front tilt angle influence the models' prediction accuracy?",
+      "What is the general trend observed between initial and predicted phase offset?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.28549v1",
+    "source_pdf": "../pdfs/2603.28549v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.28549v1/images/p0007_figure_00009.png",
+    "caption": "FIG. 8: Two models trained with pulse front tilt angles below 45◦ (left) and above 45◦ (right) offer the possibility to predict both possible PFT angles with improved RMSE. The plot color depicts the second parameter: 30◦ PFT angle, 0 rad phase offset (purple) → 45◦ PFT angle, π phase offset (blue-green) → 60◦ PFT angle, 2π phase offset (yellow).",
+    "md5": "bbfd22a5980bc61b435b59bdc7e3dabb",
+    "description2": "The figure plots two models trained with pulse front tilt angles below and above 45 degrees, distinguished by color representing different second parameters.",
+    "description3": "Two-panel plots display predicted versus initial PFT angles, colored by a second parameter representing PFT angle and phase offset.",
+    "questions": [
+      "How do different pulse front tilt angles affect the predicted angle?",
+      "What is the relationship between the initial and predicted pulse front tilt angles?"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03187v1",
+    "source_pdf": "../pdfs/2604.03187v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03187v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03187v1/images/p0002_figure_00001.png",
+    "caption": "Fig. 1. Electrical schematic illustrating two NMOS+MTJ neurons connected by a synaptic weight. Each neuron consists of a magnetic tunnel junction (MTJ), represented by the blue and orange layers, connected in series with an NMOS transistor. The synaptic connection is implemented with a voltage amplifier whose gain represents the synaptic weight wkj that controls how activity from one neuron influences the next neuron. Vin is the input voltage applied to the first neuron, Vout is the output voltage of the second neuron, and VDD is the supply voltage.",
+    "md5": "33cd278ad2cc40abeef8830575a0f60e",
+    "description2": "The plot illustrates the electrical schematic of two NMOS+MTJ neurons connected by a synaptic weight with magnetic tunnel junctions represented by blue and orange layers.",
+    "description3": "Four-panel schematic displays two NMOS+MTJ neurons linked by a synaptic weight, represented as a voltage amplifier between them.",
+    "questions": [
+      "How are neurons connected and influenced by each other in this electrical schematic?",
+      "What components make up the structure of each neuron in this schematic?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03187v1",
+    "source_pdf": "../pdfs/2604.03187v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03187v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03187v1/images/p0002_figure_00002.png",
+    "caption": "Fig. 2. Architecture of the NMOS+MTJ neural network used for XOR classification. Encoding neurons A and B drive input-layer neurons i1 and i2, which connect to output neuron o1 through synaptic weights. A bias neuron provides a constant input to the network. The XOR truth table showing the bias input and target output.",
+    "md5": "86f9ff1612b54625a029e22cbca14c2b",
+    "description2": "The figure depicts an NMOS+MTJ neural network architecture for XOR classification, featuring encoding neurons driving input-layer neurons with synaptic weights to output neuron o1.",
+    "description3": "Two-panel architecture displays encoding neurons, an input layer, and an output layer connected by synaptic weights, alongside an XOR truth table.",
+    "questions": [
+      "What is the overall architecture of the network used for XOR classification?",
+      "How are input signals processed and routed through the network's layers?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03187v1",
+    "source_pdf": "../pdfs/2604.03187v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03187v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03187v1/images/p0003_figure_00003.png",
+    "caption": "Fig. 3. Simulation results of rows 1 and 3 of the XOR truth table. (a,e) Input currents supplied to neurons i1 and i2. (b, f) Voltage spikes of neurons i1 and i2. (c, g) Current supplied to output neuron o1. (d, h) Voltage spike of output neuron o1.",
+    "md5": "d898bc0f6e5c015250300eb6e6454175",
+    "description2": "The figure plots input currents, voltage spikes, and outputs for neurons i1, i2, and o1 in rows 1 and 3 of the XOR truth table simulation results.",
+    "description3": "Four-panel plot shows input and output currents and voltage spikes for neurons i1, i2, and o1, across two rows.",
+    "questions": [
+      "How do input currents affect the voltage spikes of neurons in this simulation?",
+      "What is the relationship between input currents and the output neuron's voltage spikes?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03187v1",
+    "source_pdf": "../pdfs/2604.03187v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03187v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03187v1/images/p0004_figure_00004.png",
+    "caption": "Fig. 4. Simulation result of row 2 of the XOR truth table. (a) Input currents supplied to neurons i1 and i2. (b) Voltage spikes of neurons i1 and i2. (c) Current supplied to output neuron o1. (d) Voltage spike of output neuron o1.",
+    "md5": "fab24d59d20186b5d50d84bfbde86b6e",
+    "description2": "The figure plots a simulation result of the XOR truth table, featuring input currents, voltage spikes, and current/voltage outputs for neurons i1, i2, and o1.",
+    "description3": "Four-panel plot displays currents and voltage spikes of neurons i1, i2, and o1 over time, representing simulation results for row 2.",
+    "questions": [
+      "How do input currents affect the output voltage spikes of the simulated neurons?",
+      "What is the general relationship between the input and output signals in this simulation?"
+    ]
+  }
+]

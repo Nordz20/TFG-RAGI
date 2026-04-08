@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29941v1",
+    "source_pdf": "../pdfs/2603.29941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29941v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.29941v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1. Aggregation strategies (AggS). (a) An AggS reduces an uncertainty map to a single scalar score. (b) Empirical evaluation of AggSs. Choosing an appropriate AggS is challenging and highly task-dependent. Hence, we benchmark different strategies in the context of OoD- and failure detection over different datasets. (c) Limitations of individual AggSs. Pixel-wise strategies, in particular, have key shortcomings e.g. 1. AVG ignores spatial structure; 2. AQA lacks proportional invariance; and 3. ATA is not monotonic (see Supp. A for more details). (d) Subtypes of AggSs. Beyond pixel-wise AggSs, we also explore spatially-aware approaches—such as prediction-based and spatial AggSs, which measure the fraction of uncertainty mass within structured regions of the uncertainty map. Finally, we consider Meta-AggSs, which combine intensity-based and spatial strategies by fitting a Gaussian Mixture Model (GMM).",
+    "md5": "83d28525832484490bac5401837ec0bc",
+    "description2": "The figure plots aggregation strategies for reducing an uncertainty map to a single scalar score, including pixel-wise, prediction-based, spatial, and meta-aggregation approaches.",
+    "description3": "The figure presents a multi-panel plot categorizing aggregation strategies, including pixel-wise, spatial, and meta-approaches, with benchmarks and limitations.",
+    "questions": [
+      "How do different aggregation strategies perform in out-of-distribution and failure detection?",
+      "What are the different categories of aggregation strategies explored in this study?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29941v1",
+    "source_pdf": "../pdfs/2603.29941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29941v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.29941v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2. Structural diversity of datasets. The scatterplot illus- trates structural diversity by projecting uncertainty maps into the space of two SMR scores: MOR and EDS. High MOR indicates clustered uncertainty (low: noise), while high EDS reflects edge- localized uncertainty (low: flat regions). Notably, EDS effectively identifies OoD samples in CAR-ID/CAR-CS.",
+    "md5": "1b35652a9d0dfaac648fdf33c4d712a9",
+    "description2": "A scatterplot illustrates structural diversity by projecting uncertainty maps into the space of two SMR scores, MOR and EDS.",
+    "description3": "A scatterplot displays data points, representing datasets, plotted against MOR (noisy to clustered) and EDS (flat to edge) scores.",
+    "questions": [
+      "What does the scatterplot illustrate about the structural diversity of datasets?",
+      "How do MOR and EDS values relate to uncertainty characteristics?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29941v1",
+    "source_pdf": "../pdfs/2603.29941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29941v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.29941v1/images/p0006_figure_00003.png",
+    "caption": "Figure 3. Performance on OoD Detection. Higher AUROC (0.6–1.0) indicates better iD–OoD separation. AggSs are ranked by their mean AUROC, computed over 500 bootstrap samples per dataset and then averaged across datasets for stability. Ranking robustness is assessed via one-sided Wilcoxon signed-rank tests at 5%, showing that prediction-based BCA and ICA, along with GMM-based methods, form a statistically dominant tier (p < 0.05). Numbers after AggS labels indicate method-specific pa- rameters (cf. Supp. A.1). Full analysis, including additional UQ methods and confidence intervals, is in Supp. C.",
+    "md5": "21d0af06d6de6916cc2c7ff86daeef29",
+    "description2": "The figure plots the performance of various methods for out-of-distribution detection, with error bars indicating the range of AUROC values across 500 bootstrap samples per dataset.",
+    "description3": "A multi-panel plot displays AUROC values, ranked by mean AUROC, for various out-of-distribution detection methods.",
+    "questions": [
+      "How do different methods compare in their ability to distinguish between in-distribution and out-of-distribution data?",
+      "What is the general trend in performance ranking among the different methods shown?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29941v1",
+    "source_pdf": "../pdfs/2603.29941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29941v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.29941v1/images/p0007_figure_00004.png",
+    "caption": "Figure 4. GMM Robustness for OoD Detection. (a) Fitting a GMM enables spatial methods to act as AggSs, capturing subtle non-linear changes in uncertainty maps. (b) Qualitative examples showing that effective AggSs for iD–OoD separation are data-dependent. (c) GMM- All AUROC: leave-one-out (top) and individual fitting (bottom) on a subset (CAR-CS, LIZ-IG, WEED-Hand, and WORM-Nem split). Using all AggSs generally matches or outperforms individual ones in 3 cases, with minimal impact from removing specific ones. Exceptions occur when a feature dominates (e.g., EDS for CAR-CS, marked as Tukey outlier) or when features lack discriminative power. (d) GMM-All AUROC: absolute SHAP values. Positive values indicate that an AggS aids GMM-All in separating iD–OoD; bi-directional or null contributions reduce performance (e.g., in LIZ-IG). SHAP values are shown for the same subsets as in (c).",
+    "md5": "72a18cbd5c5cfbd041f0cbfb896a3cfe",
+    "description2": "The figure plots the robustness of Gaussian Mixture Model (GMM) for out-of-distribution detection, showcasing its effectiveness in capturing subtle changes and separating identified from out-of-distribution data.",
+    "description3": "Two-panel plots display GMM robustness for out-of-distribution detection, showing fitting, qualitative examples, AUROC comparisons, and SHAP value contributions.",
+    "questions": [
+      "How do different AggSs influence the ability to distinguish in-distribution from out-of-distribution data?",
+      "What is the general trend observed when comparing individual AggSs to the combined GMM-All approach?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.29941v1",
+    "source_pdf": "../pdfs/2603.29941v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29941v1.pdf",
+    "page": 8,
+    "image_path": "../data/2603.29941v1/images/p0008_figure_00005.png",
+    "caption": "Figure 5. Performance on FD. (a) Exemplary Selective Risk-Coverage curves. (b) E-AURC scores. Lower values indicate better alignment between uncertainty and prediction errors. AggSs are ranked by their mean E-AURC, computed over 500 bootstrap samples per dataset and then averaged across datasets for stability. Ranking robustness is assessed via one-sided Wilcoxon signed-rank tests at 5%, showing that prediction-based QFR shows statistically significant improvement over all other AggSs (p < 0.001), followed by BCA and GMM-based methods (p < 0.05). Full analysis, including additional UQ methods and confidence intervals, is in Supp. C.",
+    "md5": "1e51ded4bfecc45cb5eb3b60e2432b0f",
+    "description2": "Selective Risk-Coverage curves are plotted with error bars, showing exemplary performance on FD.",
+    "description3": "Two-panel plot displays selective risk-coverage curves and E-AURC scores, ranking aggregation strategies by mean E-AURC across datasets.",
+    "questions": [
+      "How do different methods compare in their ability to align uncertainty with prediction errors?",
+      "What is the relative ranking of different methods based on their performance metrics?"
+    ]
+  }
+]

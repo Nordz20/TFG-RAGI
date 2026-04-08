@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03550v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1. Circuit architecture and phase diagram. (a) Schematic of the measurement-only brickwork circuit applied to L = 6 qubits over three time steps. Each step features three sequential layers of measurements: single-qubit X operators shown in purple, nearest-neighbor two-qubit ZZ operator in blue, and three-qubit ZXZ operators on adjacent triplets in green. (b) Ternary phase diagram defined on the simplex γX + γZZ + γZXZ = 1. The purple, blue, and green shaded regions correspond to the trivial, long range entangled, and SPT phases, respectively, with dashed lines representing the critical boundaries between them. Stars at the three vertices mark the phase training points. Test parameter locations are indicated by red circles for outer points and orange squares for inner points. The color bar indicates the fraction of inde- pendent training runs that agree on the majority label.",
+    "md5": "ce51d051ae038b9ace6ac29fedb8cd4a",
+    "description2": "A circuit architecture is plotted, featuring a measurement-only brickwork circuit applied to 6 qubits over three time steps with sequential measurements in purple, blue, and green.",
+    "description3": "Three-panel schematic diagrams a measurement circuit over time steps, a ternary phase diagram with shaded regions, and test parameter locations.",
+    "questions": [
+      "What types of operators are used in the circuit architecture shown?",
+      "How do the different colored regions of the phase diagram relate to distinct phases?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03550v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2. Schematic of the neural network architecture. Raw X, ZZ, and ZXZ measurement records for N trajectories are reshaped to align with the circuit’s brickwork periodicity. Three parallel CNN branches independently process these inputs, followed by spatial global average pooling to extract feature sequences. These features are concatenated, projected through a linear layer, and compressed via a temporal readout. Finally, a pooling attention module aggregates the N trajectory representations into a single vector, which is mapped via a softmax layer to produce y(N), a probability distribution over the trivial, LR, and SPT phases. Bracketed notation (e.g.,[...]) is provided at each intermediate stage to explicitly indicate the shape of the data tensors.",
+    "md5": "c0b927b4f00e81480457111049d21cad",
+    "description2": "The figure schematically illustrates the neural network architecture, featuring three parallel CNN branches processing raw measurement records for N trajectories and spatial global average pooling.",
+    "description3": "Two-panel schematic displays a neural network architecture with three CNN branches processing reshaped data, followed by pooling attention and a softmax layer.",
+    "questions": [
+      "How does the neural network process different measurement records to produce a probability distribution?",
+      "What is the general flow of data through the two-panel architecture?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.03550v1/images/p0003_figure_00003.png",
+    "caption": "Figure 3. Dependence of classification accuracy on trajec- tory count and input data type. (a) Classification accuracy P as a function of the number of measurement trajectories M. Results are shown for N = 25 across discrete values of M ∈ {100, 500, 1000, 4000, 7500, 10000, 30000, 50000}. (b) Classification accuracy P across different combinations of in- put measurement channels. Blue and orange denote inner and outer test points, respectively. Error bars represent the stan- dard error across 10 trained models from different random initializations.",
+    "md5": "21fbd8661e2c5158129a5845cf869f95",
+    "description2": "The figure plots classification accuracy as a function of trajectory count or input data type with error bars representing standard error across 10 trained models.",
+    "description3": "Two-panel plot displays a line chart of classification accuracy versus trajectory count (panel a) and a bar chart of accuracy across different data combinations (panel b).",
+    "questions": [
+      "How does the accuracy depend on the number of measurement trajectories?",
+      "What is the general relationship between accuracy and measurement channel combinations?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03550v1/images/p0004_figure_00004.png",
+    "caption": "Figure 4. Dependence of classification accuracy on evolu- tion time and spatial subsystem size. (a) Classification ac- curacy P as a function of the total evolution time T, eval- uated at discrete times T ∈ {0.5L, L, 1.5L, 2L, 4L, 6L} with L = 12. The inset shows the half chain entanglement en- tropy S versus T at γX = γZXZ = 0.3. Dashed vertical lines indicate the specific evaluation times plotted in the main panel. (b) Classification accuracy P versus spatial subsys- tem size LA ∈ {2, 4, 6, 8, 10, 12}. In both panels, blue and orange markers correspond to inner and outer test points, re- spectively. Error bars denote the standard error of the mean across 10 independent trained models from different random initializations.",
+    "md5": "7d88fbfaefb9163f2b474337cf7428ca",
+    "description2": "The figure plots classification accuracy as a function of evolution time and spatial subsystem size, with separate panels showing dependence on each variable.",
+    "description3": "Two-panel plot shows classification accuracy versus evolution time (panel a) and spatial subsystem size (panel b), with blue and orange markers for inner and outer test points.",
+    "questions": [
+      "How does classification accuracy change with increasing evolution time?",
+      "What is the relationship between spatial subsystem size and classification accuracy?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.03550v1/images/p0005_figure_00005.png",
+    "caption": "Figure 5. Transfer learning scalability and impact of the at- tention mechanism. (a) Classification accuracy P versus sys- tem size L for a network trained on L = 12 and T = 36 and tested on larger systems without retraining (h1 = 8, h2 = 5). (b) Classification accuracy P for the model with (dark) and without (light) the attention mechanism with h1 = 8. In both panels, blue and orange markers correspond to inner and outer test points, respectively. Error bars denote the standard error of the mean across 10 independent trained models.",
+    "md5": "c4a99841bc4fdfbf1041673850ae9c20",
+    "description2": "The figure plots classification accuracy versus system size for a network trained on L=12 and T=36, tested without retraining, with error bars denoting the standard error of the mean.",
+    "description3": "Two-panel plot displays classification accuracy (P) versus system size (L) and h2, with error bars indicating standard error across multiple models.",
+    "questions": [
+      "How does classification accuracy change with system size, considering different test points?",
+      "What is the general effect of an attention mechanism on classification accuracy?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.03550v1/images/p0011_figure_00006.png",
+    "caption": "Figure S1. Classification accuracy P as a function of architectural hyperparameters. (a) P versus the number of CNN branch output channels h1, with the fusion hidden dimension fixed at h2 = 2. (b) P versus the fusion hidden dimension h2 with the branch channels fixed at h1 = 1. Blue and orange markers correspond to inner and outer test points, respectively. Error bars represent the standard error across 10 independent repetitions.",
+    "md5": "419152c5160266c6bf111471807e5740",
+    "description2": "The figure plots classification accuracy P as a function of architectural hyperparameters, including the number of CNN branch output channels h1 and fusion hidden dimension h2.",
+    "description3": "Two-panel line chart displays classification accuracy (P) versus architectural hyperparameters (h1 and h2), with error bars representing standard error.",
+    "questions": [
+      "How does the classification accuracy change with different numbers of CNN branch output channels?",
+      "What is the relationship between the fusion hidden dimension and the classification accuracy?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.03550v1/images/p0011_figure_00007.png",
+    "caption": "Figure S2. Classification accuracy P across the hyperparameter space (h1, h2). Heat maps show the accuracy for (a) inner and (b) outer test points. The color intensity represents the mean accuracy P averaged over 10 independent runs. The optimal configuration, h1 = 8 and h2 = 5, is indicated by a yellow star.",
+    "md5": "39ec1e23ee1e5e9dc1867b796ae33305",
+    "description2": "A heat map plots the classification accuracy P across a hyperparameter space with variables h1 and h2, displaying inner and outer test points.",
+    "description3": "Four-panel heat maps display classification accuracy across hyperparameter spaces, with yellow stars marking optimal configurations at h1 = 8 and h2 = 5.",
+    "questions": [
+      "How does the classification accuracy vary depending on the hyperparameter configuration?",
+      "What is the relationship between hyperparameter values and the resulting accuracy?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.03550v1/images/p0012_figure_00008.png",
+    "caption": "Figure S3. Dependence of classification accuracy P on batch size. (a) P versus the number of stochastic resampling steps nstep for two training and testing batch sizes, N = 25 (solid lines) and N = 80 (dashed lines). In each step, N trajectories are drawn with replacement from a pool of 10000. (b) P versus test batch size Ntest for a fixed model trained with N = 25, h1 = 8, h2 = 5. Blue and orange markers correspond to inner and outer test points, respectively. Error bars represent the standard error across 10 independent runs.",
+    "md5": "23fc1daca4ea0d71f78e450bb259a34d",
+    "description2": "Figure S3 plots classification accuracy P against batch size, showing two panels: panel (a) displays P versus stochastic resampling steps with error bars for different training and testing batch sizes.",
+    "description3": "Two-panel plot shows classification accuracy P as a line chart versus resampling steps (a) and test batch size (b) with error bars.",
+    "questions": [
+      "How does classification accuracy change with different batch sizes during training?",
+      "What is the relationship between test batch size and classification accuracy?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.03550v1",
+    "source_pdf": "../pdfs/2604.03550v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03550v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.03550v1/images/p0014_figure_00009.png",
+    "caption": "Figure S4. Classification accuracy P as a function of hidden layer dimension h. Results are shown for M = 10000 trajectories per test point. Blue and orange markers correspond to inner and outer test points, respectively. Error bars indicate the standard error across 5 independent runs.",
+    "md5": "23a09d5925b1ea2268c588da4aba4603",
+    "description2": "Classification accuracy P is plotted against hidden layer dimension h with blue and orange markers showing results for inner and outer test points, accompanied by error bars indicating standard error.",
+    "description3": "Three-panel line chart displays classification accuracy (P) versus hidden layer dimension (h) for inner and outer test points, with error bars.",
+    "questions": [
+      "How does classification accuracy change with the hidden layer dimension?",
+      "What is the difference in accuracy between the inner and outer test points?"
+    ]
+  }
+]

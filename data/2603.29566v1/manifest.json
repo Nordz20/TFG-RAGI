@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29566v1",
+    "source_pdf": "../pdfs/2603.29566v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29566v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.29566v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: PGCNN parametrization maps φ and Φ.",
+    "md5": "28dd2ecdb1cc9610bc61e4e5e002cf65",
+    "description2": "The diagram plots maps of position φ and phase Φ to illustrate the parametrization of PGCNN.",
+    "description3": "A multi-panel plot displays a neural network diagram with parametrization maps φ and Φ connected via a Hadamard and Kronecker product.",
+    "questions": [
+      "What do the maps φ and Φ represent within the PGCNN framework?",
+      "How are the parametrization maps φ and Φ related to each other?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29566v1",
+    "source_pdf": "../pdfs/2603.29566v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29566v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.29566v1/images/p0011_figure_00002.png",
+    "caption": "Figure 2: A commutative diagram that describes the relation between the projectivized parametrization maps ˜Φ and ˜φ induced by the PGCNN architecture with L layers and activa- tion degree r over the finite group G.",
+    "md5": "7115bccc1a02240b603ff4ffc029c7f5",
+    "description2": "A commutative diagram illustrates the relationship between projectivized parametrization maps ˜Φ and ˜φ in a PGCNN architecture with activation degree r over the finite group G.",
+    "description3": "Two-panel commutative diagram displays relationships between maps ˜Φ and ˜φ, with labeled sets and arrows connecting them.",
+    "questions": [
+      "What relationship does the diagram illustrate between parametrization maps and a group architecture?",
+      "How are the layers and activation degree related within the described architecture?"
+    ]
+  }
+]

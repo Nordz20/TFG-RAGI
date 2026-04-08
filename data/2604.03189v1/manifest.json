@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03189v1/images/p0006_figure_00001.png",
+    "caption": "Figure 1: The RCL optimization loop with primitives mapped to stages. A batch of B tasks is sampled from D (with replay, §3.4), each executed G times (§3.1). Failed traces are passed — alongside dual-trace annotations (§3.2) — to a multi-head reflector (§3.3) that produces per-trace diagnostics ∆i. The mutator f aggregates these into structured edits to individual playbook entries ei, conditioned on a rolling optimization state document (§3.5).",
+    "md5": "0a2ba731a57866ac60ea239dce5aeb9c",
+    "description2": "The figure depicts the RCL optimization loop with primitives mapped to stages, featuring task sampling from D and execution G times, along with failed traces and dual-trace annotations.",
+    "description3": "Two-panel diagram visually outlines an RCL optimization loop, showing forward and backward passes with primitives mapped to distinct stages.",
+    "questions": [
+      "How does the optimization loop use failed traces to improve playbook entries?",
+      "What is the overall flow of information during the optimization process?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.03189v1/images/p0013_figure_00002.png",
+    "caption": "Figure 2: Learning dynamics on AppWorld dev (Gemini 3.1 Flash-Lite, 57 tasks). Solid lines: current TGC at each checkpoint. Dashed lines: recently solved rate (fraction of tasks solved ≥1× in the trailing 5 iterations). Colored shading: active instability — the gap between the recently solved rate and current TGC, measuring tasks solved within the window but not currently retained. Gray shading: stale regressions — the gap between the all-time per-example best-so-far and the recently solved rate, measuring tasks solved historically but not within the window. Stars: peak TGC achieved during training. Green verticals: first iteration at which every dev task has been solved at least once (full coverage).",
+    "md5": "992d852cd514c83bc5f0d0fc2bfdc77a",
+    "description2": "Learning dynamics on AppWorld development are plotted with solid lines showing current TGC and dashed lines representing recently solved tasks over time.",
+    "description3": "Three multi-panel plots display learning dynamics, showing solid and dashed lines with shaded regions and star markers.",
+    "questions": [
+      "What do the lines and shading represent regarding the learning process?",
+      "How does the rate of solved tasks relate to the current training state?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.03189v1/images/p0014_figure_00003.png",
+    "caption": "Figure 3: Design choice analysis (Gemini 3.1 Flash-Lite). (a) Seed robustness on AppWorld Challenge: RCL converges to 72–76 TGC from all three seeds; ACE without primitives diverges from weaker initializations. (b) Reflector × mutator allocation across benchmarks. Performance depends on the interaction between both roles and the task regime; no single configuration dominates uniformly. (c) Per-trace vs. batched reflection with B=3. Batched reflection helps on harder tasks (AW Challenge, BC+) but hurts when failures are diverse.",
+    "md5": "036b7f60c97e9401272470b2bcb4baa8",
+    "description2": "The figure plots three separate analyses: seed robustness in AppWorld Challenge, reflector and mutator allocation across benchmarks, and per-trace versus batched reflection performance.",
+    "description3": "The figure presents three panels: seed robustness, reflector/mutator allocation, and per-trace versus batched reflection, each with multiple plots and color-coded data.",
+    "questions": [
+      "How does configuration impact performance depending on the task regime?",
+      "What is the trade-off between batched and per-trace reflection approaches?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.03189v1/images/p0021_figure_00004.png",
+    "caption": "Figure 4: Training dynamics for all primitives with a 5-iteration sliding window. Format follows Figure 2: solid = current TGC; dashed = recently solved rate (per-example union over 5 iterations); colored shading = active instability (solved within window but not now); gray shading = stale regressions (solved historically but not within window). This is the strictest recency condition and produces the widest active instability gaps.",
+    "md5": "829a7ea00729cdd32535fe1ad68096b9",
+    "description2": "The figure plots training dynamics for all primitives with a 5-iteration sliding window, featuring solid lines representing current TGC and dashed lines showing recently solved rates.",
+    "description3": "The plot contains six multi-panel line charts, each displaying trends of \"first solved,\" \"mean instability,\" \"max TGC,\" and \"% released\" over iterations.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 22,
+    "image_path": "../data/2604.03189v1/images/p0022_figure_00005.png",
+    "caption": "Figure 6: Training dynamics with the all-time best-so-far envelope (no window). The dashed line is now monotonically non-decreasing and converges to 100% for all runs. All instability is active by definition (the stale category is empty). The remaining gap measures capabilities ever demonstrated but not currently retained. This is the most permissive view and produces the narrowest gaps.",
+    "md5": "7f751cf81b839b0ea48af6e84ab1cc36",
+    "description2": "The figure plots training dynamics with an envelope showing a monotonically non-decreasing dashed line that converges to 100% for all runs, representing the best-so-far performance.",
+    "description3": "The figure contains four multi-panel plots displaying line charts tracking metrics like instability and release over iterations.",
+    "questions": [
+      "What characterizes the best-so-far training dynamics shown here?",
+      "How does the definition of instability influence the observed capabilities?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 22,
+    "image_path": "../data/2604.03189v1/images/p0022_figure_00006.png",
+    "caption": "Figure 5: Training dynamics with a 10-iteration sliding window. Tasks solved anywhere in the last 10 iterations count as recently solvable, shifting instability from the active to the stale category. Active gaps narrow relative to the 5-iteration view (Figure 4), but the relative ordering of primitives is preserved.",
+    "md5": "2db06ef88d4c3450b97aeb5a02e9c69f",
+    "description2": "The figure plots training dynamics with a 10-iteration sliding window, illustrating tasks solved within the last 10 iterations and their categorization as recently solvable or stale.",
+    "description3": "Training curves reveal varying performance across ACE, Batching, Credit Assignment, and RCL strategies, measured by solved tasks and instability.",
+    "questions": [
+      "How do the training dynamics change over iterations?",
+      "What is the relative stability of different categories during training?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 23,
+    "image_path": "../data/2604.03189v1/images/p0023_figure_00007.png",
+    "caption": "Figure 7: Base system prompt for AppWorld benchmark. The playbook section header is followed by dynamically generated playbook entries during evaluation.",
+    "md5": "947136c56ae25ca3814a66dbf0beb846",
+    "description2": "The figure displays a base system prompt for an AppWorld benchmark, featuring a playbook section header and dynamically generated playbook entries.",
+    "description3": "Three-panel plot displays a text-based system prompt with sections for general instructions, credentials, code operation, task completion, and a dynamically generated playbook.",
+    "questions": [
+      "What is the purpose of the benchmark being evaluated?",
+      "How are instructions organized to guide the evaluation process?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.03189v1/images/p0024_figure_00008.png",
+    "caption": "Figure 8: Base system prompt for BrowseComp benchmark. The playbook section header is followed by dynamically generated playbook entries during evaluation.",
+    "md5": "503a158e18edbb446988018244339604",
+    "description2": "The figure displays a base system prompt for the BrowseComp benchmark, featuring a section header and dynamically generated playbook entries.",
+    "description3": "Four-panel plot displays a text-based system prompt for the BrowseComp benchmark, including playbook section headers and dynamically generated playbook entries.",
+    "questions": [
+      "What is the purpose of the benchmark shown in this image?",
+      "How are the playbook entries created during the evaluation process?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 25,
+    "image_path": "../data/2604.03189v1/images/p0025_figure_00009.png",
+    "caption": "Figure 9: Base system prompt for RewardBench2 benchmark. The playbook section header is followed by dynamically generated playbook entries during evaluation.",
+    "md5": "0e552abf676d5d2e19c19c50185dc245",
+    "description2": "The figure plots a base system prompt for the RewardBench2 benchmark, featuring a section header and dynamically generated playbook entries.",
+    "description3": "The text presents a JSON structure with sections for reasoning, ratings, and best response IDs, accompanied by playbook instructions.",
+    "questions": [
+      "What is the purpose of the system prompt shown?",
+      "How are the playbook entries determined during the evaluation process?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 26,
+    "image_path": "../data/2604.03189v1/images/p0026_figure_00010.png",
+    "caption": "Figure 11: Seed Playbook – RewardBench2. Contains 6 entries across 6 sections.",
+    "md5": "07eda4d4e4e21a529d9d34910180cc96",
+    "description2": "The figure is a playbook that contains six entries structured across six sections.",
+    "description3": "The table lists six sections, each with a title and a description in parentheses, detailing reward criteria.",
+    "questions": [
+      "What is the purpose of this seed playbook?",
+      "How are the entries within this playbook organized?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 26,
+    "image_path": "../data/2604.03189v1/images/p0026_figure_00011.png",
+    "caption": "Figure 10: Seed Playbook – AppWorld. Contains 9 entries across 5 sections.",
+    "md5": "90130880c6c9c7cde0fe610cde72d513",
+    "description2": "The figure is a playbook that contains 9 entries structured across 5 sections, specifically for seeds in the context of AppWorld.",
+    "description3": "The playbook organizes nine entries into five sections for strategies, APIs, code, mistakes, and verification.",
+    "questions": [
+      "What is the purpose of the AppWorld seed playbook?",
+      "How is the playbook organized into different categories?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 27,
+    "image_path": "../data/2604.03189v1/images/p0027_figure_00012.png",
+    "caption": "Figure 13: Seed Playbook (High Quality) – AppWorld. Contains 9 entries across 5 sections.",
+    "md5": "b513328b3324fa2fce3834925c63f9ee",
+    "description2": "The figure is a playbook containing 9 entries structured across 5 sections.",
+    "description3": "Four-panel figure displays a seed playbook with nine entries organized into five sections: strategies, APIs, snippets, mistakes, and checklist.",
+    "questions": [
+      "What is the overall purpose of this seed playbook?",
+      "How is the playbook organized into different categories?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.03189v1",
+    "source_pdf": "../pdfs/2604.03189v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03189v1.pdf",
+    "page": 27,
+    "image_path": "../data/2604.03189v1/images/p0027_figure_00013.png",
+    "caption": "Figure 12: Seed Playbook (Decent) – AppWorld. Contains 7 entries across 4 sections.",
+    "md5": "9a31b80ed772154f8d2ef65619310f06",
+    "description2": "The Seed Playbook diagram contains 7 entries organized into 4 sections, detailing a specific strategy for AppWorld.",
+    "description3": "The multi-panel plot lists seven entries organized into four sections: apis_to_use_for_specific_information, strategies_and_hard_rules, useful_snippets_and_templates, and verification_checklist.",
+    "questions": [
+      "What is the overall purpose of the AppWorld seed playbook?",
+      "How are the playbook entries organized into different categories?"
+    ]
+  }
+]

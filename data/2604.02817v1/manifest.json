@@ -1,0 +1,274 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.02817v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: Overall framework of MMPhysVideo. Left: Our two-stage training framework, which starts with teacher models of parallel branches for joint modeling. Then, we distill a single-stream student model through representation alignment. Right: Our data engine, MMPhysPipe, for physics data curation and multimodal annotation.",
+    "md5": "d2886bc252b8724e9788c8a42d183baf",
+    "description2": "The figure shows an overall workflow diagram featuring a two-stage training framework on the left and MMPhysPipe, a data engine, on the right.",
+    "description3": "Two-panel figure displays a two-stage training framework with parallel branches and a data engine, MMPhysPipe, for physics data curation and annotation.",
+    "questions": [
+      "What is the overall purpose of the framework shown in this image?",
+      "How is the data processed and annotated within this framework?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02817v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2: Architecture comparison. Left: Channel-wise fusion used in (Xi et al., 2025a; Chefer et al., 2025) Middle Spatial-wise fusion used in (Huang et al., 2025a; Chen et al., 2025b) Right: Our decoupled design with pixel-wise fusion.",
+    "md5": "a204164f672cfb27989ed15267addcad",
+    "description2": "The figure compares three architectures, featuring channel-wise fusion on the left, spatial-wise fusion in the middle, and our proposed decoupled design with pixel-wise fusion on the right.",
+    "description3": "Four-panel diagram compares channel-wise, spatial-wise, and pixel-wise fusion architectures using block diagrams and labeled components.",
+    "questions": [
+      "How do different approaches to fusion vary in their overall design?",
+      "What are the key components used in the depicted architectures?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02817v1/images/p0005_figure_00003.png",
+    "caption": "Figure 3: Overview of MMPhysVideo. Stage I: A dual-stream teacher model with parallel branches is first trained to handle RGB and perception modalities concurrently. Then, we use bidi- rectional control links to enable pixel-wise alignment. Stage II: For inference efficiency, we distill a single-stream student model through relation alginment.",
+    "md5": "357c548f5aed5c67bd5a744972e379db",
+    "description2": "The overview of MMPhysVideo features two stages: concurrent RGB and perception modality handling with parallel branches, followed by pixel-wise alignment via bidirectional control links.",
+    "description3": "A multi-panel plot displays a dual-stream teacher model and a single-stream student model, connected by relation alignment.",
+    "questions": [
+      "What are the primary stages involved in the MMPhysVideo process?",
+      "How does the model architecture change between training and inference?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02817v1/images/p0006_figure_00004.png",
+    "caption": "Figure 4: Overview of MMPhysPipe. We employ a VLM, Qwen3-VL (Bai et al., 2025a), to curate videos with rich physical interactions and generate physical subject descriptions following our chain-of-visual-evidence (CoVE) rule. Subsequently, expert perception models (Carion et al., 2026; Wang et al., 2025b; Xiao et al., 2025) are leveraged to produce multi-granular annotations.",
+    "md5": "dd7c79937b45a3c0705bb70ccd34fc07",
+    "description2": "The figure plots the overview of MMPhysPipe, a process combining VLM and expert perception models for curating videos with physical interactions and generating subject descriptions.",
+    "description3": "Two-panel plot displays video quality assessment, physical richness, and multimodal annotation workflows, using diagrams and text labels.",
+    "questions": [
+      "How does the system leverage visual evidence for describing physical interactions?",
+      "What are the key steps involved in creating multi-granular annotations?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02817v1/images/p0009_figure_00005.png",
+    "caption": "Figure 5: Qualitative results. We compare MMPhysVideo with backbones, CogVideoX (Cog) and Wan2.1 (Wan), alongside the advanced physics method, VideoREPA (VR).",
+    "md5": "36d6a72108e1502b7ac6edd4010339dd",
+    "description2": "The figure compares MMPhysVideo with backbones, CogVideoX, Wan2.1, and VideoREPA, showcasing their performance alongside an advanced physics method.",
+    "description3": "Two-panel image contrasts various scenes, showcasing a hose spraying, honey drizzling, wine pouring, and a knife severing bread.",
+    "questions": [
+      "What qualitative aspects of physics are being compared in these results?",
+      "How do the different methods relate to advanced physics approaches?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02817v1/images/p0010_figure_00006.png",
+    "caption": "Figure 6: Visualization of joint RGB-perception generation.",
+    "md5": "8304da08312f8d9e342cf00d00998deb",
+    "description2": "The figure visualizes the process of generating joint RGB-perception.",
+    "description3": "Two-panel image displays multiple rows of images, each row showing a similar scene with varying RGB, XYZ, and unified color representations.",
+    "questions": [
+      "What types of visual scenes are being represented in this visualization?",
+      "How does the visualization demonstrate different aspects of RGB-perception generation?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02817v1/images/p0011_figure_00007.png",
+    "caption": "Figure 8: Ablation study of our distillation utilizing representation alignment based on CogVideoX- 2B, CogVideoX-5B and Wan2.1-1.3B from left to right, respectively.",
+    "md5": "3ac93dd0c34aa295d69747048e3b52de",
+    "description2": "Ablation study results are plotted, comparing the performance of three models: CogVideoX-2B, CogVideoX-5B, and Wan2.1-1.3B, utilizing representation alignment.",
+    "description3": "Two-panel diagrams compare CogVideoX-2B, CogVideoX-5B, and Wan2.1-1.3B performance across distillation configurations, using radial charts.",
+    "questions": [
+      "What impact does ablation have on the resulting representation alignment?",
+      "How do the methods differ in their distribution of alignment types?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 17,
+    "image_path": "../data/2604.02817v1/images/p0017_figure_00008.png",
+    "caption": "Figure 9: Analysis of VQA Score Distribution with frequency distribution (left) and the cumulative proportion (right), respectively.",
+    "md5": "467f56332ad36e6c15dfb52e95513555",
+    "description2": "The figure displays a graphical analysis of VQA score distribution, comprising a frequency distribution on the left and a cumulative proportion on the right.",
+    "description3": "The figure presents a multi-panel plot displaying the frequency distribution and cumulative proportion of VQA scores.",
+    "questions": [
+      "What does the analysis reveal about the frequency of VQA scores?",
+      "How does the cumulative proportion relate to VQA score ranges?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.02817v1/images/p0018_figure_00009.png",
+    "caption": "Figure 10: Visualization results of VQA scoring.",
+    "md5": "834da7b559f0d67a6bb5b2ec1f9ed4ef",
+    "description2": "The figure visualizes the results of VQA scoring.",
+    "description3": "Two-panel plot displays four quadrants, each containing a freeze-frame video with a corresponding VQA score displayed in the upper right corner.",
+    "questions": [
+      "What do the results presented here illustrate about scoring?",
+      "How do the different image sets compare in terms of their scoring?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.02817v1/images/p0018_figure_00010.png",
+    "caption": "Figure 11: Demonstration of the crafted prompt for reality score.",
+    "md5": "7ad9ec411a83f53420f3d3daceb1e3c9",
+    "description2": "The figure demonstrates a crafted prompt for reality score.",
+    "description3": "The image presents a multi-panel plot outlining a prompt and evaluation protocol for assessing video authenticity, using a JSON output format.",
+    "questions": [
+      "How does the prompt influence the resulting reality score?",
+      "What does this demonstration illustrate about prompt crafting?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 19,
+    "image_path": "../data/2604.02817v1/images/p0019_figure_00011.png",
+    "caption": "Figure 12: Visualization results of CoT reality scoring.",
+    "md5": "5423bcaf2d20d1cfac2e792a8ab92614",
+    "description2": "A visualization presents the results of CoT reality scoring.",
+    "description3": "Two-panel plot displays CoT reality scoring results, showing direct scoring and CoT scoring alongside text boxes with scores and reasons.",
+    "questions": [
+      "What does this visualization aim to demonstrate about the authenticity of content?",
+      "How do different scoring methods compare in assessing the reality of the presented results?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 19,
+    "image_path": "../data/2604.02817v1/images/p0019_figure_00012.png",
+    "caption": "Figure 13: Analysis of physical phenomenon distribution before (top) and after (bottom) applying resampling strategy.",
+    "md5": "2df67ffb7becb137ee679c59ad552d67",
+    "description2": "The figure plots the analysis of physical phenomenon distribution, comparing initial and altered states with a resampling strategy applied.",
+    "description3": "Three bar charts, arranged in a 2x3 grid, compare video counts of physical phenomena before and after resampling.",
+    "questions": [
+      "How does the distribution of physical phenomena change after applying the resampling strategy?",
+      "What are the most common types of physical phenomena observed before and after the process?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.02817v1/images/p0020_figure_00013.png",
+    "caption": "Figure 14: Comparison between VideoCon-Physics (Bansal et al., 2024) and Videoscore2 (He et al., 2025) evaluators.",
+    "md5": "f00ec7be5ffc8bf9c8425fea58c673f1",
+    "description2": "A comparison is plotted between the VideoCon-Physics evaluator and Videoscore2 evaluator, showing their performance metrics.",
+    "description3": "Two-panel figure displays a multi-panel plot comparing VideoCon-Physics and Videoscore2 evaluators across several metrics for different video datasets.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 22,
+    "image_path": "../data/2604.02817v1/images/p0022_figure_00014.png",
+    "caption": "Figure 15: More qualitative comparison with CogVideoX-2B backbones.",
+    "md5": "6554e80e93a71bf0d1a095de52c999fa",
+    "description2": "The figure presents a more qualitative comparison of various backbones using the CogVideoX-2 model.",
+    "description3": "The multi-panel plot displays sequential images, labeled with \"CogVideoX-2B\" and \"CogVideoX-2B + VideoREPA,\" showing various scenes.",
+    "questions": [
+      "What aspects are being compared using the CogVideoX- backbones?",
+      "How does this illustration provide a more qualitative comparison?"
+    ]
+  },
+  {
+    "id": 15,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 23,
+    "image_path": "../data/2604.02817v1/images/p0023_figure_00015.png",
+    "caption": "Figure 16: More qualitative comparison with CogVideoX-5B backbones.",
+    "md5": "dae91cffd0e463f3ef3bbc010284426a",
+    "description2": "The figure presents a more qualitative comparison of various backbones using the CogVideoX-5B model.",
+    "description3": "The multi-panel plot displays sequential images, labeled with \"CogVideoX-5B\" and \"CogVideoX-5B + VideoREPA,\" showing various actions.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 16,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.02817v1/images/p0024_figure_00016.png",
+    "caption": "Figure 17: More qualitative comparison with Wan2.1-1.3B backbones.",
+    "md5": "d8a1f5411653c1faaeb9344522ea288f",
+    "description2": "The figure plots a comparison of Wan2.1 and 1.3B protein backbones for structural similarity analysis.",
+    "description3": "Two-panel image displays a series of sequential frames illustrating various actions, arranged in a grid-like structure.",
+    "questions": [
+      "What aspect of the backbones is being compared in this qualitative analysis?",
+      "How does the image present a comparison of these backbones?"
+    ]
+  },
+  {
+    "id": 17,
+    "doc_id": "2604.02817v1",
+    "source_pdf": "../pdfs/2604.02817v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02817v1.pdf",
+    "page": 24,
+    "image_path": "../data/2604.02817v1/images/p0024_figure_00017.png",
+    "caption": "Figure 18: More visualization of joint generation.",
+    "md5": "b969a07ac9d5694edb94b9b1f017e933",
+    "description2": "A visualization of joint generation is plotted in this figure.",
+    "description3": "The multi-panel plot displays several images, each with overlaid colored points, showing various scenes.",
+    "questions": [
+      "What aspects of generation are being visualized in this image?",
+      "How does the visualization represent a joint process?"
+    ]
+  }
+]

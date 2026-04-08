@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02483v1/images/p0007_figure_00001.png",
+    "caption": "Figure 1: Schematic of the SwinV2-UNet architecture used for spatiotemporal prediction.",
+    "md5": "3651657424cf2d124c8ad2f855f417bc",
+    "description2": "A schematic diagram of the SwinV2-UNet architecture is plotted, illustrating its design for spatiotemporal prediction.",
+    "description3": "The schematic presents a multi-panel plot illustrating the SwinV2-UNet architecture, with down and up paths connected by a ConvNext block.",
+    "questions": [
+      "What is the overall purpose of the architecture shown in this schematic?",
+      "How are data inputs processed through the different levels of the architecture?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02483v1/images/p0009_figure_00002.png",
+    "caption": "Figure 2: Spatiotemporal prediction results for longitudinal projected flow variables. Each row corresponds to a physical variable (ρ, u, v, w). Columns show: input at t = 1.00 s, ground-truth target at t = 1.01 s, baseline model (trained with single-step rollout) prediction at t = 1.01 s, and local prediction error at t = 1.01 s.",
+    "md5": "ecca38cc4a5eb3633c3fbcd06bfc44f1",
+    "description2": "The figure plots the spatiotemporal prediction results for longitudinal projected flow variables, showing ρ, u, v, and w physical variables over time.",
+    "description3": "Four-panel plot displays input, target, prediction, and error maps for density, velocity x, velocity y, and velocity z, each with generic axis labels.",
+    "questions": [
+      "How do the predicted flow variables compare to the ground-truth values over time?",
+      "What is the spatial distribution of prediction error for the different physical variables?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02483v1/images/p0009_figure_00003.png",
+    "caption": "Figure 3: Spatiotemporal prediction results for longitudinal slice variables. Layout as in Figure 2, with rows for density and velocity components (u, v, w) on planar slices.",
+    "md5": "c4800cf2f2a11aa79bd078b2ba7cac2a",
+    "description2": "The figure plots the spatiotemporal prediction results for longitudinal slice variables, with rows representing density and velocity components (u, v, w) on planar slices.",
+    "description3": "Four-panel plot displays density and velocity components (u, v, w) on planar slices, showing input, target, prediction, and error data.",
+    "questions": [
+      "What are the predicted spatiotemporal patterns of different components?",
+      "How do the predicted results compare to the target values over time?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02483v1/images/p0010_figure_00004.png",
+    "caption": "Figure 4: Spatiotemporal prediction results for density on transverse planes at z = 2 mm and z = 10 mm. Columns show input, target, baseline model prediction, and local prediction error.",
+    "md5": "a77c9b7f2fb990146e047b20f92f04ac",
+    "description2": "The figure plots spatiotemporal prediction results for density on transverse planes at two different depths (z = 2 mm and z = 10 mm).",
+    "description3": "Four-panel plot displays input, target, prediction, and error data as color-scaled images across four columns and two rows.",
+    "questions": [
+      "How do the predicted density results relate to the baseline and input data?",
+      "What is the spatial distribution of the prediction error shown?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02483v1/images/p0012_figure_00005.png",
+    "caption": "Figure 5: Feature transformation results for Case 1: longitudinal projected density to velocity components (u, v, w) using Euclidean loss.",
+    "md5": "437d6f562f7c2270db3a3b83b1848fda",
+    "description2": "The figure plots the feature transformation results for Case 1, transforming longitudinal projected density into velocity components u, v, and w using Euclidean loss.",
+    "description3": "Three-panel plot displays longitudinal projected density and velocity components (u, v, w) with ground truth, predictions, and error visualizations.",
+    "questions": [
+      "What are the projected density components being transformed and visualized in these results?",
+      "How do the predicted velocity components compare to the ground truth values?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02483v1/images/p0012_figure_00006.png",
+    "caption": "Figure 6: Feature transformation results for Case 1: longitudinal slice density to velocity components (u, v, w) using Euclidean loss.",
+    "md5": "5bfcd7255562d54f97a97763bd61a491",
+    "description2": "The figure plots the feature transformation results for Case 1, transforming longitudinal slice density into velocity components u, v, and w using Euclidean loss.",
+    "description3": "Three-panel plot displays ground truth, predictions, and error for velocity components (u, v, w) using longitudinal slice density.",
+    "questions": [
+      "What are the resulting components after transforming longitudinal slice density?",
+      "How do the predicted velocity components compare to the ground truth?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.02483v1/images/p0013_figure_00007.png",
+    "caption": "Figure 7: Feature transformation results for Case 2: longitudinal projected density to trans- verse slice density reconstruction.",
+    "md5": "67c563956d062fc35b5212c4a14436a3",
+    "description2": "The figure plots the feature transformation results for Case 2, comparing longitudinal projected density with transverse slice density reconstruction.",
+    "description3": "Three-panel plot displays longitudinal projected density and transverse slice density reconstructions, alongside ground truth and prediction error maps.",
+    "questions": [
+      "How does the longitudinal density relate to the transverse slice density reconstruction?",
+      "What are the overall patterns observed in the density projections and reconstructions?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.02483v1/images/p0014_figure_00008.png",
+    "caption": "Figure 8: Feature transformation results for Case 3: longitudinal projected density + velocity components to longitudinal slice density + velocity components.",
+    "md5": "c427326aade4604634a436f96f4c111f",
+    "description2": "The figure plots the feature transformation results for Case 3, comparing longitudinal projected density and velocity components with longitudinal slice density and velocity components.",
+    "description3": "Four-panel plot displays projected density and velocity components alongside ground truth and predictions, with corresponding error maps.",
+    "questions": [
+      "What are the differences between the input and predicted density components?",
+      "How do the projected density components compare to the longitudinal slice components?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.02483v1/images/p0015_figure_00009.png",
+    "caption": "Figure 9: Feature transformation results for Case 4: longitudinal slice density + velocity components to longitudinal projected density + velocity components in longitudinal direc- tion.",
+    "md5": "a28a29c8443e33ab1b20833ec0ac5fd7",
+    "description2": "The figure plots the feature transformation results for Case 4, comparing longitudinal slice density and velocity components with longitudinal projected density and velocity components in longitudinal direction.",
+    "description3": "Four-panel plots display input, ground truth, predicted, and error data for longitudinal slice density and velocity components.",
+    "questions": [
+      "What are the observed differences between the initial and projected density components?",
+      "How do the velocity component projections change based on the transformation?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02483v1",
+    "source_pdf": "../pdfs/2604.02483v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02483v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.02483v1/images/p0015_figure_00010.png",
+    "caption": "Figure 10: Feature transformation results for Case 5: transverse slice density at z = 2 mm to transverse slice density at z = 10 mm.",
+    "md5": "904fbb247c3ae3b037bdeb9eb1ac0852",
+    "description2": "The figure plots the feature transformation of transverse slice density from a depth of 2 millimeters to 10 millimeters in Case 5.",
+    "description3": "The multi-panel plot displays transverse slice density data at z = 2 mm, z = 10 mm, predicted z = 10 mm, and the resulting error.",
+    "questions": [
+      "What is the overall effect of the transformation on the density of the case?",
+      "How do the results compare the initial and final transverse slice densities?"
+    ]
+  }
+]

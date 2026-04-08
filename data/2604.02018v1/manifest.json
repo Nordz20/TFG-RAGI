@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02018v1/images/p0003_figure_00001.png",
+    "caption": "FIG. 1. The whitened time-domain strain from the LHO data surrounding GW150914. In the upper panel, we show the raw whitened strain as a black curve and the measurement errors (estimated from the calibration envelope) as a one-standard- deviation blue band around the whitened strain. In the lower panel, we show the measurement error as a blue band, and we show the 68 % non-symmetric interval estimated from the residual directly to validate that the errors are approximately symmetric. Differences in the whitened strain relative to Fig. 6 of Abbott et al. [30] arise from the use of a different PSD and data-conditioning procedures.",
+    "md5": "5b8754539f12a9daf8824e62d01f292d",
+    "description2": "The figure plots the whitened time-domain strain from LHO data surrounding GW150914, with raw strain as a black curve and measurement errors as a blue band.",
+    "description3": "A multi-panel plot displays whitened strain as a black curve with a blue error band above, and measurement error as a blue band below.",
+    "questions": [
+      "What does the blue band represent in relation to the whitened strain data?",
+      "How are the estimated measurement errors characterized and displayed?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02018v1/images/p0004_figure_00002.png",
+    "caption": "FIG. 2. Violin plots of selected GW150914 source parameter posteriors for the Whittle likelihood (WL), GPBilby with a single jitter term (GP-J), and GPBilby with a jitter and SHO term (GP-JS). The left side of each violin shows the posterior obtained using the GWTC-2.1 PSD, while the right side shows the posterior obtained using the newly computed PSD and the GWTC-4.0 settings.",
+    "md5": "76cbed1e88e7dd10609d1a85727feb93",
+    "description2": "Violin plots of selected source parameter posteriors for three methods are presented, with each plot divided into two parts showing posteriors obtained using different PSDs.",
+    "description3": "Three columns of violin plots compare GW150914 parameter posteriors using different likelihood methods and PSDs.",
+    "questions": [
+      "What parameter posteriors are visualized using violin plots?",
+      "How do different GPBilby methods affect the shape of the posterior distributions?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02018v1/images/p0005_figure_00003.png",
+    "caption": "FIG. 4. Posterior distributions for the SHO term parame- ters of the GPBilby GP-JS analyses of GW150914 (left panel: LHO, right panel: LLO). The analyses using the GWTC-2.1 PSD are shown in green, while those using the newly com- puted PSD are shown in purple. For the LHO analysis with the newly computed PSD, the frequency posterior is tightly peaked at f 0 H1 = 60.53+0.98 −1.17 Hz.",
+    "md5": "bfb9ae6def8576dd7b1a67f021eb18e3",
+    "description2": "The figure plots the posterior distributions for the SHO term parameters of GPBilby GP-JS analyses of GW150914, comparing results from LHO and LLO with different PSDs.",
+    "description3": "Two-panel plot displays posterior distributions, in green and purple, for SHO parameters of GPBilby GP-JS analyses, separated by detector (LHO and LLO).",
+    "questions": [
+      "How do different analyses affect the distribution of parameters for GW150914?",
+      "What is the difference in the computed distributions between the two analyses shown?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02018v1/images/p0005_figure_00004.png",
+    "caption": "FIG. 3. Plots of selected GW150914 source parameter poste- riors, with respect to the fraction of data notched. The blue filled regions show how the 90 % interval changes as the pro- portion of notched data increases. The orange dots represent the median values and the blue shaded scatter show the full distribution of posterior samples.",
+    "md5": "98a9d23a3a29de6c5bd2b49488596480",
+    "description2": "The figure plots selected source parameter posteriors for GW150914 with respect to the fraction of notched data, displaying 90% intervals, median values, and full posterior sample distributions.",
+    "description3": "A multi-panel plot displays posterior samples as blue shading and median values as orange dots, plotted against the fraction of data notched.",
+    "questions": [
+      "How do the distributions of source parameters change with increasing notched data?",
+      "What is the general trend of the 90% interval as the fraction of notched data increases?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02018v1/images/p0006_figure_00005.png",
+    "caption": "FIG. 6. The time-frequency spectrogram showing LLO data surrounding GW230814.",
+    "md5": "9a5aff2474b7ddd0ac55245c64dc70c0",
+    "description2": "The figure is a time-frequency spectrogram displaying data from the Laser Interferometer Gravitational-Wave Observatory (LLO) surrounding the event GW230814.",
+    "description3": "Two-panel spectrogram displays normalized energy versus time in seconds, with frequency on the y-axis, showing data surrounding GW230814.",
+    "questions": [
+      "What kind of data is displayed in the spectrogram?",
+      "What does the spectrogram reveal about signal behavior over time and frequency?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02018v1/images/p0006_figure_00006.png",
+    "caption": "FIG. 5. Violin plots of selected GW170814 source parameter posteriors for the Whittle likelihood (WL), GPBilby with a single jitter term (GP-J), and GPBilby with a jitter and SHO term (GP-JS).",
+    "md5": "5d101d1560dc0f09d747921adebac6ee",
+    "description2": "Violin plots of selected source parameter posteriors are presented for three methods: Whittle likelihood, GPBilby with a single jitter term, and GPBilby with a jitter and SHO term.",
+    "description3": "The multi-panel plot presents violin plots comparing selected source parameter posteriors across three likelihood methods: WL, GP-J, and GP-JS.",
+    "questions": [
+      "How do the selected methods influence the distribution of the source parameter posteriors?",
+      "What is the overall shape of the likelihood posteriors for each parameter?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02018v1/images/p0007_figure_00007.png",
+    "caption": "FIG. 7. Violin plots showing selected source-parameter poste- riors for GW230814 obtained with different analyses. For each violin, the left half corresponds to the posterior derived using 4 s of data, while the right half shows the posterior obtained using 8 s of data. From left to right, the violins correspond to analyses performed with Bilby using the Whittle likelihood, GPBilby including only a jitter term, GPBilby including both jitter and SHO terms, and GPBilby including both jitter and SHO terms applied to data in which a 30 Hz band around 345 Hz has been notched, as discussed in the text.",
+    "md5": "256d9fa21144f606dff3a5b5c3b283c8",
+    "description2": "Violin plots show selected source-parameter posteriors for GW230814 from different analyses, with each half representing posterior distributions derived from 4 or 8 seconds of data.",
+    "description3": "Four multi-panel violin plots display source-parameter posteriors for GW230814, comparing results from different analyses using 4 and 8 seconds of data.",
+    "questions": [
+      "How do different analyses affect the distribution of posterior values for GW230814?",
+      "What is the general trend in posterior distributions when using different data lengths?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02018v1/images/p0008_figure_00008.png",
+    "caption": "FIG. 8. Posterior distributions for the SHO term parameters of the GPBilby GP-JS analyses of GW230814 (LLO detector).",
+    "md5": "d61f68145f8e601326ed90b7cae65b4a",
+    "description2": "The figure plots posterior distributions for the SHO term parameters of the GPBilby GP-JS analyses of GW230814 using the LLO detector.",
+    "description3": "The multi-panel plot displays posterior distributions as violin plots for several parameters, arranged in four rows and two columns.",
+    "questions": [
+      "What types of analyses were performed on the detector data?",
+      "What parameters are represented by the displayed distributions?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02018v1/images/p0009_figure_00009.png",
+    "caption": "FIG. 9. Posterior predictive plots for the event GW230814 for the LLO detector. In each panel we compare the strain prediction given by the maximum likelihood waveform for two analyses using the IMRPhenomXPHM SpinTaylor waveform. The upper plots show the whitened strain data and the predicted strains with 90% credibility intervals, while the bottom plots show the residuals and their 90 % credibility intervals. In the left panel we compare two GP-JS analyses, one using 8 s of the full raw data, and one using 8s of data notched between 330 Hz to 360 Hz. The middle panel compares the 8s GP-JS and GP-J analyses. The right panel compares the 4s GP-JS and GP-J analyses. Differences in the whitened strain relative to Fig. 1 of The LIGO Scientific Collaboration et al. [37] arise from the use of different data-conditioning procedures.",
+    "md5": "24db17eed3fe667cfa456c609852267e",
+    "description2": "The figure presents posterior predictive plots comparing strain predictions with 90% credibility intervals for two analyses using IMRPhenomXPHM SpinTaylor waveform, showing whitened strain and residuals.",
+    "description3": "Three multi-panel plots compare strain predictions and residuals with 90% credibility intervals for different analyses of GW230814.",
+    "questions": [
+      "How do different data selections impact the credibility of strain predictions?",
+      "What do the plots reveal about the relationship between data and analysis residuals?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 10,
+    "image_path": "../data/2604.02018v1/images/p0010_figure_00010.png",
+    "caption": "FIG. 10. Violin plots of selected GW191109 010717 source parameter posteriors comparing different analysis configurations. The left panel shows results from 8 s analyses including one SHO term; the right panel shows results with multiple SHO terms using raw data only. WL denotes the Whittle likelihood (Bilby), GP-J uses only a jitter term, GP-JS uses a jitter and one SHO term, GP-J2S uses two SHO terms, and GP-J3S uses three SHO terms. Within each violin, the left side shows the posterior obtained from the raw data, while the right side shows the posterior obtained from the deglitched data.",
+    "md5": "66f76fe1901cf41373b5288d8d02f124",
+    "description2": "Violin plots of selected GW191109 010717 source parameter posteriors are presented for different analysis configurations, comparing results with varying numbers and types of spectral harmonics (SHO) terms.",
+    "description3": "Two-panel figure displays violin plots comparing GW191109 010717 source parameter posteriors across different analysis configurations, with left/right sides showing raw/deglitched data.",
+    "questions": [
+      "How do different analysis configurations affect the distribution of source parameter posteriors?",
+      "What is the difference in posterior distributions when using raw versus deglitched data?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02018v1/images/p0011_figure_00011.png",
+    "caption": "FIG. 11. Posterior distributions for the SHO parameters (frequency f and amplitude log S0) for GW191109. GP-JS, GP-J2S, and GP-J3S denote analyses with one, two, and three SHO terms, respectively; the trailing digit in the x-axis labels identifies the individual SHO term. The left panel shows all 4 s runs and the right panel shows all 8 s runs; within each panel, the upper rows show LHO and the lower rows show LLO. All analyses use the raw data.",
+    "md5": "910df039a7e77bc48465ee0989bb7e86",
+    "description2": "The figure displays posterior distributions for Simple Harmonic Oscillator parameters frequency f and amplitude log S0 from GW191109 gravitational wave analyses with different SHO terms.",
+    "description3": "Two-panel figure displays posterior distributions as violin plots, showing frequency and amplitude for SHO parameters, separated by run and detector (LHO/LLO).",
+    "questions": [
+      "How do the different analyses affect the shapes of the posterior distributions?",
+      "What are the general trends observed in the parameter distributions?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02018v1/images/p0012_figure_00012.png",
+    "caption": "FIG. 12. Inspiral merger ringdown test for GW191109. The top plot shows the mass and spin estimates of the remnant estimated by using the full signal (in black), using only the inspiral and merger portion (in orange and using just the post- merger part of the signal (in blue). The bottom plot shows the 90% credible regions of the two-dimensional posteriors on ∆af/af and ∆Mf/Mf, with (0, 0) being the expected value for general relativity.",
+    "md5": "189a8cb65db4363fd9ef2b89eae3d6bc",
+    "description2": "The figure plots mass and spin estimates of a remnant, comparing three methods using different parts of a signal: full, inspiral-merger, and post-merger portions.",
+    "description3": "Three-panel plot displays remnant mass and spin estimates (top) and credible regions (bottom) for GW191109, using full, inspiral/merger, and post-merger signal portions.",
+    "questions": [
+      "How do estimates of remnant properties vary based on the portion of the inspiral, merger, or ringdown signal?",
+      "What do the credible regions indicate about the uncertainties in the estimated remnant properties?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02018v1/images/p0012_figure_00013.png",
+    "caption": "FIG. 13. Violin plots of selected GW231113 122623 source pa- rameter posteriors for the Whittle likelihood (WL), GPBilby with a single jitter term (GP-J), and GPBilby with a jit- ter and SHO term (GP-JS). The left side of each violin shows the posterior obtained from the raw data, while the right side shows the posterior obtained from the deglitched data. The dashed grey line indicates the median value for the IMRPhenomXPHM SpinTaylor posteriors reported in the discov- ery paper [3].",
+    "md5": "03a54f5c67d761471bc0d05f07e6ab04",
+    "description2": "Violin plots of selected GW231113 122623 source parameter posteriors are presented, comparing Whittle likelihood, GPBilby with a single jitter term, and GPBilby with a jitter and SHO term.",
+    "description3": "The multi-panel plot presents violin plots comparing parameter posteriors from three methods, displayed for raw and deglitched data.",
+    "questions": [
+      "How do different likelihood methods influence the distribution of posterior parameter values?",
+      "What differences exist in posteriors when using raw versus deglitched data?"
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.02018v1/images/p0014_figure_00014.png",
+    "caption": "FIG. 14. Violin plots of selected GW231123 source parameter posteriors for the Whittle likelihood (WL), GPBilby with a single jitter term (GP-J), and GPBilby with a jitter and SHO term (GP-JS) with IMRPhenomXPHM SpinTaylor, and for the Whittle likelihood (WL-NR) and GPBilby with a jitter and SHO term (GP-JS-NR) with NRSur7dq4. The left side of each violin shows the posterior obtained from the deglitched data, while the right side shows the posterior obtained from the raw data. The dashed grey and red line indicates the median value for the IMRPhenomXPHM SpinTaylor and NRSur7dq4 posteriors reported in the discovery paper [37], respectively.",
+    "md5": "849999f99df725f9471914dc52915c40",
+    "description2": "A violin plot compares posteriors of selected source parameters for three methods and two waveforms, showing median values as dashed lines.",
+    "description3": "Four-panel violin plots display distributions of parameter posteriors, split left-to-right by data type, with dashed lines indicating reference values.",
+    "questions": [
+      "How do different analysis methods affect the distribution of source parameter posteriors?",
+      "What is the general trend in the posterior distributions for the different parameter types?"
+    ]
+  },
+  {
+    "id": 15,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.02018v1/images/p0015_figure_00015.png",
+    "caption": "FIG. 15. Posterior predictive plots for the event GW231123 for the LHO and LLO detectors, shown in the left and right columns, respectively. The upper panels display the reconstructed strain obtained from a GPBilby analysis using one SHO term with the IMRPhenomXPHM SpinTaylor waveform and the NRSur7dq4 waveform, for the Hanford and Livingston detectors on the left and right, respectively. The residuals between the two waveform reconstructions are shown in the bottom panels. Differences in the whitened strain relative to Fig. 1 of Abac et al. [39] arise from the use of different data-conditioning procedures.",
+    "md5": "2b22c6eec9a0546f7dd534ea3a4d81e3",
+    "description2": "The figure displays posterior predictive plots for the event GW231123, featuring reconstructed strain and residuals between waveform reconstructions for LHO and LLO detectors.",
+    "description3": "Four-panel plot displays reconstructed strain and residuals for GW231123, comparing IMRPhenomXPHM and NRSur7dq4 waveforms for Hanford (left) and Livingston (right) detectors.",
+    "questions": [
+      "How do different waveform models compare in reconstructing gravitational wave signals?",
+      "What are the differences in reconstructed strain between detectors?"
+    ]
+  },
+  {
+    "id": 16,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 16,
+    "image_path": "../data/2604.02018v1/images/p0016_figure_00016.png",
+    "caption": "FIG. 16. Violin plots of selected GW230630 070659 source parameter posteriors for the Whittle likelihood (WL) and GPBilby with a jitter and SHO term (GP-JS).",
+    "md5": "5e496fc660af00fde029073ed38c6f35",
+    "description2": "Violin plots of selected source parameter posteriors are structured to compare the Whittle likelihood and GPBilby with a jitter and SHO term.",
+    "description3": "Six violin plots, paired by color, compare parameter posteriors for Whittle likelihood and GPBilby models.",
+    "questions": [
+      "What are the distributions of parameters for a selected gravitational wave source?",
+      "How do the likelihood methods differ in their parameter posterior distributions?"
+    ]
+  },
+  {
+    "id": 17,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.02018v1/images/p0020_figure_00017.png",
+    "caption": "FIG. 17. Time-frequency spectrograms of 8 s of data surrounding GW191109 010717 for the LHO detector (top) and the LLO detector (bottom). For each detector, the panels show from left to right the raw data, the reconstructed glitch, and the glitch-subtracted data.",
+    "md5": "d95c25359c4029ae8be4edab1f167b02",
+    "description2": "Time-frequency spectrograms of 8 seconds of data surrounding GW191109 010717 are plotted for the LHO and LLO detectors, showing raw data, reconstructed glitches, and glitch-subtracted data.",
+    "description3": "Two-panel plots display time-frequency spectrograms of raw data, reconstructed glitches, and glitch-subtracted data for the LHO (top) and LLO (bottom) detectors.",
+    "questions": [
+      "How does the appearance of the data change after glitch subtraction?",
+      "What are the differences observed between the two detectors' data representations?"
+    ]
+  },
+  {
+    "id": 18,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.02018v1/images/p0021_figure_00018.png",
+    "caption": "FIG. 18. Time-frequency spectrograms of the data surrounding GW231113 122623. The left panels show the raw data for the LHO and LLO detectors, upper and lower panels, respectively. The right panels show the corresponding deglitched data; no deglitched frames were produced for LHO, so the raw data are shown for both columns. The glitch subtracted from the LLO data had a frequency range of ∼80–100 Hz and occurred ∼0.1 s after the trigger time. We include two seconds of data before and two seconds of data after the trigger time.",
+    "md5": "fe5a2b9effac6685e4bd50054daa4392",
+    "description2": "Time-frequency spectrograms plot raw and deglitched data for the LHO and LLO detectors surrounding GW231113 122623, including two seconds of data before and after the trigger time.",
+    "description3": "Two-panel spectrograms display raw and deglitched data for LHO and LLO detectors, with the right panel showing raw data for both columns.",
+    "questions": [
+      "How does the raw data differ from the deglitched data shown in these spectrograms?",
+      "What is the general pattern of data observed before and after the trigger time?"
+    ]
+  },
+  {
+    "id": 19,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 22,
+    "image_path": "../data/2604.02018v1/images/p0022_figure_00019.png",
+    "caption": "FIG. 19. Time-frequency spectrograms of the data surrounding GW231123. The left panels show the raw data for the LHO and LLO detectors, upper and lower panels, respectively. The right panel shows the deglitched LHO data; no deglitched frames were produced for LLO. The glitch subtracted from the LHO data had a frequency range of ∼15–25 Hz and occurred ∼1.5 s before the trigger time. We include six seconds of data before and two seconds of data after the trigger time.",
+    "md5": "2179eb9215b1077f3dba0074bbfdfc12",
+    "description2": "Time-frequency spectrograms plot raw data for LHO and LLO detectors, along with deglitched LHO data, over a period of eight seconds surrounding GW231123.",
+    "description3": "Three-panel spectrograms display raw data from LHO and LLO detectors (upper and lower panels), alongside deglitched LHO data, showing time and frequency.",
+    "questions": [
+      "What features are visible in the raw data surrounding the gravitational wave event?",
+      "How does the data appear before and after glitch subtraction?"
+    ]
+  },
+  {
+    "id": 20,
+    "doc_id": "2604.02018v1",
+    "source_pdf": "../pdfs/2604.02018v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02018v1.pdf",
+    "page": 23,
+    "image_path": "../data/2604.02018v1/images/p0023_figure_00020.png",
+    "caption": "FIG. 20. Time-frequency spectrogram of 8 s of data surrounding GW230630 070659 for the LHO and LLO detectors.",
+    "md5": "10d849d74199eefd8ba29c985f82f893",
+    "description2": "A time-frequency spectrogram plots the frequency content of 8 seconds of data from the LHO and LLO detectors, surrounding a specific event (GW230630 070659).",
+    "description3": "Two-panel spectrograms display time-frequency data for the LHO and LLO detectors, with frequency on the y-axis and time on the x-axis.",
+    "questions": [
+      "What characteristics of the data are revealed by the time-frequency spectrogram?",
+      "How do the spectrograms of the two detectors compare regarding signal strength?"
+    ]
+  }
+]

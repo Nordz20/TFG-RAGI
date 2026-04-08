@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02397v1",
+    "source_pdf": "../pdfs/2604.02397v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02397v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02397v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1: Overview of the proposed VE-MD architecture. Left: input data, consisting of video frames or a single image. Middle: the Variational Encoder (VE, green box), which learns two latent spaces: Z1 for emotion recognition and Z2 for joint optimization of emotion recognition and person structural representation. Right: the multi-decoder head, where the Emotion Decoder uses Z1 and Z2, optionally complemented by structural outputs from the body and face decoders (SR inputs). Optional modules are outlined with a dashed line.",
+    "md5": "fd396e0d30e4da1f62686538ea64534f",
+    "description2": "The figure presents an overview of the proposed VE-MD architecture, featuring input data, a Variational Encoder, and a multi-decoder head.",
+    "description3": "Two-panel architecture displays video inputs processed by a Variational Encoder, producing latent spaces and structural outputs for emotion recognition and person representation.",
+    "questions": [
+      "What is the overall purpose of the architecture shown in this diagram?",
+      "How are video inputs processed and transformed within the architecture?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02397v1",
+    "source_pdf": "../pdfs/2604.02397v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02397v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02397v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2: PersonQuery decoder. Left: the latent space is processed by an auxiliary convolutional module that produces three multi-scale feature tensors, F1, F2, and F3, which are flattened and fed to the transformer encoder. Right: the trans- former decoder receives target queries together with the en- coded features and predicts the structural representation and the adjacency matrix through a multi-layer perceptron head and a fully connected head, respectively.",
+    "md5": "dfe51952fb918ed1f5b3ef7d38f481c0",
+    "description2": "The figure plots a PersonQuery decoder, processing latent space into three feature tensors F1, F2, and F3 for transformer encoding.",
+    "description3": "The diagram is a multi-panel plot showing a person query decoder with an encoder on the left and a decoder on the right.",
+    "questions": [
+      "How does the convolutional module process the latent space to generate feature tensors?",
+      "What heads are used to predict the skeleton and adjacency matrix, respectively?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02397v1",
+    "source_pdf": "../pdfs/2604.02397v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02397v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02397v1/images/p0004_figure_00003.png",
+    "caption": "Figure 3: Heatmap decoder. At the top is the VE latent- space input, followed by a custom UNet-upsample network, and the limbs decoder is applied to predict the limb heatmap. The same process is applied to the structural representation of faces.",
+    "md5": "176a50d24aa195c1cb36b927cb001de9",
+    "description2": "The figure plots a heatmap decoder consisting of a latent-space input, a custom UNet-upsample network, and a limbs decoder predicting limb heatmaps.",
+    "description3": "The multi-panel plot displays an encoder, UNet-upsample network, limbs decoder, and resulting skeleton heatmap.",
+    "questions": [
+      "What is the overall process for predicting limb heatmaps from input data?",
+      "How is the network structured to generate a representation of limbs?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02397v1",
+    "source_pdf": "../pdfs/2604.02397v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02397v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02397v1/images/p0006_figure_00004.png",
+    "caption": "Figure 5: Example of automatic data annotation for structural representation. The first line corresponds to body annotations using ViTPose with 18 limb connections (COCO-style). The second line corresponds to face annotations using FaceAlign- ment with 20 custom limb connections.",
+    "md5": "229a0bea968e091acd38cd2f0eb5b93a",
+    "description2": "The figure illustrates automatic data annotation for structural representation, featuring two lines representing body and face annotations with respective limb connections: COCO-style and custom.",
+    "description3": "The figure displays a multi-panel plot with six images, each showing annotated body and face limb connections.",
+    "questions": [
+      "How are body and face structures represented in this annotation example?",
+      "What is the general approach to showing connections between body parts?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02397v1",
+    "source_pdf": "../pdfs/2604.02397v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02397v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02397v1/images/p0006_figure_00005.png",
+    "caption": "Figure 4: Overview of datasets used in this study. GAF-3.0 and VGAF at left illustrate Group Emotion Recognition (GER) datasets, followed by examples from IER datasets: DFEW, SAMSEMO, MER-MULTI, and EngageNet.",
+    "md5": "7ee63add51621020d9962af2250370ab",
+    "description2": "The figure is a line chart or comparative plot that illustrates the overview of datasets used in this study, featuring GER and IER datasets with specific examples.",
+    "description3": "Two-panel image displays GER datasets (GAF-3.0, VGAF) alongside IER datasets (DFEW, SAMSEMO, MER-MULTI, EngageNet) for comparison.",
+    "questions": [
+      "What types of datasets were used to study emotion recognition?",
+      "How are the datasets organized and presented in this overview?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02397v1",
+    "source_pdf": "../pdfs/2604.02397v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02397v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.02397v1/images/p0014_figure_00006.png",
+    "caption": "Figure 6: Summary of VE-MD versus SOTA across datasets. The first two columns correspond to GER datasets. Aster- isks (*) indicates a statistically significant difference versus the SOTA using a two-sided McNemar test (p < 0.05).",
+    "md5": "cf15d181b06fc0eb5dcb6a490a396fa5",
+    "description2": "A line chart comparing the performance of VE-MD and SOTA models across various datasets, with asterisks indicating statistically significant differences in GER datasets.",
+    "description3": "A bar chart compares VE-MD and SOTA performance across six datasets, with asterisks indicating statistically significant differences.",
+    "questions": [
+      "What is the general comparison of VE-MD's performance relative to the SOTA?",
+      "What does the figure summary indicate about statistically significant differences?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02397v1",
+    "source_pdf": "../pdfs/2604.02397v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02397v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.02397v1/images/p0018_figure_00007.png",
+    "caption": "Figure 8: Predicted SR obtained with VE-MD-Heatmap on the GAF-3.0 dataset. Unlike VE-MD-PersonQuery, the VE-MD- Heatmap decoder naturally adapts to the number of persons in each image. The model also often detects SR not annotated in the ground truth, reflecting higher sensitivity. For example, in image neg_1005, five face SR are detected compared with three in the ground truth; in neg_1, four body SR are detected compared with three labeled; and in neg_108, a second per- son is detected despite being unlabeled.",
+    "md5": "bb2c2c02892e84b1918f11cc4c928369",
+    "description2": "Predicted social relationships obtained using VE-MD-Heatmap on GAF-3.0 dataset adapt to image person count and detect unannotated relationships.",
+    "description3": "Four-panel images display predicted SR, ground truth, and overlaid results, with each panel labeled with a unique identifier and heatmap_mse value.",
+    "questions": [
+      "How does the model's predictions compare to the ground truth data?",
+      "What is the general trend observed in the model's sensitivity to detected elements?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02397v1",
+    "source_pdf": "../pdfs/2604.02397v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02397v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.02397v1/images/p0018_figure_00008.png",
+    "caption": "Figure 7: Qualitative examples of predicted structural repre- sentations (SR) obtained with VE-MD-PersonQuery on MER- MULTI using a query value of 6. The model predicts more structures than those aligned with the ground truth, illustrat- ing how noisy or redundant SR predictions can arise.",
+    "md5": "3080165f05320ec8b9a8bba85884d896",
+    "description2": "The figure displays qualitative examples of predicted structural representations (SR) obtained using VE-MD-PersonQuery on MER-MULTI with a query value of 6.",
+    "description3": "Two-panel plots display ground truth and predicted skeletal representations, using different colored lines to denote individual body parts.",
+    "questions": [
+      "How do the predicted structural representations differ from the ground truth representations?",
+      "What does the illustration show about the nature of the predicted structural representations?"
+    ]
+  }
+]

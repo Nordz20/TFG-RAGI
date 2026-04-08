@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 3,
+    "image_path": "../data/2603.29785v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1: The TF plane on which the CQT is computed. Frequencies range from 20 to 2048 Hz over a 0.2s interval. The horizontal frequency bands are referred to as tiles, exhibiting varying temporal resolutions.",
+    "md5": "669655b5dd17b76a0187df5485da18d6",
+    "description2": "The figure plots a time-frequency plane featuring frequencies from 20 to 2048 Hz over 0.2 seconds, with horizontally arranged tile-like structures displaying varying temporal resolutions.",
+    "description3": "Horizontal tiles display frequency bands from 20 to 2048 Hz across a 0.2-second time interval.",
+    "questions": [
+      "What does this visualization represent regarding frequency and time?",
+      "How are different frequency ranges organized within the displayed interval?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.29785v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2: Schematic of spectral demodulation in QTAM. Top: The standard CQT filter bank where windows are centered at their absolute frequencies fk. The large spectral support necessitates a high sampling rate to resolve the carrier os- cillations. Bottom: The same windows after being circularly shifted to baseband (0Hz). By removing the carrier frequency offset, the spectral support is compressed to the signal’s in- herent bandwidth, allowing for lossless downsampling.",
+    "md5": "356c37332e9543f24ace224fc6462837",
+    "description2": "The figure schematically depicts a comparison of standard CQT filter banks and their circularly shifted versions, highlighting the effects on spectral support and sampling rate.",
+    "description3": "Two-panel plot displays a standard CQT filter bank with absolute frequencies in the top panel, and the same windows shifted to baseband in the bottom panel.",
+    "questions": [
+      "How does the spectral support change after demodulation?",
+      "What is the purpose of circularly shifting the windows in this process?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.29785v1/images/p0007_figure_00003.png",
+    "caption": "Figure 3: Demonstration of information preservation under volume compression. Panels (a) and (b) show the standard resolution (64×410). Panels (c) and (d) show the compressed representation (64 × 33). Panels (e) and (f) show the re- upsampled reconstruction. The residuals between the original and reconstructed matrices are negligible O(10−14), confirm- ing that the compression discards only redundant data.",
+    "md5": "f280c52bcceca64900c03b5e74de60ba",
+    "description2": "The figure demonstrates information preservation under volume compression, featuring panels showing standard resolution, compressed representation, and re-upsampled reconstruction.",
+    "description3": "Six panels display energy and phase data, originally sampled, downsampled, re-upsampled, and showing loss, each with frequency and time axes.",
+    "questions": [
+      "How does volume compression affect the preservation of information?",
+      "What is the relationship between the original data and its reconstructed form?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.29785v1/images/p0007_figure_00004.png",
+    "caption": "Figure 4: (Top) Overlay of the original GW150914 (H1) whitened strain data (cyan) and the signal reconstructed via the inverse QTAM transformation (blue). The signals are vi- sually indistinguishable. (Bottom) Histogram of the recon- struction residuals (xinv − xorig) overlaid with a Gaussian fit (black solid line) and the theoretical zero-mean hypothesis (blue dashed line). The residuals follow a Gaussian distri- bution with a standard deviation of σ ≈ 7.10 × 10−8. A Z-test was performed to check for zero-mean compatibility (Z ≈ 1.19), confirming that the reconstruction is accurate up to numerical precision.",
+    "md5": "d2d3a70a05c5e0484ebbeea23bf44b08",
+    "description2": "The original GW150914 whitened strain data and reconstructed signal via inverse QTAM transformation are visually indistinguishable, with a Gaussian distribution of residuals.",
+    "description3": "Two-panel plot displays a line chart comparing original and reconstructed signals, alongside a histogram of residuals with a Gaussian fit and zero-mean hypothesis.",
+    "questions": [
+      "How well does the reconstructed signal match the original gravitational wave data?",
+      "What is the distribution of differences between original and reconstructed data?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 8,
+    "image_path": "../data/2603.29785v1/images/p0008_figure_00005.png",
+    "caption": "Figure 6: Computational benchmarking of CQT implementa- tions. The plot displays the median execution time over 10 tries (± standard deviation) as a function of input batch size on a double logarithmic scale. We compare the proposed QTAM algorithm (yellow) against state-of-the-art libraries: GWpy (blue), Wavelet Q-Transform (experimental GPU implemen- tation) (green), ml4gw (pink), Omicron (brown) and the DWT wavelet library employed by coeherent WaveBurst (gray). Dashed lines indicate CPU execution, the number of cores is the one given by the standard settings of each software. Solid lines represent GPU execution performed on an NVIDIA H100. The times for the QpTransform were only measured up to batch size 100 because over that size the GPU memory filled up. QTAM demonstrates superior scaling, maintaining sub-second latency bounds even for batch sizes of O(103).",
+    "md5": "7ccfd9289a92ad2edcb85acc41ff281d",
+    "description2": "The plot displays median execution time as a function of input batch size on a double logarithmic scale, comparing proposed QTAM algorithm with state-of-the-art libraries and CPU/GPU executions.",
+    "description3": "A multi-panel line chart compares the median execution time versus batch size for several algorithms, using dashed and solid lines to differentiate CPU and GPU execution.",
+    "questions": [
+      "How do different computational methods compare in execution time as batch size increases?",
+      "What is the general trend of execution time versus batch size for these computational methods?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 8,
+    "image_path": "../data/2603.29785v1/images/p0008_figure_00006.png",
+    "caption": "Figure 5: Demodulated signal features of (H1) GW150914. Left: Energy spectrogram in the compressed baseband rep- resentation (64 × 33 bins). Right: Instantaneous frequency, computed as the time-derivative of the unwrapped phase. By removing carrier oscillations, the demodulated phase deriva- tive explicitly reveals the signal’s \"chirp\" morphology as a coherent track.",
+    "md5": "ad4a1ecf02f3150eda650f8b201ddfef",
+    "description2": "The figure plots an energy spectrogram and instantaneous frequency of the demodulated signal features for GW150914 in compressed baseband representation.",
+    "description3": "The multi-panel plot displays an energy spectrogram and instantaneous frequency, both plotted against time and frequency axes.",
+    "questions": [
+      "What are the key features of the demodulated signal’s phase?",
+      "How does the signal’s morphology appear after demodulation and phase unwrapping?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 9,
+    "image_path": "../data/2603.29785v1/images/p0009_figure_00007.png",
+    "caption": "Figure 8: Illustrative signal recovery via attention clustering on whitened data. Top panel: The full Q-transform spectro- gram and corresponding inverted time-series of strain data containing a synthetic injection. Middle and Bottom panels: Decomposition of the signal into distinct attention clusters (Cluster 1 and Cluster 2). By masking the complex CQT coefficients to these isolated TF regions and applying the in- verse transform, the individual time-domain components are reconstructed, validating the extraction of coherent waveform features from background noise.",
+    "md5": "b569e5fede2125b30ed9a326be800661",
+    "description2": "The figure plots a signal recovery via attention clustering on whitened data, featuring a full Q-transform spectrogram and inverted time-series, with decomposition into distinct clusters.",
+    "description3": "Two-panel plots display spectrograms and inverted time-series data, alongside decompositions into two attention clusters, revealing waveform features.",
+    "questions": [
+      "How can attention clustering be used to recover signals from noisy data?",
+      "What are the key components revealed by decomposing a signal into distinct clusters?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 9,
+    "image_path": "../data/2603.29785v1/images/p0009_figure_00008.png",
+    "caption": "Figure 7: TF representation (Q = 12) of the GW200129_065458 event in L1. The figure displays Q- transform spectrograms of the detector strain data surround- ing the merger time. Top panel: The original L1 data stream Middle panel: The corresponding glitch-subtracted data with standard LVK methods. Bottom panel The L1 data stream with the injected wave. For full parameters see Appendix D.",
+    "md5": "9159f2fb21124a02cd2d265542da31e1",
+    "description2": "The figure displays Q-transform spectrograms of detector strain data surrounding the merger time, featuring three panels showing original, glitch-subtracted, and injected wave data.",
+    "description3": "The multi-panel plot displays three Q-transform spectrograms of detector strain data, showing original, glitch-subtracted, and injected wave signals.",
+    "questions": [
+      "How does the glitch-subtracted data compare to the original data stream?",
+      "What is the general appearance of the data representation surrounding the merger time?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.29785v1/images/p0010_figure_00009.png",
+    "caption": "Figure 10: Posterior distributions for intrinsic parameters of the injected binary black hole system: chirp mass M, mass ratio q, and effective inspiral spin χeff.",
+    "md5": "d531fac731cf04bcaa0442a240b16c52",
+    "description2": "The figure plots posterior distributions for three intrinsic parameters of an injected binary black hole system: chirp mass M, mass ratio q, and effective inspiral spin χeff.",
+    "description3": "Three-panel plot displays posterior distributions of chirp mass, mass ratio, and effective inspiral spin, shown as density plots in different colors.",
+    "questions": [
+      "How do different methods affect the estimated distributions of binary black hole parameters?",
+      "What is the general relationship between the distributions of chirp mass, mass ratio, and effective spin?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.29785v1/images/p0010_figure_00010.png",
+    "caption": "Figure 9: Validation of QTAM clustering inversion signal re- covery. Top: The solid black line represents the ground truth injected waveform, while the dashed red line shows the signal recovered by applying the inverse Q-transform to the identified attention cluster. Bottom: Reconstruction of the real gravitational wave event GW200129_065458. The black line denotes the standard pre-processed strain data, overlaid with the QTAM cluster reconstruction (red dashed) after the deglitching process discussed in the main text. The discrep- ancies between the two waveforms are expected and due to the different denosing procedures applied. Green vertical dot- ted lines delimit the temporal window used to calculate the Pearson correlation coefficient (r) and the Intersection over Union (IoU) score, displayed in the insets. The high metric values demonstrate that the attention mask accurately cap- tures the phase and amplitude evolution of the chirp.",
+    "md5": "74f9c3e24c3e5eb33f023954d9aff775",
+    "description2": "The figure plots the validation of QTAM clustering inversion signal recovery, comparing ground truth injected waveforms with recovered signals and reconstructing a real gravitational wave event.",
+    "description3": "Two-panel plot displays a line chart comparing ground truth waveforms (black) with recovered signals (red) across two scenarios, including GW200129_065458.",
+    "questions": [
+      "How does the recovered signal compare to the original waveform?",
+      "What is the relationship between the original data and the reconstructed gravitational wave signal?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.29785v1/images/p0011_figure_00011.png",
+    "caption": "Figure 11: Posterior distributions for extrinsic parameters: geocentric time tc, right ascension α, declination δ, inclination angle θJN, and polarization ψ.",
+    "md5": "412bd31299e480aed037d02993438aeb",
+    "description2": "The figure plots posterior distributions for five extrinsic parameters: geocentric time, right ascension, declination, inclination angle, and polarization.",
+    "description3": "The multi-panel plot displays posterior distributions for parameters, including time, right ascension, declination, inclination, and polarization, using colored density plots.",
+    "questions": [
+      "What are the distributions of parameters related to celestial object orientation?",
+      "How do different methods affect the distributions of these geocentric parameters?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 13,
+    "image_path": "../data/2603.29785v1/images/p0013_figure_00012.png",
+    "caption": "Figure 12: Comparison of Filter Bank Topologies. The plot illustrates the frequency response of the QTAM window basis in the frequency domain. Top: The hybrid mode employed by QTAM. At low frequencies, the bandwidths vary geometrically (CQT behavior); at high frequencies, the bandwidth clamping (Lmax) forces the filters to maintain a constant width (STFT behavior), limiting the maximum sampling rate required for downsampling. Bottom: A pure CQT formulation without constraints. Note how the filters at the high spectral edge become extremely wide, necessitating a very high sampling rate to avoid aliasing during demodulation.",
+    "md5": "4b6673a5e19a731a3f3d22ddb097282d",
+    "description2": "The figure plots the frequency response of the QTAM window basis in the frequency domain, comparing top the hybrid mode and bottom a pure CQT formulation without constraints.",
+    "description3": "The plot presents a comparison of hybrid and pure CQT filter bank topologies, displaying frequency response curves.",
+    "questions": [
+      "How does the geometric variation in filter bandwidths affect the overall frequency response?",
+      "What behavior differences arise from the constraints applied to the QTAM filters?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 14,
+    "image_path": "../data/2603.29785v1/images/p0014_figure_00013.png",
+    "caption": "Figure 13: Multi-Parameter Q-Scan of GW150914 (H1). The figure displays energy spectrograms obtained by simultane- ously scanning across varying Quality factors (Q) and window configurations. The rows correspond to increasing Q values (Q = 4, 8, 12), illustrating the variable trade-off between time and frequency resolution. The columns demonstrate the ef- fect of different window functions and shape parameters (e.g., Bisquare, Tukey with varying τ, Kaiser with varying β). This vectorized approach facilitates the rapid identification of the optimal representation maximizing signal visibility.",
+    "md5": "b33ed7ba1531be9f04be89e7b9518c64",
+    "description2": "The figure displays energy spectrograms obtained by simultaneously scanning across varying Quality factors (Q) and window configurations, illustrating the trade-off between time and frequency resolution.",
+    "description3": "Two-panel multi-panel plot shows energy spectrograms arranged in rows of increasing Q values and columns of varying window functions and shape parameters.",
+    "questions": [
+      "How do different quality factor values affect the appearance of the energy spectrograms?",
+      "What is the general relationship between window configuration and signal visibility?"
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 15,
+    "image_path": "../data/2603.29785v1/images/p0015_figure_00014.png",
+    "caption": "Figure 14: Computational benchmarking of CQT implemen- tations running on CPU. The plot displays the median execu- tion time over 10 tries (± standard deviation) as a function of input batch size on a double logarithmic scale. The Omicron and ml4gw lines are the same as showin in Fig 6. The num- ber of CPU cores is specified for the codes which use a fixed number of them; both ml4gw and QTAM dinamically exploit the ones available on the machine, therefore no single num- ber is specified. For the codes which run on a single core, the computational time scales linearly with the batch sizes as expected.",
+    "md5": "16d6ab73af102813f0d3a7e3dbd73a0e",
+    "description2": "The plot displays median execution time over 10 tries (± standard deviation) against input batch size on a double logarithmic scale for CQT implementations running on CPU.",
+    "description3": "The multi-panel plot displays median execution time versus input batch size on a double logarithmic scale for several CQT implementations.",
+    "questions": [
+      "How does the computational time of different codes change with increasing batch size?",
+      "What is the general relationship between batch size and execution time for these computational codes?"
+    ]
+  },
+  {
+    "id": 15,
+    "doc_id": "2603.29785v1",
+    "source_pdf": "../pdfs/2603.29785v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29785v1.pdf",
+    "page": 19,
+    "image_path": "../data/2603.29785v1/images/p0019_figure_00015.png",
+    "caption": "Figure 15: Full posterior distributions for all sampled parameters for the injected signal. This figure complements Figs. 10 and 11 by displaying the complete parameter space. The BW+QTAM configuration consistently yields tighter constraints while remaining compatible with the injected values. The QTAM-only reconstruction shows visible shifts in several parameters, consistent with partial signal–glitch overlap affecting the reconstruction.",
+    "md5": "fcd9b9e2e44d88ebfb3fb56e4c686b2d",
+    "description2": "The figure plots full posterior distributions for all sampled parameters of an injected signal, displaying the complete parameter space.",
+    "description3": "A multi-panel plot displays posterior distributions for sampled parameters, colored by reconstruction configuration (Standard, QTAM, BayesWave, and BayesWave + QTAM).",
+    "questions": [
+      "How do different configurations affect the range of possible parameter values?",
+      "What is the general pattern of the distributions for the sampled parameters?"
+    ]
+  }
+]

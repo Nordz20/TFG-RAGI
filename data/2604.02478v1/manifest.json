@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02478v1",
+    "source_pdf": "../pdfs/2604.02478v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02478v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02478v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1: AIVV framework, illustrating the sequential flow of the system.",
+    "md5": "1a463d068d4caa874f350de9f9baaaf8",
+    "description2": "The figure depicts a workflow diagram illustrating the sequential flow of the system within the AIVV framework.",
+    "description3": "The diagram is a flowchart outlining the AIVV framework, with sequential steps connected by arrows and labeled with process types.",
+    "questions": [
+      "What is the overall purpose of the AIVV system shown?",
+      "How does the system's flow transition between automated and manual processes?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02478v1",
+    "source_pdf": "../pdfs/2604.02478v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02478v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02478v1/images/p0006_figure_00002.png",
+    "caption": "Figure 2: (a) Hovering, (b) Lawnmower Mapping Pattern, and (c) Complex Mission.",
+    "md5": "453044742cb010387cd07bb89bab3e8e",
+    "description2": "The figure displays three patterns: hovering, lawnmower mapping, and complex mission.",
+    "description3": "Three-panel plot displays three line charts, each showing a time series of yaw angle data, labeled as Dataset 1, 2, and 3.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02478v1",
+    "source_pdf": "../pdfs/2604.02478v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02478v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02478v1/images/p0009_figure_00003.png",
+    "caption": "Figure 3: Ablation study comparing three framework stages (rows) across three test scenarios (columns). The mathematical baseline exhibits a high false-positive rate (FPR), which is visibly reduced when the LLM council is introduced. The full AIVV framework integrates the adaptation pipeline to achieve optimal validation.",
+    "md5": "966b703f4918857e35387b9bdb3569b1",
+    "description2": "A pipeline diagram comparing three framework stages across three test scenarios, featuring a mathematical baseline and two additional stages: LLM council and full AIVV framework.",
+    "description3": "The multi-panel plot displays three rows of line charts, each showing three columns representing different test scenarios and framework stages.",
+    "questions": [
+      "What is the overall goal of the framework, according to the caption?",
+      "How does the caption describe the relationship between baseline and full framework?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02478v1",
+    "source_pdf": "../pdfs/2604.02478v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02478v1.pdf",
+    "page": 19,
+    "image_path": "../data/2604.02478v1/images/p0019_figure_00004.png",
+    "caption": "Figure 4: Effect of gain-tuning on REMUS 100 hovering (Dataset 1) yaw response",
+    "md5": "26f635e2f03e6b3107b9f49fb98bcf0f",
+    "description2": "The figure plots the effect of gain-tuning on the yaw response of REMUS 100 hovering in Dataset 1.",
+    "description3": "Two-panel line chart plots yaw angle (in degrees) versus time step, comparing responses before and after gain-tuning of a REMUS 100 hovering.",
+    "questions": [
+      "How does gain-tuning affect the yaw response of the REMUS 100 while hovering?",
+      "What is the general difference in the yaw response before and after gain-tuning?"
+    ]
+  }
+]

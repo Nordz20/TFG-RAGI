@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02877v1",
+    "source_pdf": "../pdfs/2604.02877v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02877v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.02877v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1. (a) Prior works learn each instrument prompt in- dependently. (b,c) They overlook the power of positive for- ward and backward transfer between early-acquired and newly- acquired knowledge. (d) In contrast, our work organizes instru- ment prompts from general to specific as a hierarchical prompt parsing tree. (e) It supports positive forward transfer by helping new instrument prompts inherit profitable knowledge from the past to assist new-class learning. (f) It further enables positive back- ward transfer by letting the newly-acquired knowledge wisely re- fine early-acquired knowledge to improve old-class segmentation.",
+    "md5": "a4a6d22555c567640439e177433446bf",
+    "description2": "A hierarchical prompt parsing tree is plotted, structured with instrument prompts organized from general to specific.",
+    "description3": "Two-panel diagrams show prior work's independent learning versus a hierarchical prompt parsing tree enabling positive forward and backward transfer.",
+    "questions": [
+      "How do early-acquired and newly-acquired knowledge interact in the presented approach?",
+      "What is the hierarchical structure used to organize instrument prompts?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02877v1",
+    "source_pdf": "../pdfs/2604.02877v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02877v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02877v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2. Overview of our self-reflection hierarchical prompt framework. We progressively append instrument-aware prompts into a pre- trained model during the training lifespan. For each new class, before diving into learning its specific prompts, we first build a hierarchical prompt parsing tree to discover the profitable knowledge it could inherit from the past, i.e., the instrument-shared (IS) and n-part-shared knowledge, promoting new-class learning by positive forward knowledge transfer. Simply learning one instrument-distinct (ID) prompt partition would be sufficient to delineate its contour. Based on the newly acquired ID partition, we trigger self-reflection on existing knowledge to support positive backward knowledge transfer, wisely refining their representativeness within the context of all seen classes without causing catastrophic forgetting.",
+    "md5": "c7e4ad295dd9d1863cc9089e5481184f",
+    "description2": "Our self-reflection hierarchical prompt framework progressively appends instrument-aware prompts into a pre-trained model during training for profitable knowledge discovery and transfer.",
+    "description3": "A hierarchical prompt framework diagram displays prompt partitions, trees, and knowledge transfer pathways between a model encoder and prediction head.",
+    "questions": [
+      "How does the framework leverage past knowledge to improve learning of new classes?",
+      "What is the overall structure used to organize and refine prompts during training?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02877v1",
+    "source_pdf": "../pdfs/2604.02877v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02877v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02877v1/images/p0006_figure_00003.png",
+    "caption": "Figure 3. Visual comparisons of our approaches and highly competitive approaches. More comparison results are in the supplementary.",
+    "md5": "167e6c8c4d68ed57a17766bc69d4145b",
+    "description2": "A visual comparison is plotted between our approaches and highly competitive approaches.",
+    "description3": "A multi-panel plot displays visual comparisons of several approaches alongside ground truth, arranged in horizontal rows and columns.",
+    "questions": [
+      "How do different approaches perform relative to each other in these visual comparisons?",
+      "What is the overall trend shown by the comparison results presented here?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02877v1",
+    "source_pdf": "../pdfs/2604.02877v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02877v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02877v1/images/p0008_figure_00004.png",
+    "caption": "Figure 4. Effects of the decay factor γ and the teleport probability α on model performance.",
+    "md5": "7f97f10834b8b9d3607daf2f5595a55f",
+    "description2": "The figure plots the effects of the decay factor gamma and the teleport probability alpha on model performance.",
+    "description3": "Two-panel line charts display performance (mIoU) versus decay factor (γ) and teleport probability (α), respectively, with labeled axes and data points.",
+    "questions": [
+      "How does the decay factor influence the model's overall performance?",
+      "What is the general relationship between teleport probability and model performance?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02877v1",
+    "source_pdf": "../pdfs/2604.02877v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02877v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02877v1/images/p0012_figure_00005.png",
+    "caption": "Figure 2. Visualization comparison of segmentation results across all methods. Rows 1–2, 4-5: previous datasets. Row 3, 6: current dataset.",
+    "md5": "0dd469918e24d7672b7816c52492e355",
+    "description2": "The figure visualizes a comparison of segmentation results across various methods, with rows 1-2 and 4-5 representing previous datasets and row 3 and 6 representing the current dataset.",
+    "description3": "Two-panel image displays a grid of segmentation results across multiple methods for various datasets, with rows representing different datasets.",
+    "questions": [
+      "What is the purpose of the comparison shown between methods and datasets?",
+      "How are the results organized to show differences between datasets?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02877v1",
+    "source_pdf": "../pdfs/2604.02877v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02877v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02877v1/images/p0012_figure_00006.png",
+    "caption": "Figure 3. Automatic estimation of instrument part count.",
+    "md5": "f85afc1a85dac23107e9ce96d9c1b84b",
+    "description2": "The figure presents an automatic estimation of instrument part count.",
+    "description3": "A flowchart details an automatic instrument part count estimation process, starting with labeled images and ending with a three-part instrument result.",
+    "questions": [
+      "What is the overall process for estimating the number of parts in an instrument?",
+      "How is the count of instrument parts determined automatically?"
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02583v1",
+    "source_pdf": "../pdfs/2604.02583v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02583v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.02583v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1: An example of utilizing our FusionBERT model in images-3D model retrieval task with multi-view images as input query. Our FusionBERT model achieves a successful Top-1 retrieval, surpassing other SOTA image-3D retrieval models such as TAMM [24], OpenShape [9] and ULIP-2 [22] in matching multi-view images to the right 3D model.",
+    "md5": "24441c567cd424bc0d72cfd8a10ed750",
+    "description2": "Figure 1 illustrates our FusionBERT model successfully retrieving a 3D model from multi-view images, outperforming TAMM, OpenShape, and ULIP-2 models.",
+    "description3": "The multi-panel plot displays a query process retrieving 3D models based on multi-view images, with performance comparisons shown.",
+    "questions": [
+      "How does the FusionBERT model perform in image-3D model retrieval tasks?",
+      "What is the general process for retrieving 3D models using multi-view images?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02583v1",
+    "source_pdf": "../pdfs/2604.02583v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02583v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.02583v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2: System overview. FusionBERT fine-tunes a multi-view fusion aggregator and a normal-aware 3D encoder by aligning fused multi-view features with 3D representations via contrastive learning, mitigating the cross-modal gap between images and 3D. Following TAMM [24], we introduce IAA and TAA into the 3D encoder to decouple representations into visual and semantic subspaces, enabling more effective tri-modal pre-training. Contrastive learning maximizes similarity between matched features while minimizing those for mismatched ones.",
+    "md5": "62bf85c1d8011193e3f5740174cd7302",
+    "description2": "A system overview is plotted, featuring a fusion of multi-view features with 3D representations via contrastive learning, mitigating the cross-modal gap between images and 3D.",
+    "description3": "Two-panel diagram illustrates a system overview with a multi-view image encoder, a normal-aware 3D encoder, and a text encoder connected by alignment adapters.",
+    "questions": [
+      "How does this system address the differences between image and 3D data representations?",
+      "What is the overall architecture for fusing multi-view images, 3D data, and text?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02583v1",
+    "source_pdf": "../pdfs/2604.02583v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02583v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02583v1/images/p0004_figure_00003.png",
+    "caption": "Figure 3: Architecture of the normal-aware 3D model encoder. The input point cloud (𝑁 × 9) is partitioned into 𝑃 patches via FPS and 𝑘NN grouping. Each patch is encoded by a Mini- PointNet into patch tokens, which are concatenated with a [CLS] token and processed by Transformer blocks. The output [CLS] token is projected to the global shape feature.",
+    "md5": "6e967dea3c04038c07ef55976e78f869",
+    "description2": "The figure illustrates an architecture for encoding 3D model inputs, partitioning point clouds into patches via FPS and kNN grouping, then processing patch tokens with Transformer blocks.",
+    "description3": "The architecture includes patching, Mini-PointNet encoding, Transformer blocks, and a projection to generate a global shape feature.",
+    "questions": [
+      "How does the architecture process point cloud data to generate a global shape feature?",
+      "What is the role of grouping and concatenation in the model’s structure?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02583v1",
+    "source_pdf": "../pdfs/2604.02583v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02583v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02583v1/images/p0005_figure_00004.png",
+    "caption": "Figure 4: Two-stage training pipeline. In stage 1, the 3D encoder with adapters is trained to align the features of 3D point clouds with single-view CLIP image features, with contrastive loss for optimization. In stage 2, the multi-view aggregator is trained to be aligned with the feature space of the frozen 3D encoder trained from stage 1.",
+    "md5": "ac7d76556d5aeaeffe21c19ad03afe31",
+    "description2": "The figure shows a two-stage training pipeline, where a 3D encoder aligns point cloud and CLIP image features using contrastive loss in the first stage, then trains a multi-view aggregator to match its feature space.",
+    "description3": "The two-stage training pipeline uses a multi-panel plot with boxes representing encoders, aggregators, and loss functions.",
+    "questions": [
+      "How are 3D point cloud features aligned with image features during training?",
+      "What are the key stages involved in the training pipeline shown?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02583v1",
+    "source_pdf": "../pdfs/2604.02583v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02583v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02583v1/images/p0006_figure_00005.png",
+    "caption": "Figure 5: Two exemplar retrieval tasks on Objaverse-LVIS dataset [4], where our FusionBERT model achieves the best perfor- mance with the correct result at Recall@1 for both cases, outperforming SOTA TAMM [24], OpenShape [9] and ULIP-2 [22].",
+    "md5": "87dcf1f22f94e23a2b089a5d3ddce6a4",
+    "description2": "The figure plots two exemplar retrieval tasks on the Objaverse-LVIS dataset.",
+    "description3": "Four-panel plot displays retrieval results for two tasks, showing top 5 matches with recall scores for FusionBERT, TAMM, OpenShape, and ULIP-2.",
+    "questions": [
+      "How does the FusionBERT model's performance compare to other methods?",
+      "What type of dataset is used to evaluate these retrieval models?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02583v1",
+    "source_pdf": "../pdfs/2604.02583v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02583v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02583v1/images/p0007_figure_00006.png",
+    "caption": "Figure 6: Ablation study on the number of input views for our FusionBERT, OpenShape [9], TAMM [24] and ULIP-2 [22] across 1 ∼ 12 input views with Top-5 retrieval accuracies (%) on Objaverse-LVIS dataset.",
+    "md5": "03c5f02f1976aa82e9d5c310ccb9d7f7",
+    "description2": "Ablation study results are plotted showing the top-5 retrieval accuracy percentages for FusionBERT, OpenShape, TAMM, and ULIP-2 across 1 to 12 input views.",
+    "description3": "The line chart displays Top-5 retrieval accuracies (%) for FusionBERT, OpenShape, TAMM, and ULIP-2 models across varying numbers of input views.",
+    "questions": [
+      "How does the number of input views influence retrieval accuracies on the Objaverse-LVIS dataset?",
+      "What is the general relationship between input views and model performance?"
+    ]
+  }
+]

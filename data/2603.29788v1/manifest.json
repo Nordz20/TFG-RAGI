@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.29788v1/images/p0002_figure_00001.png",
+    "caption": "Fig. 1. Overview of the proposed multi-feature fusion pipeline. An input image is processed by three parallel feature encoders (ΨMSCN, ΨCLIP, ΨMLBP). The resulting feature vectors are normalized, fused, and fed into a classifier for final prediction.",
+    "md5": "e504a8f26d598284aa9d05c9ad18b4f9",
+    "description2": "An overview of the proposed multi-feature fusion pipeline diagrams an input image being processed by three parallel feature encoders: ΨMSCN, ΨCLIP, and ΨMLBP.",
+    "description3": "A multi-panel plot outlines a pipeline, with input images branching into three feature encoders before normalization, fusion, and classification.",
+    "questions": [
+      "What is the general process for classifying an image based on its features?",
+      "How are different image features combined to make a final prediction?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.29788v1/images/p0004_figure_00002.png",
+    "caption": "Fig. 2. Visual comparison of texture (LBP) and contrast (GLCM) maps for a natural image and its AI-generated counterparts by DALLE and Stable Diffu- sion. The MSCN Contrast Maps (right) reveal that AI-generated images often exhibit inconsistent local intensity distributions and ’halo’ artifacts compared to the smooth, natural scene statistics of the photograph. Simultaneously, the MLBP texture maps (center) expose the underlying structural regularity and ’tiling’ artifacts inherent in generative architectures, contrasting sharply with the stochastic, high-variance micro-textures observed in the natural sample.",
+    "md5": "ca5cba0034e0b91b9209f44fe15732a7",
+    "description2": "The figure is a visual comparison of texture (LBP) and contrast (GLCM) maps for a natural image and its AI-generated counterparts by DALLE and Stable Diffusion.",
+    "description3": "The multi-panel plot displays original images alongside their corresponding LBP texture maps and MSCN contrast maps, arranged in three rows.",
+    "questions": [
+      "How do AI-generated images differ from natural images in terms of texture and contrast?",
+      "What structural characteristics distinguish AI-generated images from natural scene representations?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.29788v1/images/p0007_figure_00003.png",
+    "caption": "Fig. 4. Association between manifold separation and detection performance across feature configurations. For each dataset (Synthbuster, PKU, CIFAKE, FakeBench), points correspond to the seven feature configurations (marker- coded) and plot average MCC (y-axis) versus log10 Fr´echet divergence between natural and GenAI feature distributions (x-axis). The title of each panel reports the absolute Spearman rank correlation (SRCC |ρ|) computed across configurations.",
+    "md5": "a4c188be94b0a72c7647d8df5cb7429f",
+    "description2": "The figure plots a line chart showing the association between manifold separation and detection performance, with average MCC on the y-axis and log10 Fréchet divergence on the x-axis for different feature configurations.",
+    "description3": "Three-panel plots display average MCC versus log10 Fréchet divergence for seven feature configurations, each panel reporting Spearman rank correlation.",
+    "questions": [
+      "How do feature configurations influence the association between manifold separation and performance?",
+      "What general relationship is shown between the distributions and their correlation?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 7,
+    "image_path": "../data/2603.29788v1/images/p0007_figure_00004.png",
+    "caption": "Fig. 3. Real–GenAI distribution separation across datasets and feature configurations. For each dataset, we report the (log-scaled) Gaussian Fr´echet distance (FID-like) between the natural and GenAI feature distributions for the seven configurations (three individual feature families and their fusions). Larger values indicate greater deviation from the natural image manifold in the corresponding feature projection, while smaller values indicate stronger manifold overlap and a harder detection regime.",
+    "md5": "f00d525d479da7c4e0d2196d13bfaaa0",
+    "description2": "Fig. 3 plots the log-scaled Gaussian Fréchet distance between real and GenAI feature distributions across datasets and configurations for three individual feature families and their fusions.",
+    "description3": "Three-panel plot displays log-scaled Fréchet distances across four datasets (Synthbuster, PKU-4K, CIFAKE, FakeBench) for seven feature configurations, using bars of varying colors.",
+    "questions": [
+      "How do different feature configurations influence the separation of distributions?",
+      "What general trends are shown regarding distribution deviation from the manifold?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 8,
+    "image_path": "../data/2603.29788v1/images/p0008_figure_00005.png",
+    "caption": "Fig. 5. t-SNE on CIFAKE (natural vs. GenAI) across all feature configurations",
+    "md5": "705097594bc7add081a81d27e0642838",
+    "description2": "A line chart compares the performance of t-SNE on natural and generated AI data from CIFAKE across various feature configurations.",
+    "description3": "Two-panel plot displays t-SNE scatter plots, showing natural versus GenAI data points in six configurations, with red and orange indicating different groups.",
+    "questions": [
+      "How do feature configurations influence the separation of natural and GenAI data?",
+      "What patterns emerge when visualizing data configurations using t-SNE?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 9,
+    "image_path": "../data/2603.29788v1/images/p0009_figure_00006.png",
+    "caption": "Fig. 6. Effect Size vs. Significance for classifier and feature effects by metrics (Accuracy: top and MCC: bottom). Each point corresponds to a generator-level Kruskal–Wallis test after FDR correction. Marker shape encodes the tested factor (circles: classifier; triangles: feature), and color encodes the feature categories. The x-axis reports effect size ϵ2 (0–1), the y-axis shows significance as − log10(q). The dashed horizontal line marks the q = 0.05 threshold; vertical dotted lines indicate small/medium/large effect-size heuristics. Labels are shown only for statistically significant points to reduce clutter.",
+    "md5": "f1afb19f030070b356d81fba221ebd75",
+    "description2": "The figure plots the relationship between effect size and significance for classifier and feature effects by metrics, with accuracy at the top and MCC at the bottom.",
+    "description3": "The plot presents a multi-panel scatterplot showing effect size versus significance for classifier and feature effects, with points colored and shaped by factor and category.",
+    "questions": [
+      "What main concept is organized in the figure?",
+      "How are the main categories structured in the figure?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.29788v1/images/p0010_figure_00007.png",
+    "caption": "Fig. 7. Accuracy–MCC correlation for Individual (top) vs Fusion (bottom) features. The scatter points are colored by feature and styled by classifier.",
+    "md5": "785c59b3a4c81be7fdcb56932ff68081",
+    "description2": "The figure plots a line chart of accuracy against MCC correlation, comparing individual and fusion features.",
+    "description3": "The multi-panel plot displays scatter plots of accuracy versus MCC, colored by feature and styled by classifier, for individual and fusion features.",
+    "questions": [
+      "How does the relationship between accuracy and correlation vary between feature sets?",
+      "What is the general trend observed when comparing individual and fusion features?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 10,
+    "image_path": "../data/2603.29788v1/images/p0010_figure_00008.png",
+    "caption": "Fig. 8. Generalizability comparison of individual and fusion features across Synthbuster, PKU-4K (T2I/I2I), and FakeBench.",
+    "md5": "8531dbfb1e75c005eac21084f6033c2e",
+    "description2": "The figure compares the generalizability of individual and fusion features across three datasets: Synthbuster, PKU-4K, and FakeBench.",
+    "description3": "Two-panel bar charts compare generalizability across Synthbuster, PKU-4K, and FakeBench, displaying accuracy (top) and MCC (bottom) for individual and fusion features.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.29788v1",
+    "source_pdf": "../pdfs/2603.29788v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.29788v1.pdf",
+    "page": 11,
+    "image_path": "../data/2603.29788v1/images/p0011_figure_00009.png",
+    "caption": "Fig. 9. Performance comparison with state-of-the-art approaches.",
+    "md5": "dce646122a3d258eed06f594ede348f9",
+    "description2": "The figure plots a performance comparison with state-of-the-art approaches.",
+    "description3": "A bar chart compares the accuracy of several approaches across five datasets, labeled along the x-axis.",
+    "questions": [
+      "How do the presented approaches’ performance compare to state-of-the-art?",
+      "What are the general performance differences between the approaches?"
+    ]
+  }
+]

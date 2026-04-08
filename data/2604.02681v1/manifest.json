@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02681v1",
+    "source_pdf": "../pdfs/2604.02681v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02681v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.02681v1/images/p0002_figure_00001.png",
+    "caption": "Fig. 1: Example dynamic spectrum of PSR J0814+7429 with LOFAR taken on MJD 57361. The white patches are removed due to RFI.",
+    "md5": "e5d9437fb0d0eb197f3b60ee0d4e0bbc",
+    "description2": "The figure displays a dynamic spectrum of PSR J0814+7429, obtained using LOFAR on Modified Julian Day 57361, with white areas removed due to radio frequency interference.",
+    "description3": "A dynamic spectrum plot displays frequency (MHz) versus time (hours) for PSR J0814+7429, with white areas indicating removed radio frequency interference.",
+    "questions": [
+      "What type of data is shown in this example spectrum?",
+      "How does the signal intensity change over time in this dynamic spectrum?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02681v1",
+    "source_pdf": "../pdfs/2604.02681v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02681v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02681v1/images/p0004_figure_00002.png",
+    "caption": "Fig. 2: Long-term variations of scintillation timescale ∆τd (top panel) and scintillation bandwidth ∆νd (bottom panel) for PSR J0814+7429. The vertical gray dotted lines indicate the start of a calendar year. More observations in 2017 resulted in relatively dense data points this year.",
+    "md5": "4d159299df962b63c2c5b949ed569ae0",
+    "description2": "The figure plots long-term variations of scintillation timescale Δτd and scintillation bandwidth Δνd for PSR J0814+7429, with top and bottom panels showing these variations over time.",
+    "description3": "A two-panel plot displays long-term variations of timescale and bandwidth data, with vertical lines marking calendar years and denser data points in 2017.",
+    "questions": [
+      "What long-term trends are observed in the scintillation timescale and bandwidth?",
+      "How do the variations in scintillation timescale and bandwidth change over time?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02681v1",
+    "source_pdf": "../pdfs/2604.02681v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02681v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02681v1/images/p0005_figure_00003.png",
+    "caption": "Fig. 3: Top panel: the scintillation velocities of PSR J0814+7429 as a function of day of year. The points with error bars are the scintillation velocities from Equation 1, and the curve shown is that from Equation 2. The residuals between the two scintillation velocities are shown in the bottom left panel. And the residual histogram distribution with Gaussian fitting (gray dashed line) is shown in the bottom right panel.",
+    "md5": "b0e20f712f98834324ee4547df7b5202",
+    "description2": "The top panel plots scintillation velocities of PSR J0814+7429 versus day of year, with points and error bars representing values from Equation 1 and a curve from Equation 2.",
+    "description3": "The multi-panel plot displays scintillation velocities versus day of year, residuals, and a residual histogram with a Gaussian fit.",
+    "questions": [
+      "How do scintillation velocities change over the course of a year?",
+      "What is the distribution of the differences between the two scintillation velocity measurements?"
+    ]
+  }
+]

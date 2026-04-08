@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.04808v1/images/p0001_figure_00001.png",
+    "caption": "Figure 1. Standard pipeline for training concept-based policies. Practitioners select concepts for decision-making through a labor- intensive process of iteratively selecting candidate concepts, train- ing concept-based policies, and evaluating their performance.",
+    "md5": "5216efc12f026dae9913e8ec80780b41",
+    "description2": "A standard pipeline is plotted for training concept-based policies, featuring iterative processes of selecting candidate concepts, training, and evaluation.",
+    "description3": "A flowchart outlines a pipeline for training concept-based policies, involving baseline policy training, concept selection, and performance evaluation.",
+    "questions": [
+      "What is the general process for training policies based on concepts?",
+      "How are policies iteratively improved through concept selection and evaluation?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 3,
+    "image_path": "../data/2604.04808v1/images/p0003_figure_00002.png",
+    "caption": "Figure 2. Concept-based models rely on a set of decision-relevant concepts that help distinguish between different states, yet currently these concepts are manually selected. In this work, we study how to identify and select decision-relevant concepts. Our key insight is that decision-relevant concepts best separate “different” states, where difference is defined by their decision consequences. We use this insight to develop algorithms for concept selection with performance guarantees.",
+    "md5": "b19fba1a5baf07ce5125bca954fd6ff1",
+    "description2": "A line chart or comparative plot structures a set of decision-relevant concepts that distinguish between different states based on their decision consequences.",
+    "description3": "Four-panel plot displays a concept-based model, concept bank, and two panels illustrating decision-relevant concepts separating different and similar states.",
+    "questions": [
+      "How do concept-based models help distinguish between different states?",
+      "What is the relationship between decision consequences and the selection of concepts?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.04808v1/images/p0006_figure_00003.png",
+    "caption": "Figure 4. We vary the number of timesteps that we train policies for in MiniGrid, while also varying the accuracy of concept predictors (left) or the number of concepts selected (right). Increasing the accuracy of concept predictors speeds up training, while increasing the number of concepts increases the maximum performance.",
+    "md5": "ed0a81be5f815f3f20626d464495a16c",
+    "description2": "The figure plots the relationship between the number of timesteps trained and the accuracy of concept predictors or the number of concepts selected in MiniGrid.",
+    "description3": "Three-panel three panels display line charts showing reward versus timesteps, with varying dotted and solid lines representing different percentages and concept numbers.",
+    "questions": [
+      "How does the number of training timesteps affect policy performance?",
+      "What is the relationship between the number of concepts and maximum performance?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.04808v1/images/p0006_figure_00004.png",
+    "caption": "Figure 3. Normalized reward of concept selection algorithms with perfect (top) and imperfect (bottom) concept predictors. Our algorithm, DRS, improves performance compared to the random, variance, and greedy baselines for four out of five environments in the perfect setting. DRS and DRS-log improve performance or are optimal in all environments in the imperfect setting.",
+    "md5": "ec139720cfe50427255e869952772297",
+    "description2": "The figure plots the normalized reward of concept selection algorithms with perfect and imperfect concept predictors, comparing different algorithmic approaches across various environments.",
+    "description3": "Three-panel plots display bar graphs representing normalized reward across five environments, comparing algorithms under perfect and imperfect concept predictor conditions.",
+    "questions": [
+      "How does the algorithm's performance change with imperfect versus perfect concept predictors?",
+      "What is the general relationship between algorithm performance and the depicted environments?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.04808v1/images/p0007_figure_00005.png",
+    "caption": "Figure 6. We assess the impact of concept selection upon test-time intervention across four environments. Across all four environments, the DRS algorithm has the highest reward both before and after intervention, showing that well-selected concepts improve intervention.",
+    "md5": "b452341611cd0c552dfec6dc1630126d",
+    "description2": "The figure plots the assessment of concept selection's impact on test-time intervention across four environments, with the DRS algorithm's performance depicted for both pre- and post-intervention scenarios.",
+    "description3": "The plot contains four panels, each displaying a line chart of reward versus accuracy for different methods and types.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.04808v1/images/p0007_figure_00006.png",
+    "caption": "Figure 5. Impact of the number of concepts selected against the accuracy of the underlying concepts. Increasing either number or accuracy of concepts has a similar impact on performance, and that sufficiently accurate and many concepts are needed to ensure good performance.",
+    "md5": "49fb6569d34c4c7e3b57461090f4c91a",
+    "description2": "The figure plots the impact of the number of concepts selected against the accuracy of the underlying concepts.",
+    "description3": "Four-panel grid displays accuracy percentages against concept numbers for CartPole, MiniGrid, Pong, Boxing, and Glucose, using colored squares.",
+    "questions": [
+      "What general impact does the number of selected concepts have on performance?",
+      "How does accuracy relate to the number of concepts for good performance?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.04808v1/images/p0008_figure_00007.png",
+    "caption": "Figure 7. The DRS algorithm can mimic manual concept selection in CUB. It matches performance (left) while selecting a subset of the manually selected concepts (right).",
+    "md5": "505083f114cfcedc722068e7d130a27a",
+    "description2": "The figure plots the DRS algorithm's performance and concept selection compared to manual selection, matching results on the left and right.",
+    "description3": "Two-panel line chart plots accuracy versus number of concepts (left) and similarity versus number of concepts (right), comparing DRS with other algorithms and manual selection.",
+    "questions": [
+      "How does the algorithm's performance compare to manual selection in this concept selection task?",
+      "What is the relationship between the number of concepts selected and the resulting performance?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.04808v1/images/p0012_figure_00008.png",
+    "caption": "Figure 8. We assess the performance of a) not relaxing constraint P1c for DRS and b) varying ρ for CartPole and MiniGrid. We find that ρ = 0.75 performs well across perfect and imperfect settings, while introducing P1c leads to lower performance in CartPole.",
+    "md5": "3b742d90ab7eeb692eb6662fec0575c5",
+    "description2": "The figure plots the performance of two scenarios: not relaxing constraint P1c for DRS and varying ρ for CartPole and MiniGrid.",
+    "description3": "Three-panel bar plots compare performance across CartPole and MiniGrid, with varying ρ values and a constraint relaxation assessment.",
+    "questions": [
+      "How does relaxing constraints affect performance in both CartPole and MiniGrid?",
+      "What is the relationship between constraint relaxation and overall performance?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 13,
+    "image_path": "../data/2604.04808v1/images/p0013_figure_00009.png",
+    "caption": "Figure 9. We compare concept selection algorithms while varying the number of concepts selected k with perfect (top) and imperfect (bottom) concept predictors. We find that for CartPole and MiniGrid, DRS outperforms baselines across values of k, while for environments such as Boxing and Glucose, a threshold number of concepts is needed before DRS outperforms baselines.",
+    "md5": "dd0643d940ff2c06f5778922c50f8fe7",
+    "description2": "The figure compares concept selection algorithms with varying numbers of selected concepts (k) using perfect and imperfect predictors.",
+    "description3": "Three-panel plot displays line charts showing reward versus the number of concepts selected, with four algorithms compared across five environments.",
+    "questions": [
+      "How do different algorithms perform relative to baselines in various environments?",
+      "What is the relationship between the number of concepts and algorithm performance?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.04808v1/images/p0014_figure_00010.png",
+    "caption": "Figure 10. We compare the time to compute across methods and datasets, and find that all algorithms run in under ten minutes. While DRS and DRS-log take longer than variance and greedy, they still run quickly across environments.",
+    "md5": "105ea2f8d97e57a4f3bf73c2f7a57954",
+    "description2": "The figure compares the time to compute across various methods and datasets, plotting their running times against each other.",
+    "description3": "The multi-panel bar chart compares computation time (in seconds) for four methods across four datasets.",
+    "questions": [
+      "How do different methods compare in terms of computation time?",
+      "What is the relationship between algorithms and the environments they operate in?"
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.04808v1/images/p0014_figure_00011.png",
+    "caption": "Figure 11. We vary the number of timesteps that we train policies for in CartPole, while also varying the accuracy of concept predic- tors (left) or the number of concepts selected (right). When the number of concepts is small or the accuracy of the concepts is low, policies fail to train, with the efficiency of training increasing with both parameters.",
+    "md5": "6f53f8446b24165d004d7af7542b4e4c",
+    "description2": "The figure plots the relationship between the number of timesteps trained for and the accuracy/number of concepts used in CartPole policy training.",
+    "description3": "Three-panel line charts display reward versus timesteps, with varying concept accuracy (left) and concept number (right), showing training efficiency trends.",
+    "questions": [
+      "How does training efficiency change with the number of timesteps used?",
+      "What is the relationship between the number of concepts and training success?"
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.04808v1/images/p0014_figure_00012.png",
+    "caption": "Figure 12. We assess test-time intervention performance when varying the level of intervention α in CartPole. Across all α, the DRS algorithm performs best, with steadily improving perfor- mance as α is increased.",
+    "md5": "91db333aeba5cac9d7c80fe3f524b0e6",
+    "description2": "The figure plots the performance of the DRS algorithm in the CartPole task for various levels of intervention alpha (α).",
+    "description3": "Three-panel line chart displays reward values versus intervention probability, showing multiple algorithms with shaded error bands.",
+    "questions": [
+      "What general trend is observed regarding algorithm performance as intervention levels increase?",
+      "Which algorithm consistently exhibits superior performance in this CartPole assessment?"
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": "2604.04808v1",
+    "source_pdf": "../pdfs/2604.04808v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.04808v1.pdf",
+    "page": 15,
+    "image_path": "../data/2604.04808v1/images/p0015_figure_00013.png",
+    "caption": "Figure 13. We vary the number of timesteps we use to train the policy π without concepts in MiniGrid. Typically, we have π = π∗, but here, we demonstrate that the DRS and DRS-log algorithms perform well even when π is trained for only 100k timesteps.",
+    "md5": "946b90b80359bd0be3b6ba32286bf8c1",
+    "description2": "The figure plots the performance of the DRS and DRS-log algorithms as a function of training timesteps in MiniGrid without concepts.",
+    "description3": "Three-panel line chart displays variance data for DRS, DRS-log, and Greedy algorithms across varying π* timestep values, labeled in thousands.",
+    "questions": [
+      "How do different algorithms perform when the policy is trained for varying numbers of timesteps?",
+      "What is the general trend observed with increasing training timesteps?"
+    ]
+  }
+]

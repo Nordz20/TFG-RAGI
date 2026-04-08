@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.30035v1",
+    "source_pdf": "../pdfs/2603.30035v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.30035v1.pdf",
+    "page": 3,
+    "image_path": "../data/2603.30035v1/images/p0003_figure_00001.png",
+    "caption": "Figure 1: Architecture of UtilityNet. The utility branch predicts the utility reward for each context- action pair, while the gating branch predicts whether UCB-bonus-based action selection should be activated.",
+    "md5": "20e8681eb9428bc70d9aab03463a1657",
+    "description2": "The architecture of UtilityNet diagrammatically depicts a utility branch predicting rewards for context-action pairs and a gating branch determining UCB-bonus-based action selection activation.",
+    "description3": "Two-panel architecture diagram displays utility and gating branches with multiple linear layers and ReLU activations, connected by various embedding and MLP layers.",
+    "questions": [
+      "What is the overall architecture of the UtilityNet system?",
+      "How does the system determine whether to use a bonus-based action selection?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.30035v1",
+    "source_pdf": "../pdfs/2603.30035v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.30035v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.30035v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2: Reward comparison of NeuralUCB, RouteLLM-BERT, and two simple baselines, random and min-cost, under the simulated online routing setting.",
+    "md5": "4d27db7f2e97ec1ac9f47aaea442efae",
+    "description2": "The figure compares the rewards of NeuralUCB, RouteLLM-BERT, and two simple baselines (random and min-cost) in a simulated online routing setting.",
+    "description3": "Two-panel plot displays line charts comparing NeuralUCB, RouteLLM-BERT, random, and min-cost reward across slices, showing average and cumulative reward trends.",
+    "questions": [
+      "How do the routing approaches differ in their average reward performance?",
+      "What is the general pattern of cumulative reward for each routing setting?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.30035v1",
+    "source_pdf": "../pdfs/2603.30035v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.30035v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.30035v1/images/p0005_figure_00003.png",
+    "caption": "Figure 3: Encoder ablation under the simulated online routing setting. We compare four text en- coders, multilingual-e5-large-instruct, all-mpnet-base-v2, Qwen3-Embedding-0.6B, and all-MiniLM-L6-v2, using both average reward and cumulative reward.",
+    "md5": "accd74de791017a309906b804c605c3d",
+    "description2": "Encoder ablation is plotted under a simulated online routing setting, comparing four text encoders: multilingual-e5-large-instruct, all-mpnet-base-v2, Qwen3-Embedding-0.6B, and all-MiniLM-L6-v2.",
+    "description3": "Two-panel line chart compares four text encoders' average and cumulative reward across slices, with different colored lines representing each encoder.",
+    "questions": [
+      "How do different embedding encoders affect average reward in this simulated setting?",
+      "What is the overall pattern of cumulative reward for the encoder types shown?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.30035v1",
+    "source_pdf": "../pdfs/2603.30035v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.30035v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.30035v1/images/p0006_figure_00004.png",
+    "caption": "Figure 4: Comparison between the proposed NeuralUCB policy and the max-quality reference in terms of cost and selected quality under the simulated online routing setting.",
+    "md5": "fbd4bc6f4af686ebde05124a39d8527d",
+    "description2": "The figure compares the proposed NeuralUCB policy with a max-quality reference in terms of cost and selected quality under a simulated online routing setting.",
+    "description3": "Four-panel line charts compare NeuralUCB and max-quality reference data, displaying cost and quality trends across slices on the x-axis.",
+    "questions": [
+      "What aspects of routing performance are being compared in this illustration?",
+      "Describe the general relationship between cost and quality during the routing process.?"
+    ]
+  }
+]

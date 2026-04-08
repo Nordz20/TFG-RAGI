@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.28765v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: A visual explanation of the IF4 data type. Like NVFP4, individual values are scaled by an FP8 scale factor, each of which is shared by 16 values. However, since each value has its own sign bit, in NVFP4 all scale factors are positive and the scale factor’s sign bit is never used. We repurpose this bit into an indicator which reflects whether the group’s values are stored as FP4 or scaled INT4.",
+    "md5": "30c1c6f117baf5e59a0d5b538eebcabe",
+    "description2": "A visual explanation of the IF4 data type plots individual values scaled by a shared FP8 scale factor, with each value having its own sign bit.",
+    "description3": "A multi-panel plot compares error versus values for FP4 and scaled INT4 representations, using a shared FP8 scale factor.",
+    "questions": [
+      "How does the IF4 data type compare to NVFP4 in terms of value scaling?",
+      "What determines whether a group of values is stored as FP4 or scaled INT4?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 2,
+    "image_path": "../data/2603.28765v1/images/p0002_figure_00002.png",
+    "caption": "Figure 2: Adaptive Block-Scaled Data Types (IF) provide better model performance for most low- precision memory constraints (Section 5.1).",
+    "md5": "4299152d1bf2a392aae683f6135705ca",
+    "description2": "A plot of adaptive block-scaled data types illustrates their impact on model performance under various low-precision memory constraints.",
+    "description3": "Three-panel line chart plots average WikiText-2 perplexity versus bits per parameter, using different markers to represent various quantization schemes and block sizes.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 4,
+    "image_path": "../data/2603.28765v1/images/p0004_figure_00003.png",
+    "caption": "Figure 3: IF4 quantization is done by quantizing each group to FP4 and INT4 and selecting the option with less mean squared error, resulting in less quantization error across many weight channels in Qwen3.5-35B-A3B with no storage overhead compared to NVFP4.",
+    "md5": "9c0238665938c91f614df956d76f9462",
+    "description2": "The figure plots a line chart comparing mean squared errors of different quantization options for IF4, selecting the option with lower error.",
+    "description3": "The pseudocode outlines a process for IF4 quantization, displaying intermediate values in bracketed lists.",
+    "questions": [
+      "How does quantizing weight channels affect the overall error in Qwen3.5-35B-A3B?",
+      "What is the impact of quantization on storage overhead?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 5,
+    "image_path": "../data/2603.28765v1/images/p0005_figure_00004.png",
+    "caption": "Figure 4: IF4 outperforms NVFP4 during W4A4G4 quantized training. When MS-EDEN [27] is used in the backward pass, IF4 results in an even larger improvement.",
+    "md5": "afc4172bd2116e0b463cf7ed27bf5949",
+    "description2": "The figure plots a comparison of performance between IF4 and NVFP4 during quantized training with varying parameters.",
+    "description3": "A multi-panel line chart displays training loss and relative difference from BF16 over tokens in billions for IF4, NVFP4, and NVFP4 (MS-EDEN).",
+    "questions": [
+      "How does IF4's performance change during quantized training compared to NVFP?",
+      "What is the general trend of training loss as the number of tokens increases?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 6,
+    "image_path": "../data/2603.28765v1/images/p0006_figure_00005.png",
+    "caption": "Figure 5: In W4A4G4 training and W4A4 PTQ, it is common to reduce the dynamic range of the inputs being quantized, such as through a Hadamard transformation. We find that NVINT4 deals with these transformed inputs better, explaining part of IF4’s success.",
+    "md5": "5ceba189f4e38e4fc8d68425710f80f1",
+    "description2": "The figure illustrates how reducing input data dynamic range via Hadamard transformation improves performance in W4A4G4 training and PTQ for quantization.",
+    "description3": "Two-panel figure displays a line chart comparing NVFP4, NVINT4, IF4, and NVFP4 (wgrad) with a table showing RTN and RTN w/ Hadamard values.",
+    "questions": [
+      "How does the transformation of inputs influence the training process and overall success?",
+      "What general relationship is observed between training methods and performance?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 8,
+    "image_path": "../data/2603.28765v1/images/p0008_figure_00006.png",
+    "caption": "Figure 6: Hardware architecture of an IF4 multiply-accumulate (MAC) block, demonstrating the feasibility of IF4 in next-generation hardware accelerators.",
+    "md5": "8bc0a31530fb28da7a12583f45a99c00",
+    "description2": "The figure diagrams the hardware architecture of a Multiply-Accumulate (MAC) block incorporating In-Field Four (IF4) for accelerating next-generation computing applications.",
+    "description3": "The multi-panel plot displays a hardware architecture for an IF4 multiply-accumulate block, including labeled components and data flow.",
+    "questions": [
+      "How does this architecture support next-generation hardware accelerators?",
+      "What are the key components of this multiply-accumulate block design?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 14,
+    "image_path": "../data/2603.28765v1/images/p0014_figure_00007.png",
+    "caption": "Figure 7: Average change in high-precision values after being quantized to each data type across 1000 trials with stochastic rounding. While large values change the most when quantized with IF4, we find this only affects a very small number of gradients, as most gradients (shown in gray) are significantly smaller than outlier gradient values.",
+    "md5": "a733b6441d3d63f3729132ea4c0657a0",
+    "description2": "The figure plots the average change in high-precision values after being quantized to each data type across 1000 trials with stochastic rounding.",
+    "description3": "Three-panel histogram plots show the average change in high-precision values after quantization, with panels labeled NVPF4, NVPF4 + 4/6, and IF4.",
+    "questions": [
+      "How do different quantization methods affect the change in high-precision values?",
+      "What is the distribution of gradient values after quantization?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 15,
+    "image_path": "../data/2603.28765v1/images/p0015_figure_00008.png",
+    "caption": "Figure 8: Hardware architecture of NVFP4 multiply-accumulate (MAC) block, providing the baseline for IF4 MAC",
+    "md5": "6fb4db2c010da916a366796d5f0383a8",
+    "description2": "The hardware architecture of Figure 8 illustrates the NVFP4 multiply-accumulate (MAC) block, which enables IF4 MAC operations.",
+    "description3": "The block diagram outlines a hardware architecture for an NVFP4 multiply-accumulate (MAC) block, with LUTs and multiple processing stages.",
+    "questions": [
+      "What is the overall architecture of the multiply-accumulate block?",
+      "How are weights and activations processed within the hardware block?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2603.28765v1",
+    "source_pdf": "../pdfs/2603.28765v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2603.28765v1.pdf",
+    "page": 17,
+    "image_path": "../data/2603.28765v1/images/p0017_figure_00009.png",
+    "caption": "Figure 9: We find WikiText-2 Perplexity to be a fairly strong indicator of average downstream task accuracy across a variety of Qwen3.5 model sizes. This helps us simulate future data types in Section 5.1 while using fewer resources.",
+    "md5": "11b7de7d516664cecd2747cfc46f0208",
+    "description2": "The figure plots the relationship between WikiText-2 Perplexity and average downstream task accuracy for various Qwen3.5 model sizes, serving as a strong indicator of accuracy.",
+    "description3": "Qwen3.5 model sizes exhibit varying average task accuracy based on quantization scheme and WikiText-2 perplexity.",
+    "questions": [
+      "How does WikiText-2 perplexity relate to downstream task accuracy?",
+      "What is the general trend between model size and average downstream task accuracy?"
+    ]
+  }
+]

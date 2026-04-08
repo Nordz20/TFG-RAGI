@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02367v1",
+    "source_pdf": "../pdfs/2604.02367v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02367v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02367v1/images/p0008_figure_00001.png",
+    "caption": "Figure 1: Accuracy–P95 latency scatterplot for all evaluated models. Both axes now use the pre-registered gating metrics: exact-match accuracy (y) and P95 latency (x). Filled markers: Study 1 harmonized benchmark (identical hardware). Open markers (E): Study 2 randomized experiment (neff =60). The shaded green region marks the viable operating zone (accuracy ≥ 0.85, P95 ≤ 2,000 ms). No model enters the viable region. DeepSeek-V3 approaches the accuracy threshold but exceeds the latency gate (P95 = 2,295 ms). Qwen-2.5-3B is Pareto-dominant among self-hosted models.",
+    "md5": "fa4c2dbf29f9fda0f1c226e5891d5aab",
+    "description2": "Accuracy–P95 latency scatterplot plots exact-match accuracy against P95 latency for all evaluated models using pre-registered gating metrics.",
+    "description3": "Two-panel scatterplot displays accuracy (y-axis) versus P95 latency (x-axis) for various models, with filled and open markers distinguishing study conditions.",
+    "questions": [
+      "What general trends are observed in model accuracy versus latency?",
+      "How are the models differentiated based on study and performance markers?"
+    ]
+  }
+]

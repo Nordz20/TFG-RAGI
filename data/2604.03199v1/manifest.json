@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03199v1",
+    "source_pdf": "../pdfs/2604.03199v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03199v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.03199v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1: LT-MIA transfers from transformers to non-transformer architectures, exceeding transformer performance on every text dataset. Blue bars show held-out transformer results (mean over 7 models), while the remaining bars show zero-shot transfer to Mamba-2.8B (state-space), RWKV-4-3B (linear attention), and RecurrentGemma-2B (gated recurrence). The classifier was trained exclusively on transformers and textual data.",
+    "md5": "d085d0bce1a38c70cd4be1b058d5b8e9",
+    "description2": "The figure plots a line chart comparing the performance of transformer-based models with non-transformer architectures, showing held-out results for transformers and zero-shot transfer to other models.",
+    "description3": "Two-panel bar chart compares the performance of transformer, Mamba, RWKV, and RecurrentGemma models across four datasets, displaying AUC values on the y-axis.",
+    "questions": [
+      "What main objective or task does the figure describe?",
+      "How is the overall pipeline or architecture organized in the figure?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03199v1",
+    "source_pdf": "../pdfs/2604.03199v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03199v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03199v1/images/p0004_figure_00002.png",
+    "caption": "Figure 2: LT-MIA pipeline. Given a text sample and black-box access to a fine-tuned target model and its pre-trained reference, we extract 154-dimensional feature vectors at each token position capturing how the two models’ predictions diverge. A lightweight transformer encoder processes this feature sequence to predict membership.",
+    "md5": "b49236121a24bfd26771692d86716980",
+    "description2": "The LT-MIA pipeline diagram illustrates the extraction of 154-dimensional feature vectors from text samples, tracking divergence between fine-tuned and pre-trained target models.",
+    "description3": "Two-panel diagram outlines a pipeline, beginning with text input, progressing through models and feature extraction, and concluding with a classifier output.",
+    "questions": [
+      "How does this pipeline use model predictions to determine membership?",
+      "What is the general flow of information through this membership prediction process?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03199v1",
+    "source_pdf": "../pdfs/2604.03199v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03199v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.03199v1/images/p0007_figure_00003.png",
+    "caption": "Figure 3: Feature importance measured as AUC drop when each feature group is ablated. Comparison features (relating target to reference model outputs) dominate across all four architectural families. The consistent hierarchy (Comparison > Target-only > Reference-only) confirms the membership signal is relational: what matters is how fine-tuning changed the model, not the model’s behavior in isolation.",
+    "md5": "258fe35cb3f01331f9e0b6fc07541e14",
+    "description2": "The figure plots feature importance measured as AUC drop when each feature group is ablated, with comparison features dominating across four architectural families.",
+    "description3": "Two-panel bar chart displays AUC drop values for comparison, target-only, and reference-only feature groups across Transformer, Mamba, RWKV, and RecurrentGemma architectures.",
+    "questions": [
+      "How do architectural families compare regarding the importance of feature groups?",
+      "What general relationship is suggested by the consistent ranking of feature groups?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.03199v1",
+    "source_pdf": "../pdfs/2604.03199v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03199v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.03199v1/images/p0008_figure_00004.png",
+    "caption": "Figure 4: Effect of training diversity on generalization, with total samples fixed at 18,000. “Train AUC” is evaluated on held-out samples from training model-dataset combinations (in-distribution), while “Eval AUC” is evaluated on entirely different model-dataset combinations (out-of-distribution). All metrics use samples never seen during classifier training. Training on one combination yields near-perfect in-distribution AUC (0.998) but poor transfer (0.796). With 30 combinations, the gap shrinks from 20.2 points to 0.2 points.",
+    "md5": "d9a503e6f0e21bb5ee687fd0d04da046",
+    "description2": "The figure plots the effect of training diversity on generalization, with total samples fixed at 18,000, evaluating model-dataset combinations' performance in- and out-of-distribution.",
+    "description3": "Two-panel bar chart displays “Train AUC” and “Eval AUC” values across one, ten, and thirty training combinations, with total samples fixed at 18,000.",
+    "questions": [
+      "How does the number of training combinations affect generalization performance?",
+      "What is the relationship between in-distribution and out-of-distribution evaluation metrics?"
+    ]
+  }
+]

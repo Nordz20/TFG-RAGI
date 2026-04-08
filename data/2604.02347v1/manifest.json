@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02347v1",
+    "source_pdf": "../pdfs/2604.02347v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02347v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.02347v1/images/p0004_figure_00001.png",
+    "caption": "Fig. 1. Structure of FTimeXer model.",
+    "md5": "a68ea1c47cd8246858f9c44238a87c7f",
+    "description2": "The structure of the FTimeXer model is plotted.",
+    "description3": "The multi-panel plot, labeled \"FTimeXer model structure,\" displays several blocks connected by arrows, representing data flow.",
+    "questions": [
+      "What is the overall architecture of the FTimeXer model?",
+      "How are input series processed within the model's structure?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02347v1",
+    "source_pdf": "../pdfs/2604.02347v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02347v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.02347v1/images/p0007_figure_00002.png",
+    "caption": "Fig. 2. Visualization results on Magnolia, California CT2, and NewYork Greenidge datasets.",
+    "md5": "d2ae008c44b94beb518a5507d78273e1",
+    "description2": "The figure visualizes results for three datasets: Magnolia, California CT2, and New York Greenidge.",
+    "description3": "Three multi-panel plots display line charts comparing \"Ground truth,\" \"FTimeXer,\" and \"TimeXer\" data across Magnolia, California CT2, and NewYork Greenidge datasets.",
+    "questions": [
+      "What geographic locations are represented by the datasets shown in this visualization?",
+      "What types of results are being visualized for these datasets?"
+    ]
+  }
+]

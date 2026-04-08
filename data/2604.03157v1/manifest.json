@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.03157v1",
+    "source_pdf": "../pdfs/2604.03157v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03157v1.pdf",
+    "page": 4,
+    "image_path": "../data/2604.03157v1/images/p0004_figure_00001.png",
+    "caption": "Figure 1. Overview of Chart-RL Framework. We !rst use data pipeline to construct training samples from pre-processed CQA dataset, then factorize policy optimization based reinforcement learning (GRPO/DAPO/GSPO) in the training pipeline. The trained policy model is then used in the inference pipeline to complete question-answering task through the enhanced visual understanding and reasoning by the VLMs.",
+    "md5": "d9ca6d437e85da93d504c5518f448d21",
+    "description2": "The figure illustrates a workflow diagram depicting data pipeline construction for chart-based reinforcement learning, GRPO/DAPO/GSPO optimization, and subsequent use of trained policy models for question-answering tasks.",
+    "description3": "The diagram presents a multi-panel plot outlining a Chart-RL framework, including data, training, and inference pipelines.",
+    "questions": [
+      "How does the framework utilize reinforcement learning for question-answering?",
+      "What is the general flow of data through the pipeline?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.03157v1",
+    "source_pdf": "../pdfs/2604.03157v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03157v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.03157v1/images/p0006_figure_00002.png",
+    "caption": "Figure 2. Reinforcement Learning Processes by GRPO, DAPO and GSPO. The training loss represents model’s error decreasing as it learns from the training data. The RL reward indicates the upward trend over time during the successful training run. The policy entropy demonstrates a stable non-zero level indicating the active, $exible and exploring training process. The episode mean length shows rapid and stable convergence over the reinforcement learning.",
+    "md5": "5fb1be465af5145ebfb8aed635513a08",
+    "description2": "The figure plots the training loss, RL reward, policy entropy, and episode mean length of three reinforcement learning processes: GRPO, DAPO, and GSPO.",
+    "description3": "Four-panel plot displays training loss, reward, entropy, and mean length line charts for GRPO, DAPO, and GSPO reinforcement learning processes.",
+    "questions": [
+      "How do different reinforcement learning processes affect model training loss over time?",
+      "What are the general trends observed in the reinforcement learning process metrics?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.03157v1",
+    "source_pdf": "../pdfs/2604.03157v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.03157v1.pdf",
+    "page": 7,
+    "image_path": "../data/2604.03157v1/images/p0007_figure_00003.png",
+    "caption": "Figure 3. Latency-Accuracy trade-o# analysis. Our RL- enhanced models achieve an optimal balance between quali- tative performance and computational e\"ciency.",
+    "md5": "870a4eedd708f12ba736c2c4398a1b9c",
+    "description2": "A latency-accuracy trade-off analysis is plotted, illustrating the balance achieved by our RL-enhanced models between qualitative performance and computational efficiency.",
+    "description3": "Four-panel scatter plot displays latency versus accuracy for several models, using circles for open-source VLM and triangles for fine-tuned models.",
+    "questions": [
+      "What balance between performance and efficiency do the enhanced models achieve?",
+      "How does computational analysis reveal the relationship between latency and accuracy?"
+    ]
+  }
+]

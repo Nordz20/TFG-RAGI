@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02812v1",
+    "source_pdf": "../pdfs/2604.02812v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02812v1.pdf",
+    "page": 1,
+    "image_path": "../data/2604.02812v1/images/p0001_figure_00001.png",
+    "caption": "Fig. 1. Overview of the proposed framework. Given synthetic observations, a large foundation model is first used to automatically generate a synthetic supervision dataset composed of task instructions and corresponding Behavior Trees from visual observations and structured system specifications. This dataset is then used to fine-tune the Pixtral-12B vision-language model for constrained symbolic generation. At inference time, the fine-tuned model receives a real-world observation, a task instruction, and system specifications, and outputs a reactive Behavior Tree representing a structured robot policy for task execution.",
+    "md5": "dcd329973ab5dbe7c6696e526fb5e009",
+    "description2": "The figure presents an overview of the proposed framework, featuring stages of synthetic observation processing, foundation model usage, dataset generation, fine-tuning, and inference.",
+    "description3": "A multi-panel plot outlines a framework, beginning with synthetic data generation and culminating in real-world robot policy output.",
+    "questions": [
+      "How is a dataset of task instructions and behavior trees created for robot policy generation?",
+      "What is the overall process for generating robot behavior from observations and specifications?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02812v1",
+    "source_pdf": "../pdfs/2604.02812v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02812v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02812v1/images/p0005_figure_00002.png",
+    "caption": "Fig. 2. Examples of synthetic tabletop scenes used in dataset generation.",
+    "md5": "67cf805e6152c13fe52235259779e54a",
+    "description2": "Examples of synthetic tabletop scenes are plotted or structured in this figure.",
+    "description3": "The figure presents a 2x3 grid of synthetic tabletop scenes with varying table colors and scattered objects.",
+    "questions": [
+      "What types of scenes are included in the dataset generation process?",
+      "How are synthetic scenes utilized to create the dataset?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02812v1",
+    "source_pdf": "../pdfs/2604.02812v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02812v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02812v1/images/p0005_figure_00003.png",
+    "caption": "Fig. 3. Representation of the target Behavior Tree T in the prompt schema.",
+    "md5": "9ba8847767032680eb4fa810fa091ed3",
+    "description2": "The figure represents a representation of the target Behavior Tree T in the prompt schema.",
+    "description3": "The code displays a nested structure of \"Selector\" and \"Sequence\" elements, containing \"Condition,\" \"Action,\" and \"children\" keys.",
+    "questions": [
+      "What does this representation illustrate about the target behavior?",
+      "How is the target behavior structured within the prompt schema?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02812v1",
+    "source_pdf": "../pdfs/2604.02812v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02812v1.pdf",
+    "page": 8,
+    "image_path": "../data/2604.02812v1/images/p0008_figure_00004.png",
+    "caption": "Fig. 4. Example of real-world images, representing scenarios coherent with the synthetic dataset.",
+    "md5": "ba0f49e9d46b8f815dc2d81ce2f86087",
+    "description2": "The figure presents a collection of real-world images that represent scenarios consistent with a synthetic dataset.",
+    "description3": "The image is a two-panel plot displaying arrangements of colored, block-shaped objects on a gray surface.",
+    "questions": [
+      "What types of images are used to represent the scenarios?",
+      "How do these images relate to a larger, synthetic dataset?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02812v1",
+    "source_pdf": "../pdfs/2604.02812v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02812v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02812v1/images/p0011_figure_00005.png",
+    "caption": "Fig. 5. Real-world experimental platforms used to validate hardware-agnostic BT execution: the Franka Emika Panda and the UR5e.",
+    "md5": "0990766f1a9d2f1bf7d2474554bc49a0",
+    "description2": "The diagram illustrates two real-world experimental platforms, the Franka Emika Panda and the UR5e, validating hardware-agnostic Bluetooth (BT) execution.",
+    "description3": "Two-panel image displays two robotic arms, a Franka Emika Panda and a UR5e, positioned over tables with arranged colored blocks.",
+    "questions": [
+      "What types of robotic platforms were used for the experimental validation?",
+      "How does the experimental setup demonstrate real-world application?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02812v1",
+    "source_pdf": "../pdfs/2604.02812v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02812v1.pdf",
+    "page": 11,
+    "image_path": "../data/2604.02812v1/images/p0011_figure_00006.png",
+    "caption": "Fig. 6. Sequence of the task computed by the UR5 platform in which the user asks to stack all the yellow objects.",
+    "md5": "258efa9380b51a66276df1ddcf53dd89",
+    "description2": "A sequence of tasks is plotted, illustrating the computation steps performed by the UR5 platform when asked to stack all the yellow objects.",
+    "description3": "A sequence of four panels displays a robotic arm stacking yellow objects as part of a task performed by the UR5 platform.",
+    "questions": [
+      "What is the overall task being performed by the robotic platform?",
+      "How does the sequence of actions progress to complete the user's request?"
+    ]
+  }
+]

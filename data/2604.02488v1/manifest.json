@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 2,
+    "image_path": "../data/2604.02488v1/images/p0002_figure_00001.png",
+    "caption": "Figure 1. Framework overview. Tier 1 (Stage I alone) provides automatic diagnostics d across five assumption families for expert-guided assumption auditing. Tier 2 (Stages I–III) adds calibrated risk estimation with uncertainty intervals and an abstention-aware decision policy that recommends using or abstaining from a method m∗ according to its risk score R.",
+    "md5": "e193ab36e03a180983a8ccb5ffc1134a",
+    "description2": "The figure presents a workflow diagram illustrating two tiers of a framework, featuring automatic diagnostics across five assumption families and expert-guided auditing.",
+    "description3": "Two-panel diagram outlines a framework with tiers and stages, showing data flow and decision pathways for assumption auditing and risk estimation.",
+    "questions": [
+      "What is the primary purpose of Tier 1 in the framework?",
+      "How does the framework incorporate risk estimation and expert guidance?"
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 5,
+    "image_path": "../data/2604.02488v1/images/p0005_figure_00002.png",
+    "caption": "Figure 2. Assumption violations in causal discovery. Each row shows data violating an assumption (left) and the resulting causal graph with true and erroneous edges (right; see legend).",
+    "md5": "cb4177de0614f97e6c06c8f1f59094b6",
+    "description2": "The figure plots assumption violations in causal discovery, showing data violating assumptions alongside corresponding causal graphs with true and incorrect edges.",
+    "description3": "Two-panel plots display time series data violating assumptions alongside corresponding causal graphs showing true and erroneous edges, with legends.",
+    "questions": [
+      "How do violations of assumptions affect the identification of causal relationships?",
+      "What are the common differences between the true causal graph and the discovered graph?"
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 6,
+    "image_path": "../data/2604.02488v1/images/p0006_figure_00003.png",
+    "caption": "Figure 3. Time series causal graph G = (V, E) for N = 3 variables with τmax = 2. (a) Timeline representation: arrows be- tween variable timelines encode causal effects; horizontal span equals the lag τ. Each edge repeats at every time step (sta- tionarity). (b) Summary causal graph: each directed edge is annotated with its lag, corresponding to the triple (i, j, τ) ∈ E.",
+    "md5": "7e7f8645115bd51229c84372ce736992",
+    "description2": "A timeline representation of a causal graph for three variables, where arrows between variable timelines encode causal effects and horizontal span equals the lag.",
+    "description3": "Two-panel figure displays a timeline representation of causal effects between three variables, alongside a summary causal graph with annotated lags.",
+    "questions": [
+      "How do the timelines represent causal relationships between variables over time?",
+      "What is the overall structure used to depict causal connections and their lags?"
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 9,
+    "image_path": "../data/2604.02488v1/images/p0009_figure_00004.png",
+    "caption": "Figure 4. Detailed flowcharts for each pipeline stage. (a) Stage I: Diagnostic Auditing computes five diagnostic families from input X, producing the diagnostic vector d = [d1, . . . , d5]. (b) Stage II: Risk Estimation transforms diagnostics into calibrated risk scores via logistic aggregation, isotonic calibration, and bootstrap uncertainty quantification. (c) Stage III: Decision Policy evaluates thresholds to output Recommend m∗ or Abstain.",
+    "md5": "d2a0113ef1fbaefb96ac710b75ea3343",
+    "description2": "The figure displays a pipeline workflow diagram consisting of three stages: Diagnostic Auditing, Risk Estimation, and Decision Policy.",
+    "description3": "Two-panel figure displays three flowcharts, labeled Stage I, Stage II, and Stage III, detailing pipeline processes with inputs, computations, and outputs.",
+    "questions": [
+      "What general types of data are used for diagnostic and risk estimation?",
+      "Describe the high-level progression of data through the pipeline stages.?"
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 12,
+    "image_path": "../data/2604.02488v1/images/p0012_figure_00005.png",
+    "caption": "Figure 5. Sigmoid mapping from linear predictor z to risk probability Rk ∈ [0, 1] for VAR-Granger and PCMCI+ methods. Shaded regions illustrate decision zones for nonstationarity risk (Rnonstat) using the hard constraints from Table 5: both Granger and PCMCI+ are admissible when Rk < θGranger k = 0.60, only PCMCI+ is admissible when 0.60 ≤ Rk < θPCMCI+ k = 0.80, and abstention is required when Rk ≥ 0.80.",
+    "md5": "b7734e309c3450131cc801bb1d702344",
+    "description2": "The figure plots a sigmoid mapping from the linear predictor z to risk probability Rk, illustrating decision zones for nonstationarity risk using hard constraints from Table 5.",
+    "description3": "A sigmoid curve plots risk probability against a linear predictor, with shaded zones indicating admissibility based on threshold values.",
+    "questions": [
+      "How does the linear predictor relate to the probability of nonstationarity risk?",
+      "What are the different zones of risk probability and their corresponding method admissibility?"
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 14,
+    "image_path": "../data/2604.02488v1/images/p0014_figure_00006.png",
+    "caption": "Figure 6. SHAP feature attribution analysis. Bar lengths indicate mean absolute SHAP values quantifying each diagnostic’s contribution to risk predictions across the Synthetic DGP Atlas (396 calibration datasets).",
+    "md5": "44dc84489c231bac51bb1bd0014b6a6a",
+    "description2": "The figure plots bar lengths representing mean absolute SHAP values, illustrating the contribution of each diagnostic to risk predictions in 396 calibration datasets.",
+    "description3": "Two-panel figure displays four bar charts, each showing mean absolute SHAP values for diagnostic contributions to risk predictions.",
+    "questions": [
+      "What does the analysis indicate about the relative importance of diagnostic factors?",
+      "How are the contributions of factors quantified in these predictions?"
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 17,
+    "image_path": "../data/2604.02488v1/images/p0017_figure_00007.png",
+    "caption": "Figure 7. Heatmap of mean risk scores across the 10 DGP families (columns) and four calibrated risk dimensions (rows). Cell values report family-level averages computed using hybrid labelling: primary dimensions retain generator-assigned la- bels; off-diagonal dimensions are measured empirically from the data (confounding proxy baseline-calibrated to F1 ≈ 0.20). Within the core sub-block F2–F5, diagonal dominance holds: each family’s highest risk falls in its targeted column. Notable off-diagonal patterns include elevated confounding in F2 (0.72), F3 (0.58), and F7 (0.46), and elevated persistence in F6 (0.95) due to seasonal autocorrelation structure.",
+    "md5": "fb9a964b1a49023e3542d022b6aa89e3",
+    "description2": "A heatmap displays mean risk scores across 10 DGP families, with four calibrated risk dimensions plotted as rows, showing family-level averages computed using hybrid labeling.",
+    "description3": "Two-panel heatmap displays mean risk scores across ten DGP families (columns) and four risk dimensions (rows), using a color scale to represent values.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 18,
+    "image_path": "../data/2604.02488v1/images/p0018_figure_00008.png",
+    "caption": "Figure 8. Distribution of empirically measured primary risk scores for the core families F2–F5 (n = 50 each), corresponding to the four calibrated risk dimensions. Scores are computed from the generated data using Stage I diagnostic statistics (confounding proxy baseline-calibrated). Dashed lines indicate family means; annotations report observed ranges. All four families exhibit continuous severity gradations, confirming suitability for isotonic calibration. Low-risk coverage is supplied by the remaining families (F1, F6–F8).",
+    "md5": "5fb1cc7e5a427dd976757dcf5fd19920",
+    "description2": "The figure plots a line chart showing the distribution of primary risk scores for five core families, with each family's mean score and observed range indicated.",
+    "description3": "Three-panel histograms display empirically measured primary risk scores for families F2-F5, each with a dashed line indicating the family mean and observed range.",
+    "questions": [
+      "What do the annotations reveal about the observed ranges of risk scores?",
+      "How are the empirically measured risk scores distributed among the families?"
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 20,
+    "image_path": "../data/2604.02488v1/images/p0020_figure_00009.png",
+    "caption": "Figure 9. Reliability diagrams for four risk dimensions on held-out validation set (100 DGPs). Points clustered along the diagonal indicate well-calibrated predictions. Shaded regions denote 95% confidence intervals.",
+    "md5": "246f0862b517b6634bf32117efc75801",
+    "description2": "The figure plots reliability diagrams for four risk dimensions, with points clustered along the diagonal indicating well-calibrated predictions and shaded regions representing 95% confidence intervals.",
+    "description3": "Three-panel plot displays reliability diagrams for four risk dimensions, showing observed frequency versus predicted risk with 95% confidence intervals and a perfect calibration line.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": "2604.02488v1",
+    "source_pdf": "../pdfs/2604.02488v1.pdf",
+    "source_pdf_url": "https://arxiv.org/pdf/2604.02488v1.pdf",
+    "page": 21,
+    "image_path": "../data/2604.02488v1/images/p0021_figure_00010.png",
+    "caption": "Figure 10. Cross-validation performance stability analysis comparing 5-fold, 10-fold, and bootstrap resampling schemes across AUROC, R2, and MAE for the four risk dimensions. Error bars denote ±1 standard deviation; dashed lines indicate target thresholds.",
+    "md5": "9e95eb9024d8c43c33e1677c7af67a2e",
+    "description2": "The figure plots cross-validation performance stability analysis comparing 5-fold, 10-fold, and bootstrap resampling schemes with error bars denoting ±1 standard deviation.",
+    "description3": "The multi-panel plot displays cross-validation performance (AUROC, R2, MAE) with error bars and target thresholds for four risk dimensions.",
+    "questions": [
+      "What main idea or comparison does the figure present?",
+      "What overall structure or pattern is shown in the figure?"
+    ]
+  }
+]
