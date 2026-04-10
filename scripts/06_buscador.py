@@ -2,7 +2,7 @@ import requests
 from elasticsearch import Elasticsearch
 
 # ================== CONFIG ==================
-ES_HOST = "http://localhost:9200"
+ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
 ES_INDEX = "ragi_images"
 
 EMBED_URL = "https://wiig.dia.fi.upm.es/ollama/api/embeddings"
