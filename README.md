@@ -18,18 +18,23 @@ Descarga el código fuente en el servidor de destino:
 ```bash
 git clone [https://github.com/Nordz20/TFG-RAGI.git](https://github.com/Nordz20/TFG-RAGI.git)
 cd TFG-RAGI
-2. Levantar la arquitectura
+```
+
+### 2. Levantar la arquitectura
 Para construir las imágenes de los contenedores (Frontend y Backend) y levantar los servicios (incluyendo Elasticsearch), ejecuta el siguiente comando.
 
 Nota: Es fundamental incluir el flag --build para garantizar que los cambios en el código y las variables de entorno se apliquen correctamente en los contenedores.
 
-Bash
+```bash
 docker compose up -d --build
-3. Verificar el estado
+```
+
+### 3. Verificar el estado
 Una vez termine el proceso de construcción, puedes comprobar que los tres contenedores (ragi_frontend, ragi_backend, ragi_elasticsearch) están corriendo con:
 
-Bash
+```bash
 docker ps
+```
 Acceso al Sistema
 El sistema está configurado de forma dinámica para funcionar tanto en local como bajo un subdominio específico.
 
