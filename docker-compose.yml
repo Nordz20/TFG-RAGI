@@ -21,7 +21,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./data:/app/data
+      - ./data:/data
     environment:
       - ES_HOST=http://elasticsearch:9200
 

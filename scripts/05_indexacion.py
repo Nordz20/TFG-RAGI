@@ -1,6 +1,7 @@
 import json
 import time
 from pathlib import Path
+import os
 
 import requests
 from elasticsearch import Elasticsearch
@@ -12,7 +13,7 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 DATA_DIR = PROJECT_ROOT / "data"
 
 # ElasticSearch
-ES_HOST = "http://localhost:9200"
+ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
 ES_INDEX = "ragi_images"
 
 # Modelo de embeddings (servidor universidad)

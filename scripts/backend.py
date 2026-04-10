@@ -3,6 +3,7 @@ import io
 import csv
 from datetime import datetime
 from pathlib import Path
+import os
 
 import requests
 from elasticsearch import Elasticsearch
@@ -21,7 +22,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 DATA_DIR = PROJECT_ROOT / "data"
 
-ES_HOST = "http://localhost:9200"
+ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
 ES_INDEX = "ragi_images"
 ES_RATINGS_INDEX = "ragi_ratings" 
 
