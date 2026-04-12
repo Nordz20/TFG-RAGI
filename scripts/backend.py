@@ -20,23 +20,30 @@ warnings.filterwarnings("ignore")
 # ================== CONFIG ==================
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
-DATA_DIR = PROJECT_ROOT / "data"
+
+# DETECCIÓN DE ENTORNO: Si existe /data es Docker (UPM), si no, es tu local
+if os.path.exists("/data"):
+    DATA_DIR = Path("/data")
+else:
+    DATA_DIR = PROJECT_ROOT / "data"
 
 ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
 ES_INDEX = "ragi_images"
 ES_RATINGS_INDEX = "ragi_ratings" 
 
-EMBED_URL = "https://wiig.dia.fi.upm.es/ollama/api/embeddings"
+# VARIABLE DE ENTORNO ARREGLADA: 
+# Si existe usa la de Carlos (Docker), si no usa la pública con tu VPN
+EMBED_URL = os.getenv("EMBED_URL", "https://wiig.dia.fi.upm.es/ollama/api/embeddings")
 EMBED_MODEL = "nomic-embed-text-v2-moe"
 
 MIN_SCORE = 0.75
 MAX_RESULTS = 5
 
 # ================== APP ==================
-# MODIFICACIÓN CARLOS: Añadimos root_path para que funcione en /ragi
+# ROOT PATH INTELIGENTE: Pone /ragi solo si está en el servidor de la UPM
 app = FastAPI(
     title="RAGI API",
-    root_path="/ragi"
+    root_path="/ragi" if os.path.exists("/data") else ""
 )
 
 app.add_middleware(
@@ -46,8 +53,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Montamos las imágenes. Al usar root_path="/ragi", 
-# la URL real será http://dominio.es/ragi/images/...
+# SERVIR IMÁGENES: Esto arregla el bug visual (Error 404)
 app.mount("/images", StaticFiles(directory=str(DATA_DIR)), name="images")
 
 # Conexión a ES
@@ -78,7 +84,7 @@ def get_embedding(text: str) -> list[float]:
 # ================== ENDPOINTS ==================
 @app.get("/")
 def root():
-    return {"status": "RAGI API running", "path": "/ragi"}
+    return {"status": "RAGI API running", "path": "/ragi" if os.path.exists("/data") else "/"}
 
 
 @app.post("/search")
@@ -108,6 +114,9 @@ def search(req: SearchRequest):
         raise HTTPException(status_code=500, detail=f"Error en ElasticSearch: {e}")
 
     results = []
+    # Añade el prefijo /ragi solo si estamos en el servidor de la universidad
+    prefijo = "/ragi" if os.path.exists("/data") else ""
+
     for hit in response["hits"]["hits"]:
         if hit["_score"] < MIN_SCORE:
             continue
@@ -115,9 +124,9 @@ def search(req: SearchRequest):
         src = hit["_source"]
         raw_path = src.get("image_path", "")
         
-        # AJUSTE DE RUTA: Aseguramos que la URL de la imagen incluya el prefijo del subpath
-        # El navegador buscará en /ragi/images/...
-        image_url = raw_path.replace("../data/", "/ragi/images/").replace("..\\data\\", "/ragi/images/")
+        # LIMPIEZA DE RUTAS: Funciona venga de Windows, Linux o Docker
+        clean_path = raw_path.replace("../data/", "").replace("..\\data\\", "").replace("/data/", "").lstrip("\\/")
+        image_url = f"{prefijo}/images/{clean_path}"
 
         results.append({
             "image_url": image_url,
@@ -185,7 +194,7 @@ def export_ratings():
 
 @app.get("/download")
 def download(path: str):
-    clean = path.replace("../data/", "").replace("..\\data\\", "")
+    clean = path.replace("../data/", "").replace("..\\data\\", "").replace("/data/", "").lstrip("\\/")
     full_path = DATA_DIR / clean
     if not full_path.exists():
         raise HTTPException(status_code=404, detail="Imagen no encontrada")

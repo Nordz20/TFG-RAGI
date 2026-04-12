@@ -8,10 +8,14 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-    ports:
-      - "9200:9200"
+    # Puertos comentados para evitar conflictos en el servidor de la UPM
+    # ports:
+    #   - "9200:9200"
     volumes:
       - es_data:/usr/share/elasticsearch/data
+    networks:
+      - default
+      - ollama_net
 
   backend:
     build: ./scripts
@@ -19,19 +23,32 @@ services:
     depends_on:
       - elasticsearch
     ports:
-      - "8000:8000"
+      - "3081:8000" # Puerto actualizado por Carlos
     volumes:
       - ./data:/data
     environment:
       - ES_HOST=http://elasticsearch:9200
+      - EMBED_URL=http://ollama_low:11434/api/embeddings # Variable para Ollama interno
+    networks:
+      - default
+      - ollama_net
 
   frontend:
     build: ./frontend
     container_name: ragi_frontend
     ports:
-      - "80:80"
+      - "3080:80" # Puerto actualizado por Carlos
     depends_on:
       - backend
+    networks:
+      - default
+      - ollama_net
 
 volumes:
   es_data:
+
+# Red interna de Ollama en la UPM
+networks:
+  ollama_net:
+    external: true
+    name: ollama_default

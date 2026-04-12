@@ -1,3 +1,4 @@
+import os
 import requests
 from elasticsearch import Elasticsearch
 
@@ -5,7 +6,8 @@ from elasticsearch import Elasticsearch
 ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
 ES_INDEX = "ragi_images"
 
-EMBED_URL = "https://wiig.dia.fi.upm.es/ollama/api/embeddings"
+# VARIABLE DE ENTORNO ARREGLADA: Igual que en el backend y el indexador
+EMBED_URL = os.getenv("EMBED_URL", "https://wiig.dia.fi.upm.es/ollama/api/embeddings")
 EMBED_MODEL = "nomic-embed-text-v2-moe"
 
 TOP_K = 2

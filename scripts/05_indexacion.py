@@ -10,14 +10,20 @@ from elasticsearch.helpers import scan  # NUEVO: Necesario para leer todos los I
 # ================== CONFIG ==================
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
-DATA_DIR = PROJECT_ROOT / "data"
+
+# DETECCIÓN DE ENTORNO: Si existe /data es Docker (UPM), si no, es tu local
+if os.path.exists("/data"):
+    DATA_DIR = Path("/data")
+else:
+    DATA_DIR = PROJECT_ROOT / "data"
 
 # ElasticSearch
 ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
 ES_INDEX = "ragi_images"
 
-# Modelo de embeddings (servidor universidad)
-EMBED_URL = "https://wiig.dia.fi.upm.es/ollama/api/embeddings"
+# VARIABLE DE ENTORNO ARREGLADA: 
+# Si existe usa la interna de Docker, si no (tu PC) usa la pública con VPN
+EMBED_URL = os.getenv("EMBED_URL", "https://wiig.dia.fi.upm.es/ollama/api/embeddings")
 EMBED_MODEL = "nomic-embed-text-v2-moe"  # cambiar cuando esté disponible
 
 SLEEP_BETWEEN = 0.2
@@ -83,7 +89,7 @@ def build_full_text(entry: dict) -> str:
 
 # ================== EMBEDDINGS ==================
 def get_embedding(text: str) -> list[float]:
-    """Llama al modelo de embeddings del servidor de la universidad."""
+    """Llama al modelo de embeddings del servidor de la universidad o local."""
     payload = {
         "model": EMBED_MODEL,
         "prompt": text
