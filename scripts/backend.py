@@ -40,11 +40,8 @@ MIN_SCORE = 0.75
 MAX_RESULTS = 5
 
 # ================== APP ==================
-# ROOT PATH INTELIGENTE: Pone /ragi solo si está en el servidor de la UPM
-app = FastAPI(
-    title="RAGI API",
-    root_path="/ragi" if os.path.exists("/data") else ""
-)
+# Inicialización limpia (Corrección de Carlos para evitar problemas con el proxy)
+app = FastAPI(title="RAGI API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -124,8 +121,19 @@ def search(req: SearchRequest):
         src = hit["_source"]
         raw_path = src.get("image_path", "")
         
-        # LIMPIEZA DE RUTAS: Funciona venga de Windows, Linux o Docker
-        clean_path = raw_path.replace("../data/", "").replace("..\\data\\", "").replace("/data/", "").lstrip("\\/")
+        # LIMPIEZA DE RUTAS: Corrección de Carlos
+        clean_path = raw_path
+
+        # Normalizar rutas
+        clean_path = clean_path.replace("\\", "/")
+
+        # Quitar cualquier prefijo hasta /data/
+        if "/data/" in clean_path:
+            clean_path = clean_path.split("/data/")[-1]
+        elif "data/" in clean_path:
+            clean_path = clean_path.split("data/")[-1]
+
+        clean_path = clean_path.lstrip("/")
         image_url = f"{prefijo}/images/{clean_path}"
 
         results.append({
@@ -194,8 +202,15 @@ def export_ratings():
 
 @app.get("/download")
 def download(path: str):
-    clean = path.replace("../data/", "").replace("..\\data\\", "").replace("/data/", "").lstrip("\\/")
-    full_path = DATA_DIR / clean
+    # Aplicamos también la limpieza de Carlos aquí por si acaso
+    clean_path = path.replace("\\", "/")
+    if "/data/" in clean_path:
+        clean_path = clean_path.split("/data/")[-1]
+    elif "data/" in clean_path:
+        clean_path = clean_path.split("data/")[-1]
+    clean_path = clean_path.lstrip("/")
+    
+    full_path = DATA_DIR / clean_path
     if not full_path.exists():
         raise HTTPException(status_code=404, detail="Imagen no encontrada")
     return FileResponse(full_path, media_type="image/png", filename=full_path.name)
