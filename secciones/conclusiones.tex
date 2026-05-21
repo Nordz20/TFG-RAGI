@@ -1,0 +1,47 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Conclusiones y Trabajos Futuros}
+\label{sec:conclusiones}
+
+\section{Conclusiones}
+\label{sec:conclusiones_principales}
+
+El presente Trabajo de Fin de Grado ha abordado el diseño, desarrollo y evaluación de RAGI (\textit{Retrieval-Augmented Generation for Images}), un sistema de recuperación semántica multimodal orientado a figuras de artículos científicos. A lo largo de los capítulos precedentes se ha presentado la motivación del proyecto, el estado del arte en el que se fundamenta, la metodología seguida para su construcción y los resultados obtenidos tanto a nivel cuantitativo como cualitativo. Este apartado sintetiza las principales conclusiones extraídas del trabajo realizado.
+
+En primer lugar, se ha demostrado la viabilidad de construir un \textit{pipeline} completo de extracción, enriquecimiento e indexación de figuras científicas utilizando exclusivamente herramientas de código abierto desplegadas en infraestructura local. El módulo de \textit{Document Layout Analysis} basado en YOLOv10 logró procesar alrededor de un centenar de documentos PDF, aislando aproximadamente 700 figuras con sus metadatos asociados \cite{wang2024yolov10}. Si bien el proceso de recorte no resultó universal para todos los formatos de publicación, la arquitectura demostró ser lo suficientemente robusta como para constituir una base funcional sobre la que iterar.
+
+En segundo lugar, el estudio cualitativo con 49 evaluaciones de usuarios arrojó un \textit{Mean Opinion Score} (MOS) global de 3.90 sobre 5.00. Este resultado indica una alta aceptación del sistema por parte de los usuarios finales, validando la utilidad percibida de la aproximación semántica para la recuperación de figuras técnicas. El análisis cruzado con los metadatos de los documentos (\textit{captions}, páginas y procedencia) confirmó que el sistema es robusto frente a variaciones en la calidad de la información original, siendo la correlación entre la longitud del pie de foto y la satisfacción del usuario prácticamente nula ($r = -0.063$). Asimismo, el mapa semántico generado mediante PCA sobre los \textit{embeddings} de las consultas evidenció que el sistema es capaz de distinguir y agrupar distintas intenciones de búsqueda en el espacio vectorial.
+
+En tercer lugar, la evaluación cuantitativa reveló una realidad propia del campo de la Recuperación de Información: los modelos léxicos tradicionales (BM25) obtuvieron una mayor precisión en la primera posición (P@1 de 86.67\%) frente al modelo semántico vectorial (P@1 de 73.33\%) en un entorno de evaluación basado en coincidencia exacta de términos. Este resultado, lejos de invalidar la propuesta, la contextualiza adecuadamente. La búsqueda semántica no reemplaza a la búsqueda léxica en escenarios donde la consulta del usuario coincide exactamente con la terminología del documento, sino que la complementa. La verdadera fortaleza del enfoque semántico reside en su capacidad para manejar consultas abstractas, conversacionales o formuladas con sinónimos, situaciones que constituyen el uso más natural en un contexto de investigación real.
+
+En cuarto lugar, se ha cumplido la totalidad de los objetivos específicos planteados al inicio del proyecto. Se desarrolló un \textit{pipeline} de extracción multimodal funcional (O1.1), se enriqueció semánticamente el catálogo de figuras mediante modelos de Visión-Lenguaje ejecutados en local (O1.2), se construyó e integró un motor de búsqueda vectorial sobre Elasticsearch (O1.3), y se evaluó el impacto de la anotación basada en preguntas tanto cuantitativa como cualitativamente (O1.4). Cada uno de estos hitos fue verificado experimentalmente, tal y como se documentó en el Capítulo 4.
+
+Finalmente, cabe destacar que RAGI constituye una prueba de concepto sólida y funcional que sienta las bases para futuras líneas de trabajo. El proyecto ha puesto de manifiesto que es posible construir sistemas de recuperación de información visual académica sin depender de servicios en la nube cerrados, garantizando la privacidad de los datos y la soberanía tecnológica de la institución. Las limitaciones identificadas —especialmente en lo relativo al tamaño del dataset, la calidad de los modelos locales y el sesgo metodológico de la evaluación— no invalidan los resultados obtenidos, sino que los enmarcan dentro del alcance realista de un Trabajo de Fin de Grado y señalan direcciones claras de mejora para el futuro.
+
+\section{Impacto Social y Medioambiental}
+\label{sec:impacto_social}
+
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{imagenes/ods_involucrados.png}
+    \caption{Objetivos de Desarrollo Sostenible (ODS) de Naciones Unidas a los que contribuye el proyecto RAGI.}
+    \label{fig:ods}
+\end{figure}
+
+El desarrollo del sistema RAGI no solo ha perseguido objetivos técnicos y académicos, sino que también se enmarca dentro de una reflexión más amplia sobre el impacto social y medioambiental de las tecnologías de inteligencia artificial. Esta sección analiza las contribuciones del proyecto en ambas dimensiones, vinculándolas con los Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030 de Naciones Unidas.
+
+El principal impacto social de RAGI radica en su contribución a la democratización del acceso al conocimiento científico. Al tratarse de un sistema construido íntegramente con herramientas de código abierto y diseñado para ejecutarse en infraestructura local, RAGI elimina las barreras económicas y tecnológicas que imponen los servicios comerciales de inteligencia artificial. Cualquier institución académica, independientemente de su presupuesto, puede desplegar y utilizar el sistema sin incurrir en costes recurrentes por API o suscripciones.
+
+Esta accesibilidad se alinea directamente con el \textbf{ODS 4: Educación de Calidad}. La capacidad de buscar y recuperar figuras científicas de forma semántica acelera la revisión bibliográfica y facilita la comprensión de conceptos técnicos complejos, beneficiando tanto a estudiantes como a investigadores en etapas tempranas de su carrera. Asimismo, al indexar el contenido visual de artículos científicos, el sistema contribuye a reducir las desigualdades en el acceso a la información (\textbf{ODS 10: Reducción de las Desigualdades}), permitiendo que investigadores de instituciones con recursos limitados puedan explotar el mismo volumen de literatura académica que aquellos en centros de investigación punteros.
+
+Además, RAGI fomenta la innovación en el ámbito de la recuperación de información multimodal (\textbf{ODS 9: Industria, Innovación e Infraestructura}). La arquitectura propuesta demuestra que es posible construir sistemas de búsqueda semántica competitivos utilizando exclusivamente recursos de hardware y software disponibles en entornos universitarios, promoviendo un modelo de investigación sostenible y replicable.
+
+El impacto medioambiental de los sistemas de inteligencia artificial es una preocupación creciente en la comunidad científica. Los grandes modelos de lenguaje y visión comercial se ejecutan en centros de datos masivos que consumen cantidades ingentes de energía para alimentar servidores GPU y sistemas de refrigeración, contribuyendo significativamente a la huella de carbono global \cite{touvron2023}.
+
+RAGI aborda esta problemática desde el diseño mediante dos decisiones arquitectónicas fundamentales. En primer lugar, el uso de modelos de código abierto de tamaño reducido (como \textit{all-MiniLM-L6-v2} para \textit{embeddings} y Gemma3 para visión-lenguaje), en lugar de modelos comerciales de cientos de miles de millones de parámetros, reduce drásticamente el coste computacional por inferencia. En segundo lugar, la ejecución local elimina la necesidad de transmitir datos a servidores remotos, evitando el consumo energético asociado a las comunicaciones de red y al procesamiento en la nube.
+
+Esta aproximación contribuye al \textbf{ODS 12: Producción y Consumo Responsables}, al promover un uso más eficiente de los recursos computacionales. Asimismo, se enmarca dentro de los principios de la \textbf{Inteligencia Artificial Verde (\textit{Green AI})}, corriente que aboga por priorizar la eficiencia energética y la reproducibilidad sobre el rendimiento bruto en la investigación de inteligencia artificial.
+
+\end{document}

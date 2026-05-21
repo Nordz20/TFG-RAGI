@@ -1,0 +1,8 @@
+C:\Users\usuario\Downloads\TFG RAGI FINAL\scripts\01_extraccion_imagenes.py
+C:\Users\usuario\Downloads\TFG RAGI FINAL\scripts\02_descripciones_llm.py
+C:\Users\usuario\Downloads\TFG RAGI FINAL\scripts\03_descripciones_llm_caption.py
+C:\Users\usuario\Downloads\TFG RAGI FINAL\scripts\04_preguntas.py
+C:\Users\usuario\Downloads\TFG RAGI FINAL\scripts\05_indexacion.py
+C:\Users\usuario\Downloads\TFG RAGI FINAL\scripts\06_buscador.py
+C:\Users\usuario\Downloads\TFG RAGI FINAL\scripts\backend.py
+C:\Users\usuario\Downloads\TFG RAGI FINAL\scripts\requirements.txt

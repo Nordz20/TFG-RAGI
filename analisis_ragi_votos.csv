@@ -1,0 +1,50 @@
+Timestamp,Query,Ruta_Imagen,Estrellas
+2026-04-17T09:03:08.871415,show me an image about neural network architecture,../data/2012.00641v2/images/p0001_figure_00001.png,3
+2026-04-17T09:03:16.984403,show me an image about neural network architecture,../data/2603.28600v1/images/p0012_figure_00003.png,2
+2026-04-17T09:02:54.885120,show me an image about neural network architecture,../data/2603.29612v1/images/p0005_figure_00001.png,2
+2026-04-17T09:02:57.844160,show me an image about neural network architecture,../data/2012.00641v2/images/p0003_figure_00003.png,4
+2026-04-17T09:03:51.926496,show me an image about Transformer architecture,../data/2604.03199v1/images/p0002_figure_00001.png,1
+2026-04-16T07:21:05.021420,show me an image about deep learning timeline,../data/2012.00641v2/images/p0003_figure_00004.png,4
+2026-04-16T11:51:37.720715,show me an image about Reinforcement learning ,../data/2604.03157v1/images/p0006_figure_00002.png,2
+2026-04-17T09:06:39.600112,show me an image about neural network,../data/2012.00641v2/images/p0007_figure_00007.png,3
+2026-04-17T09:07:02.656574,show me an image about neural network,../data/2603.28600v1/images/p0012_figure_00003.png,3
+2026-04-17T09:07:03.654463,show me an image about neural network,../data/2012.00641v2/images/p0003_figure_00003.png,4
+2026-04-17T09:18:43.419641,show me an image about Distributional regression transformer,../data/2604.02832v1/images/p0005_figure_00001.png,5
+2026-04-17T09:24:57.358997,show me an image about convolutional neural network,../data/2012.00641v2/images/p0003_figure_00003.png,5
+2026-04-17T09:24:54.084471,show me an image about FusionBERT system overview,../data/2604.02583v1/images/p0003_figure_00002.png,5
+2026-04-17T09:24:57.581127,show me an image about FusionBERT system overview,../data/2604.02583v1/images/p0001_figure_00001.png,4
+2026-04-17T09:25:01.051390,show me an image about FusionBERT system overview,../data/2604.02583v1/images/p0006_figure_00005.png,5
+2026-04-17T09:23:41.414197,show me an image about Model divergence features,../data/2604.03199v1/images/p0004_figure_00002.png,5
+2026-04-17T09:21:50.497669,show me an image about neural network,../data/2012.00641v2/images/p0003_figure_00003.png,5
+2026-04-17T09:22:02.876896,show me an image about neural network,../data/2012.00641v2/images/p0007_figure_00007.png,4
+2026-04-17T09:22:05.354301,show me an image about neural network,../data/2603.28600v1/images/p0012_figure_00003.png,4
+2026-04-17T09:03:03.193651,show me an image about neural network architecture,../data/2604.03550v1/images/p0003_figure_00002.png,5
+2026-04-17T09:09:04.889477,show me an image about deep learning timeline,../data/2012.00641v2/images/p0003_figure_00004.png,5
+2026-04-17T09:09:06.832806,show me an image about deep learning timeline,../data/2012.00641v2/images/p0006_figure_00005.png,5
+2026-04-17T09:09:10.215242,show me an image about deep learning timeline,../data/2012.00641v2/images/p0009_figure_00008.png,5
+2026-04-17T09:10:37.618807,show me an image about deep learning,../data/2604.03203v1/images/p0002_figure_00001.png,3
+2026-04-17T09:10:44.987935,show me an image about deep learning,../data/2012.00641v2/images/p0003_figure_00003.png,1
+2026-04-17T09:10:54.991866,show me an image about deep learning,../data/2012.00641v2/images/p0003_figure_00004.png,2
+2026-04-17T09:10:56.084833,show me an image about deep learning,../data/2012.00641v2/images/p0006_figure_00005.png,2
+2026-04-17T09:11:24.119479,show me an image about neural network,../data/2012.00641v2/images/p0003_figure_00003.png,5
+2026-04-17T09:11:30.489547,show me an image about neural network,../data/2012.00641v2/images/p0007_figure_00007.png,3
+2026-04-17T09:13:44.007448,show me an image about neural network architecure,../data/2603.29822v1/images/p0002_figure_00001.png,5
+2026-04-17T09:15:12.353229,show me an image about Noise estimation network,../data/2603.29822v1/images/p0003_figure_00002.png,5
+2026-04-17T09:16:48.042245,show me an image about Online routing baselines,../data/2603.30035v1/images/p0005_figure_00002.png,5
+2026-04-17T09:15:37.627687,show me an image about Signal processing steps,../data/2603.29822v1/images/p0003_figure_00002.png,4
+2026-04-17T09:17:30.651671,show me an image about Mixture Density Network,../data/2604.02832v1/images/p0005_figure_00001.png,5
+2026-04-17T09:17:31.625473,show me an image about Mixture Density Network,../data/2604.03020v1/images/p0008_figure_00004.png,5
+2026-04-17T09:16:26.649483,show me an image about NeuralUCB reward plot,../data/2603.30035v1/images/p0005_figure_00002.png,4
+2026-04-17T09:12:54.805064,show me an image about UAV sensing system,../data/2603.29822v1/images/p0002_figure_00001.png,5
+2026-04-17T09:11:34.372408,show me an image about neural network,../data/2603.28600v1/images/p0012_figure_00003.png,3
+2026-04-17T09:25:05.638596,show me an image about convolutional neural network,../data/2012.00641v2/images/p0001_figure_00001.png,4
+2026-05-13T10:58:00.823305,show me an image about Convolutional Neural Network,../data/2012.00641v2/images/p0003_figure_00003.png,5
+2026-05-07T11:53:21.518613,show me an image about neural network architecture,../data/2604.03550v1/images/p0003_figure_00002.png,4
+2026-04-17T09:26:09.320926,show me an image about Normal-aware 3D encoder,../data/2604.02583v1/images/p0004_figure_00003.png,5
+2026-04-17T09:26:11.006946,show me an image about Normal-aware 3D encoder,../data/2604.02583v1/images/p0003_figure_00002.png,5
+2026-05-13T10:57:24.462900,show me an image about neural network,../data/2012.00641v2/images/p0003_figure_00003.png,4
+2026-05-13T10:57:25.827137,show me an image about neural network,../data/2012.00641v2/images/p0007_figure_00007.png,3
+2026-05-13T10:57:28.422324,show me an image about neural network,../data/2603.28600v1/images/p0012_figure_00003.png,3
+2026-04-17T09:28:44.983730,show me an image about 3D encoder,../data/2604.02583v1/images/p0004_figure_00003.png,5
+2026-05-13T10:58:06.647865,show me an image about Convolutional Neural Network,../data/2012.00641v2/images/p0001_figure_00001.png,4
+2026-05-13T11:00:16.045021,show me an image about Reinforcement Learning,../data/2604.03157v1/images/p0006_figure_00002.png,2

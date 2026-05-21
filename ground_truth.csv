@@ -1,0 +1,31 @@
+Query,Expected_Image
+temperature results distribution,../data/2604.02139v1/images/p0011_figure_00005.png
+average precision per query,../data/2603.28603v1/images/p0019_figure_00007.png
+magnetic field configurations,../data/2604.02139v1/images/p0009_figure_00003.png
+forward model computing time,../data/2603.28549v1/images/p0002_figure_00001.png
+drbench non-resolving url rates,../data/2604.03173v1/images/p0004_figure_00001.png
+browsecomp benchmark base system prompt,../data/2604.03189v1/images/p0024_figure_00008.png
+ve-md-heatmap predicted sr,../data/2604.02397v1/images/p0018_figure_00007.png
+dimension-wise matrix-profile post-sorting strategy,../data/2604.02445v1/images/p0004_figure_00002.png
+appworld benchmark base system prompt,../data/2604.03189v1/images/p0023_figure_00007.png
+predicted structural representation qualitative examples,../data/2604.02397v1/images/p0018_figure_00008.png
+deep learning image retrieval taxonomy,../data/2012.00641v2/images/p0002_figure_00002.png
+flanker task decision boundaries,../data/2603.28600v1/images/p0015_figure_00004.png
+siamese network similarity computation,../data/2012.00641v2/images/p0007_figure_00007.png
+math geometry q&a compression accuracy,../data/2604.02343v1/images/p0049_figure_00020.png
+physical phenomenon distribution analysis,../data/2604.02817v1/images/p0019_figure_00012.png
+pulse front reconstruction error,../data/2603.28549v1/images/p0006_figure_00006.png
+visual explanation if4 data type,../data/2603.28765v1/images/p0002_figure_00001.png
+qtam clustering inversion signal validation,../data/2603.29785v1/images/p0010_figure_00010.png
+module-level ablation study,../data/2604.02798v1/images/p0008_figure_00005.png
+feature importance auc drop,../data/2604.03199v1/images/p0007_figure_00003.png
+performance comparison models,../data/2604.02911v1/images/p0006_figure_00004.png
+model visual sketch architecture,../data/2604.02139v1/images/p0007_figure_00002.png
+umap projection of training data,../data/2603.28466v1/images/p0005_figure_00002.png
+gsm8k q&a compression accuracy,../data/2604.02343v1/images/p0044_figure_00009.png
+lawnmower mapping pattern hovering,../data/2604.02478v1/images/p0006_figure_00002.png
+mean rmse estimator error,../data/2603.29981v1/images/p0025_figure_00013.png
+metabolic maps of naa naag,../data/2604.03150v1/images/p0011_figure_00003.png
+appworld seed playbook,../data/2604.03189v1/images/p0026_figure_00011.png
+math number theory q&a compression,../data/2604.02343v1/images/p0049_figure_00019.png
+drift susceptibility architectural characteristics,../data/2601.04170v1/images/p0008_figure_00003.png

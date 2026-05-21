@@ -1,0 +1,122 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+Este capítulo presenta los resultados empíricos y analíticos obtenidos tras someter al sistema RAGI a un riguroso proceso de experimentación. Tal y como se planteó en los objetivos del proyecto, la meta principal es validar la efectividad de la solución propuesta desde dos perspectivas complementarias: una evaluación cuantitativa del rendimiento algorítmico del motor de búsqueda y una evaluación cualitativa basada en la percepción y satisfacción de los usuarios finales.
+
+Para estructurar adecuadamente estos hallazgos, el capítulo se ha dividido en seis grandes bloques:
+\begin{enumerate}
+    \item \textbf{Diseño de la Evaluación:} Detalla la metodología y el entorno de experimentación tanto para el estudio cuantitativo como para el cualitativo.
+    \item \textbf{Resultados Cuantitativos:} Expone las métricas numéricas obtenidas por los distintos modelos de búsqueda.
+    \item \textbf{Resultados Cualitativos:} Analiza las valoraciones empíricas recabadas a través de la interacción de los usuarios con el sistema.
+    \item \textbf{Comparativa y Discusión:} Contrasta los enfoques léxicos y semánticos, justificando los resultados obtenidos.
+    \item \textbf{Objetivos Logrados:} Evalúa el grado de cumplimiento de las metas propuestas al inicio del Trabajo de Fin de Grado.
+    \item \textbf{Problemas Encontrados:} Documenta las limitaciones técnicas y los principales obstáculos superados durante el desarrollo.
+\end{enumerate}
+
+\renewcommand{\sectionbreak}{}
+
+\section{Diseño de la Evaluación}
+\label{sec:resultados_evaluacion}
+
+La validación cuantitativa de un sistema de Recuperación de Información (IR) requiere de un entorno controlado que permita ejecutar pruebas repetibles y reproducibles. Para lograrlo, se ha diseñado un \textit{pipeline} de evaluación automatizado compuesto por dos fases fundamentales: la construcción del conjunto de referencia (\textit{Ground Truth}) y la orquestación del motor de inferencia.
+
+\subsection{Construcción de la Verdad Fundamental (\textit{Ground Truth})}
+Para evaluar si el buscador devuelve la imagen correcta, es imperativo disponer de un listado de consultas emparejadas biunívocamente con la figura que las responde. Dado que el sistema debe evaluar simulaciones de búsquedas reales, se descartó el uso directo de las preguntas sintéticas generadas por el sistema (las cuales presentan una estructura gramatical compleja y a menudo artificial, como \textit{``How are the objects spatially arranged''}).
+
+En su lugar, se desarrolló un algoritmo de extracción heurística que procesó el catálogo indexado de figuras para generar un conjunto de 30 consultas o \textit{prompts} altamente realistas. El proceso consistió en:
+\begin{enumerate}
+    \item \textbf{Extracción del \textit{Caption}:} Aislar el pie de foto original de cada figura aleatoria.
+    \item \textbf{Limpieza algorítmica:} Eliminar prefijos de publicación (ej. ``Fig 1:'', ``Figure 2(a):'') y frases introductorias irrelevantes.
+    \item \textbf{Filtrado de conceptos clave:} Suprimir palabras vacías (\textit{stopwords}) e identificadores bibliográficos, conservando únicamente los sustantivos técnicos o métricas.
+    \item \textbf{Limitación de longitud:} Restringir la cadena resultante a un bloque de entre 3 y 6 palabras clave, simulando el comportamiento típico de un investigador introduciendo términos en una barra de búsqueda (ej. \textit{``flanker task decision boundaries''} o \textit{``pulse front reconstruction error''}).
+\end{enumerate}
+
+Este conjunto actúa como el estándar de oro (\textit{Gold Standard}) contra el cual se contrastarán todas las recuperaciones del sistema.
+
+\subsection{Orquestación del Evaluador Cuantitativo}
+La ejecución de las pruebas se realizó mediante un orquestador automatizado conectado directamente a la API local de Elasticsearch. Para garantizar una medición equitativa, el script itera sobre las 30 consultas del \textit{Ground Truth} y, para cada una de ellas, lanza tres peticiones concurrentes a la base de datos simulando los tres casos de estudio definidos en la metodología (Léxico simple, Léxico ampliado y Semántico vectorial).
+
+Dado que el modelo semántico requiere transformar la consulta de texto a un \textit{embedding} en tiempo real, el evaluador se integró con el modelo \textit{Nomic Embed Text v2}. Se implementó un sistema de tolerancia a fallos con reintentos exponenciales y caché local para garantizar que la latencia de red no interferiese en la medición objetiva del \textit{ranking} de resultados. El sistema registró exhaustivamente en qué posición (del 1 al 5) aparecía la ruta de la imagen esperada para calcular las métricas finales.
+
+\subsection{Diseño del Estudio Cualitativo (Usuarios)}
+De forma paralela a la experimentación algorítmica, se diseñó un estudio con usuarios reales para capturar la Relevancia Percibida de las figuras devueltas. Para ello, se integró un sistema de telemetría en la interfaz web de RAGI que permitía a los investigadores puntuar los resultados de sus búsquedas libres mediante una escala Likert de 1 a 5 estrellas. Los datos recabados se almacenaron en un índice independiente (\texttt{ragi\_ratings}) para su posterior análisis estadístico.
+
+\section{An¡lisis de Resultados Cuantitativos}
+\label{sec:resultados_numericos}
+
+A continuación, se presentan los resultados obtenidos tras ejecutar el conjunto de evaluación sobre los tres escenarios planteados. El rendimiento de cada modelo se ha cuantificado empleando las métricas de Precisión (\textit{Precision@1}), Exhaustividad (\textit{Recall@5}) y \textit{Mean Reciprocal Rank (MRR)}.
+
+\subsection{Rendimiento del Modelo \textit{Baseline} (Búsqueda Léxica)}
+El modelo \textit{Baseline} representa el enfoque tradicional de recuperación documental, utilizando el algoritmo estadístico BM25 (basado en frecuencia de términos y frecuencia inversa de documentos, TF-IDF). En este escenario, el motor de búsqueda únicamente inspecciona el campo \texttt{caption} original.
+
+Los resultados obtenidos por este modelo fueron los siguientes:
+\begin{itemize}
+    \item \textbf{Precision@1:} 86.67 \%
+    \item \textbf{Recall@5:} 96.67 \%
+    \item \textbf{MRR:} 0.9083
+\end{itemize}
+
+El modelo logra posicionar la figura correcta como primera opción en casi el 87\% de las consultas, fallando en recuperar la imagen en el \textit{Top-5} únicamente en un 3.33\% de los casos.
+
+\subsection{Rendimiento del Modelo RAGI Básico (Léxico Ampliado)}
+El segundo escenario amplía el espacio de búsqueda. El motor sigue empleando el algoritmo léxico BM25, pero ejecutando una consulta múltiple (\textit{multi-match}) que explora tanto el \texttt{caption} original como la \texttt{description} densa generada por el Modelo de Visión-Lenguaje (VLM).
+
+Las métricas registradas en este caso fueron:
+\begin{itemize}
+    \item \textbf{Precision@1:} 86.67 \%
+    \item \textbf{Recall@5:} 96.67 \%
+    \item \textbf{MRR:} 0.9083
+\end{itemize}
+
+De forma notable, las métricas obtenidas son algorítmicamente idénticas a las del modelo \textit{Baseline}. Esto indica que, para este conjunto particular de consultas, la inclusión de descripciones visuales no ha alterado el ránking superior establecido por los pies de foto originales.
+
+\subsection{Rendimiento del Modelo RAGI Avanzado (Búsqueda Semántica Vectorial)}
+El tercer caso evalúa la aproximación vanguardista del sistema. La búsqueda léxica se sustituye completamente por una Búsqueda Aproximada de Vecinos Más Cercanos (\textit{Approximate k-NN}) en el espacio vectorial. La consulta se convierte en un \textit{embedding} denso y se compara mediante similitud del coseno contra el \textit{embedding} global del documento.
+
+Los resultados de recuperación en el espacio semántico fueron:
+\begin{itemize}
+    \item \textbf{Precision@1:} 73.33 \%
+    \item \textbf{Recall@5:} 93.33 \%
+    \item \textbf{MRR:} 0.8222
+\end{itemize}
+
+Aunque el modelo semántico presenta un alto \textit{Recall} (superior al 93\%), se observa una degradación de aproximadamente 13 puntos porcentuales en la \textit{Precision@1} respecto a los modelos léxicos puros.
+
+\subsection{Comparativa Analítica y Discusión}
+La Tabla \ref{tab:resultados_cuantitativos} consolida las métricas obtenidas por los tres modelos evaluados.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Modelo de Búsqueda} & \textbf{Precision@1} & \textbf{Recall@5} & \textbf{MRR} \\ \hline
+        \textit{Baseline} (Léxico: Caption) & 86.67 \% & 96.67 \% & 0.9083 \\ \hline
+        RAGI Básico (Léxico: Cap + Desc) & 86.67 \% & 96.67 \% & 0.9083 \\ \hline
+        RAGI Avanzado (Semántico: Vectorial KNN) & 73.33 \% & 93.33 \% & 0.8222 \\ \hline
+    \end{tabular}
+    \caption{Comparativa de rendimiento en la recuperación de figuras según el modelo de búsqueda empleado.}
+    \label{tab:resultados_cuantitativos}
+\end{table}
+
+A primera vista, los datos revelan una conclusión contraintuitiva: los algoritmos tradicionales basados en palabras clave (BM25) han superado en precisión al modelo fundamentado en Inteligencia Artificial y búsquedas vectoriales. Sin embargo, este resultado es metodológicamente coherente cuando se analiza la naturaleza de la Verdad Fundamental (\textit{Ground Truth}) construida.
+
+Como se detalló en la Sección \ref{sec:resultados_evaluacion}, las consultas de los usuarios simulados se extrajeron directamente filtrando los \textit{captions} originales. Esto genera un sesgo de evaluación hacia la coincidencia léxica exacta (\textit{Exact Keyword Matching}). Cuando la consulta del usuario contiene las palabras exactas y específicas (ej. nombres propios de algoritmos o acrónimos) que el autor original empleó para nombrar la figura, el algoritmo BM25 encuentra una correspondencia perfecta, elevando el \textit{score} del documento a valores máximos y asegurando el \textit{Top-1}.
+
+Por el contrario, los modelos densos (\textit{embeddings}) mapean la consulta a un espacio conceptual. Aunque son excelentes superando el problema del desajuste de vocabulario (\textit{vocabulary mismatch}) —es decir, cuando el usuario usa sinónimos o formula descripciones amplias—, tienden a ``suavizar'' los términos técnicos muy específicos. Al incrustar en un mismo vector el caption, la descripción rica y las preguntas generadas, el vector resultante adquiere un alcance semántico muy amplio, lo cual disminuye ligeramente la cercanía matemática absoluta frente a una consulta conformada por apenas cuatro palabras muy focalizadas.
+
+Este experimento empírico demuestra una realidad bien conocida en la literatura actual de Recuperación de Información: la Inteligencia Artificial no reemplaza a la búsqueda léxica en contextos de terminología técnica estricta, sino que debe complementarla. Estos hallazgos justifican la necesidad futura de evolucionar RAGI hacia un paradigma de \textbf{Búsqueda Híbrida} (\textit{Hybrid Search}), fusionando las puntuaciones de BM25 (para garantizar precisión en nombres exactos) con la flexibilidad conceptual de los \textit{embeddings} (para búsquedas descriptivas abstractas).
+
+\section{Análisis de Resultados Cualitativos}
+\label{sec:resultados_cualitativos}
+% --- A rellenar con los datos del script de Python ---
+
+\section{Grado de Consecución de los Objetivos}
+\label{sec:resultados_objetivos}
+% --- A rellenar ---
+
+\section{Problemas Encontrados y Limitaciones}
+\label{sec:resultados_problemas}
+% --- A rellenar ---
+
+\end{document}
