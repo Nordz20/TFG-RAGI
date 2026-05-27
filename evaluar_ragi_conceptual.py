@@ -10,7 +10,7 @@ ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
 ES_INDEX = "ragi_images"
 EMBED_URL = os.getenv("EMBED_URL", "https://wiig.dia.fi.upm.es/ollama/api/embeddings")
 EMBED_MODEL = "nomic-embed-text-v2-moe"
-CSV_FILE = "ground_truth.csv"
+CSV_FILE = "ground_truth_conceptual.csv"
 CACHE_FILE = "cache_embeddings.json"
 TOP_K = 5
 

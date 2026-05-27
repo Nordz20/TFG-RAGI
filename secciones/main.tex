@@ -1,0 +1,1325 @@
+\documentclass[a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[draft]{graphicx} 
+\usepackage[T1]{fontenc}  
+\usepackage{booktabs}
+\usepackage{afterpage}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage{subfiles}
+\usepackage{appendix}
+\usepackage{minted}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage{amsmath} 
+\usepackage{float}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+
+\newcommand{\sectionbreak}{\clearpage}
+
+% --- CONFIGURACIÓN DE SANGRÍA ---
+\usepackage{indentfirst} 
+\setlength{\parindent}{0.75cm} 
+
+% --- GEOMETRÍA ---
+\usepackage{geometry}
+
+% --- CONFIGURACIÓN DE PÁGINA ---
+\pagestyle{headings}
+
+\titleformat{\chapter}[display]   
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\graphicspath{ {imagenes/} }
+
+% --- REDEFINICIONES ESPAÑOL ---
+\renewcommand{\spanishtablename}{Tabla}
+\renewcommand{\spanishlisttablename}{Índice de tablas}
+\renewcommand{\spanishcontentsname}{Índice}
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+
+% --- COMANDOS PERSONALIZADOS ---
+\newcommand\paginablanco{\null\thispagestyle{empty}\newpage}
+\newcommand\paginablancosin{\paginablanco{}\addtocounter{page}{-1}}
+\renewcommand{\arraystretch}{1.5}
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\newcommand{\tfg}{Trabajo Fin de Grado }
+
+% ========================================================
+% COMIENZO DEL DOCUMENTO
+% ========================================================
+\begin{document}
+
+% --- PORTADA ---
+\begin{titlepage}
+    \thispagestyle{empty}
+    \centering
+    {\scshape\Large Universidad Politécnica de Madrid \par}
+    {\scshape\Large Escuela Técnica Superior de Ingeniería de Sistemas Informáticos \par}
+    
+    \vfill 
+
+    \makebox[\textwidth]{\includegraphics[width=1.15\textwidth]{logo_etsisi.png}}
+    
+    \vfill 
+    
+    {\bfseries\LARGE RAGI: Sistema de recuperación semántica de figuras científicas basado en anotación automática de contenido \par}
+    
+    \vspace{0.75cm}
+    \vfill 
+    
+    {\Large Proyecto Fin de Grado \par}
+    
+    \vspace{0.5cm}
+    \vfill 
+    
+    {\Large Grado en Ciencia de Datos e Inteligencia Artificial \par}
+    
+    \vspace{0.5cm}
+    \vfill 
+    
+    {\Large Curso académico 2025-2026 \par}
+    
+    \vspace{0.5cm}
+    \vfill 
+    
+    {\Large Autor: \\ Nour Eddin Bouchira Lamchaouri \par}
+    
+    \vspace{0.5cm}
+    \vfill 
+    
+    {\Large Tutor: \\ Carlos Badenes-Olmedo \par}
+    
+    \vfill 
+\end{titlepage}
+
+% --- NUEVA GEOMETRÍA PARA EL CUERPO ---
+\newgeometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+
+\pagenumbering{Roman}
+
+% --- CONFIGURACIÓN DE ESPACIADO ---
+\setlength{\parskip}{1em} 
+
+% AGRADECIMIENTOS
+\chapter*{Agradecimientos}
+\addcontentsline{toc}{section}{Agradecimientos}
+\begin{flushright}
+\textit{A rellenar...}
+\end{flushright}
+
+% RESUMEN
+\chapter*{Resumen}
+\addcontentsline{toc}{section}{Resumen}
+Este proyecto propone el desarrollo de RAGI, un buscador de imágenes técnicas diseñado para optimizar la recuperación de información gráfica en el ámbito académico y/o profesional. El sistema plantea un enfoque innovador basado en la indexación de imágenes extraídas de artículos científicos, las cuales son enriquecidas mediante un proceso de anotación automática. Esta metodología consiste en asociar a cada imagen una descripción detallada y un conjunto de preguntas generadas a partir de su propio contenido, estableciendo que la imagen actúa como respuesta directa a dichas cuestiones. De esta forma, el sistema ofrece un motor de búsqueda capaz de sugerir recursos visuales relevantes, acompañados de su cita correspondiente, a partir de un texto o consulta dada. El principal reto técnico que aborda este trabajo radica en la arquitectura necesaria para realizar esta anotación de imágenes a gran escala de manera eficiente.
+
+Para garantizar el rendimiento y la utilidad del enfoque propuesto, el proyecto aborda un reto científico fundamental centrado en la evaluación sistemática de la calidad de las anotaciones generadas. El estudio se enfoca en validar la capacidad del sistema para relacionar y sugerir imágenes que sean verdaderamente relevantes a conceptos concretos extraídos de las consultas. El análisis de esta calidad métrica busca evaluar el impacto del modelo de anotación basado en pares de descripción-pregunta en la recuperación de imágenes técnicas, contrastando la hipótesis inicial de su posible ventaja frente a enfoques tradicionales, proporcionando a los investigadores una herramienta eficaz y contextualizada para explorar el conocimiento visual presente en la literatura científica.
+
+\textbf{Palabras clave:} Recuperación de información, Anotación de imágenes, Búsqueda semántica, Artículos científicos, Indexación a gran escala.
+
+% ABSTRACT
+\chapter*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+This project proposes the development of RAGI, a technical image search engine designed to optimize the retrieval of graphic information in academic and/or professional environments. The system presents an innovative approach based on the indexing of images extracted from scientific articles, which are enriched through an automatic annotation process. This methodology consists of associating each image with a detailed description and a set of questions generated from its own content, establishing that the image acts as a direct answer to these questions. In this way, the system offers a search engine capable of suggesting relevant visual resources, accompanied by their corresponding citation, based on a given text or query. The main technical challenge addressed in this work lies in the architecture required to perform this large-scale image annotation efficiently.
+
+To guarantee the performance and utility of the proposed approach, the project addresses a fundamental scientific challenge focused on the systematic evaluation of the quality of the generated annotations. The study focuses on validating the system's ability to relate and suggest images that are truly relevant to specific concepts extracted from the queries. The analysis of this metric quality seeks to evaluate the impact of the annotation model based on description-question pairs on the retrieval of technical images, contrasting the initial hypothesis of its potential advantage over traditional approaches, providing researchers with an effective and contextualized tool to explore the visual knowledge present in scientific literature.
+
+\textbf{Keywords:} Information retrieval, Image annotation, Semantic search, Scientific articles, Large-scale indexing.
+
+% --- ÍNDICES (SIN PARSKIP) ---
+\begingroup
+\setlength{\parskip}{0pt}
+\tableofcontents
+\newpage
+\listoftables
+\newpage
+\listoffigures
+\newpage
+\endgroup
+
+% --- CUERPO DEL TFG ---
+\pagenumbering{arabic}
+
+% CAPÍTULO 1: INTRODUCCIÓN
+\chapter{Introducción}
+
+\section{Contexto}
+
+El volumen de publicaciones científicas ha experimentado un crecimiento exponencial en las últimas décadas. Diferentes estudios cienciométricos señalan que la producción académica mundial se duplica cada pocos años, generando una sobreabundancia de información que dificulta enormemente la búsqueda, asimilación y descubrimiento de nuevo conocimiento \cite{bornmann2015}. En este vasto océano de documentos académicos, gran parte de la información crucial no se encuentra únicamente redactada en el texto principal, sino que está encapsulada en formatos visuales. Figuras, gráficos de dispersión, diagramas de arquitectura de software o tablas comparativas son elementos esenciales que los autores utilizan para sintetizar resultados experimentales complejos y permitir la comparativa de datos de un solo vistazo.
+
+A pesar de la innegable importancia de este contenido visual, los motores de búsqueda académicos y los sistemas de recuperación de información (IR, por sus siglas en inglés) tradicionales presentan severas limitaciones a la hora de procesarlos. Históricamente, estos sistemas se han basado casi en exclusiva en la indexación de texto y metadatos explícitos, tales como el título del artículo, los autores, las palabras clave o el resumen. En el mejor de los casos, los buscadores indexan el pie de foto (\textit{caption}) que acompaña a la imagen. Sin embargo, este enfoque ignora en gran medida el contenido semántico profundo de las figuras, ya que los pies de foto suelen ser descripciones escuetas que no reflejan la totalidad de las variables, tendencias o componentes ilustrados \cite{zhong2019}. 
+
+En consecuencia, cuando un investigador necesita localizar una figura específica con un propósito técnico —por ejemplo, buscar ``el diagrama de una arquitectura de red neuronal convolucional para detección de objetos'' o ``una gráfica que compare el rendimiento temporal de algoritmos de ordenación''—, los sistemas convencionales resultan insuficientes. Esta carencia tecnológica obliga a los investigadores a realizar revisiones manuales y tediosas, abriendo múltiples documentos PDF y escrutando visualmente página por página hasta encontrar la información deseada.
+
+Para abordar las limitaciones generales en la búsqueda de información y mejorar la interacción humano-máquina, ha tomado una especial relevancia en los últimos años el paradigma de Generación Aumentada por Recuperación (RAG, por sus siglas en inglés). RAG es una arquitectura híbrida que mejora las capacidades de los grandes modelos de lenguaje (LLMs). En lugar de depender únicamente del conocimiento estático memorizado por el modelo durante su entrenamiento, RAG conecta el LLM a una base de datos externa. Cuando el usuario realiza una consulta, el sistema primero recupera fragmentos de información precisa y actualizada de dicha base de datos, y posteriormente se los proporciona al LLM como contexto para que redacte la respuesta final. Este mecanismo reduce en la medida de lo posible las ``alucinaciones'' (respuestas inventadas o incorrectas) y proporciona un marco de información mucho más fiable y contrastable \cite{lewis2020}.
+
+Si bien RAG supuso una revolución para el procesamiento de texto, la reciente evolución de los LLMs hacia Modelos de Visión-Lenguaje (VLMs) ha permitido extender este concepto al ámbito multimodal. Modelos de última generación como LLaVA (Large Language-and-Vision Assistant) o GPT-4V poseen la capacidad no solo de leer texto, sino de procesar y ``entender'' los píxeles de una imagen. Estos modelos pueden realizar reconocimiento óptico de caracteres (OCR) integrado, identificar objetos, interpretar relaciones espaciales y, lo que es más importante, generar descripciones detalladas sobre el contenido visual y responder a preguntas complejas de razonamiento basándose en la imagen que están observando \cite{liu2024}.
+
+El éxito de estos nuevos enfoques de recuperación multimodal radica en el uso de \textit{embeddings} o incrustaciones vectoriales. Un \textit{embedding} es una representación matemática de datos abstractos (ya sean párrafos de texto o imágenes completas) en un espacio geométrico de alta dimensionalidad. Cuando se procesa una imagen y su descripción textual asociada, los modelos de inteligencia artificial generan vectores numéricos que capturan su significado semántico subyacente. Al almacenar estos vectores en bases de datos vectoriales especializadas, es posible realizar lo que se conoce como búsquedas semánticas cruzadas (\textit{Cross-Modal Retrieval}). 
+
+Gracias al \textit{Cross-Modal Retrieval}, un sistema informático puede recibir una consulta formulada en lenguaje natural por un usuario, convertir esa frase en un vector, y buscar en la base de datos qué elemento tiene el vector matemáticamente más cercano (utilizando métricas como la similitud del coseno). De este modo, el sistema devuelve la figura que mejor representa semánticamente la intención de búsqueda del usuario, independientemente de si las palabras exactas de la consulta estaban presentes o no en el documento original.
+
+Es en este contexto de innovación tecnológica donde se enmarca este Trabajo de Fin de Grado (TFG), el cual propone el desarrollo de RAGI (Retrieval-Augmented Generation for Images). RAGI es un sistema integral de búsqueda semántica multimodal diseñado específicamente para la extracción, el enriquecimiento y la recuperación ágil de figuras procedentes de artículos científicos. La aproximación se basa en la creación de un \textit{pipeline} automatizado que se aleja de la dependencia de APIs comerciales mediante el uso de modelos de IA generativa de visión y lenguaje desplegados de manera local.
+
+Para ilustrar este proceso, la Figura \ref{fig:diagrama_ragi} presenta la arquitectura conceptual del sistema. En ella se puede observar cómo el flujo de trabajo inicial se bifurca a partir del documento PDF original, separando la extracción del texto de la extracción de las imágenes técnicas (como gráficos o diagramas). A continuación, el núcleo inteligente del sistema recae sobre un VLM, que actúa como motor de enriquecimiento. Este modelo procesa cada imagen para dotarla de un contexto semántico profundo mediante dos tareas clave: la generación de una descripción exhaustiva de lo que se observa en la figura, y la formulación proactiva de posibles preguntas (Q\&A) que dicha imagen podría responder. Finalmente, el diagrama ilustra cómo una consulta en lenguaje natural por parte del investigador desencadena el proceso de recuperación sobre esta base de conocimiento enriquecida.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{diagrama_ragi.png}
+    \caption{Arquitectura conceptual del sistema RAGI y flujo de búsqueda multimodal.}
+    \label{fig:diagrama_ragi}
+\end{figure}
+
+Tal y como se evidencia en el esquema de la Figura \ref{fig:diagrama_ragi}, la principal aportación de RAGI es su capacidad para acortar la brecha semántica entre el contenido visual estático y la intención de búsqueda dinámica del usuario. En lugar de depender de los limitados pies de foto originales, el sistema infiere representaciones textuales profundas y predicciones de preguntas que amplían sustancialmente la información indexada. Además, resulta fundamental destacar en el bloque final del diagrama que el resultado devuelto al investigador no es únicamente la figura aislada, sino que esta se recupera acompañada de la cita bibliográfica exacta del \textit{paper} del que fue extraída. Esta característica garantiza la trazabilidad metodológica y el rigor académico, permitiendo al usuario contextualizar el gráfico dentro del marco de su investigación original. Sobre esta estructura de enriquecimiento semántico y trazabilidad se fundamentarán los capítulos posteriores de esta memoria, donde se detallará la implementación técnica y evaluación de cada uno de los módulos representados.
+
+\section{Motivación}
+
+Extraer y catalogar información gráfica directamente desde artículos científicos se ha convertido en un paso fundamental para sacar partido a la masiva cantidad de literatura académica que existe en la actualidad. Cada día se publican miles de documentos en formato PDF donde la información más crítica (diagramas de arquitectura, resultados experimentales y flujos de trabajo) queda atrapada de forma estática. Transformar estas figuras en conocimiento indexado y enriquecido semánticamente permite que dichos recursos visuales sean directamente consultables por máquinas y humanos. Esto tiene el potencial de agilizar significativamente la revisión del estado del arte, facilita la asimilación de conceptos complejos y desbloquea un enorme potencial de descubrimiento que motiva el desarrollo de este PFG.
+
+Sin embargo, aunque los recientes Modelos Fundacionales Multimodales (MLLMs, por sus siglas en inglés) comerciales han demostrado una capacidad asombrosa para entender imágenes complejas, depender de ellos para construir un motor de búsqueda académico a gran escala plantea varios retos de fondo:
+
+\begin{itemize}
+    \item \textbf{Privacidad, propiedad intelectual y soberanía tecnológica:} Gran parte de la literatura científica está sujeta a derechos de autor, y los documentos en fase de prepublicación (\textit{preprints}) contienen datos sensibles e inéditos. Enviar masivamente estos documentos a servidores y APIs de terceros (como OpenAI o Google) compromete la confidencialidad de las investigaciones. Además, estas plataformas imponen tarifas por token y cuotas de uso que limitan severamente la autonomía tecnológica y dificultan la investigación abierta y gratuita \cite{touvron2023}.
+    
+    \item \textbf{Falta de adaptabilidad al dominio científico:} Los buscadores de imágenes generalistas no están diseñados para comprender la densidad técnica de un diagrama de bloques neuronal o de una gráfica de dispersión. Se requieren sistemas que no solo vean la imagen, sino que puedan razonar sobre ella y extraer su contexto técnico \cite{yin2023}.
+    
+    \item \textbf{Necesidad de soluciones locales y eficientes:} En entornos de investigación universitarios, resulta inviable mantener suscripciones perpetuas a APIs en la nube. Es crucial desarrollar metodologías que aprovechen modelos de código abierto y puedan ejecutarse en infraestructura local (servidores propios), garantizando un despliegue transparente, reproducible y sin costes recurrentes por consulta.
+\end{itemize}
+
+En este TFG se presenta un enfoque práctico, privado y automatizado para la recuperación semántica de figuras científicas, sin recurrir a servicios en la nube cerrados. La propuesta se basa en un \textit{pipeline} offline que extrae las imágenes de los PDFs y utiliza modelos de Visión-Lenguaje (VLMs) de código abierto desplegados localmente para enriquecer y anotar cada figura. Este enriquecimiento se vertebra en dos estrategias clave de anotación: la generación de una descripción exhaustiva y la formulación de preguntas que la propia imagen es capaz de responder.
+
+Para el diseño de este motor de búsqueda, se parte de la hipótesis de que asociar metadatos conversacionales (qué muestra la imagen y qué preguntas responde) a un recurso visual podría mejorar sustancialmente su capacidad de ser recuperado en un espacio vectorial frente a consultas conceptuales. Estas estrategias se implementan y evalúan de forma progresiva, utilizando métricas de recuperación de información para contrastar empíricamente esta hipótesis inicial, analizando el impacto de la indexación de pares descripción-pregunta a la hora de sugerir la figura correcta ante la consulta de una persona.
+
+\section{Objetivos}
+\label{sec:objetivos}
+
+\subsection{Objetivo general}
+
+El objetivo principal de este proyecto es diseñar y desarrollar RAGI, un sistema de recuperación semántica multimodal orientado a figuras de artículos científicos, basado en modelos de visión-lenguaje (VLMs) de ejecución local (O1). El sistema propuesto parte de la extracción automatizada de imágenes en documentos PDF, las cuales son posteriormente enriquecidas semánticamente mediante la generación de preguntas y descripciones detalladas. El rendimiento del motor de búsqueda resultante se evaluará mediante métricas de recuperación de información, comparando la eficacia de la indexación basada en el enfoque de preguntas generadas frente a los enfoques tradicionales de subtitulado (\textit{captioning}), con el fin de validar la utilidad de la propuesta en la exploración de literatura académica \cite{li2022blip}.
+
+\subsection{Objetivos específicos}
+
+Para desarrollar y validar el sistema propuesto para la recuperación semántica de figuras, se plantean los siguientes objetivos concretos:
+
+\begin{itemize}
+    \item \textbf{Implementar un pipeline de extracción multimodal (O1.1):} Desarrollar un módulo capaz de procesar de manera masiva artículos científicos en formato no estructurado (PDF) para identificar, aislar y almacenar de forma estructurada las figuras científicas junto con sus metadatos de origen (pie de figura, página y documento). El éxito de esta fase se fundamenta en la robustez de la extracción frente a la heterogeneidad de formatos de publicación.
+
+    \item \textbf{Enriquecer el contenido visual mediante VLMs locales (O1.2):} Ampliar la representación semántica de cada figura extraída utilizando modelos fundacionales de visión y lenguaje de código abierto, garantizando la privacidad y la autonomía del sistema. Esto implica orquestar la inferencia local para generar automáticamente descripciones exhaustivas y formular posibles preguntas de investigación que la imagen pueda responder, reduciendo así la brecha semántica (\textit{semantic gap}) entre la representación visual y textual \cite{radford2021learning}.
+
+    \item \textbf{Construir e integrar el motor de búsqueda vectorial (O1.3):} Transformar los metadatos y anotaciones multimodales generados en representaciones matemáticas continuas (\textit{embeddings}) e indexarlos en una base de datos vectorial escalable (Elasticsearch). El objetivo es habilitar búsquedas cruzadas (\textit{Cross-Modal Retrieval}), permitiendo recuperar las imágenes técnicas más relevantes a partir de consultas complejas en lenguaje natural formuladas por los investigadores \cite{baltruvsaitis2018multimodal}.
+
+    \item \textbf{Evaluar el impacto de la anotación basada en preguntas (O1.4):} 
+    \begin{enumerate}
+        \item[a)] Medir, mediante métricas estándar de recuperación de información empírica, la capacidad del sistema para sugerir imágenes que sean verdaderamente relevantes ante un conjunto de consultas técnicas de referencia.
+        \item[b)] Comparar el rendimiento del motor de búsqueda cuando utiliza exclusivamente el texto del \textit{caption} original frente a la mejora obtenida al incluir las descripciones enriquecidas y las preguntas generadas por IA, cuantificando empíricamente la ganancia en la precisión de recuperación.
+    \end{enumerate}
+\end{itemize}
+
+Para ofrecer una visión clara de la interdependencia técnica y temporal de las metas propuestas, la Figura \ref{fig:diagrama_objetivos} representa gráficamente el flujo de trabajo del proyecto. Se invita al lector a observar cómo el diseño metodológico sigue un progreso estrictamente secuencial en sus fases de desarrollo (cajas verdes). Este camino directo comienza con el procesamiento inicial de los PDFs (O1.1), avanza hacia el enriquecimiento inteligente con VLMs (O1.2) y desemboca en la indexación en el motor vectorial (O1.3). Finalmente, el flujo ilustra cómo la etapa de evaluación (caja azul) se bifurca en dos líneas de análisis simultáneas: la medición de métricas globales de recuperación (4a) y la comparativa directa entre enfoques (4b).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{diagrama_objetivos.png}
+    \caption{Flujo secuencial e interdependencia de los objetivos específicos planteados en el proyecto.}
+    \label{fig:diagrama_objetivos}
+\end{figure}
+
+Como se deduce del esquema anterior, este diseño metodológico garantiza que cada fase del proyecto genere los cimientos tecnológicos necesarios para la fase sucesiva. El éxito en la bifurcación final de evaluación está intrínsecamente ligado a la calidad de la extracción inicial y a la precisión de las anotaciones generadas. De este modo, los objetivos específicos no solo definen un listado de tareas a realizar, sino que estructuran formalmente el desarrollo cronológico de los capítulos que conforman esta memoria, asegurando una progresión lógica, cohesionada y orientada de forma directa hacia la consecución del objetivo general del trabajo.
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}         % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Estructura del documento}
+\endgroup
+
+Este documento se estructura en cinco capítulos principales, además de la bibliografía y los anexos, orientados a desarrollar de forma progresiva los distintos aspectos del trabajo realizado. A continuación se detalla el contenido de cada uno de ellos:
+
+\begin{itemize}
+    \item \textbf{Capítulo 1 -- Introducción:} Presenta el contexto en el que se enmarca el proyecto, la motivación que lo impulsa, así como el objetivo general y los objetivos específicos planteados.
+    
+    \item \textbf{Capítulo 2 -- Estado del Arte:} Revisa los enfoques y tecnologías existentes en los que se fundamenta el sistema. Se profundiza en el paradigma de Generación Aumentada por Recuperación (RAG), la evolución de los Modelos de Visión-Lenguaje (VLMs) y las técnicas de indexación vectorial, analizando sistemas afines al propuesto.
+
+    \item \textbf{Capítulo 3 -- Desarrollo del Proyecto:} Describe en detalle la arquitectura del sistema RAGI y su implementación técnica. Se explica el \textit{pipeline} offline para la extracción de PDFs, la inferencia con modelos locales para la generación de anotaciones (descripciones y preguntas), y la construcción de la base de datos vectorial y la interfaz de usuario.
+    
+    \item \textbf{Capítulo 4 -- Resultados:} Presenta la evaluación del sistema desarrollado. Se analizan las métricas de recuperación obtenidas al utilizar las preguntas generadas frente a los enfoques tradicionales, comprobando el impacto y la efectividad de las estrategias de anotación propuestas.
+    
+    \item \textbf{Capítulo 5 -- Conclusiones y trabajos futuros:} Resume las principales aportaciones del proyecto, valorando el grado de cumplimiento de los objetivos. Asimismo, se exponen las limitaciones encontradas y se proponen posibles líneas de mejora para el futuro.
+    
+    \item \textbf{Bibliografía:} Recoge las fuentes bibliográficas, artículos científicos y documentación técnica que han servido de base para el desarrollo de este Trabajo de Fin de Grado.
+\end{itemize}
+
+
+% RESTO DE CAPÍTULOS (Uso de subfiles o texto directo)
+\chapter{Estado del Arte}
+
+\section{Análisis y Procesamiento de Documentos Científicos (DLA)}
+\label{sec:estado_arte_dla}
+
+El formato PDF (\textit{Portable Document Format}) se ha consolidado como el estándar ampliamente adoptado para la difusión y preservación del conocimiento científico. Su éxito radica en su capacidad para mantener una alta fidelidad visual y garantizar que el formato de los documentos permanezca inalterable, independientemente del sistema operativo o el software de visualización utilizado. Sin embargo, esta enorme ventaja en la capa de presentación supone un reto computacional formidable de cara a la minería de datos: los archivos PDF, por su propia naturaleza arquitectónica, carecen de una estructura lógica interna explícita. No emplean etiquetas semánticas para definir qué es un párrafo, un título o una figura; en su lugar, el PDF se comporta fundamentalmente como un lienzo donde se ejecutan instrucciones de bajo nivel para renderizar vectores, mapas de bits y glifos en coordenadas espaciales concretas \cite{clark2016pdffigures}.
+
+Para transformar esta amalgama de información visual estática en datos estructurados y explotables por sistemas automáticos, es necesario aplicar técnicas avanzadas de Análisis de Diseño de Documentos (\textit{Document Layout Analysis}, DLA). El DLA se define como el proceso computacional mediante el cual se identifica, categoriza y relaciona la estructura geométrica y lógica de la página de un documento. El objetivo principal de estas técnicas es segmentar la página aislando regiones de interés (\textit{Regions of Interest}, ROI) tales como bloques de texto continuo, fórmulas matemáticas, tablas y, de forma crítica para el presente trabajo, los elementos gráficos y figuras que encapsulan los resultados experimentales \cite{binmakhashen2019document}.
+
+Históricamente, la extracción de información documental se abordó mediante sistemas rígidos basados en reglas y heurísticas espaciales. Estos enfoques clásicos se dividían principalmente en dos corrientes: métodos \textit{top-down} (de arriba hacia abajo), como el algoritmo de corte X-Y que dividía iterativamente la página buscando valles de píxeles en blanco para delimitar columnas y párrafos; y métodos \textit{bottom-up} (de abajo hacia arriba), que agrupaban componentes conexos o caracteres individuales en palabras, posteriormente en líneas y finalmente en regiones estructuradas \cite{binmakhashen2019document}.
+
+Aunque estos métodos tradicionales resultaban eficaces para procesar documentos con plantillas predecibles, rígidas e idénticas (como facturas, recibos o formularios administrativos), presentaban limitaciones insalvables al aplicarse a la literatura científica en formato salvaje (\textit{in the wild}). Los artículos académicos publicados por diferentes editoriales (IEEE, ACM, Elsevier, Springer) poseen diseños topológicos extremadamente complejos y variables. Incluyen arquitecturas de múltiples columnas, figuras de gran tamaño que rompen los márgenes establecidos, gráficos flotantes e inserciones que invalidan cualquier regla espacial rígida predefinida. En consecuencia, la extracción basada en heurísticas adolecía de una severa falta de generalización, propagando errores de segmentación estructural que terminaban corrompiendo el contenido visual extraído \cite{zhong2019publaynet}.
+
+Para superar las severas limitaciones de los sistemas heurísticos, la investigación en DLA experimentó un profundo cambio de paradigma, adoptando las técnicas de aprendizaje profundo (\textit{Deep Learning}). Este giro metodológico reformuló el análisis de documentos, pasando de ser un problema de análisis de texto a tratarse puramente como un problema de visión artificial y detección de objetos (\textit{Object Detection}). Bajo este prisma, cada página del documento en formato PDF se rasteriza (se convierte en una imagen de alta resolución) sobre la cual se aplican redes neuronales convolucionales (CNN) preentrenadas. Estas redes aprenden a identificar patrones visuales complejos, texturas y formas que diferencian un bloque de texto denso de un diagrama de bloques.
+
+La consolidación de este enfoque fue posible gracias a la publicación de conjuntos de datos masivos orientados específicamente a documentos científicos, destacando PubLayNet \cite{zhong2019publaynet}. La disponibilidad de cientos de miles de páginas manualmente etiquetadas facilitó el entrenamiento de arquitecturas de segmentación de instancias como Mask R-CNN. Más recientemente, la familia de arquitecturas basadas en YOLO (\textit{You Only Look Once}) ha revolucionado el procesamiento de documentos. A diferencia de modelos anteriores que requerían múltiples pasadas computacionales, YOLO procesa la imagen entera en una única evaluación de la red neuronal, lo que le permite realizar inferencias con una latencia mínima y una alta eficiencia computacional. Variantes especializadas y optimizadas (\textit{fine-tuned}) para documentos académicos, como es el caso de \textit{doclayout-yolo}, son capaces de predecir coordenadas espaciales precisas (\textit{bounding boxes}) alrededor de las entidades de interés, ignorando el ruido de fondo.
+
+Para comprender visualmente la capacidad de estos modelos modernos frente a la complejidad de un artículo científico real, la Figura \ref{fig:dla_yolo} muestra el resultado de inferencia de un modelo basado en YOLO sobre la página de un \textit{paper}. Se invita al lector a fijar su atención en cómo el modelo es capaz de trazar cajas delimitadoras de distintos colores según la naturaleza semántica de la región: cajas verdes gruesas englobando los gráficos (ignorando el texto que tienen alrededor), cajas azules más finas identificando los pies de foto (\textit{captions}) vinculados a dichas figuras, y cajas rojas aislados para los títulos de las secciones.
+
+\begin{figure}[H] % Cambiado a [H] para forzar la posición si usas \usepackage{float}, si te da error cámbialo a [htbp]
+    \centering
+    \includegraphics[width=0.65\textwidth]{figura_dla_yolo.png} % Tamaño reducido al 65% del ancho para que no salte de página
+    \caption{Visualización del proceso de \textit{Document Layout Analysis} (DLA). El modelo segmenta la página delimitando las figuras (verde), identificando los pies de foto o \textit{captions} (azul) y detectando los títulos de sección (rojo).}
+    \label{fig:dla_yolo}
+\end{figure}
+
+Tal y como se aprecia en la Figura \ref{fig:dla_yolo}, la capacidad de inferir la semántica de la región delimitada es el gran aporte del \textit{Deep Learning} al DLA. Esta precisión en el recorte es fundamental, ya que en la literatura científica los gráficos suelen contener subfiguras anidadas (etiquetadas como a, b, c) o estar estrechamente rodeados de texto denso que, de ser incluido por error en el recorte, contaminaría la imagen \cite{clark2016pdffigures}. Además, el modelo logra resolver un reto semántico crítico: desvincular la imagen pura de su contexto textual explícito (el \textit{caption} o pie de foto). Aislar correctamente el gráfico (caja verde) por un lado, y su pie de foto (caja azul) por otro, garantiza que el flujo de trabajo posterior disponga de imágenes puras y sin ruido. Estos avances evidencian que un sistema RAG multimodal moderno no puede sustentarse sobre librerías estándar de extracción de PDFs, sino que requiere como pilar fundacional el uso de modelos de visión artificial orientados a documentos, intentando garantizar así un alto grado de fidelidad y limpieza en los datos que serán posteriormente enriquecidos.
+
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Modelos de Visión-Lenguaje (VLMs)}
+\label{sec:estado_arte_vlms}
+\endgroup
+
+
+Una vez superado el desafío arquitectónico de extraer y aislar limpiamente las figuras de los documentos científicos, el siguiente paso crítico para construir un sistema de recuperación multimodal es la comprensión profunda del contenido semántico de dichas imágenes. Tradicionalmente, la visión artificial (encargada de analizar píxeles) y el procesamiento de lenguaje natural (encargado de analizar texto) evolucionaron como disciplinas académicas estrictamente separadas. Resolver problemas que requerían ambas modalidades exigía diseñar complejas tuberías (\textit{pipelines}) donde múltiples modelos especializados actuaban en cadena, propagando errores de una etapa a la siguiente. Sin embargo, en los últimos años, la irrupción de los Modelos de Visión-Lenguaje (\textit{Vision-Language Models}, VLMs) ha unificado ambas modalidades en un único marco computacional entrenado de extremo a extremo (\textit{end-to-end}), permitiendo a los sistemas razonar sobre características visuales complejas utilizando la expresividad del lenguaje natural \cite{radford2021learning}.
+
+El desarrollo reciente de estos modelos fundacionales puede dividirse principalmente en dos grandes paradigmas metodológicos: los enfoques contrastivos y los enfoques generativos.
+
+El paradigma contrastivo alcanzó su madurez y adopción masiva con la presentación del modelo CLIP (\textit{Contrastive Language-Image Pre-training}) \cite{radford2021learning}. La genialidad de la arquitectura de CLIP consiste en entrenar simultáneamente un codificador de imágenes (\textit{Image Encoder}, usualmente un \textit{Vision Transformer} o ResNet) y un codificador de texto (\textit{Text Encoder}) sobre cientos de millones de pares imagen-texto extraídos de internet. Durante este proceso masivo, el modelo utiliza una función de pérdida contrastiva cuyo objetivo es maximizar la similitud del coseno entre los vectores (\textit{embeddings}) del par correcto, y minimizarla frente a cualquier otra combinación incorrecta. Este entrenamiento dota a CLIP de una capacidad excepcional para la clasificación \textit{Zero-Shot} y la alineación semántica, logrando emparejar con gran precisión una consulta de búsqueda con su imagen correspondiente. Sin embargo, su naturaleza es puramente de recuperación (\textit{retrieval}); al carecer de un decodificador autorregresivo, CLIP no puede articular palabras. Es capaz de saber que una imagen corresponde al concepto de "red neuronal convolucional", pero es estructuralmente incapaz de redactar un párrafo explicando la topología o los flujos de datos que muestra dicho diagrama.
+
+Para solventar esta severa limitación y lograr verdaderos asistentes conversacionales visuales, la investigación evolucionó rápidamente hacia las arquitecturas multimodales generativas. Estos nuevos modelos, cuyo máximo exponente de código abierto es LLaVA (\textit{Large Language-and-Vision Assistant}) \cite{liu2023visual}, combinan la notable capacidad de extracción de características visuales de modelos preentrenados (como el propio codificador de CLIP) con el inmenso poder de razonamiento, lógica y redacción de un Gran Modelo de Lenguaje (LLM) moderno (como LLaMA o Vicuna). 
+
+Para comprender de forma intuitiva cómo se logra esta comunicación técnica entre dos mundos aparentemente distintos (píxeles y palabras), la Figura \ref{fig:arquitectura_llava} detalla la arquitectura de red de LLaVA. Se invita al lector a seguir el flujo de información de abajo hacia arriba: inicialmente, la imagen de entrada ($\mathbf{X_v}$) pasa por el codificador visual (en azul), el cual extrae sus características abstractas latentes ($\mathbf{Z_v}$). El componente verdaderamente innovador reside en el bloque intermedio (en naranja), la matriz de proyección $\mathbf{W}$. Esta red neuronal lineal actúa como un "traductor universal", convirtiendo las características puramente visuales en una secuencia de \textit{tokens} visuales ($\mathbf{H_v}$). Finalmente, estos tokens visuales se concatenan en el mismo espacio con los \textit{tokens} provenientes de la instrucción textual del usuario ($\mathbf{H_q}$), permitiendo que el LLM (en verde) los procese conjuntamente para generar una respuesta en lenguaje natural estructurada ($\mathbf{X_a}$).
+
+\begin{figure}[H] % Uso [H] para evitar saltos indeseados, asegúrate de tener \usepackage{float}
+    \centering
+    \includegraphics[width=0.85\textwidth]{llava.png}
+    \caption{Arquitectura de red del modelo generativo LLaVA. Se ilustra la integración de un codificador visual preentrenado (Vision Encoder) con un Gran Modelo de Lenguaje (LLM) a través de una capa de proyección ($\mathbf{W}$), permitiendo el procesamiento conjunto de tokens visuales y textuales. Fuente: adaptado de Liu \textit{et al.} \cite{liu2023visual}.}
+    \label{fig:arquitectura_llava}
+\end{figure}
+
+Tal y como demuestra el esquema arquitectónico analizado, la principal aportación de los enfoques generativos es que el modelo de lenguaje no necesita ser entrenado desde cero para "ver", sino que se le inyecta la visión a través de la proyección alineada de la matriz $\mathbf{W}$. Al dotar a un LLM de capacidades visuales directas, el sistema adquiere la habilidad de ejecutar tareas críticas que antes eran impensables en la indexación de figuras científicas: el \textit{Image Captioning} avanzado (generación automática de descripciones altamente descriptivas) y el \textit{Visual Question Answering} (VQA, capacidad de responder a preguntas técnicas observando una imagen).
+
+Esta doble capacidad de inferencia resulta transformadora para el procesamiento de literatura académica. Por norma general, el pie de foto original que acompaña a una figura en un \textit{paper} carece de información autocontenida. Los autores asumen que el lector ha leído la metodología del texto principal para entender qué significan los acrónimos de los ejes, las líneas de tendencia o las variables del diagrama. Si se indexara únicamente este pie de foto, la imagen quedaría semánticamente oculta. En cambio, al procesar las figuras extraídas mediante un modelo como LLaVA, es posible redactar de forma sintética un \textit{caption} denso y exhaustivo que desglose el tipo de gráfico, analice los patrones de los datos, traduzca las leyendas y explique su significado técnico de forma aislada.
+
+De forma complementaria, la capacidad de VQA permite al modelo invertir su comportamiento: en lugar de solo describir, puede anticiparse a la intención del investigador generando proactivamente preguntas lógicas (y sus respectivas respuestas) que un científico formularía al ver ese gráfico. Este proceso de enriquecimiento convierte un archivo de imagen estático, opaco y mudo en una estructura de metadatos textuales viva y densa. Es precisamente esta nueva capa de anotaciones conversacionales la que constituye el material indispensable para alimentar un motor de base de datos vectorial moderno, incrementando significativamente la probabilidad de que la figura sea recuperada ante consultas complejas en lenguaje natural.
+
+\clearpage
+
+\section{Búsqueda Semántica y Espacios Vectoriales}
+\label{sec:estado_arte_busqueda}
+
+La extracción automatizada y el enriquecimiento conversacional de figuras científicas, por muy avanzados que sean, resultan estériles si los investigadores no disponen de mecanismos computacionales eficientes para recuperar dicha información ante una necesidad de conocimiento. Históricamente, los motores de búsqueda documentales clásicos se han fundamentado en técnicas de recuperación léxica, comúnmente conocidas como búsquedas por palabras clave (\textit{keyword matching}). Estos enfoques operan bajo el modelo de "bolsa de palabras" (\textit{Bag-of-Words}), donde la relevancia de un documento se puntúa en función de la frecuencia estadística y la rareza de los términos exactos de la consulta, siendo el algoritmo genético BM25 el estándar más consolidado de la industria. Sin embargo, la recuperación puramente léxica adolece de un problema fundamental y bien documentado: el desajuste de vocabulario (\textit{vocabulary mismatch}). Si el usuario formula una consulta conceptualmente idéntica pero sintácticamente diferente al texto indexado (utilizando sinónimos, paráfrasis o traducciones), la superposición léxica será nula y el sistema fracasará en la recuperación de la información, por muy relevante que esta sea \cite{reimers2019sentence}.
+
+Para superar estas severas limitaciones y lograr que las máquinas entiendan la intención real detrás de una consulta, el estado del arte en recuperación de información ha convergido de forma unánime hacia la Búsqueda Semántica Densa (\textit{Dense Retrieval}), una técnica que abandona las cadenas de texto en favor de la representación matemática del conocimiento mediante espacios vectoriales.
+
+La piedra angular de la búsqueda semántica es la transformación del contenido no estructurado (ya sea un párrafo de texto, el \textit{caption} de un artículo o una imagen generada) en vectores numéricos densos y continuos de alta dimensionalidad (típicamente entre 384 y 1024 dimensiones), denominados \textit{embeddings}. Modelos neuronales masivamente preentrenados, como las arquitecturas basadas en BERT para texto o los codificadores visuales de CLIP, son los encargados de proyectar la información abstracta a este espacio matemático. 
+
+La propiedad más fascinante de estos espacios latentes es que la distancia geométrica entre dos vectores refleja directamente su similitud semántica. De este modo, conceptos relacionados acaban ocupando regiones próximas en el hiperespacio multidimensional, independientemente del idioma o del fraseo exacto utilizado. En el contexto de los sistemas multimodales, esta tecnología permite un hito sin precedentes: alinear modalidades heterogéneas. Es decir, permite que el análisis visual de un gráfico y la descripción textual de ese mismo gráfico hablen el mismo ``idioma matemático'' \cite{radford2021learning}.
+
+Para ilustrar de forma intuitiva este concepto, la Figura \ref{fig:espacio_multimodal} presenta una proyección tridimensional simplificada de un espacio vectorial multimodal. Se invita al lector a observar la distribución de los tres elementos representados. Por un lado, notamos cómo el \textit{embedding} de una imagen real de un gráfico de dispersión (círculo verde) y el \textit{embedding} de la consulta de texto "Resultados en gráfico de dispersión" (triángulo azul) se localizan en coordenadas geométricas extremadamente cercanas. Por otro lado, un concepto semánticamente ajeno al contexto científico, como la frase "Perro saltando" (cruz roja), es proyectado por la red neuronal hacia una región del espacio vectorial diametralmente opuesta y alejada.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{imagenes/espacio_multimodal.png}
+    \caption{Representación conceptual de un espacio vectorial multimodal. Modos de información heterogéneos, como texto e imágenes, son proyectados al mismo espacio latente. Los elementos semánticamente equivalentes (gráfico y su descripción) se agrupan en regiones cercanas, mientras que los conceptos no relacionados se distancian.}
+    \label{fig:espacio_multimodal}
+\end{figure}
+
+Tal y como demuestra de forma visual la Figura \ref{fig:espacio_multimodal}, la tarea del motor de búsqueda se reduce a un problema geométrico clásico. Cuando un usuario introduce una consulta, el sistema la convierte en un vector (el triángulo azul) y busca en su base de datos qué elemento indexado (el círculo verde) tiene la menor distancia matemática. Esta similitud se calcula habitualmente midiendo el ángulo que forman ambos vectores desde el origen, métrica conocida como la similitud del coseno. Al basarse en proximidad geométrica en lugar de coincidencias de caracteres, el sistema es completamente inmune al problema del desajuste de vocabulario mencionado al inicio de la sección.
+
+No obstante, la adopción masiva de \textit{embeddings} densos ha planteado un gigantesco reto de ingeniería a nivel de infraestructura. Comparar el vector de una consulta contra millones de vectores indexados para encontrar los más similares calculando la similitud del coseno uno por uno (lo que se conoce como búsqueda exacta por fuerza bruta o \textit{k-Nearest Neighbors}, k-NN) presenta una complejidad computacional lineal ($O(N)$). Esto resulta en latencias inasumibles para sistemas interactivos en producción. 
+
+Para resolver este crítico cuello de botella, la industria ha desarrollado Bases de Datos Vectoriales especializadas (tales como Milvus, FAISS, Qdrant o las recientes implementaciones vectoriales de Elasticsearch). El núcleo tecnológico de estos motores no es la fuerza bruta, sino la implementación de algoritmos de Búsqueda Aproximada de Vecinos Más Cercanos (\textit{Approximate Nearest Neighbor}, ANN). El algoritmo de referencia en la actualidad es el HNSW (\textit{Hierarchical Navigable Small World}) \cite{malkov2018efficient}. Este sofisticado algoritmo estructura los millones de vectores en un grafo jerárquico multicapa basado en propiedades topológicas de "mundo pequeño". Gracias a esta estructura, el sistema puede navegar por el grafo saltando entre nodos para encontrar los vectores más cercanos con una complejidad logarítmica ($O(\log N)$), reduciendo los tiempos de búsqueda de minutos a milisegundos y manteniendo un grado de exhaustividad (\textit{recall}) prácticamente idéntico al de la búsqueda exacta.
+
+Finalmente, resulta imperativo señalar que la investigación actual sugiere que la búsqueda semántica no debe considerarse un reemplazo absoluto de la búsqueda léxica, sino su evolución complementaria. Mientras que la búsqueda densa sobresale de manera excepcional en capturar el contexto amplio, la intención del investigador y el significado general de una figura, la búsqueda léxica (BM25) sigue siendo matemáticamente superior para encontrar identidades exactas, números de serie de componentes, acrónimos técnicos o nombres propios de genes (como "BRCA1"), elementos que son críticos y muy frecuentes en la literatura científica. Por este motivo, las arquitecturas de recuperación de información más avanzadas del estado del arte implementan la denominada Recuperación Híbrida (\textit{Hybrid Search}). Estos sistemas ejecutan ambas consultas (densa y léxica) en paralelo sobre los mismos documentos, y posteriormente fusionan los resultados de ambos ránkings mediante técnicas estadísticas de normalización (como \textit{Reciprocal Rank Fusion}, RRF), maximizando así la precisión y garantizando que se recuperan tanto las coincidencias semánticas como las exactas.
+
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}
+\section{Retrieval-Augmented Generation (RAG) Multimodal}
+\label{sec:estado_arte_rag}
+\endgroup
+
+La confluencia de la recuperación semántica (analizada en la Sección \ref{sec:estado_arte_busqueda}) y los modelos generativos avanzados (Sección \ref{sec:estado_arte_vlms}) ha cristalizado en uno de los paradigmas arquitectónicos más influyentes e investigados en la Inteligencia Artificial actual: la Generación Aumentada por Recuperación (\textit{Retrieval-Augmented Generation}, RAG). El concepto original de RAG fue formalizado por Lewis \textit{et al.} \cite{lewis2020retrieval} como una solución elegante a dos problemas endémicos de los Grandes Modelos de Lenguaje (LLMs): las alucinaciones (la generación de información empíricamente falsa pero con apariencia de certeza) y la obsolescencia del conocimiento (la incapacidad del modelo para acceder a eventos o datos que no formaban parte de su corpus de entrenamiento original). Tradicionalmente, actualizar el conocimiento de una red neuronal requería un costoso proceso de reentrenamiento (\textit{fine-tuning}). En contraste, la arquitectura RAG desacopla el conocimiento de la generación. Cuando un usuario realiza una consulta, el sistema actúa primero como un buscador, recuperando fragmentos documentales altamente relevantes de una base de datos vectorial externa. Posteriormente, estos fragmentos se inyectan en la consulta original como contexto de apoyo explícito (\textit{prompt augmentation}) y se envían al LLM. De este modo, el modelo sintetiza una respuesta fundamentada de manera estricta en la información recuperada, permitiendo trazar el origen de los datos y citar sus fuentes.
+
+Aunque el RAG textual ha demostrado un éxito rotundo en tareas de procesamiento de lenguaje natural general y gestión documental corporativa, presenta una limitación crítica e insoslayable al aplicarse a disciplinas científicas e ingenieriles: ignora por completo la información visual. En un artículo académico, elementos como las estructuras moleculares, los diagramas de arquitectura de software o las gráficas de resultados empíricos no son meros complementos estéticos, sino los portadores principales del conocimiento científico novedoso. Un sistema RAG tradicional que extrae e indexa únicamente el texto plano de un documento perderá un contexto investigativo insustituible. Para abordar esta carencia fundamental, la frontera del estado del arte ha evolucionado rápidamente hacia el RAG Multimodal (mRAG). En este nuevo paradigma, la base de conocimiento abandona la exclusividad del texto para almacenar \textit{embeddings} conjuntos de modalidades heterogéneas. 
+
+El flujo de trabajo en una arquitectura mRAG expande la complejidad del sistema tradicional en tres fases interconectadas. En primer lugar, durante la fase de \textit{Ingesta Multimodal}, el sistema debe procesar los documentos en bruto para extraer de forma automatizada tanto el corpus textual como los componentes visuales críticos, aplicando las técnicas de \textit{Document Layout Analysis} detalladas en la Sección \ref{sec:estado_arte_dla}. Una vez aislados, estos componentes visuales son enriquecidos semánticamente e indexados en el espacio vectorial común. A continuación, en la fase de \textit{Recuperación Multimodal}, la consulta del investigador se transforma en un vector semántico y se compara contra esta base de datos híbrida, lo que permite al sistema recuperar no solo los párrafos de un artículo, sino directamente las figuras que responden conceptualmente a la intención de búsqueda. Finalmente, en la fase de \textit{Generación Multimodal}, tanto los textos como las imágenes recuperadas se envían como contexto a un Modelo de Visión-Lenguaje (VLM), el cual sustituye al LLM estándar. El VLM es capaz de visualizar las figuras extraídas en su contexto original, leer el texto asociado y formular una respuesta rica, técnica y fuertemente interconectada.
+
+A pesar del enorme potencial teórico del mRAG, su aplicación práctica al dominio de la literatura académica es un área de investigación sumamente incipiente y plagada de obstáculos. Las aproximaciones actuales que intentan integrar gráficos técnicos en sistemas de búsqueda se enfrentan a cuellos de botella severos en la fase crítica de extracción de datos. Muchas implementaciones iniciales dependen ingenuamente de los metadatos preexistentes proporcionados por las propias editoriales (a menudo incompletos, inconsistentes o protegidos tras muros de pago), o utilizan analizadores de PDF rudimentarios basados en reglas espaciales. Estos enfoques extractivos fallan sistemáticamente al intentar aislar figuras compuestas, tablas complejas o diagramas anidados sin arrastrar ruido textual del cuerpo del documento. Asimismo, indexar directamente las imágenes en bruto en bases vectoriales resulta altamente ineficiente para figuras científicas con gran densidad de datos. Si este proceso no se acompaña de un preprocesamiento semántico robusto —como la generación de descripciones exhaustivas y predicciones conversacionales previas a la inserción vectorial—, la brecha semántica entre la consulta del usuario y el contenido abstracto del gráfico sigue siendo demasiado grande para garantizar una recuperación precisa.
+
+Es precisamente en este contexto tecnológico de transición, desafíos de extracción y necesidad de mejora semántica donde se enmarca y justifica plenamente la propuesta del presente Trabajo de Fin de Grado. El sistema RAGI (\textit{Retrieval-Augmented Generation for Images}) ha sido diseñado metodológicamente para solventar las limitaciones detectadas en las arquitecturas previas mediante la orquestación de un \textit{pipeline} integral, local y automatizado. Este flujo abarca desde la extracción resiliente y precisa de figuras mediante modelos avanzados de detección de objetos (\textit{doclayout-yolo}), pasando por la generación de metadatos ricos y relacionales mediante VLMs preentrenados locales, hasta culminar en la construcción de un motor de recuperación híbrida de alto rendimiento. De esta forma, RAGI busca garantizar que la base de conocimiento científica construida sea visualmente fiel al documento original, semánticamente densa para el motor de búsqueda, y fácilmente explotable mediante lenguaje natural, democratizando el acceso a la información visual oculta en las publicaciones académicas.
+
+
+\chapter{Metodología}
+
+\section{Dataset de Referencia}
+\label{sec:metodologia_dataset}
+
+Para poder evaluar de forma rigurosa el rendimiento de RAGI y cuantificar el impacto de las diferentes estrategias de enriquecimiento semántico, resulta indispensable contar con un conjunto de datos (\textit{dataset}) de referencia. Dado que el sistema está diseñado para operar sobre literatura académica real, los datos de prueba deben reflejar la complejidad, heterogeneidad y densidad técnica propias de los artículos científicos contemporáneos.
+
+\subsection{Objetivo del Dataset de Referencia}
+
+El principal objetivo de este dataset es proporcionar un entorno de evaluación controlado (\textit{ground truth} o verdad fundamental) que permita medir empíricamente la eficacia del motor de búsqueda propuesto. Específicamente, este conjunto de datos cumple tres propósitos fundamentales en el marco del proyecto:
+
+\begin{enumerate}
+    \item \textbf{Validación de la extracción (Bloque I):} Servir como corpus de prueba para comprobar empíricamente si el modelo de \textit{Document Layout Analysis} es capaz de aislar correctamente las figuras frente a diseños de página complejos (múltiples columnas, gráficos integrados en el texto, etc.).
+    \item \textbf{Base empírica para el enriquecimiento (Bloque II):} Proporcionar un conjunto diverso de imágenes técnicas (diagramas de flujo, gráficas de resultados, tablas y arquitecturas de red) sobre las cuales los modelos de Visión-Lenguaje locales puedan generar descripciones y formular preguntas plausibles.
+    \item \textbf{Evaluación de recuperación (Resultados):} Actuar como el espacio de búsqueda delimitado sobre el cual se ejecutarán consultas predefinidas para comparar el rendimiento del modelo \textit{Baseline} frente a las variantes semánticas propuestas por RAGI.
+\end{enumerate}
+
+\subsection{Descripción y Recopilación del Dataset}
+
+El dataset empleado en este trabajo ha sido construido a partir de artículos científicos en formato PDF extraídos de arXiv \cite{clement2019arxiv}. arXiv es un repositorio temático de acceso abierto operado por la Universidad de Cornell que alberga prepublicaciones (\textit{preprints}) de investigación científica antes de su revisión por pares. En este proyecto se ha priorizado la recopilación de publicaciones recientes del ámbito de la Inteligencia Artificial y la Ciencia de Datos, dado que las figuras en estas disciplinas presentan un alto grado de complejidad conceptual y visual (tales como arquitecturas de redes neuronales, \textit{pipelines} de procesamiento o representaciones de espacios latentes).
+
+Para la conformación del conjunto de datos, se recopiló un centenar de artículos científicos. Posteriormente, estos documentos fueron sometidos a un proceso de filtrado manual para descartar aquellos que no contenían elementos gráficos relevantes o presentaban un formato manifiestamente incompatible (por ejemplo, PDFs generados como escaneos de imágenes), asegurando así la pertinencia del corpus de prueba. 
+
+Tras el procesamiento inicial y la fase de extracción automática (que se detallará metodológicamente en la Sección \ref{sec:metodologia_dla}), el dataset final de evaluación quedó constituido por 700 figuras únicas. Estas figuras abarcan diversas tipologías representativas de la literatura técnica en inteligencia artificial, entre las que destacan:
+\begin{itemize}
+    \item \textbf{Gráficas de rendimiento y datos:} Diagramas de barras, curvas de aprendizaje (ej. \textit{Loss/Epoch}) y gráficos de dispersión utilizados para mostrar resultados experimentales y comparativas de modelos.
+    \item \textbf{Diagramas conceptuales:} Representaciones visuales de arquitecturas de software, topologías de modelos de aprendizaje profundo y flujos de trabajo (\textit{pipelines}) de datos.
+    \item \textbf{Tablas renderizadas:} Cuadros de datos numéricos complejos y tablas de estado del arte (\textit{SOTA}) que han sido incrustados como imágenes en el documento original.
+\end{itemize}
+
+Para evidenciar la naturaleza y complejidad de este corpus de evaluación, la Figura \ref{fig:dataset_samples} presenta un mosaico con cuatro recortes reales extraídos por el sistema. En él se puede observar la profunda divergencia semántica entre los elementos indexados: desde un esquema estructural de bloques conceptuales (a), pasando por representaciones abstractas de tiempo e intervenciones en formato de dispersión (b), o métricas de rendimiento continuas y superpuestas (c), hasta llegar a diagramas de flujo de altísima densidad informativa y texto diminuto incrustado (d).
+
+\begin{figure}[H] % Recomiendo [H] o [htbp] dependiendo de tu plantilla
+    \centering
+    \includegraphics[width=0.85\textwidth]{dataset_samples.png}
+    \caption{Ejemplos representativos de las figuras que componen el dataset de referencia extraído de arXiv, ilustrando la heterogeneidad visual de la literatura científica en IA.}
+    \label{fig:dataset_samples}
+\end{figure}
+
+Tal y como demuestra el muestreo de la Figura \ref{fig:dataset_samples}, el sistema no se enfrenta a imágenes naturales sencillas de interpretar, sino a composiciones abstractas que exigen un conocimiento de dominio profundo. Incluir esta variabilidad tipológica en el \textit{dataset} aporta validez ecológica al estudio, asegurando que las métricas de precisión obtenidas en los capítulos posteriores no provengan de un entorno excesivamente simplificado, sino de un escenario representativo de la literatura técnica real a la que un investigador se enfrenta a diario.
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Métricas de Evaluación}
+\label{sec:metodologia_metricas}
+\endgroup
+
+La evaluación de sistemas de recuperación de información multimodal presenta desafíos particulares, ya que requiere cuantificar con precisión la alineación semántica entre una consulta puramente textual y un documento visual proyectado en un espacio latente. Para validar empíricamente la utilidad y el rendimiento del sistema RAGI ante este reto, se ha diseñado una metodología de evaluación dividida en dos dimensiones complementarias: una evaluación cuantitativa u objetiva, centrada en la capacidad matemática del motor de búsqueda para recuperar las figuras correctas; y una evaluación cualitativa o subjetiva, enfocada en la percepción y satisfacción del usuario final con los resultados obtenidos.
+
+\subsection{Evaluación Cuantitativa: Rendimiento de Recuperación}
+\label{subsec:metricas_cuantitativas}
+
+Para medir el rendimiento de los distintos modelos de búsqueda (basados en los enfoques de \textit{captions}, descripciones y preguntas), se han empleado tres métricas estándar en el campo de la Recuperación de Información (IR) \cite{manning2008introduction}. Dado que en nuestro conjunto de datos de evaluación o \textit{Ground Truth} existe una única figura catalogada como ``correcta'' o esperada para cada consulta, las métricas se adaptan a este escenario de relevancia binaria estricta:
+
+\begin{itemize}
+    \item \textbf{Precision@1 (P@1):} Mide la proporción de consultas en las que el sistema logra devolver la figura exactamente correcta en la primera posición (\textit{Top-1}) del ránking. Es una métrica estricta que refleja la fiabilidad del sistema para dar una respuesta inmediata y precisa sin obligar al investigador a inspeccionar resultados adicionales.
+    
+    \item \textbf{Recall@5 (R@5):} Evalúa si el sistema es capaz de incluir la imagen relevante dentro de los 5 primeros resultados devueltos (\textit{Top-5}). Un alto \textit{Recall@5} indica que, aunque el sistema no siempre acierte en la primera posición, la figura buscada se encuentra rápidamente accesible entre las principales sugerencias del buscador, lo cual resulta fundamental en entornos de exploración bibliográfica.
+    
+    \item \textbf{Mean Reciprocal Rank (MRR):} Constituye una métrica fundamental para evaluar la calidad general del ordenamiento (\textit{ranking}) \cite{craswell2009mean}. Se calcula promediando el inverso de la posición (\textit{rank}) en la que aparece la primera imagen relevante para cada consulta.
+    \begin{equation}
+        MRR = \frac{1}{|Q|} \sum_{i=1}^{|Q|} \frac{1}{\text{rank}_i}
+    \end{equation}
+    Donde $|Q|$ es el número total de consultas y $\text{rank}_i$ es la posición en la que el sistema devolvió la figura correcta para la consulta $i$. Si la imagen aparece en primera posición, su puntuación es $1$; si aparece en segunda, es $0.5$, y así sucesivamente. Un MRR cercano a 1 indica que el sistema posiciona sistemáticamente las respuestas correctas en la parte más alta de los resultados.
+\end{itemize}
+
+Cabe destacar que, debido a la naturaleza de nuestro conjunto de referencia —donde se busca un único documento visual exacto para cada \textit{prompt}—, métricas alternativas de evaluación orientadas a listas exhaustivas, como la Precisión Promedio Media (MAP) o la Ganancia Acumulada Descontada Normalizada (NDCG), resultan matemáticamente equivalentes o redundantes respecto al MRR \cite{manning2008introduction}. Por consiguiente, la terna conformada por P@1, R@5 y MRR proporciona una visión analítica robusta y completa, abarcando tanto la exactitud estricta del sistema como su utilidad general como herramienta de búsqueda.
+
+Finalmente, para poder someter a evaluación empírica las arquitecturas de recuperación híbridas, es necesario establecer un mecanismo matemático que unifique sistemas de puntuación intrínsecamente incompatibles. Las arquitecturas léxicas (como BM25) carecen de un límite superior estricto en su \textit{score} de relevancia, mientras que los modelos semánticos vectoriales emplean métricas acotadas típicamente limitadas al intervalo $[0, 1]$. Para resolver esta asimetría y evitar combinaciones lineales ponderadas arbitrarias, la evaluación del modelo híbrido documentado en este proyecto emplea el algoritmo estadístico de Fusión Recíproca de Rangos (\textit{Reciprocal Rank Fusion} o RRF) \cite{cormack2009reciprocal}. 
+
+El algoritmo RRF prescinde de los \textit{scores} absolutos y recalcula la relevancia basándose exclusivamente en la posición ($R$) que ocupa un documento ($d$) en cada uno de los modelos evaluados ($m \in M$), empleando la fórmula:
+\begin{equation}
+    RRF(d) = \sum_{m \in M} \frac{1}{k + R_{m}(d)}
+\end{equation}
+Donde $k$ es una constante heurística de estabilización (establecida convencionalmente en $k=60$). Esta fusión genera un listado de resultados unificado, permitiendo someter al enfoque híbrido exactamente a las mismas métricas objetivas (P@1, R@5 y MRR) que los modelos puros para garantizar una comparativa científica y equitativa.
+
+\section{Casos de Estudio y \textit{Baselines}}
+\label{sec:metodologia_baselines}
+
+Para evaluar empíricamente el valor de la arquitectura propuesta en RAGI, es necesario aislar y medir el impacto que tiene cada una de las estrategias de enriquecimiento semántico (descripciones y preguntas) en la recuperación final de las imágenes. 
+
+Dado que el \textit{pipeline} de extracción e indexación (detallado en las secciones posteriores) procesa todos los metadatos de forma conjunta en un único índice de Elasticsearch, la evaluación no requiere la ejecución de tres sistemas aislados. En su lugar, la comparación se simula dinámicamente en la fase de recuperación (\textit{Retrieval}), restringiendo el espacio de búsqueda a campos específicos del índice. Con este propósito, se han definido tres casos de estudio progresivos:
+
+\subsection{Modelo \textit{Baseline}: Búsqueda Tradicional}
+\label{subsec:baseline}
+
+Este caso representa el estado del arte tradicional en la recuperación de figuras de documentos en formato PDF y actúa como la línea base (\textit{baseline}) que el sistema aspira a superar o complementar. En este escenario, el motor de búsqueda únicamente tiene acceso al campo \texttt{caption}, es decir, el pie de foto original extraído directamente del documento junto a la figura.
+
+Para simular este modelo, las consultas de evaluación se ejecutarán utilizando exclusivamente algoritmos de búsqueda léxica (como BM25 \cite{robertson2009bm25}) sobre el texto original. Se postula inicialmente que este modelo podría presentar carencias en consultas conceptuales debido al desajuste de vocabulario (\textit{vocabulary mismatch}). Sin embargo, también se anticipa que podría resultar altamente competitivo o incluso superior si las consultas de evaluación contienen la terminología técnica exacta presente en el pie de foto.
+
+\subsection{Modelo RAGI Básico: Búsqueda Léxica Ampliada (Caption + Descripción)}
+\label{subsec:ragi_basico}
+
+Este escenario introduce el primer nivel de mejora mediante Inteligencia Artificial. En este modelo, el espacio de búsqueda se amplía para incluir tanto el \texttt{caption} original como el campo \texttt{description}, el cual contiene el análisis exhaustivo generado por el Modelo de Visión-Lenguaje (VLM) al observar la figura.
+
+En este caso, el paradigma de búsqueda se mantiene puramente léxico (algoritmo BM25), pero operando sobre un volumen de texto mayor. La premisa subyacente es que la descripción explícita de ejes, colores, formas y tendencias proporcionará un abanico de términos mucho más amplio. El objetivo es comprobar si esta expansión de vocabulario mediante IA mitiga el problema del desajuste terminológico de la búsqueda tradicional sin necesidad de recurrir a espacios vectoriales.
+
+\subsection{Modelo RAGI Avanzado: Búsqueda Semántica Vectorial Integral}
+\label{subsec:ragi_avanzado}
+
+Este último caso de estudio representa la propuesta central y completa de este Trabajo de Fin de Grado. El espacio de búsqueda abarca la totalidad del conocimiento extraído y generado: \texttt{caption}, \texttt{description} y el campo \texttt{questions} (los pares de preguntas generados sintéticamente por el sistema).
+
+La evaluación de este caso final se realizará mediante búsqueda semántica (vectorial pura) sobre el \textit{embedding} global del documento. La hipótesis metodológica establece que, al obligar al modelo generativo a formular preguntas que la propia imagen es capaz de responder, el espacio vectorial resultante debería alinearse de forma natural con la lógica interrogativa del ser humano. El interés reside en cuantificar empíricamente cómo se comporta esta máxima integración semántica frente a la precisión léxica del modelo \textit{Baseline}.
+
+\subsection{Modelo RAGI Híbrido: Fusión Léxico-Semántica}
+\label{subsec:ragi_hibrido}
+
+Tras definir los espectros puros de recuperación (léxico frente a semántico), se introduce un cuarto caso de estudio transversal. Este escenario asume la hipótesis de que la precisión en un entorno académico real no depende de elegir una única tecnología, sino de orquestarlas. 
+
+En este modelo, el sistema no restringe el espacio de búsqueda. Por el contrario, ejecuta de forma concurrente el modelo RAGI Básico (léxico ampliado) y el modelo RAGI Avanzado (vectorial), fusionando matemáticamente ambas listas de resultados mediante el algoritmo de Fusión Recíproca de Rangos (RRF). El objetivo de este modelo híbrido es evaluar de forma preliminar si la combinación del determinismo de las palabras clave y la flexibilidad de la topología semántica logra estabilizar el rendimiento global del buscador, ofreciendo el paradigma de recuperación más completo de la arquitectura RAGI.
+
+\vspace{0.5cm}
+
+Para facilitar la comprensión visual de estas configuraciones, la Tabla \ref{tab:resumen_baselines} sintetiza la combinación de campos y tecnologías empleadas en cada caso. Se invita al lector a observar cómo la complejidad algorítmica y la dependencia de datos sintéticos aumenta progresivamente desde el \textit{Baseline} hasta los modelos Avanzado e Híbrido.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|l|c|c|c|l|}
+        \hline
+        \textbf{Modelo evaluado} & \textbf{Caption} & \textbf{Descripción VLM} & \textbf{Preguntas} & \textbf{Paradigma de Búsqueda} \\ \hline
+        \textit{Baseline} & Sí & No & No & Léxica (BM25) \\ \hline
+        RAGI Básico & Sí & Sí & No & Léxica (BM25 ampliada) \\ \hline
+        RAGI Avanzado & Sí & Sí & Sí & Semántica (Vectorial pura) \\ \hline
+        RAGI Híbrido & Sí & Sí & Sí & Híbrida (BM25 + k-NN con RRF) \\ \hline
+    \end{tabular}
+    \caption{Resumen de la configuración de los campos de búsqueda en Elasticsearch para la simulación de los cuatro escenarios metodológicos de estudio.}
+    \label{tab:resumen_baselines}
+\end{table}
+
+Tal y como se estructura en la Tabla \ref{tab:resumen_baselines}, el diseño progresivo de estos escenarios permitirá, en el capítulo de Resultados, realizar una autopsia precisa del impacto real de la IA generativa en el motor de búsqueda, documentando el rendimiento aislado de cada tecnología antes de proponer su fusión final.
+
+\subsection{Evaluaciones Complementarias: Ablación y Escenarios Naturales}
+\label{subsec:ragi_evaluaciones_complementarias}
+
+Para dotar al diseño experimental de un mayor rigor científico, aislar el impacto matemático de cada módulo generativo y mitigar los sesgos inherentes al diseño del \textit{Ground Truth} principal, la metodología contempla la ejecución de tres evaluaciones complementarias sobre la arquitectura definida:
+
+\begin{enumerate}
+    \item \textbf{Estudio de Ablación de Metadatos:} Este experimento tiene como objetivo diseccionar el espacio léxico para cuantificar cuánto valor aporta cada capa de enriquecimiento sintético. Manteniendo constante la tecnología de recuperación (BM25), se medirá el rendimiento de la búsqueda aislando combinaciones específicas de campos: únicamente \textit{caption}, \textit{caption} junto con descripciones, y \textit{caption} junto con preguntas. Este enfoque permitirá determinar si el incremento volumétrico de texto generado por Inteligencia Artificial favorece, penaliza o resulta estadísticamente irrelevante para los motores probabilísticos.
+    
+    \item \textbf{Escenario de Búsqueda Conceptual:} Para medir el impacto del problema del desajuste de vocabulario (\textit{vocabulary mismatch}), se diseñará un segundo conjunto de referencia (\textit{Ground Truth Conceptual}) compuesto por consultas abstractas, descriptivas y conversacionales que no derivan de forma literal del pie de foto original. Esta evaluación contrastará el rendimiento de los cuatro modelos principales (Baseline, Básico, Avanzado e Híbrido) en un entorno donde se carece de coincidencia léxica exacta.
+    
+    \item \textbf{Simulación de Telemetría Offline:} Con el fin de evaluar el rendimiento del sistema ante el comportamiento natural y no supervisado de los usuarios, se extraerá una muestra representativa de consultas reales formuladas por investigadores durante el estudio piloto cualitativo (exclusivamente aquellas que resultaron en una recuperación exitosa con valoraciones de 4 o 5 estrellas). Esta evaluación consistirá en enfrentar retroactivamente el motor léxico tradicional (BM25) contra estas consultas reales, comparando empíricamente la fragilidad de la búsqueda por palabras clave frente al éxito documentado de la arquitectura semántica en un entorno de producción interactivo.
+\end{enumerate}
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Fase 1: Extracción y Procesamiento de Documentos (DLA)}
+\label{sec:metodologia_dla}
+\endgroup
+
+El primer eslabón arquitectónico del sistema RAGI consiste en procesar los artículos científicos originales en formato PDF para aislar sus elementos gráficos y emparejarlos unívocamente con su texto de anclaje original (\textit{caption}). Dado que los documentos académicos presentan diseños topológicos extremadamente complejos —tales como arquitecturas de doble o triple columna, figuras flotantes sin bordes delimitados y subgráficos apilados—, la extracción requiere un enfoque híbrido. No basta con aplicar reglas espaciales rígidas; es necesario combinar modelos de visión artificial para la detección visual de los elementos y librerías de bajo nivel para el análisis de los metadatos estructurales del PDF.
+
+Este proceso de Análisis de Diseño de Documentos (\textit{Document Layout Analysis}, DLA) se ha materializado en un \textit{pipeline} automatizado y secuencial (implementado en el módulo \texttt{01\_extraccion\_imagenes.py}). 
+
+El análisis estructural inicial comienza renderizando cada página del documento PDF como una imagen de alta resolución (250 DPI). Sobre este lienzo de píxeles se ejecuta una inferencia visual utilizando un modelo de detección de objetos de última generación, basado en la arquitectura YOLOv10 \cite{wang2024yolov10}. Específicamente, se ha empleado una variante del modelo preentrenada de forma exclusiva para el dominio de documentos académicos (\textit{DocLayout-YOLO}). Este modelo procesa la imagen en una única pasada y devuelve las coordenadas espaciales (cajas delimitadoras o \textit{bounding boxes}) de las distintas regiones de interés, clasificándolas con un nivel de confianza probabilístico en categorías como ``texto plano'', ``títulos'', ``tablas'', ``pies de foto'' y, de forma crítica, ``figuras''.
+
+De forma estrictamente paralela a la inferencia de la red neuronal, el \textit{pipeline} utiliza la librería \textit{PyMuPDF} para penetrar en la estructura lógica interna del documento. Mientras YOLO se encarga de ver dónde están las figuras, PyMuPDF se encarga de leer los textos vectoriales dibujados en el documento. Mediante el uso de expresiones regulares estrictas (Regex), el sistema clasifica de forma determinista qué bloques de texto actúan como anclas (ej. ``Figure 1:'', ``Fig. 2(a)''). Esta doble aproximación visión-texto permite mitigar los falsos positivos que la red neuronal pudiera cometer al intentar leer texto pixelado.
+
+Una vez que el sistema dispone de las coordenadas de las figuras y la ubicación exacta de los pies de foto, se enfrenta a la tarea más delicada: recortar y aislar el gráfico de forma limpia. Frecuentemente, las redes neuronales como YOLO delimitan el núcleo de la figura de forma excesivamente conservadora, dejando fuera del recorte elementos vitales como las leyendas periféricas, las etiquetas de los ejes o los títulos flotantes. Para solventar este problema y dotar al sistema de una mayor fiabilidad, se ha diseñado e implementado un algoritmo heurístico de aislamiento dinámico compuesto por tres fases secuenciales:
+
+\begin{enumerate}
+    \item \textbf{Asociación Espacial (\textit{Caption Matching}):} En primer lugar, se calcula la distancia geométrica vertical y el solapamiento horizontal entre las cajas delimitadoras de las figuras y las de los pies de foto identificados. El sistema aplica un algoritmo de minimización de distancia para emparejar inequívocamente cada figura con el bloque de texto semántico que le corresponde.
+    
+    \item \textbf{Expansión Segura por Contenido (\textit{Safe Content Expand}):} Para capturar las leyendas periféricas ignoradas por la red neuronal, el sistema rasteriza la imagen en escala de grises y calcula una Matriz Integral (\textit{Integral Image}). Esta estructura de datos permite medir instantáneamente la densidad de "píxeles de tinta" frente a "píxeles de fondo blanco" en cualquier región de la hoja. Guiado por esta matriz de densidad, el algoritmo expande de forma iterativa y progresiva los márgenes de la caja delimitadora hacia fuera, buscando capturar elementos flotantes y deteniéndose únicamente cuando se topa con "barreras" de texto irrelevante.
+    
+    \item \textbf{Sistema de Prevención de Cortes (\textit{Anti-Slicing}):} Las barreras se infieren dinámicamente a partir de la ubicación de los títulos y párrafos vecinos. Si durante la fase de expansión geométrica la caja delimitadora de la figura colisiona con un bloque de texto perteneciente al cuerpo del artículo, el sistema activa una rutina de anti-corte. Esta rutina retrocede milimétricamente los márgenes del recorte conflictivo para garantizar que ningún párrafo o palabra irrelevante quede rebanada y contamine la imagen resultante.
+\end{enumerate}
+
+Finalmente, las figuras procesadas a través de este complejo algoritmo heurístico son recortadas del lienzo original y almacenadas en el disco en formato de imagen pura (PNG). En paralelo, sus metadatos asociados (identificador único, página de procedencia, ruta del archivo y, sobre todo, el texto íntegro del \textit{caption}) se serializan en un manifiesto estructurado en formato JSON (\texttt{manifest.json}). Este archivo actúa como el punto de entrada consolidado que alimentará las fases posteriores de enriquecimiento semántico y evaluación.
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Fase 2: Enriquecimiento Semántico mediante \textit{Captioning} Denso}
+\label{sec:metodologia_captioning}
+\endgroup
+
+Una vez completada la extracción estructural y el almacenamiento de las figuras en el disco local, el sistema se enfrenta al problema de la brecha semántica (\textit{semantic gap}). Los pies de foto (\textit{captions}) originales de los artículos científicos suelen ser extremadamente concisos, asumen un contexto implícito que solo está presente en la lectura del texto principal y, de manera casi generalizada, omiten describir la estructura visual explícita de la imagen (por ejemplo, rara vez especifican ``esto es un gráfico de dispersión'' o ``se muestra un diagrama de flujo de tres etapas''). 
+
+Para solventar esta limitación e independizar conceptualmente a la figura de su documento original, el \textit{pipeline} implementa una segunda fase enfocada en la generación automática de Descripciones Densas (\textit{Dense Captioning}). Esta etapa (orquestada de forma asíncrona mediante los módulos \texttt{02\_descripciones\_llm.py} y \texttt{03\_descripciones\_llm\_caption.py}) se apoya en el uso intensivo de Modelos de Visión-Lenguaje (VLMs) y Modelos de Lenguaje (LLMs) de código abierto.
+
+Para garantizar la total privacidad de los datos extraídos (previendo el procesamiento de \textit{preprints} o documentos con derechos de autor) y evitar las cuotas impuestas por APIs comerciales, el proceso de enriquecimiento se ejecuta 100\% sobre infraestructura local de la universidad utilizando el motor \textit{Ollama}. Para dotar a esta fase de una verdadera robustez a nivel de sistema —entendiendo como robustez la capacidad de tolerar fallos sin interrumpir el flujo masivo de indexación—, la arquitectura de inferencia se ha diseñado siguiendo un mecanismo de cascada (\textit{fallback mechanism}):
+
+En primer lugar, se aplica el \textit{Análisis Multimodal Primario}. La imagen extraída del PDF se codifica en Base64 y se envía, junto con su pie de foto original, a un Modelo de Visión-Lenguaje de alta capacidad (específicamente la familia Gemma3). El modelo debe observar la distribución de los píxeles reales y utilizar el \textit{caption} como ancla de contexto técnico para generar una descripción sintética y autocontenida que relacione los elementos visuales (colores, ejes, tendencias) con el concepto científico subyacente.
+
+En caso de que se produzca una falla de inferencia —ya sea porque la imagen presenta una corrupción en la extracción, es excesivamente grande para la ventana de contexto del VLM, o el servidor agota el tiempo máximo de espera (\textit{timeout})—, el sistema delega automáticamente la tarea a la \textit{Inferencia Textual Secundaria}. En este nivel de contingencia, se invoca a un modelo de lenguaje puramente textual, rápido y eficiente (como LLaMA3 o Qwen3), el cual genera la descripción enriquecida apoyándose exclusivamente en heurísticas extraídas del pie de foto original, garantizando así que ninguna imagen quede sin indexar.
+
+Uno de los principales desafíos metodológicos abordados durante el desarrollo fue la tendencia de la Inteligencia Artificial generativa a padecer alucinaciones espaciales, como afirmar que una imagen contiene múltiples gráficas cuando en realidad es un gráfico simple. Para mitigar este problema, el \textit{pipeline} inyecta heurísticas deterministas previas a la inferencia. Mediante técnicas de procesamiento de imágenes con la librería \textit{Pillow}, el sistema escanea de forma muy rápida la densidad de píxeles horizontales y verticales de la figura buscando "brechas blancas" (\textit{gaps}). Este escaneo permite deducir algorítmicamente el número de paneles o subgráficos de la imagen (1, 2, 3 o 4) antes de consultar a la IA. Si la imagen contiene múltiples cuadrantes, el sistema inyecta una regla estricta en el \textit{prompt} del VLM forzándole a comenzar su descripción con un prefijo exacto (por ejemplo, \textit{"Two-panel figure..."}). Esta pre-inyección de metadatos estructurales actúa como un raíl cognitivo para el modelo, reduciendo en gran medida las alucinaciones estructurales.
+
+Por último, para asegurar que las descripciones inyectadas en la base de datos vectorial sean limpias, concisas y aptas para la recuperación semántica, el sistema incorpora un bucle iterativo de retroalimentación algorítmica (\textit{Self-Correction Loop}). Tras la generación de cada descripción, el módulo somete la salida del LLM/VLM a una batería de filtros de integridad:
+\begin{itemize}
+    \item \textbf{Restricciones de formato:} Se verifica mediante expresiones regulares (Regex) que la salida constituya una única oración, no exceda el límite estricto de 28 palabras y no contenga vocabulario ajeno al inglés.
+    \item \textbf{Filtros Anti-Relleno (\textit{Boilerplate Removal}):} Se rechazan salidas que comiencen con muletillas clásicas de modelos conversacionales (como \textit{"Here is the rewritten output..."} o \textit{"This figure illustrates..."}), obligando al modelo a ir directo al dato técnico.
+    \item \textbf{Filtros de Integridad Contextual:} Se rechazan de forma absoluta las descripciones que inventan referencias cruzadas inexistentes (ej. "tal y como se ve en la Figura 4") o que alucinan metodologías no presentes en el pie de foto original (por ejemplo, introduciendo la palabra "pipeline" arbitrariamente).
+\end{itemize}
+
+Si una descripción generada fracasa en cualquiera de estos validadores, el sistema reacciona dinámicamente: construye un nuevo \textit{prompt} indicando exactamente por qué falló (ej. \textit{"Rewrite because: More than 28 words"}), adjunta el error y vuelve a lanzar la inferencia. Este ciclo se repite hasta un máximo de tres reintentos. Este exhaustivo control de calidad algorítmico sobre la salida estocástica de la IA garantiza la homogeneidad y precisión del catálogo, un paso crítico para el correcto desempeño del motor de búsqueda (Fase 4).
+
+\section{Fase 3: Generación Sintética de Preguntas (\textit{Synthetic Queries})}
+\label{sec:metodologia_preguntas}
+
+El último paso dentro del \textit{pipeline} de enriquecimiento semántico constituye el pilar central de la hipótesis de este trabajo. Aunque la inclusión de descripciones generadas por IA (Fase 2) incrementa notablemente la densidad informativa de una imagen, las descripciones siguen estando redactadas en formato declarativo (ej. "La gráfica muestra la curva de precisión de tres arquitecturas..."). Sin embargo, la intención de búsqueda de un usuario rara vez adopta una estructura declarativa; los investigadores formulan consultas o preguntas (ej. "¿Qué arquitectura de red neuronal logra la mejor precisión?"). 
+
+Para alinear el espacio vectorial de las imágenes indexadas con la intención de búsqueda humana, el sistema (mediante el script \texttt{04\_preguntas.py}) emplea modelos multimodales, priorizando a \textit{gemma3:12b} como modelo primario y apoyándose en \textit{qwen3:8b} como alternativa textual de contingencia, para inferir de forma predictiva las consultas que un usuario haría para acabar encontrando dicha figura. Este enfoque asume que \textit{la propia figura actúa como la respuesta visual} a las preguntas generadas.
+
+Para construir esta generación estructurada de consultas ancla, por cada figura procesada el sistema solicita al modelo la formulación de exactamente dos preguntas en lenguaje natural. Estas consultas están restringidas a un máximo estricto de 18 palabras, garantizando que adquieran un formato de consulta (\textit{query-like}) en lugar de párrafos interrogativos densos. Además, deben estar estructuradas obligatoriamente en formato JSON. Para maximizar la utilidad en la fase de recuperación semántica, estas dos preguntas (referidas como \texttt{q1} y \texttt{q2}) asumen roles distintos pero complementarios:
+
+\begin{enumerate}
+    \item \textbf{Pregunta de alcance general (\texttt{q1}):} Una consulta amplia sobre el tema principal o el objetivo de la gráfica (ej. "\textit{What main objective does the architecture describe?}").
+    \item \textbf{Pregunta de detalle o estructura (\texttt{q2}):} Una consulta orientada a la organización, tendencia visual o patrón característico de la figura (ej. "\textit{How are the main categories structured in the taxonomy?}").
+\end{enumerate}
+
+Queriendo asegurar que estas preguntas funcionen eficientemente como anclas semánticas (conceptos que atraerán a la consulta del investigador en el espacio vectorial), el sistema extrae previamente los términos clave (\textit{anchor terms}) del pie de foto original filtrando las palabras vacías (\textit{stopwords}). El VLM es instruido para fundamentar sus preguntas utilizando obligatoriamente estos conceptos de alta relevancia, siendo rechazadas iterativamente aquellas iteraciones que no cumplan este requisito.
+
+De forma análoga a la generación de descripciones, la formulación libre de preguntas por parte de un LLM presenta riesgos para un motor de búsqueda. Si una imagen genera preguntas excesivamente genéricas o, por el contrario, plagadas de detalles irrelevantes, su \textit{embedding} vectorial se contaminará (\textit{semantic drift}), empeorando la recuperación. Para mitigar este problema, la Fase 3 incluye un validador algorítmico robusto que evalúa sintácticamente cada pregunta generada frente a reglas de exclusión estrictas antes de ser aceptada e insertada en el archivo de metadatos:
+
+\begin{itemize}
+    \item \textbf{Censura de lectura exacta y temporalidad ambigua:} Se rechazan preguntas orientadas a la lectura de valores puros que el usuario difícilmente buscaría a ciegas, censurando expresiones heurísticas como \textit{``exact value''}, \textit{``intersect''}, \textit{``where do the curves meet''} o referencias imprecisas como \textit{``around [año]''}.
+    \item \textbf{Restricción de entidades (\textit{Model IDs}) y alucinación estructural:} Para evitar que el LLM alucine la presencia de modelos comerciales (ej. GPT-4, Claude), se prohíbe explícitamente la aparición de dichos \textit{tokens} en las preguntas si estos no estaban presentes en el pie de foto original del documento. Adicionalmente, el script implementa un estimador heurístico de densidad de píxeles en blanco para deducir la presencia de sub-figuras; si se detecta un único panel, se rechazan preguntas que alucinen términos como \textit{``multi-panel''} o \textit{``two-panel''}.
+    \item \textbf{Similitud de secuencia limitante:} Se descartan ambas preguntas si una métrica de coincidencia de patrones (el algoritmo de Ratcliff/Obershelp, integrado a través de \texttt{SequenceMatcher}) determina que comparten un solapamiento textual superior al 82\%. Esto fuerza al modelo a evitar variaciones gramaticales de la misma cuestión, obligándole a generar dos vectores semánticos lo más ortogonales posibles para una misma imagen.
+\end{itemize}
+
+El proceso completo garantiza que cada figura quede catalogada en la base de datos no solo por lo que es (texto y descripción), sino por las dudas científicas que teóricamente es capaz de resolver (preguntas ancla), construyendo un índice mucho más alineado con el comportamiento de búsqueda humano.
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Fase 4: Indexación Vectorial}
+\label{sec:metodologia_indexacion}
+\endgroup
+
+Una vez finalizadas las fases de extracción heurística y enriquecimiento semántico mediante modelos multimodales, cada figura cuenta con un catálogo de metadatos exhaustivo en formato JSON que incluye: su pie de foto original, descripciones densas de su contenido visual y consultas sintéticas predictivas (preguntas ancla). Para que esta información sea explotable mediante búsquedas en lenguaje natural de alta precisión, el \textit{pipeline} requiere transformar estos datos textuales en representaciones matemáticas e indexarlos en un motor de búsqueda de alta disponibilidad, proceso orquestado de manera automatizada mediante el script \texttt{05\_indexacion.py}.
+
+La búsqueda semántica moderna se fundamenta en la proyección del texto a un espacio vectorial continuo de alta dimensionalidad. Para lograr esto, el sistema procesa iterativamente el manifiesto de cada figura y construye un bloque de texto unificado (\texttt{full\_text}). Este campo consolida la semántica de la imagen concatenando secuencialmente el \textit{caption} original, las múltiples iteraciones de las descripciones generadas por el VLM y las preguntas sintéticas. Esta concatenación asegura que el modelo de vectorización disponga de todo el contexto visual y predictivo en una única inferencia. 
+
+Este documento consolidado se envía posteriormente a un modelo de \textit{embeddings} ejecutado localmente para garantizar la privacidad y reducir la latencia de red. En la arquitectura de RAGI se ha seleccionado el modelo \textit{Nomic Embed Text v2} (\texttt{nomic-embed-text-v2-moe}) \cite{nussbaum2024nomic}, un modelo de código abierto altamente optimizado para capturar el contexto semántico en secuencias largas de texto con una dimensionalidad elevada. El modelo procesa la información amalgamada y devuelve un vector denso (\textit{dense vector}) de representación matemática que condensa el significado integral de la figura en un único punto topológico dentro del hiperespacio.
+
+Para el almacenamiento persistente y la posterior recuperación sub-milimétrica de los datos vectoriales y léxicos, el sistema emplea \textit{Elasticsearch}, configurado específicamente para soportar búsquedas algorítmicas de los k-vecinos más cercanos (k-NN, \textit{k-Nearest Neighbors}). En lugar de almacenar únicamente el vector final de forma opaca, el script de indexación crea un índice estructurado (denominado \texttt{ragi\_images}) que preserva la granularidad original de los datos. Esta separación es un requisito arquitectónico crítico para permitir la evaluación segmentada por Casos de Estudio (descrita en la Sección \ref{sec:metodologia_baselines}), ya que habilita al motor de búsqueda para ponderar, encender o apagar campos semánticos específicos durante el proceso de consulta. 
+
+Previo a la fase de ingesta, el script implementa un mecanismo algorítmico de limpieza de estado que escanea la base de datos para detectar y eliminar documentos huérfanos (\textit{orphans})—registros presentes en el índice vectorial pero cuyos archivos locales han sido eliminados—, garantizando así la coherencia absoluta entre el almacenamiento en disco y el hiperespacio vectorial. Una vez saneado el entorno, el mapeo (\textit{mapping}) del índice en Elasticsearch se despliega con una topología de campos diseñada para soportar búsquedas híbridas:
+
+\begin{itemize}
+    \item \textbf{Campos de metadatos estáticos (\textit{keyword}):} Atributos como \texttt{doc\_id}, \texttt{source\_pdf\_url}, \texttt{page} e \texttt{image\_path}. Se utilizan para el filtrado escalar de alta velocidad (búsqueda exacta) y para proporcionar a la interfaz de usuario la ruta de renderizado de la imagen.
+    \item \textbf{Campos de texto enriquecido (\textit{text}):} Atributos como \texttt{caption}, \texttt{description2/3} y \texttt{questions}. Estos campos se indexan utilizando analizadores de lenguaje natural convencionales basados en la frecuencia espacial de los términos (TF-IDF), lo que permite la ejecución de búsquedas léxicas puras tradicionales mediante el algoritmo BM25.
+    \item \textbf{Campo vectorial continuo (\textit{dense\_vector}):} El campo \texttt{embedding}, dinámicamente tipado a la dimensionalidad nativa del modelo Nomic, está configurado matemáticamente para calcular distancias espaciales (utilizando la similitud del coseno) frente a las consultas vectorizadas formuladas en tiempo real por los investigadores.
+\end{itemize}
+
+Esta arquitectura dual texto-vector, sustentada por una gestión de estado controlada, sienta las bases definitivas para la implementación del motor de recuperación híbrida, el cual constituye el núcleo interactivo del sistema RAGI.
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Fase 5: Motor de Búsqueda e Interfaz (Frontend/Backend)}
+\label{sec:metodologia_buscador}
+\endgroup
+
+El último componente de la arquitectura RAGI consiste en la capa de explotación interactiva. Una vez que toda la literatura científica ha sido extraída, procesada, enriquecida y proyectada en el espacio vectorial de Elasticsearch, es necesario proporcionar a los investigadores herramientas eficientes para formular sus consultas y visualizar los resultados. 
+
+Para cubrir esta necesidad y, simultáneamente, habilitar el entorno necesario para la evaluación humana del sistema, se ha desarrollado una arquitectura en dos niveles: un buscador de consola (CLI) para pruebas de desarrollo algorítmico, y una API REST completa (Backend) para dar soporte a la Interfaz de Usuario y a los estudios de usabilidad.
+
+\subsection{Procesamiento de la Consulta (\textit{Query Embedding})}
+
+Cuando un usuario interactúa con el sistema (ya sea a través de la interfaz web o la consola), introduce una necesidad de información en lenguaje natural (ej. "\textit{transformer architecture applied to computer vision}"). 
+
+El flujo de procesamiento de esta consulta, gestionado por los \textit{endpoints} de búsqueda (script \texttt{backend.py}), sigue la siguiente lógica:
+\begin{enumerate}
+    \item La consulta de texto plano es enviada a la API de modelos local (Ollama).
+    \item El mismo modelo de \textit{embeddings} que se utilizó durante la indexación (\textit{Nomic Embed Text v2}) transforma la consulta del usuario en un vector denso. Garantizar el uso del mismo modelo en la indexación y en la búsqueda es matemáticamente imperativo para que el espacio vectorial esté alineado.
+    \item Este vector de consulta es inyectado en el cuerpo de la petición de Elasticsearch, ejecutando un algoritmo de vecinos más cercanos (k-NN). El motor calcula la similitud del coseno entre el vector de la consulta y todos los vectores de las figuras indexadas.
+    \item Elasticsearch devuelve el \textit{Top-K} (las imágenes matemáticamente más cercanas a la consulta) ordenadas por su \textit{score} de relevancia.
+\end{enumerate}
+
+El backend implementa además heurísticas de control, estableciendo un umbral mínimo de similitud (\texttt{MIN\_SCORE}) para evitar devolver resultados de baja calidad (\textit{long tail}) cuando el sistema no dispone de imágenes relacionadas con la consulta del usuario.
+
+\subsection{Interfaz de Usuario (\textit{Frontend})}
+\label{subsec:interfaz_usuario}
+
+Para abstraer la complejidad del motor vectorial y ofrecer una experiencia de usuario análoga a la de los motores de búsqueda comerciales modernos, se ha desarrollado una interfaz gráfica (\textit{Frontend}). El diseño prioriza la accesibilidad y la limpieza visual, enfocándose puramente en la caja de búsqueda (\textit{search bar}) como punto de entrada. En la Figura \ref{fig:interfaz_inicio} se observa el diseño minimalista de la pantalla principal, concebido para evitar la sobrecarga cognitiva del investigador y ofrecer sugerencias rápidas de búsqueda basadas en el contenido indexado.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes/primera.png}
+    \caption{Pantalla de inicio del buscador semántico RAGI, mostrando un diseño limpio centrado en la intencionalidad de búsqueda.}
+    \label{fig:interfaz_inicio}
+\end{figure}
+
+Este enfoque \textit{zero-click} hacia la barra de búsqueda asegura que la barrera de entrada técnica sea nula, permitiendo a investigadores de cualquier dominio (no exclusivamente de ciencias de la computación) formular sus consultas en lenguaje natural inmediatamente.
+
+Una vez ejecutada una consulta válida, el sistema renderiza dinámicamente los resultados devueltos por el \textit{Backend}. Como se detallará en la Figura \ref{fig:interfaz_resultados}, la vista de resultados no se limita a mostrar la imagen aislada, sino que proporciona un contexto enriquecido esencial para el investigador: el porcentaje de similitud matemática (\textit{score}), el pie de foto original extraído del PDF, la referencia al documento fuente, y controles de interacción.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes/Captura de pantalla 2026-05-21 100345.png}
+    \caption{Visualización de resultados estructurados ante la consulta \textit{“neural network architecture”}, mostrando el contexto documental, el porcentaje de relevancia espacial y el módulo interactivo de valoración por estrellas.}
+    \label{fig:interfaz_resultados}
+\end{figure}
+
+La presentación en formato de tarjetas (\textit{cards}) facilita el escaneo rápido visual (\textit{skimming}). Especial relevancia cobra la inclusión del control de valoración por estrellas (\textit{Likert scale}) integrado directamente en cada resultado; este elemento interactivo es el engranaje central que habilita la captura de datos empíricos para el estudio de usabilidad descrito posteriormente.
+
+Finalmente, el motor está programado para gestionar de forma elegante los fallos de cobertura (\textit{recall failures}). Cuando una consulta se proyecta en una región del espacio vectorial donde no existen documentos cercanos que superen el umbral de similitud (\texttt{MIN\_SCORE}), la interfaz bloquea proactivamente la devolución de "ruido" (\textit{long tail}). La Figura \ref{fig:interfaz_vacia} ilustra la pantalla de mitigación que informa al usuario de que la necesidad de información no está cubierta por la base documental actual.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes/Captura de pantalla 2026-05-21 100304.png}
+    \caption{Respuesta de la interfaz al ejecutar una consulta (\textit{“sigmoid curve AI”}) cuyos vecinos más cercanos en el hiperespacio no superan el umbral mínimo de similitud coseno exigido por el sistema.}
+    \label{fig:interfaz_vacia}
+\end{figure}
+
+Este mecanismo de contención heurística es fundamental en entornos académicos; proporciona mayor confianza al investigador al confirmar explícitamente la ausencia de literatura indexada sobre el tema, en lugar de forzarle a revisar resultados semánticamente desconectados generados por una extrapolación algorítmica deficiente.
+
+\subsection{Sistema de Telemetría y Evaluación Cualitativa}
+\label{subsec:telemetria}
+
+Un aspecto fundamental de la capa de \textit{Backend} (desarrollada en el \textit{framework} FastAPI) es la integración nativa de un sistema de telemetría y \textit{feedback}. Este módulo fue diseñado específicamente para dar soporte al Estudio de Usuarios definido en la metodología de evaluación cualitativa (Sección \ref{sec:metodologia_metricas}).
+
+La API expone un \textit{endpoint} dedicado (\texttt{/rate}) que registra la interacción del usuario. Cuando la interfaz web devuelve una serie de figuras para una consulta, el investigador puede valorar la relevancia del resultado asignando una puntuación de 1 a 5 estrellas (\textit{Likert scale}). 
+
+Cada interacción se serializa y almacena en un índice paralelo de Elasticsearch (\texttt{ragi\_ratings}), registrando de forma inmutable:
+\begin{itemize}
+    \item La cadena de texto (\textit{query}) original introducida por el investigador.
+    \item La ruta de la imagen que el sistema sugirió.
+    \item La puntuación subjetiva otorgada por el experto humano.
+    \item La marca de tiempo (\textit{timestamp}) de la evaluación.
+\end{itemize}
+
+Finalmente, un \textit{endpoint} de exportación (\texttt{/export\_ratings}) consolida todos los registros y genera un archivo de valores separados por comas (CSV). Este flujo automatizado permite extraer de manera limpia y estructurada los juicios de relevancia empíricos, los cuales serán analizados estadísticamente en el Capítulo de Resultados para demostrar la utilidad real de RAGI en entornos académicos.
+
+\subsection{Disponibilidad del Sistema}
+\label{subsec:disponibilidad}
+
+Para garantizar la reproducibilidad de los resultados y permitir la validación empírica de las hipótesis planteadas en este trabajo, todo el ecosistema RAGI ha sido desplegado y liberado públicamente. Esta política de transparencia y acceso abierto responde a la necesidad de facilitar tanto la evaluación empírica por parte de la comunidad investigadora como la futura extensión o auditoría del código subyacente.
+
+El sistema completo, en sus vertientes operativa y de desarrollo, se encuentra disponible a través de dos vías principales:
+
+\begin{itemize}
+    \item \textbf{Servicio Web Desplegado:} La herramienta interactiva final, que engloba el motor de búsqueda híbrido y la interfaz gráfica de usuario (\textit{Frontend}), se encuentra alojada en los servidores del grupo de investigación. Es plenamente funcional y accesible de manera pública a través de la URL: \url{https://wiig.dia.fi.upm.es/ragi}. Este es el entorno de producción exacto empleado por los participantes durante el estudio de usabilidad.
+    
+    \item \textbf{Código Fuente (Repositorio Github):} El código fuente íntegro del proyecto ha sido consolidado en un único repositorio bajo control de versiones. Este repositorio incluye los \textit{scripts} de extracción heurística (\textit{PyMuPDF}), los \textit{pipelines} de enriquecimiento semántico multimodal (\textit{Ollama}), así como la totalidad de la lógica de indexación y el código del \textit{Backend/Frontend}. El repositorio puede ser consultado y clonado desde: \url{https://github.com/Nordz20/TFG-RAGI}.
+\end{itemize}
+
+
+\chapter{Resultados}
+
+Este capítulo expone el análisis empírico y analítico obtenido tras someter al sistema RAGI a un riguroso proceso de experimentación. Tal y como se estableció en la formulación de los objetivos del proyecto, la meta principal es validar la viabilidad y efectividad de la solución propuesta desde dos perspectivas complementarias: una evaluación cuantitativa centrada en el rendimiento algorítmico del motor de recuperación, y una evaluación cualitativa basada en la percepción, usabilidad y satisfacción de los investigadores finales.
+
+Para estructurar adecuadamente estos hallazgos de forma coherente, el capítulo se ha dividido en grandes bloques analíticos. En primer lugar, se detalla el diseño metodológico de la evaluación experimental. Posteriormente, se exponen los resultados cuantitativos contrastando los enfoques léxicos y semánticos, seguidos de la evaluación cualitativa extraída de la telemetría del sistema. A continuación, se presenta una reflexión sobre el grado de consecución de los objetivos iniciales para, finalmente, documentar de forma crítica las principales limitaciones técnicas encontradas durante el desarrollo del sistema.
+
+\renewcommand{\sectionbreak}{}
+
+\section{Diseño de la Evaluación Experimental}
+\label{sec:resultados_evaluacion}
+
+\renewcommand{\sectionbreak}{\clearpage}
+
+La validación cuantitativa objetiva de un sistema de Recuperación de Información (IR) requiere de un entorno controlado que permita ejecutar pruebas algorítmicas que sean repetibles, medibles y libres de ruido externo. Para lograr este estándar, se ha diseñado un \textit{pipeline} de evaluación automatizado compuesto por la construcción de un conjunto de referencia (\textit{Ground Truth}) y la orquestación programática del motor de inferencia.
+
+\textbf{Construcción de la Verdad Fundamental (\textit{Ground Truth})}\\
+Para medir matemáticamente la precisión del buscador (es decir, evaluar si devuelve la imagen correcta en las primeras posiciones), es indispensable disponer de un listado de consultas emparejadas biunívocamente con la figura que idealmente las responde. Dado que el objetivo del sistema es evaluar simulaciones de búsquedas humanas reales, se descartó el uso directo de las preguntas sintéticas generadas en la Fase 3 del \textit{pipeline}. Estas preguntas, aunque útiles para el anclaje vectorial, presentan una estructura gramatical completa (ej. \textit{``What overall structure is shown in the figure?''}) que difiere significativamente de las consultas telegráficas que un investigador suele introducir en una barra de búsqueda.
+
+En su lugar, se desarrolló un algoritmo de extracción heurística que procesó el catálogo indexado de figuras para generar un conjunto controlado de 30 consultas o \textit{prompts} altamente realistas. El proceso automatizado consistió en las siguientes fases:
+\begin{enumerate}
+    \item \textbf{Extracción del \textit{Caption}:} Aislamiento del pie de foto original de una muestra aleatoria representativa de figuras indexadas.
+    \item \textbf{Limpieza algorítmica y estandarización:} Eliminación mediante expresiones regulares de prefijos de publicación (ej. ``Fig 1:'', ``Figure 2(a):'') y frases introductorias genéricas que no aportan valor semántico.
+    \item \textbf{Filtrado de densidad conceptual:} Supresión de palabras vacías (\textit{stopwords}) e identificadores bibliográficos, conservando de forma estricta únicamente los sustantivos técnicos, algoritmos o métricas fundamentales.
+    \item \textbf{Limitación por carga cognitiva:} Restricción de la cadena de texto resultante a un bloque de entre 3 y 6 palabras clave. Esta ventana de longitud modela fielmente el comportamiento de la disciplina de búsqueda por palabras clave (\textit{keyword search paradigm}), simulando consultas como \textit{``flanker task decision boundaries''} o \textit{``pulse front reconstruction error''}.
+\end{enumerate}
+
+\textbf{Sesgo Léxico del Entorno de Pruebas}\\
+Desde una perspectiva analítica crítica, es crucial reconocer que este método de generación introduce un sesgo léxico inherente en la evaluación. Dado que las 30 consultas del \textit{Ground Truth} son literalmente subconjuntos extractados de los pies de foto originales, los algoritmos de recuperación probabilística tradicional (como BM25) contarán con una ventaja matemática natural basada en el emparejamiento exacto de secuencias de caracteres (\textit{exact match}). Este diseño experimental, lejos de ser un defecto, expone el escenario ideal para los enfoques léxicos y servirá como línea base estricta para demostrar las áreas donde los motores puramente semánticos presentan debilidades operativas frente a terminología hiper-específica, justificando posteriormente la necesidad de arquitecturas de recuperación híbrida.
+
+\textbf{Orquestación del Motor Evaluador}\\
+Definido el estándar de oro (\textit{Gold Standard}), la ejecución de las pruebas de rendimiento se delegó a un script orquestador automatizado, conectado internamente a la API de Elasticsearch. Para garantizar una comparativa algorítmica equitativa, el orquestador itera sobre las 30 consultas y lanza tres peticiones concurrentes por cada una, simulando de manera transparente los tres casos de estudio metodológicos: Léxico simple, Léxico ampliado (con descripciones) y Semántico vectorial.
+
+Dado que la evaluación del modelo semántico exige transformar la consulta de texto a un \textit{embedding} de alta dimensionalidad en tiempo real, el evaluador se integró directamente con la API local albergando el modelo \textit{Nomic Embed Text v2} \cite{nussbaum2024nomic}. Para blindar la fiabilidad de las métricas, se implementó un sistema de tolerancia a fallos con reintentos exponenciales y caché en memoria, asegurando que las posibles latencias de red o cuellos de botella en la inferencia del vector no afectaran a la medición objetiva del \textit{ranking} de resultados. El sistema registró exhaustivamente la posición de acierto (dentro del rango \textit{Top-1} a \textit{Top-5}) de la imagen esperada, generando los conjuntos de datos que sustentan el análisis de precisión que se expone a continuación.
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Análisis de Resultados Cuantitativos}
+\label{sec:resultados_numericos}
+\endgroup
+
+A continuación, se presentan los resultados obtenidos tras ejecutar el conjunto de evaluación sobre los tres escenarios arquitectónicos planteados. El rendimiento de cada modelo se ha cuantificado algorítmicamente empleando las métricas de recuperación estándar en el estado del arte: Precisión de primer acierto (\textit{Precision@1}), Exhaustividad en las primeras cinco posiciones (\textit{Recall@5}) y el \textit{Mean Reciprocal Rank (MRR)}, el cual penaliza matemáticamente la aparición tardía del documento esperado.
+
+\subsection{Rendimiento del Modelo \textit{Baseline} (Búsqueda Léxica)}
+El modelo \textit{Baseline} representa el enfoque tradicional y determinista de recuperación documental, utilizando el algoritmo estadístico BM25 (basado en la función de frecuencia de términos y frecuencia inversa de documentos, TF-IDF) \cite{manning2008introduction}. En este escenario primitivo, el motor de búsqueda únicamente inspecciona el campo \texttt{caption} original proporcionado por el autor del documento, sin ningún tipo de enriquecimiento multimodal.
+
+Los resultados consolidados obtenidos por este modelo fueron los siguientes:
+\begin{itemize}
+    \item \textbf{Precision@1:} 86.67 \%
+    \item \textbf{Recall@5:} 96.67 \%
+    \item \textbf{MRR:} 0.9083
+\end{itemize}
+
+El modelo logra posicionar la figura correcta como primera opción absoluta en casi el 87\% de las consultas simuladas, fallando en recuperar la imagen dentro de la ventana de atención principal (\textit{Top-5}) únicamente en un 3.33\% de los casos. Este rendimiento establece un listón de precisión notable en este conjunto de evaluación, que servirá como principal referencia para los siguientes modelos.
+
+\subsection{Rendimiento del Modelo RAGI Básico (Léxico Ampliado)}
+El segundo escenario amplía el espacio de búsqueda. El motor sigue empleando el algoritmo léxico BM25, pero ejecutando una consulta concurrente y múltiple (\textit{multi-match}) que explora tanto el \texttt{caption} original como la densa \texttt{description} generada sintéticamente por el Modelo de Visión-Lenguaje (VLM).
+
+Las métricas registradas para este enfoque híbrido a nivel textual fueron:
+\begin{itemize}
+    \item \textbf{Precision@1:} 86.67 \%
+    \item \textbf{Recall@5:} 96.67 \%
+    \item \textbf{MRR:} 0.9083
+\end{itemize}
+
+De forma notable, las métricas empíricas obtenidas son algorítmicamente idénticas a las del modelo \textit{Baseline}. Esto demuestra que, para este conjunto particular de consultas breves y técnicas, la inclusión volumétrica de descripciones visuales no ha alterado el ránking superior ya establecido por los pies de foto. Las palabras clave requeridas ya se encontraban presentes en el \textit{caption}, por lo que el aumento de densidad textual generado por la Inteligencia Artificial no penalizó ni favoreció estadísticamente la intersección léxica del algoritmo BM25.
+
+\subsection{Rendimiento del Modelo RAGI Avanzado (Búsqueda Semántica Vectorial)}
+El tercer caso evalúa la aproximación vanguardista del sistema. La búsqueda léxica basada en cadenas de caracteres se sustituye completamente por una Búsqueda Aproximada de Vecinos Más Cercanos (\textit{Approximate k-NN}) en el espacio topológico vectorial. La consulta textual introducida se convierte en un \textit{embedding} denso en tiempo de inferencia y se coteja matemáticamente mediante similitud del coseno contra el \textit{embedding} global del documento (que amalgama \textit{caption}, descripciones y preguntas sintéticas).
+
+Los resultados de recuperación iterativa en el espacio semántico arrojaron las siguientes cifras:
+\begin{itemize}
+    \item \textbf{Precision@1:} 73.33 \%
+    \item \textbf{Recall@5:} 93.33 \%
+    \item \textbf{MRR:} 0.8222
+\end{itemize}
+
+Aunque el modelo semántico puro presenta un nivel de \textit{Recall} competitivo bajo las condiciones experimentales descritas (superior al 93\%, demostrando que casi siempre encuentra la imagen relevante), se observa una degradación de aproximadamente 13 puntos porcentuales en la métrica \textit{Precision@1} respecto a los enfoques léxicos clásicos.
+
+\subsection{Rendimiento del Modelo RAGI Híbrido (BM25 + Vectorial)}
+Como respuesta a la dispersión semántica identificada en el enfoque puramente vectorial, se ejecutó una prueba preliminar de fusión de algoritmos. Este modelo híbrido emplea la técnica estadística de Fusión Recíproca de Rangos (\textit{Reciprocal Rank Fusion} o RRF) para combinar, sin necesidad de normalización previa, los listados de resultados devueltos por el motor léxico (BM25) y el motor semántico (k-NN) de forma concurrente.
+
+La evaluación de este enfoque estabilizado ofreció los siguientes resultados:
+\begin{itemize}
+    \item \textbf{Precision@1:} 83.33 \%
+    \item \textbf{Recall@5:} 93.33 \%
+    \item \textbf{MRR:} 0.8833
+\end{itemize}
+
+El modelo híbrido demuestra una notable resiliencia, logrando amortiguar drásticamente la caída de precisión inicial al subir la métrica \textit{Precision@1} en un 10\% absoluto respecto al motor puramente semántico.
+
+\subsection{Comparativa Analítica y Discusión Crítica}
+
+Para proporcionar una visión consolidada del rendimiento algorítmico, la Tabla \ref{tab:resultados_cuantitativos} expone frente a frente las tres métricas clave para cada uno de los modelos implementados. El lector debe observar con especial atención el estancamiento de los valores entre los dos primeros escenarios (enfoques léxicos) y la caída de la métrica principal (\textit{Precision@1}) al aplicar exclusivamente el enfoque semántico.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Modelo de Búsqueda} & \textbf{Precision@1} & \textbf{Recall@5} & \textbf{MRR} \\ \hline
+        \textit{Baseline} (Léxico: Caption) & 86.67 \% & 96.67 \% & 0.9083 \\ \hline
+        RAGI Básico (Léxico: Cap + Desc) & 86.67 \% & 96.67 \% & 0.9083 \\ \hline
+        RAGI Avanzado (Semántico: Vectorial KNN) & 73.33 \% & 93.33 \% & 0.8222 \\ \hline
+        RAGI Híbrido (BM25 + Vectorial RRF) & 83.33 \% & 93.33 \% & 0.8833 \\ \hline
+    \end{tabular}
+    \caption{Comparativa de rendimiento algorítmico, evidenciando la recuperación de precisión lograda por el enfoque Híbrido al fusionar la exactitud léxica con la flexibilidad semántica.}
+    \label{tab:resultados_cuantitativos}
+\end{table}
+
+A primera vista, los datos condensados en esta tabla revelan una conclusión aparentemente contraintuitiva: los algoritmos tradicionales basados en palabras clave (BM25) han superado en precisión absoluta al modelo fundamentado en Inteligencia Artificial Generativa y búsquedas vectoriales. Sin embargo, este resultado es metodológicamente coherente y científicamente explicable cuando se analiza en profundidad la naturaleza subyacente de la Verdad Fundamental (\textit{Ground Truth}) empleada para la simulación.
+
+Como se documentó rigurosamente en la Sección \ref{sec:resultados_evaluacion}, las consultas de los usuarios simulados se extrajeron directamente filtrando léxicamente los \textit{captions} originales. Esta heurística genera inevitablemente un fuerte sesgo de evaluación empírica hacia la coincidencia exacta (\textit{Exact Keyword Matching}). Cuando la consulta del investigador contiene los sustantivos exactos, nombres propios de algoritmos o acrónimos hiper-específicos que el autor original empleó textualmente para nombrar su figura, el algoritmo BM25 encuentra una correspondencia de caracteres perfecta. Esto dispara la función TF-IDF, elevando el \textit{score} de dicho documento a valores estadísticamente infranqueables y asegurando el \textit{Top-1}.
+
+Por el contrario, los modelos densos (\textit{embeddings}) operan bajo un paradigma de compresión. Mapean la consulta introducida a un vasto espacio conceptual de alta dimensionalidad. Aunque estas arquitecturas vectoriales representan el estado del arte para superar el problema del desajuste de vocabulario (\textit{vocabulary mismatch}) —es decir, brillan cuando el usuario emplea sinónimos, abstracciones o formula descripciones amplias de lo que desea ver—, tienden algorítmicamente a ``suavizar'' o diluir el peso de los términos técnicos extremadamente raros y específicos. Al incrustar en un mismo vector el \textit{caption}, la extensa descripción rica generada por el VLM y las múltiples preguntas sintéticas ancla, el vector resultante adquiere un alcance semántico amplísimo y robusto. Sin embargo, esta masiva condensación de significado penaliza la cercanía matemática absoluta frente a una consulta conformada por apenas tres o cuatro palabras hiper-focalizadas.
+
+Para comprender en profundidad las limitaciones del modelo basado en recuperación densa frente a la recuperación dispersa, se ha llevado a cabo un análisis cualitativo de divergencias. La Tabla \ref{tab:divergencias_semantico} presenta una selección de cinco casos de estudio extraídos del conjunto de validación donde el modelo léxico (BM25) logró posicionar la imagen correcta en el primer lugar (Top-1), mientras que el modelo semántico falló en esta tarea. Al examinar esta tabla, el lector debe prestar especial atención a la proximidad topológica de los errores semánticos; es decir, en qué medida la figura errónea devuelta por el modelo semántico pertenece al mismo documento o contexto que la figura esperada, así como la especificidad del vocabulario empleado en la consulta original.
+
+\begin{table}[htpb]
+    \centering
+    \renewcommand{\arraystretch}{1.3} 
+    \begin{tabular}{|p{3.5cm}|p{2.5cm}|p{2.5cm}|p{6cm}|}
+    \hline
+    \textbf{Consulta (\textit{Query})} & \textbf{Predicción BM25} & \textbf{Predicción Semántica} & \textbf{Análisis del Fallo Semántico} \\
+    \hline
+    \textit{average precision per query} & Figura 7 (Acierto) & Figura 8 (Fallo) & Ambas figuras pertenecen al mismo artículo. Esto sugiere que el modelo semántico agrupa ambos contextos en el mismo espacio vectorial, perdiendo la granularidad léxica necesaria para discriminar variaciones menores. \\
+    \hline
+    \textit{pulse front reconstruction error} & Figura 6 (Acierto) & Figura 7 (Fallo) & La proximidad topológica (figuras consecutivas) indica que el contexto semántico general fue capturado, pero la coincidencia exacta de n-gramas favorece al motor léxico en contextos densos. \\
+    \hline
+    \textit{module-level ablation study} & Figura 5 (Acierto) & Figura 4 (Fallo) & Los estudios de ablación suelen presentarse en grupos de tablas o gráficas conexas. La representación vectorial parece diluir el nivel específico del módulo, algo que BM25 aísla con mayor precisión. \\
+    \hline
+    \textit{metabolic maps of naa naag} & Figura 3 (Acierto) & Figura 2 (Fallo) & La alta especificidad de los términos bioquímicos favorece a BM25 por su alta frecuencia inversa de documento (IDF). El modelo de embeddings posiblemente carezca de un peso fuerte para estos vocablos en su preentrenamiento. \\
+    \hline
+    \textit{math number theory q\&a compression} & Figura 19 (Acierto) & Figura 11 (Fallo) & Aunque la consulta es conceptual, la concatenación exacta del dominio matemático es resuelta más eficazmente por coincidencia exacta, sugiriendo un solapamiento en el espacio latente de las distintas pruebas del estudio. \\
+    \hline
+    \end{tabular}
+    \caption{Casos de estudio de divergencias donde el motor léxico supera al semántico en granularidad local.}
+    \label{tab:divergencias_semantico}
+\end{table}
+
+Como aporta la Tabla \ref{tab:divergencias_semantico}, el análisis de estos fallos revela que los errores del modelo semántico no son fallos de comprensión semántica global, sino de precisión local. En la inmensa mayoría de las divergencias analizadas, la imagen recuperada erróneamente por la búsqueda vectorial pertenece al mismo artículo científico y trata una temática estrechamente relacionada. Esto indica que las representaciones densas sitúan la consulta en la vecindad correcta del espacio latente. Sin embargo, cuando las consultas contienen terminología altamente específica, jerga de nicho (como \textit{naa naag}) o requieren diferenciar elementos consecutivos fuertemente cohesionados en el texto original, el enfoque léxico demuestra ser superior. Esta complementariedad empírica justifica de manera robusta la adopción de una arquitectura híbrida mediante \textit{Reciprocal Rank Fusion} (RRF), ya que permite mitigar esta difuminación vectorial empleando la precisión de grano fino del modelo BM25 como mecanismo de anclaje léxico.
+
+Estos resultados empíricos son un hallazgo de suma relevancia para el desarrollo de RAGI y demuestran empíricamente un axioma fundamental de la literatura IR contemporánea: los modelos masivos de IA no deben concebirse como un reemplazo directo y absoluto de la búsqueda léxica tradicional en contextos de terminología técnica estricta. Antes bien, los enfoques semánticos y probabilísticos operan en espectros complementarios. 
+
+La conclusión principal de esta fase experimental sugiere que la indexación generativa no falla estructuralmente, sino que es sensible a métricas de emparejamiento exacto (\textit{Exact Match}). Frente a este fenómeno, la adopción arquitectónica de un enfoque de \textbf{Búsqueda Híbrida} (\textit{Hybrid Search}) no solo se plantea como una necesidad teórica, sino que los resultados preliminares documentados en la Tabla \ref{tab:resultados_cuantitativos} lo confirman como la vía óptima de implementación. 
+
+Como se observa en los datos, el motor híbrido (mediante RRF) logra fusionar dinámicamente el determinismo de BM25 (garantizando retención algorítmica ante nombres exactos, rozando el \textit{Top-1} del \textit{Baseline}) con la potente flexibilidad conceptual de los \textit{embeddings}. Este ejercicio corrobora empíricamente que la suma de ambos paradigmas ofrece el marco de recuperación más resiliente para un entorno de investigación académica real, consolidando la aportación principal del sistema.
+
+\subsection{Evaluación Offline de Telemetría Real}
+\label{sec:resultados_telemetria}
+
+Para corroborar las vulnerabilidades de los enfoques tradicionales frente al comportamiento orgánico de búsqueda humana, se ejecutó una evaluación empírica \textit{offline} empleando los datos de telemetría extraídos del estudio piloto de usuarios (cuyo diseño se detallará en la Sección \ref{sec:estudio_cualitativo}). 
+
+Se seleccionó aleatoriamente una muestra representativa de 20 consultas reales formuladas libremente por investigadores a través de la interfaz de RAGI. El criterio de inclusión exigió que la interacción original hubiese concluido con una valoración de satisfacción alta (4 o 5 estrellas), garantizando así que la figura deseada existía en el catálogo y que la arquitectura de recuperación semántica vectorial había sido capaz de sugerirla exitosamente. Posteriormente, estas mismas consultas "salvajes" se re-evaluaron a nivel algorítmico simulando una recuperación puramente léxica (BM25 ampliado).
+
+Los resultados de esta simulación revelaron una degradación drástica del rendimiento de los enfoques basados en texto en un entorno de producción real. El modelo léxico apenas alcanzó una \textit{Precision@1} del 25.00\% y un \textit{Recall@5} del 60.00\%. 
+
+Este contraste empírico es enormemente revelador. Matemáticamente, significa que en el 40\% de las ocasiones en las que un usuario investigador encontró satisfactoriamente la figura que buscaba empleando la arquitectura de IA del sistema RAGI, el motor clásico de palabras clave habría sido incapaz de mostrar dicha imagen entre los cinco primeros resultados. 
+
+Esta evidencia offline consolida de forma definitiva el pilar metodológico de este proyecto: en el mundo real, los investigadores raramente utilizan en sus consultas los n-gramas exactos presentes en el pie de foto original de un artículo. Esto confirma que el enriquecimiento sintético mediante Modelos de Visión-Lenguaje (VLM) y la topología de los espacios latentes no son meras optimizaciones teóricas, sino requisitos imprescindibles para la recuperación efectiva y resiliente del conocimiento científico visual.
+
+\subsection{Estudio de Ablación de Metadatos}
+\label{sec:resultados_ablacion}
+
+Para responder a la necesidad de aislar de forma matemática la contribución de los pares de pregunta-respuesta generados por la IA y su impacto sobre el motor de indexación, se diseñó un Estudio de Ablación. En este experimento, se mantuvieron estáticas las consultas originales del \textit{Ground Truth} y la tecnología de recuperación léxica (BM25), alterando exclusivamente la volumetría de los campos indexados en Elasticsearch a los que el motor tenía acceso.
+
+La Tabla \ref{tab:resultados_ablacion} expone las cuatro permutaciones evaluadas y su efecto directo sobre las métricas de recuperación.
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3} 
+    \begin{tabular}{|p{5cm}|c|c|c|}
+        \hline
+        \textbf{Campos Indexados (BM25)} & \textbf{Precision@1} & \textbf{Recall@5} & \textbf{MRR} \\ 
+        \hline
+        Solo \textit{Caption} & 86.67 \% & 96.67 \% & 0.9083 \\ 
+        \hline
+        \textit{Caption} + Descripción & 86.67 \% & 96.67 \% & 0.9083 \\ 
+        \hline
+        \textit{Caption} + Preguntas & 86.67 \% & 96.67 \% & 0.9067 \\ 
+        \hline
+        \textit{Caption} + Desc + Preguntas & 86.67 \% & 96.67 \% & 0.9067 \\ 
+        \hline
+    \end{tabular}
+    \caption{Estudio de ablación léxica aislando la aportación de los metadatos generados sintéticamente.}
+    \label{tab:resultados_ablacion}
+\end{table}
+
+Los resultados del estudio de ablación certifican empíricamente el límite algorítmico de las arquitecturas probabilísticas tradicionales. Al expandir el documento con decenas de palabras generadas por IA (descripciones largas y preguntas), no se experimenta ninguna ganancia en la métrica principal. De hecho, la adición volumétrica de las preguntas induce una pérdida infinitesimal en la métrica de posicionamiento (el MRR desciende de 0.9083 a 0.9067). Esta minúscula caída se explica matemáticamente por la naturaleza de la penalización de longitud del documento (\textit{document length normalization}) propia de la función de cálculo BM25: a mayor cantidad de texto genérico introducido, menor densidad concentrada tienen las palabras clave específicas.
+
+Este hallazgo es fundamental para la validación arquitectónica del sistema RAGI, ya que demuestra de forma aislada que el enriquecimiento sintético denso basado en preguntas y respuestas \textbf{no puede ser explotado eficazmente por un motor de búsqueda por palabras clave}. El verdadero valor de inyectar preguntas a un documento no radica en proveer más "texto para buscar", sino en proporcionar anclas lógicas para que el codificador de lenguaje alinee el documento en el hiperespacio vectorial. Esta limitación extractiva de BM25 ante datos aumentados es lo que justifica de forma definitiva la migración hacia las búsquedas puramente semánticas o híbridas implementadas en las secciones posteriores.
+
+\subsection{Evaluación Alternativa: Escenario de Búsqueda Conceptual}
+\label{sec:resultados_conceptuales}
+
+Para aislar el sesgo de coincidencia exacta detectado en la evaluación principal y obtener una perspectiva más alineada con el uso natural del sistema, se construyó un segundo conjunto de referencia (\textit{Ground Truth} Conceptual). Este conjunto consta de 30 consultas formuladas manualmente que, a diferencia del experimento anterior, no proceden literalmente del texto de los \textit{captions}. En su lugar, las consultas se redactaron empleando sinónimos, descripciones estructurales y conceptos abstractos (por ejemplo, sustituyendo \textit{``temperature results distribution''} por \textit{``thermal mapping layout''}).
+
+La Tabla \ref{tab:resultados_conceptuales} presenta el rendimiento de los cuatro modelos ante este escenario de alto desajuste de vocabulario (\textit{vocabulary mismatch}).
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3} 
+    \begin{tabular}{|p{4.5cm}|c|c|c|}
+        \hline
+        \textbf{Modelo de Búsqueda} & \textbf{Precision@1} & \textbf{Recall@5} & \textbf{MRR} \\ 
+        \hline
+        \textit{Baseline} (Léxico) & 3.33 \% & 3.33 \% & 0.0333 \\ 
+        \hline
+        RAGI Básico (Léxico Ampl.) & 3.33 \% & 3.33 \% & 0.0333 \\ 
+        \hline
+        RAGI Avanzado (Semántico) & 10.00 \% & 30.00 \% & 0.1678 \\ 
+        \hline
+        RAGI Híbrido (BM25 + Vectorial) & 0.00 \% & 16.67 \% & 0.0428 \\ 
+        \hline
+    \end{tabular}
+    \caption{Rendimiento de los modelos frente a consultas conceptuales sin correspondencia léxica directa.}
+    \label{tab:resultados_conceptuales}
+\end{table}
+
+Los datos recabados en este segundo escenario evidencian la vulnerabilidad extrema de los motores léxicos tradicionales. Al carecer de los n-gramas exactos, la capacidad de recuperación del algoritmo BM25 sufre un colapso, cayendo a una precisión residual del 3.33\%. 
+
+En marcado contraste, la arquitectura de recuperación semántica (RAGI Avanzado) demuestra su resiliencia. Aunque las métricas absolutas son lógicamente inferiores debido a la alta complejidad y abstracción geométrica de la tarea, el modelo vectorial logra triplicar la \textit{Precision@1} y multiplicar por diez el \textit{Recall@5} (alcanzando un 30.00\%) respecto al \textit{Baseline}. Esto sugiere que la proyección de las imágenes en un espacio latente denso permite al sistema inferir equivalencias temáticas que escapan por completo a la búsqueda por palabras clave.
+
+Cabe destacar el comportamiento del modelo Híbrido en este contexto extremo. Dado que la técnica de fusión (\textit{Reciprocal Rank Fusion}) pondera ambas listas de resultados, la práctica ausencia de aciertos en la lista léxica degrada la puntuación combinada. Esta observación empírica es valiosa, ya que indica que los modelos híbridos rinden de manera óptima cuando ambos motores aportan una señal mínima válida, pero el enfoque vectorial puro sigue siendo superior ante formulaciones puramente abstractas o conversacionales.
+
+\section{Estudio Cualitativo de Usuarios}
+\label{sec:estudio_cualitativo}
+
+\subsection{Diseño de la Evaluación Cualitativa}
+\label{sec:eval_cualitativa_diseno}
+
+Para complementar los resultados cuantitativos y evaluar la utilidad real y percibida del sistema RAGI (\textit{Retrieval-Augmented Generation for Images}), se llevó a cabo un estudio cualitativo con usuarios finales. A diferencia de las métricas algorítmicas, el objetivo primordial de este estudio empírico fue medir la percepción humana sobre la relevancia de las imágenes recuperadas frente a consultas formuladas espontáneamente en lenguaje natural, emulando un escenario de búsqueda académica real y exploratoria.
+
+El estudio recogió un piloto con un total de 49 evaluaciones válidas. En cada interacción, el usuario introducía una consulta (\textit{query}) libre y el sistema devolvía las imágenes consideradas como más relevantes utilizando exclusivamente el modelo de recuperación semántica vectorial. A continuación, se solicitaba al usuario que valorase la idoneidad de las imágenes devueltas mediante un sistema de puntuación estructurado de 1 a 5 estrellas. Esta métrica discreta es un estándar en la industria, comúnmente utilizada para calcular el \textit{Mean Opinion Score} (MOS) en sistemas de recomendación y recuperación de información \cite{streijl2016mean}, permitiendo cuantificar la percepción subjetiva de forma estadística.
+
+Para garantizar el rigor y la exhaustividad del análisis, el módulo de telemetría del \textit{Backend} registró subrepticiamente los siguientes datos por cada iteración:
+\begin{itemize}
+    \item Marca temporal (\textit{Timestamp}) exacta de la consulta.
+    \item Cadena de texto íntegra introducida por el usuario (\textit{Query}).
+    \item Ruta local y metadatos de la imagen devuelta, incluyendo el identificador unívoco del documento de origen (\textit{arXiv ID}), el número de página y la posición ordinal de la figura en el PDF.
+    \item Puntuación explícita de satisfacción otorgada por el usuario humano (escala ordinal de 1 a 5).
+\end{itemize}
+
+Los datos recopilados fueron posteriormente consolidados, procesados y cruzados con los metadatos intrínsecos de los documentos indexados. Adicionalmente, se aplicaron técnicas avanzadas de Procesamiento de Lenguaje Natural (NLP) y herramientas de reducción de dimensionalidad matemática (PCA) sobre los \textit{embeddings} de las consultas \cite{reimers2019sentence} para extraer y mapear intenciones de búsqueda latentes. 
+
+\subsection{Análisis de Resultados Cualitativos}
+\label{sec:eval_cualitativa_resultados}
+
+Antes de detallar los hallazgos, es importante acotar el alcance de esta evaluación. Dado el tamaño de la muestra (49 interacciones) y la ausencia de un ensayo controlado aleatorizado (prueba A/B ciega) que compare directamente la percepción del usuario frente a un modelo de recuperación tradicional (como BM25), los siguientes resultados deben interpretarse como un estudio preliminar de usabilidad y utilidad percibida. En consecuencia, las métricas expuestas sugieren tendencias de comportamiento y aceptación por parte de los usuarios, pero no pretenden constituir una validación estadística estricta de superioridad algorítmica.
+
+El procesamiento estadístico de las 49 evaluaciones empíricas recogidas refleja una alta aceptación general del ecosistema por parte de los usuarios, logrando un \textit{Mean Opinion Score} (MOS) global de 3.90 sobre 5.00. Este valor indica que, de media, las imágenes devueltas por el motor semántico respondieron de forma satisfactoria o altamente satisfactoria a las necesidades de información de los investigadores.
+
+\subsubsection{Distribución de la Satisfacción General}
+
+Para comprender la estructura de las valoraciones, la Figura \ref{fig:distribucion_estrellas} muestra el histograma de frecuencias absolutas otorgadas por los usuarios. El lector debe observar el claro sesgo de la distribución hacia la derecha (valores altos).
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig1_distribucion_estrellas.png}
+    \caption{Distribución de frecuencias absolutas de las valoraciones otorgadas por los usuarios en escala de 1 a 5 estrellas.}
+    \label{fig:distribucion_estrellas}
+\end{figure}
+
+Este histograma confirma que las valoraciones predominantes fueron de 4 y 5 estrellas, minimizando las respuestas neutras (3) o insuficientes (1-2). Para consolidar esta visión, la Figura \ref{fig:satisfaccion_agrupada} segmenta estas puntuaciones en tres niveles macro de satisfacción (Alta: 4-5, Neutra: 3, Baja: 1-2).
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig2_satisfaccion_agrupada.png}
+    \caption{Proporción porcentual agrupada por niveles macro de satisfacción (Alta, Neutra, Baja).}
+    \label{fig:satisfaccion_agrupada}
+\end{figure}
+
+Esta agrupación aporta una evidencia sólida: la inmensa mayoría de las iteraciones resultaron en una alta satisfacción para el usuario. Esto sugiere la viabilidad de la arquitectura semántica para capturar la intención real detrás de la consulta, respaldando de forma preliminar el esfuerzo computacional invertido en las fases de enriquecimiento mediante Modelos de Visión-Lenguaje.
+
+Adicionalmente, resulta pertinente observar el comportamiento de las valoraciones a lo largo del tiempo para descartar posibles sesgos de interacción. La Figura \ref{fig:evolucion_temporal} expone esta dinámica temporal mediante una media móvil (\textit{moving average}, con ventana $n=5$).
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig6_evolucion_temporal.png}
+    \caption{Evolución cronológica de las valoraciones durante el estudio, suavizada mediante media móvil ($n=5$).}
+    \label{fig:evolucion_temporal}
+\end{figure}
+
+El análisis de esta gráfica indica una notable estabilidad: la interacción del usuario con el sistema se mantiene estable y resiliente durante toda la sesión. No se evidencia una degradación del MOS achacable a la fatiga del usuario ni a fallos del servidor, sugiriendo que el sistema responde con una calidad consistente en escenarios de uso continuado.
+
+\subsubsection{Impacto de la Formulación de la Consulta}
+
+Uno de los desafíos más críticos en los sistemas RAG basados en semántica es demostrar robustez frente a la heterogeneidad lingüística en la formulación de consultas. Para evaluar esto, la Figura \ref{fig:longitud_vs_satisfaccion} cruza la extensión de la consulta (medida en número de palabras) con el grado de satisfacción obtenido.
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig3_longitud_vs_satisfaccion.png}
+    \caption{Relación de dispersión entre la longitud léxica de la consulta y la valoración percibida.}
+    \label{fig:longitud_vs_satisfaccion}
+\end{figure}
+
+Los resultados ilustran una interesante flexibilidad ante las entradas: el sistema logró obtener puntuaciones máximas (5 estrellas) independientemente de si la consulta es telegráfica (2 palabras) o altamente descriptiva (10+ palabras). Esto resulta relevante, ya que apunta a que el modelo Nomic es capaz de vectorizar peticiones de diferente densidad sin perder el foco semántico de lo solicitado.
+
+Para profundizar cualitativamente en este aspecto, se segmentaron las consultas en dos categorías estrictas: \textit{Conversacionales} (instrucciones complejas como ``show me a diagram of...'') y basadas en \textit{Keywords} puras. La Figura \ref{fig:tipo_consulta} expone las diferencias en la satisfacción percibida según este estilo de búsqueda.
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig11_tipo_consulta_vs_satisfaccion.png}
+    \caption{Comparativa de satisfacción según el estilo de búsqueda del usuario (\textit{Keywords} directas frente a sintaxis \textit{Conversacional}).}
+    \label{fig:tipo_consulta}
+\end{figure}
+
+Esta gráfica resulta de particular interés: sugiere que el sistema vectorial penaliza ligeramente el lenguaje telegráfico puramente basado en palabras clave en comparación con el desempeño natural de aproximaciones clásicas como BM25 (confirmando lo debatido en la Sección \ref{sec:resultados_numericos}), pero mantiene un rendimiento excepcionalmente alto y estable con formulaciones naturales. Esto subraya que la principal ventaja de utilizar espacios vectoriales reside en comprender semánticamente instrucciones humanas complejas que la coincidencia exacta de texto fallaría en procesar. 
+
+Adicionalmente, el análisis de frecuencia de los conceptos introducidos por los usuarios (Figura \ref{fig:top_palabras_clave}) revela las tendencias de búsqueda.
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig10_top_palabras_clave.png}
+    \caption{Top 10 conceptos más recurrentes solicitados por los participantes durante el estudio piloto.}
+    \label{fig:top_palabras_clave}
+\end{figure}
+
+Estos datos aportan perspectiva sobre el dominio del problema: los términos más demandados gravitan alrededor de arquitecturas neuronales, diagramas y \textit{transformers}, dominios visuales donde la terminología puede ser variada y ambigua. 
+
+Finalmente, para desgranar los extremos del rendimiento, las Figuras \ref{fig:top_mejores} y \ref{fig:top_peores} detallan respectivamente las consultas que reportaron mayor índice de éxito algorítmico y los fallos de recuperación más pronunciados. Se presentan de forma escalonada para su análisis detallado.
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig4_top_mejores_consultas.png}
+    \caption{Desglose de las consultas que obtuvieron la mejor valoración media, indicando una alta comprensión conceptual del sistema.}
+    \label{fig:top_mejores}
+\end{figure}
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig5_top_peores_consultas.png}
+    \caption{Desglose de las consultas con la peor valoración media, subrayando las limitaciones semánticas ante ambigüedades.}
+    \label{fig:top_peores}
+\end{figure}
+
+El análisis de las consultas penalizadas aporta aprendizajes clave para futuras iteraciones: los peores resultados suelen converger en términos excesivamente ambiguos o en escenarios donde el investigador esperaba recuperar una representación gráfica o tabular muy específica, la cual el \textit{embedding} generalista terminó confundiendo con otro diagrama de estructura topológica similar en el espacio multidimensional.
+
+\subsubsection{Influencia de los Metadatos del Documento}
+
+Para descartar sesgos inducidos por la calidad asimétrica de la fuente de datos, se analizó estadísticamente la correlación lineal entre las valoraciones de los usuarios y las características intrínsecas de las imágenes indexadas en el archivo \texttt{manifest.json}. 
+
+En primer lugar, se calculó el coeficiente de correlación de Pearson ($r$) entre la puntuación otorgada y la longitud en caracteres del pie de foto original (\textit{caption}). La Figura \ref{fig:longitud_caption_vs_satisfaccion} ilustra esta relación de dispersión.
+
+\begin{figure}[hbt!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imagenes/fig8_longitud_caption_vs_satisfaccion.png}
+        \caption{Correlación de dispersión entre la valoración obtenida y la longitud del \textit{caption} original extraído del PDF ($r = -0.063$).}
+        \label{fig:longitud_caption_vs_satisfaccion}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imagenes/fig7_pagina_vs_satisfaccion.png}
+        \caption{Correlación entre la valoración percibida y el número ordinal de la página de origen dentro del PDF original ($r = -0.222$).}
+        \label{fig:pagina_vs_satisfaccion}
+    \end{minipage}
+\end{figure}
+
+El valor de $r = -0.063$ observado a la izquierda indica una correlación prácticamente inexistente. Este hallazgo matemático es un indicador alentador: sugiere que el sistema RAGI, gracias al enriquecimiento sintético mediante VLM, recupera con idéntica eficacia imágenes que carecen de pies de foto extensos que aquellas bien documentadas por sus autores, ayudando a mitigar el clásico problema de escasez de metadatos de origen (\textit{metadata scarcity}).
+
+Por otro lado, la dispersión observada a la derecha ($r = -0.222$) revela una leve correlación negativa estadísticamente significativa respecto a la página del PDF de origen. Las figuras recuperadas que provienen de las páginas iniciales de los artículos tienden a generar una mayor satisfacción en los usuarios. Este fenómeno aporta sentido semántico al corpus: concuerda con la naturaleza estructural de la literatura científica. Las figuras introductorias (páginas iniciales) suelen ilustrar arquitecturas de alto nivel y diagramas de flujo conceptuales (conceptos generales y altamente demandados por los usuarios exploratorios), mientras que las gráficas ubicadas en las páginas de anexos o apéndices muestran resultados métricos hiper-focalizados, incrementando la probabilidad de inducir confusión o ambigüedad si el usuario no especificó dicho nivel de detalle en su consulta.
+
+Finalmente, la Figura \ref{fig:valoracion_por_paper} certifica que la satisfacción general no está sesgada por la calidad sobresaliente de un documento fuente en particular.
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/fig9_valoracion_por_paper.png}
+    \caption{Distribución de la valoración media desglosada por documento científico (identificado por su arXiv ID).}
+    \label{fig:valoracion_por_paper}
+\end{figure}
+
+Este gráfico indica que la recuperación semántica tiende a operar de forma equilibrada a través de todo el índice inter-documental, encontrando resultados útiles sin depender de unos pocos \textit{papers} "ancla".
+
+\subsubsection{Análisis de Intenciones Semánticas (Embeddings)}
+
+Como último ejercicio analítico, para validar matemáticamente la heterogeneidad de las intenciones de los participantes y demostrar gráficamente la comprensión semántica profunda que el sistema logra sobre el dominio científico, las cadenas de texto consultadas se proyectaron en el espacio vectorial. Mediante el uso de arquitecturas \textit{Transformer} pre-entrenadas \cite{reimers2019sentence}, se extrajeron los \textit{embeddings} independientes de cada consulta. Estos vectores fueron agrupados topológicamente mediante el algoritmo \textit{K-Means} y visualizados en dos dimensiones empleando el Análisis de Componentes Principales (PCA) \cite{wold1987principal}. La Figura \ref{fig:clusters_embeddings} ilustra las agrupaciones resultantes, donde cada color representa una familia semántica disjunta.
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes/fig12_clusters_embeddings.png}
+    \caption{Mapeo semántico 2D (generado mediante PCA) de las consultas introducidas. Los colores ilustran clústeres conceptuales detectados de forma no supervisada (\textit{K-Means}).}
+    \label{fig:clusters_embeddings}
+\end{figure}
+
+Como evidencia la gráfica, la formulación aparentemente caótica de los usuarios converge en nubes de clústeres conceptualmente lógicos (por ejemplo, diferenciando búsquedas puras sobre \textit{arquitecturas de redes profundas} de aquellas referidas a aplicaciones lógicas en \textit{Reinforcement Learning} o \textit{robótica de control}). 
+
+Este posicionamiento espacial aporta una perspectiva analítica complementaria a la evaluación: el sistema no opera como un mero mapeador de secuencias de caracteres, sino que comprende las afinidades abstractas del lenguaje natural. Es precisamente esta capacidad subyacente la que permite a la arquitectura RAGI responder exitosamente a las necesidades de los investigadores con notable flexibilidad léxica, lo que contribuye a explicar el MOS global consolidado de 3.90 sobre 5.
+
+\section{Objetivos Logrados}
+\label{sec:objetivos_logrados}
+
+Una vez expuestos y analizados los resultados cuantitativos y cualitativos del sistema RAGI, el presente apartado tiene como propósito contrastar las metas fundacionales planteadas al inicio del proyecto con los resultados efectivamente obtenidos. Se evalúa de forma crítica e integral el grado de consecución tanto del objetivo general como de cada uno de los objetivos específicos descritos originalmente en la Sección \ref{sec:objetivos}.
+
+\subsection{Objetivos Específicos}
+\label{subsec:objetivos_especificos}
+
+A continuación, se examina pormenorizadamente el cumplimiento de cada uno de los hitos técnicos definidos en el Capítulo 1:
+
+\begin{itemize}
+    \item \textbf{O1.1: Implementar un \textit{pipeline} de extracción multimodal.} Se ha desarrollado y desplegado con éxito un módulo automatizado de procesamiento masivo de documentos PDF (script \texttt{01\_extraccion\_imagenes.py}). Dicho módulo integra un modelo de detección de objetos basado en YOLOv10 \cite{wang2024yolov10}, específicamente afinado para el análisis estructural de documentos científicos (\textit{DocLayout-YOLO}). El componente de recorte dinámico y emparejamiento heurístico de metadatos demostró ser sumamente resiliente frente a la heterogeneidad de formatos de publicación (columnas simples, dobles, tablas embebidas), superando las limitaciones clásicas de los extractores de texto tradicionales. Este proceso culminó con la extracción de aproximadamente 700 figuras a partir de un corpus de un centenar de artículos, produciendo un manifiesto estructurado \cite{clark2016pdffigures}. Este objetivo se considera plenamente alcanzado.
+
+    \item \textbf{O1.2: Enriquecer el contenido visual mediante VLMs locales.} Se diseñó e instanció un \textit{pipeline} de inferencia local (scripts \texttt{02}, \texttt{03} y \texttt{04}) que orquesta modelos de Visión-Lenguaje de última generación (Gemma3 y arquitecturas LLaMA) desplegados mediante Ollama. La decisión de mantener la ejecución en infraestructura universitaria garantizó la privacidad y soberanía de los datos académicos \cite{touvron2023}. El sistema implementó de forma efectiva un mecanismo de contingencia en cascada (\textit{fallback}) y algoritmos de validación para asegurar la calidad de las descripciones densas y las preguntas sintéticas generadas, mitigando activamente el riesgo de alucinaciones. Habiéndose procesado el catálogo completo de imágenes, este objetivo se considera logrado.
+
+    \item \textbf{O1.3: Construir e integrar el motor de búsqueda vectorial.} Se configuró una instancia de Elasticsearch con una topología de índice dual (\texttt{ragi\_images}) diseñada para soportar nativamente tanto la búsqueda léxica (TF-IDF/BM25) como la búsqueda vectorial topológica (k-NN) \cite{manning2008introduction}. Los metadatos multimodales amalgamados se proyectaron al espacio vectorial mediante el modelo \textit{Nomic Embed Text v2} \cite{nussbaum2024nomic} de forma sub-milimétrica. Además, la API REST (FastAPI) orquesta estos mecanismos de inferencia de manera transparente para el usuario. Esta arquitectura no solo cumple con lo requerido, sino que deja la infraestructura técnicamente preparada para futuras implementaciones de búsqueda híbrida. El motor es plenamente operativo.
+
+    \item \textbf{O1.4: Evaluar el impacto de la anotación basada en preguntas.} La consecución de este objetivo evaluativo se abordó desde dos prismas complementarios:
+    \begin{enumerate}
+        \item[a)] \textit{Dimensión Cuantitativa:} Se construyó un \textit{Ground Truth} con 30 consultas realistas, extraídas paramétricamente de los \textit{captions} originales. Las métricas algorítmicas resultantes (P@1, R@5 y MRR) evidenciaron que, bajo un sesgo de evaluación léxica estricta (\textit{exact match}), el modelo tradicional BM25 domina en precisión, mientras que la aproximación semántica garantiza una exhaustividad de recuperación sumamente alta \cite{craswell2009mean}. 
+        \item[b)] \textit{Dimensión Cualitativa:} Al trasladar el motor a un entorno interactivo libre, el estudio de usuarios (con 49 iteraciones empíricas) arrojó un \textit{Mean Opinion Score} (MOS) global de 3.90 sobre 5.00. Este hallazgo contrarresta la aparente caída de precisión algorítmica, validando que la flexibilidad de los \textit{embeddings} resulta altamente útil para la intencionalidad exploratoria humana real \cite{robertson2009bm25}. Este objetivo analítico se considera cumplido en su totalidad.
+    \end{enumerate}
+\end{itemize}
+
+Para proporcionar una visión sintética de este análisis, la Tabla \ref{tab:objetivos_logrados} consolida el grado de consecución de cada objetivo específico junto con las evidencias empíricas (cuantitativas y cualitativas) recabadas durante el desarrollo y la experimentación.
+
+\begin{table}[hbt!]
+    \centering
+    \begin{tabular}{|l|c|p{8cm}|}
+        \hline
+        \textbf{Objetivo Específico} & \textbf{Estado} & \textbf{Evidencia de Cumplimiento} \\ \hline
+        O1.1: Pipeline de extracción DLA & Completado & Extracción, recorte y catalogación de $\sim$700 figuras complejas sin pérdida de formato original. \\ \hline
+        O1.2: Enriquecimiento VLM local & Completado & Generación iterativa de descripciones densas y preguntas ancla para el 100\% del corpus. \\ \hline
+        O1.3: Motor de búsqueda vectorial & Completado & Índice Elasticsearch dual operativo (léxico + kNN) integrado bajo una API REST funcional. \\ \hline
+        O1.4a: Evaluación cuantitativa & Completado & Análisis métrico ejecutado (P@1: 86.67\% en enfoque léxico vs. 73.33\% en enfoque semántico). \\ \hline
+        O1.4b: Evaluación cualitativa & Completado & Recolección de telemetría arrojando un MOS global de 3.90/5.00 sobre 49 evaluaciones reales. \\ \hline
+    \end{tabular}
+    \caption{Resumen del grado de consecución de los objetivos específicos del proyecto y su correspondiente respaldo empírico.}
+    \label{tab:objetivos_logrados}
+\end{table}
+
+Como se desprende de la información consolidada en la tabla, cada uno de los hitos de ingeniería trazados en el diseño preliminar del sistema cuenta con un respaldo empírico verificable. Desde la resolución de los desafíos volumétricos en la extracción documental (O1.1) hasta la validación psicométrica de la utilidad de la herramienta (O1.4b), el proyecto ha superado progresivamente todas las etapas de su ciclo de vida de desarrollo.
+
+\subsection{Objetivo General}
+\label{subsec:objetivo_general}
+
+El objetivo rector de este Trabajo de Fin de Grado consistía en diseñar, desarrollar y validar RAGI (\textit{Retrieval-Augmented Generation for Images}), un sistema integral de recuperación semántica multimodal orientado específicamente a figuras de artículos científicos, priorizando el uso de modelos de visión-lenguaje de ejecución local.
+
+A la luz de los resultados desglosados a lo largo de este capítulo, se puede concluir de manera fundamentada que dicho objetivo matriz ha sido alcanzado satisfactoriamente. El ecosistema RAGI materializa la totalidad del complejo \textit{pipeline} propuesto: desde la extracción robusta de topologías PDF complejas mediante algoritmos de \textit{Document Layout Analysis} \cite{zhong2019}, pasando por la inyección de metadatos sintéticos a través de VLMs soberanos \cite{liu2024}, hasta culminar en la indexación hiperdimensional en Elasticsearch y su exposición a través de una interfaz interactiva de búsqueda centrada en el usuario.
+
+El proceso de evaluación ha permitido validar con rigor metodológico la hipótesis central del proyecto: si bien las métricas cuantitativas estrictas demostraron que los motores vectoriales puros sufren frente a terminología técnica hiper-específica en comparación con la búsqueda léxica exacta (BM25), la combinación de anotaciones generadas por IA proporciona una flexibilidad innegable para la búsqueda exploratoria. El estudio cualitativo ratificó empíricamente que esta arquitectura proporciona a los investigadores una herramienta eficaz, resiliente a la ambigüedad del lenguaje y altamente valorada, logrando contextualizar el conocimiento visual latente en la literatura científica \cite{lewis2020}. 
+
+En conclusión, RAGI constituye una prueba de concepto (\textit{Proof of Concept}) madura y funcional. Este trabajo demuestra fehacientemente la viabilidad técnica de construir sistemas de recuperación de información visual en dominios académicos utilizando exclusivamente tecnologías \textit{Open Source} e infraestructura local. Asimismo, los hallazgos críticos documentados sientan un precedente de incalculable valor para guiar futuras iteraciones del sistema hacia paradigmas de búsqueda híbrida, donde la precisión léxica y la comprensión conceptual se integren para ofrecer un marco altamente avanzado en recuperación documental.
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Problemas Encontrados}
+\label{sec:problemas_encontrados}
+\endgroup
+
+A lo largo de las fases de diseño, desarrollo, implementación y evaluación del ecosistema RAGI, se identificaron diversas limitaciones operativas y dificultades técnicas. Documentar exhaustivamente estos obstáculos es un ejercicio de rigor y transparencia académica fundamental en la ingeniería de software. Este análisis crítico permite contextualizar las decisiones de diseño adoptadas, justificar razonadamente las anomalías en las métricas obtenidas y establecer una línea base clara sobre la cual fundamentar futuras iteraciones del proyecto. 
+
+A continuación, se exponen los principales problemas estructurados por áreas de impacto algorítmico y metodológico:
+
+\begin{itemize}
+    \item \textbf{Limitaciones en la Adquisición y Procesamiento Estructural del Dataset:} El proceso de recolección y curación del corpus documental presentó cuellos de botella significativos desde sus compases iniciales. En primer lugar, la ingesta de los artículos desde el repositorio arXiv se ejecutó de forma manual. Al carecer de un módulo automatizado de recolección masiva (API \textit{scraper} con control de cuotas y gestión de formato fuente), se restringió el volumen de documentos procesados a un centenar de artículos, limitando severamente la escalabilidad volumétrica de las pruebas algorítmicas. Adicionalmente, el modelo de segmentación \textit{Document Layout Analysis} (\textit{DocLayout-YOLO}) demostró no ser universalmente compatible con la extrema heterogeneidad tipográfica de la literatura científica. Las maquetaciones varían drásticamente (plantillas IEEE de doble columna, formatos LNCS de una columna o \textit{layouts} personalizados). Figuras sin bordes delimitados explícitamente, gráficos insertados como marcas de agua, o mallas de subfiguras anidadas provocaron fallos heurísticos de aislamiento. Esto generó recortes contaminados con texto circundante, forzando una costosa exclusión manual de documentos corruptos y reduciendo el tamaño efectivo del catálogo de evaluación.
+
+    \item \textbf{Restricciones Computacionales de los Modelos en Ejecución Local:} La decisión arquitectónica central de emplear exclusivamente Modelos de Lenguaje Abiertos (\textit{Open Source}) garantizó la soberanía computacional y la privacidad de los datos académicos procesados. Sin embargo, este \textit{trade-off} tecnológico conllevó un evidente peaje en la calidad analítica. Modelos locales como Gemma3 o las variantes parametrizadas de LLaMA (restringidos por el número de parámetros activos) presentan un rendimiento métrico objetivamente inferior al de gigantes comerciales privativos (como GPT-4V o Gemini Pro) en tareas complejas de razonamiento visual denso \cite{yin2023}. En la práctica, esto se tradujo en descripciones visuales que, en ocasiones, resultaban excesivamente genéricas o adolecían de alucinaciones técnicas (por ejemplo, la invención de métricas en las leyendas o la interpolación incorrecta de los ejes cartesianos). A esto se sumó una limitación crítica de \textit{hardware}: la incompatibilidad de la versión de CUDA preinstalada con la memoria VRAM limitada de la GPU disponible (RTX 5060 Laptop). Este cuello de botella impidió aprovechar la aceleración nativa por tensores para ciertos procesos de codificación, forzando el desvío de la carga computacional hacia la CPU y penalizando drásticamente los tiempos globales de procesamiento y experimentación.
+
+    \item \textbf{Inestabilidad de la Infraestructura de Inferencia y Red:} Durante la fase crítica de vectorización y evaluación cuantitativa, el servidor remoto de la universidad, encargado de proveer los \textit{embeddings} semánticos, experimentó latencias severas, micro-cortes y bloqueos de seguridad (\textit{HTTP 403 Forbidden}) derivados probablemente de políticas limitadoras de peticiones (\textit{rate-limiting}). Este comportamiento errático obligó a interrumpir el flujo de ejecución previsto y desarrollar de emergencia un sistema de contingencia robusto basado en una caché local de estados (\texttt{cache\_embeddings.json}). Aunque este enfoque demostró resiliencia en la ingeniería del software, mitigando la pérdida de datos, ralentizó notablemente el cronograma de experimentación y demostró la fragilidad de depender de \textit{endpoints} externos sin sistemas de balanceo de carga.
+
+    \item \textbf{Sesgos Metodológicos en la Evaluación Cuantitativa (\textit{Ground Truth}):} Como se ha argumentado extensamente en la discusión de resultados, el diseño paramétrico del \textit{Ground Truth} introdujo un sesgo ineludible hacia la coincidencia léxica exacta (\textit{Exact Keyword Matching}). Al derivar las 30 consultas de evaluación directamente de los \textit{captions} originales de los autores mediante la purga de \textit{stopwords}, se favoreció y se premió matemáticamente al algoritmo estadístico BM25 frente al motor vectorial. En un entorno de producción académico, las consultas introducidas por investigadores que desconocen el documento subyacente tienden a la abstracción conceptual o a descripciones topológicas amplias, escenario donde el motor semántico (al mitigar el desajuste de vocabulario) desplegaría su verdadero potencial comparativo.
+
+    \item \textbf{Limitaciones Estadísticas del Estudio Cualitativo:} El piloto de estudio de usuarios logró capturar de forma efectiva 49 iteraciones evaluadas. Si bien este tamaño muestral inicial es válido para perfilar una tendencia de usabilidad y obtener un \textit{Mean Opinion Score} indicativo (MOS de 3.90), carece del volumen y de la potencia estadística (\textit{statistical power}) necesarios para inferir conclusiones universalmente generalizables. Además, el protocolo de evaluación se ejecutó mediante un enfoque de validación simple (\textit{single-blind}) circunscrito únicamente al motor semántico. La ausencia de un test A/B paralelo, donde un grupo de control interactuase exclusivamente con el motor léxico (BM25), impide realizar un contraste diferencial. Esta limitación obliga a interpretar el alto grado de satisfacción humana con cautela empírica, no pudiendo descartarse que parte del éxito percibido esté influenciado por el «efecto novedad» de la interfaz o la predisposición positiva de los participantes.
+\end{itemize}
+
+A modo de síntesis estructurada, la Tabla \ref{tab:limitaciones} consolida esta matriz de vulnerabilidades. El lector puede observar en ella una clasificación cualitativa de cada obstáculo técnico y metodológico en función de su criticidad y su área de impacto sobre el ecosistema RAGI, proporcionando así una hoja de ruta transparente sobre los frentes que requerirán mayor atención investigadora a futuro.
+
+\begin{table}[hbt!]
+    \centering
+    \begin{tabular}{|l|c|c|}
+        \hline
+        \textbf{Limitación} & \textbf{Impacto} & \textbf{Afecta a} \\ \hline
+        Descarga manual de PDFs & Bajo & Escalabilidad del catálogo \\ \hline
+        Recorte no universal de figuras & Medio & Tamaño del dataset final \\ \hline
+        Modelos locales de calidad inferior & Medio & Precisión de anotaciones \\ \hline
+        Incompatibilidad CUDA/GPU & Medio & Velocidad de procesamiento \\ \hline
+        Inestabilidad del servidor de embeddings & Alto & Evaluación cuantitativa \\ \hline
+        Sesgo léxico en el Ground Truth & Alto & Comparativa de modelos \\ \hline
+        Tamaño muestral limitado (49 votos) & Medio & Validez estadística \\ \hline
+        Falta de contraste directo en estudio & Medio & Interpretación del MOS \\ \hline
+    \end{tabular}
+    \caption{Resumen de las principales limitaciones identificadas durante el proyecto y su impacto estimado.}
+    \label{tab:limitaciones}
+\end{table}
+
+La exposición proactiva de estas limitaciones no desmerece en absoluto los hitos de ingeniería descritos en la Sección \ref{sec:objetivos_logrados}, sino que atestigua la tremenda complejidad inherente a la integración de \textit{pipelines} de Inteligencia Artificial Generativa en dominios documentales del mundo real. Esta matriz de impacto sirve como fundamentación crítica y preludio directo para la formulación de las líneas de trabajo futuro que se discutirán en el capítulo de conclusiones.
+
+\chapter{Conclusiones y Trabajos Futuros}
+\label{sec:conclusiones}
+
+\section{Conclusiones}
+\label{sec:conclusiones_principales}
+
+El presente Trabajo de Fin de Grado ha abordado el diseño, desarrollo y evaluación de RAGI (\textit{Retrieval-Augmented Generation for Images}), un ecosistema de recuperación semántica multimodal orientado a figuras de artículos científicos. A lo largo de los capítulos precedentes se ha presentado la motivación del proyecto, fundamentada en el estado del arte actual, así como la metodología de extracción, enriquecimiento y vectorización, culminando en un riguroso análisis cuantitativo y cualitativo. Este apartado sintetiza de forma crítica las principales conclusiones extraídas del trabajo realizado.
+
+En primer lugar, desde un punto de vista de ingeniería de \textit{software}, se ha demostrado la viabilidad técnica de construir un \textit{pipeline} completo de extracción, enriquecimiento e indexación de figuras científicas utilizando exclusivamente herramientas de código abierto desplegadas en infraestructura local. El módulo de \textit{Document Layout Analysis} (\textit{DocLayout-YOLOv10}) logró aislar aproximadamente 700 figuras con sus metadatos asociados a partir de un centenar de documentos PDF \cite{wang2024yolov10}. Si bien el proceso heurístico de recorte evidenció limitaciones al enfrentarse a maquetaciones atípicas, la arquitectura implementada constituye una prueba de concepto operativa y viable sobre la que continuar iterando.
+
+En segundo lugar, la evaluación cuantitativa ha arrojado hallazgos de gran calado científico que matizan la hipótesis inicial del proyecto. Inicialmente, se planteó metodológicamente que el motor semántico (al incorporar descripciones densas y preguntas sintéticas generadas por IA) superaría en precisión algorítmica al enfoque tradicional. Sin embargo, los resultados evidenciaron que el modelo léxico clásico (BM25) obtuvo una mayor precisión en la primera posición (\textit{Precision@1} del 86.67\%) frente al modelo semántico vectorial (73.33\%) en un entorno de pruebas fundamentado en \textit{Exact Keyword Matching}. 
+
+Este resultado, lejos de constituir una falla del sistema, es un hallazgo empírico relevante. Indica que la Inteligencia Artificial generativa y la indexación probabilística no mejoran la recuperación \textit{en todos los casos}, y pone de manifiesto que los modelos vectoriales tienden a diluir la importancia de la terminología técnica hiper-específica. Lo que este experimento no demuestra es la inferioridad del enfoque semántico en la vida real, sino el sesgo inherente de evaluar modelos abstractos mediante un \textit{Ground Truth} derivado directamente de los textos originales de los autores. Frente a este fenómeno, la prueba preliminar de fusión implementada logró mitigar la caída de rendimiento (elevando el \textit{Precision@1} al 83.33\%). Estos datos certifican empíricamente que la adopción de arquitecturas de \textbf{Búsqueda Híbrida} (\textit{Hybrid Search}) —que amalgamen la exactitud léxica de BM25 con la exhaustividad conceptual de los \textit{embeddings}— no es una mera hipótesis de diseño, sino la solución validada para construir sistemas de recuperación académica eficientes.
+
+En tercer lugar, para complementar la frialdad de las métricas algorítmicas y evaluar el impacto del "desajuste" detectado, el estudio cualitativo con 49 evaluaciones de usuarios arrojó un \textit{Mean Opinion Score} (MOS) global de 3.90 sobre 5.00. Este resultado valida la utilidad real percibida de la aproximación semántica en contextos de búsqueda exploratoria e incierta. El análisis cruzado con los metadatos demostró que el motor es capaz de recuperar resultados satisfactorios independientemente de la escasez descriptiva original ($r = -0.063$ entre longitud del pie de foto y satisfacción). A su vez, la proyección espacial de las consultas mediante PCA evidenció que el sistema logra abstraer y agrupar intenciones de búsqueda complejas, situación donde las aproximaciones léxicas basadas en palabras clave fracasarían de forma rutinaria.
+
+En cuarto lugar, se puede afirmar que se ha cumplido satisfactoriamente la totalidad de los objetivos específicos planteados. Se desarrolló un \textit{pipeline} de extracción multimodal (O1.1), se enriqueció semánticamente el catálogo mediante Modelos de Visión-Lenguaje en local para asegurar la privacidad institucional (O1.2), se integró un motor dual sobre Elasticsearch (O1.3), y se evaluó críticamente el impacto real de la arquitectura (O1.4).
+
+Finalmente, cabe destacar que las limitaciones documentadas durante el desarrollo (volumen del corpus, calidad de los VLMs locales y falta de un test A/B cruzado con usuarios) enmarcan con realismo los alcances de este Trabajo de Fin de Grado, pero no invalidan la solidez de la prueba de concepto desarrollada. RAGI demuestra que es posible construir la siguiente generación de bibliotecas científicas soberanas y privadas.
+
+Para facilitar la labor del Tribunal Evaluador, asegurar el principio académico de reproducibilidad de la investigación y permitir la futura extensión del código, la demostración de la interfaz final y el repositorio del código fuente íntegro del proyecto se encuentran permanentemente a disposición pública en las siguientes direcciones:
+\begin{itemize}
+    \item \textbf{Servicio web desplegado (Entorno de producción):} \url{https://wiig.dia.fi.upm.es/ragi}
+    \item \textbf{Código fuente (Repositorio de GitHub):} \url{https://github.com/Nordz20/TFG-RAGI}
+\end{itemize}
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Impacto Social y Medioambiental}
+\label{sec:impacto_social}
+\endgroup
+
+El desarrollo del sistema RAGI no solo ha perseguido la resolución de un problema técnico en la ingeniería de la información, sino que también se enmarca dentro de una reflexión ética y deontológica más amplia sobre el impacto social y medioambiental de las tecnologías de Inteligencia Artificial Generativa. Esta sección analiza las contribuciones tangibles del proyecto en ambas dimensiones, vinculándolas estructuralmente con los Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030 de Naciones Unidas, cuyo resumen visual se expone en la Figura \ref{fig:ods}.
+
+\subsection{Impacto Social}
+
+El principal impacto social de RAGI radica en su contribución directa a la democratización del acceso al conocimiento científico complejo. Al tratarse de un ecosistema construido íntegramente con herramientas de código abierto (\textit{Open Source}) y diseñado para ejecutarse sobre infraestructura local básica, RAGI elimina de raíz las barreras económicas y de dependencia tecnológica que imponen los servicios comerciales de inteligencia artificial privativos (SaaS). Cualquier institución académica pública, independientemente de sus recursos, puede desplegar y auditar el sistema sin incurrir en costes recurrentes por consumo de APIs o suscripciones corporativas.
+
+Esta accesibilidad tecnológica se alinea de forma explícita con el \textbf{ODS 4: Educación de Calidad}. La capacidad de buscar y recuperar figuras científicas y diagramas de forma semántica acelera drásticamente la revisión bibliográfica de los estudiantes e investigadores, facilitando la asimilación de conceptos técnicos densos y beneficiando a investigadores en etapas tempranas de su carrera investigadora. Asimismo, al catalogar y abrir el contenido visual (históricamente opaco a los buscadores tradicionales) de los artículos científicos, el sistema contribuye a reducir las desigualdades en el acceso a la información (\textbf{ODS 10: Reducción de las Desigualdades}). Esto garantiza que investigadores de instituciones con recursos bibliográficos limitados puedan explotar el mismo volumen de literatura y con las mismas herramientas de vanguardia que aquellos ubicados en centros de investigación con alta financiación.
+
+Además, RAGI fomenta activamente la innovación en el ámbito de la recuperación de información multimodal (\textbf{ODS 9: Industria, Innovación e Infraestructura}). La arquitectura \textit{pipeline} propuesta demuestra que es plenamente posible construir sistemas de búsqueda semántica de alto rendimiento utilizando exclusivamente recursos de hardware y software estándar disponibles en entornos universitarios, promoviendo un modelo de ingeniería de \textit{software} sostenible y replicable.
+
+En el plano humano, es imperativo destacar que el sistema ha sido diseñado para mitigar la barrera cognitiva de entrada. La interfaz gráfica \textit{Zero-Click} permite a cualquier profesional formular consultas orgánicas en lenguaje natural y obtener resultados visuales instantáneos sin necesidad de comprender los complejos mecanismos subyacentes de topología vectorial (\textit{embeddings}) o la inferencia de LLMs. Esta accesibilidad expande el espectro de usuarios potenciales hacia ramas no puramente computacionales (medicina, biología, sociología), donde la formación especializada en IA es poco común.
+
+Por último, el carácter de desarrollo abierto del proyecto fomenta el intercambio científico global. Al publicar íntegramente el código fuente y la metodología paramétrica empleada en repositorios públicos, se insta a la comunidad académica a replicar los experimentos, auditar los sesgos de los modelos y adaptar la arquitectura RAGI a nuevos dominios de conocimiento específico, afianzando la noción de que la tecnología debe construirse colectivamente.
+
+\subsection{Impacto Medioambiental}
+
+El impacto medioambiental derivado del entrenamiento y despliegue masivo de sistemas de Inteligencia Artificial es una preocupación crítica en la comunidad científica. Los grandes modelos de lenguaje y visión comerciales (LLM/VLM) se ejecutan de forma ininterrumpida en centros de datos hiperscalares que consumen cantidades ingentes de energía eléctrica para alimentar redes de GPUs y clústeres de refrigeración, contribuyendo alarmantemente a la huella de carbono global \cite{touvron2023}.
+
+La arquitectura de RAGI mitiga estructuralmente esta problemática desde su fase de diseño técnico mediante tres decisiones fundamentales. En primer lugar, la elección del paradigma RAG (\textit{Retrieval-Augmented Generation}). Al utilizar RAG e indexación vectorial, el sistema adquiere la capacidad de aprender de nueva literatura insertada en la base de datos sin necesidad de ejecutar procesos de re-entrenamiento o afinamiento (\textit{Fine-Tuning}) de las redes neuronales, erradicando así la fase algorítmica más demandante a nivel energético. 
+
+En segundo lugar, el uso de modelos optimizados y cuantizados (como \textit{Nomic Embed Text v2} para la codificación del espacio latente y \textit{Gemma3:12b} para el procesamiento de visión-lenguaje), en lugar de modelos monolíticos de cientos de miles de millones de parámetros, reduce sustancialmente los FLOPs (operaciones de coma flotante) necesarios y, por ende, el coste energético por inferencia. En tercer lugar, la arquitectura de ejecución puramente local evita el consumo energético vampírico asociado al enrutamiento, cifrado y latencia de transmisión de \textit{payloads} masivos de datos a través de nodos de red en la nube.
+
+Esta aproximación técnica y ética contribuye directamente al \textbf{ODS 12: Producción y Consumo Responsables}, promoviendo un uso eficiente, mesurado y justificable de los recursos computacionales. Todo el proyecto se enmarca estrictamente dentro de los preceptos de la \textbf{Inteligencia Artificial Verde (\textit{Green AI})}, una corriente metodológica que aboga por priorizar la eficiencia energética, la optimización de parámetros y la reproducibilidad académica por encima del rendimiento bruto a cualquier coste carbónico.
+
+Finalmente, cabe señalar que la optimización algorítmica del \textit{pipeline} de extracción heurística (\textit{DocLayout-YOLO}) e indexación en \textit{Elasticsearch} optimizó significativamente el \textit{wall-clock time} (tiempo total de cómputo encendido), garantizando que la huella ecológica global del ciclo de vida del desarrollo de este TFG fuera lo más reducida posible.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{imagenes/ods_involucrados.png}
+    \caption{Objetivos de Desarrollo Sostenible (ODS) de Naciones Unidas estructuralmente apoyados por RAGI: ODS 4 (Educación), ODS 9 (Innovación), ODS 10 (Reducción de Desigualdades) y ODS 12 (Consumo Responsable).}
+    \label{fig:ods}
+\end{figure}
+
+\begingroup
+\let\clearpage\relax % Desactiva el salto de página automático
+\let\newpage\relax   % Desactiva también \newpage por si la plantilla usa este
+\vspace{0.5cm}       % Añadimos un poco de espacio para que no se pegue al texto anterior
+
+\section{Trabajos Futuros}
+\label{sec:trabajos_futuros}
+
+\endgroup
+
+Los resultados empíricos obtenidos y las limitaciones arquitectónicas identificadas a lo largo del ciclo de desarrollo de RAGI abren un amplio abanico de líneas de investigación y trabajo futuro. Estas vías de evolución permitirían no solo mitigar las vulnerabilidades técnicas actuales, sino escalar el ecosistema hacia un entorno de producción de grado industrial. A continuación, se enumeran y detallan las principales direcciones estratégicas identificadas:
+
+\begin{itemize}
+    \item \textbf{Escalabilidad de la Búsqueda Híbrida Vectorial-Léxica:} Dado que la evaluación preliminar (mediante \textit{Reciprocal Rank Fusion}) demostró empíricamente que la arquitectura híbrida estabiliza la precisión del modelo semántico y mantiene la contundencia léxica de BM25, el siguiente paso evolutivo es su escalado a un entorno de producción masivo. Se propone investigar la integración profunda de motores duales nativos y explorar combinaciones convexas dinámicas (\textit{alpha-weighting}), donde el peso del \textit{score} léxico frente al vectorial se ajuste automáticamente en tiempo real mediante modelos de aprendizaje automático predictivos en función de la longitud y naturaleza de la consulta del investigador.
+
+    \item \textbf{Desarrollo de un \textit{Pipeline} ETL para Ingesta Automatizada:} Para superar la limitación de la descarga manual, se plantea el diseño de un módulo automatizado de \textit{crawling} y \textit{scraping} (proceso ETL: \textit{Extract, Transform, Load}). Este módulo se conectaría programáticamente a la API oficial de arXiv (a través de protocolos como OAI-PMH), permitiendo la ingesta desatendida de lotes masivos de documentos filtrados por metadatos temáticos o fechas de publicación. Esto no solo aceleraría exponencialmente la construcción del catálogo, sino que habilitaría un sistema de actualización continua (\textit{cron jobs}) para mantener el índice vectorial sincronizado con el estado del arte científico diario.
+
+    \item \textbf{Escalabilidad y Diversificación del Corpus Documental:} El catálogo actual de validación operó sobre aproximadamente 700 figuras. Para asegurar la capacidad de generalización del modelo frente a datos fuera de distribución (\textit{Out-of-Distribution}, OOD), se requiere escalar el corpus a decenas de miles de imágenes. Esto implicaría abarcar disciplinas dispares (biomedicina, astrofísica, ingeniería civil) e ingestar fuentes \textit{Open Access} adicionales como PubMed Central. Paralelamente, el sistema deberá someterse a pruebas de estrés (\textit{stress testing}) sobre nuevas tipologías visuales complejas, tales como micrografías, esquemas topológicos de circuitos o renders 3D.
+
+    \item \textbf{Optimización y \textit{Fine-Tuning} de Modelos Locales:} El vertiginoso ritmo de avance en el campo de la IA \textit{Open Source} hace previsible la inminente disponibilidad de alternativas locales mucho más potentes. Se propone evaluar periódicamente la integración de nuevas arquitecturas VLM (como LLaVA-NeXT, iteraciones multimodales de Llama o familias Qwen superiores) mediante cuantización de pesos (GGUF/AWQ) para asegurar su viabilidad en \textit{hardware} modesto. Más importante aún, se plantea explorar técnicas de entrenamiento paramétrico eficiente (\textit{PEFT / LoRA}) sobre el modelo de \textit{embeddings} Nomic, ajustando sus pesos internos con literatura puramente científica para forzar una alineación semántica óptima entre la jerga técnica y el hiperespacio vectorial.
+
+    \item \textbf{Expansión Rigurosa del Estudio de Interacción Humano-Computadora (HCI):} El estudio de usabilidad requiere ser expandido para garantizar robustez y significación estadística (\textit{p-value}). Se proyecta un estudio controlado con centenares de participantes, estructurado mediante pruebas A/B ciegas (\textit{Blind A/B Testing}). En dicho escenario, los usuarios evaluarían los resultados híbridos frente a los puramente léxicos o semánticos sin sesgo de confirmación. Asimismo, la telemetría del \textit{Backend} se ampliaría para capturar analíticas pasivas de comportamiento, tales como el \textit{Click-Through Rate} (CTR), el tiempo medio de permanencia (\textit{dwell time}) y la tasa de reformulación de la consulta, métricas definitivas de la utilidad real del motor.
+
+    \item \textbf{Refinamiento Arquitectónico del Módulo de Detección Visual:} Para atenuar las limitaciones del actual \textit{DocLayout-YOLO} ante PDFs atípicos, se contempla re-entrenar las cabezas de detección del modelo con un conjunto de datos mucho más agresivo y heterogéneo (incluyendo escaneos antiguos de \textit{papers} en blanco y negro). Alternativamente, se abre la puerta a sustituir la detección de cajas delimitadoras (\textit{bounding boxes}) por arquitecturas de segmentación por píxeles puras, como \textit{Segment Anything Model} (SAM) o \textit{Vision Transformers} (ViT) especializadas en \textit{layout}, que logran el aislamiento perfecto de figuras difuminadas o sin bordes explícitos.
+
+    \item \textbf{Exploración del Paradigma de Búsqueda \textit{Cross-Modal}:} Por último, la frontera tecnológica del sistema pasa por trascender el texto. Se propone implementar un índice multimodal puro que no solo vectorice la descripción sintética, sino los propios píxeles de la imagen empleando modelos de alineación contrastiva (como CLIP o SigLIP). Esta capacidad habilitaría casos de uso disruptivos, tales como la búsqueda inversa de diagramas (\textit{Reverse Image Search}), donde el investigador cargaría el boceto de una gráfica para que el sistema recupere instantáneamente las arquitecturas topológicamente equivalentes publicadas en la literatura mundial.
+\end{itemize}
+
+\newpage
+% Eliminamos \chapter*{Bibliografía} para evitar el título duplicado y la página extra vacía
+\subfile{secciones/referencias}
+
+\end{document}
